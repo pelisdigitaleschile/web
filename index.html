@@ -1,71 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="ANSI">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>.::Pelis Digitales Chile::.</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Favicon generado en https://favicon.io/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <!-- Importaci�n de hestilos propios -->
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Importaci�n de estilos externos -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
-    <style>
-        /* Estilos para la barra superior fija */
-        .sticky-top {
-            background: white;
-            padding: 10px 0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra suave debajo de la barra */
-        }
-
-        /* Estilos para los iconos sociales */
-        .social-icons a {
-            color: #333;
-            margin: 0 10px;
-            font-size: 24px;
-            transition: color 0.3s; /* Animación suave al hacer hover */
-        }
-        .social-icons a:hover {
-            color: #0d6efd; /* Color azul de Bootstrap al pasar el mouse */
-        }
-
-        /* Estilos para los iconos de ordenamiento */
-        .sort-icon {
-            cursor: pointer;
-            margin-left: 5px;
-        }
-
-        /* Configuración del modal para los trailers */
-        .modal-dialog {
-            max-width: 800px; /* Ancho máximo para el modal de video */
-        }
-
-        /* Contenedor responsive para el iframe de YouTube */
-        .responsive-iframe {
-            position: relative;
-            padding-bottom: 56.25%; /* Aspecto 16:9 */
-            height: 0;
-            overflow: hidden;
-        }
-        .responsive-iframe iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        /* Estilo para la columna de números */
-        .numero-column {
-            width: 70px; /* Ancho fijo para la columna de números */
-        }
-
-        /* Estilos para las columnas ordenables */
-        .sortable {
-            cursor: pointer;
-            user-select: none; /* Previene la selección del texto al hacer clic */
-        }
-        .sortable i {
-            margin-left: 5px;
-        }
-    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">    
 </head>
 
 <body>
@@ -74,7 +22,7 @@
         <div class="container">
             <div class="text-center social-icons">
                 <a href="mailto:pelisdigitaleschile@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="https://instagram.com/pelisdigitaleschile" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://instagram.com/pelisdigitaleschile" target="_blank"><i class="fab fa-instagram"></i></a>                
                 <a href="https://docs.google.com/spreadsheets/d/1ztMEK2YIFsrTX9Yh5F5v7yE53to18-8GnkYe-W3sp8E/edit?usp=sharing" target="_blank"><i class="fa-regular fa-file-excel"></i></a>
             </div>
         </div>
@@ -91,38 +39,38 @@
                     <tr>
                         <!-- Columnas ordenables con iconos de ordenamiento -->
                         <th onclick="sortTable(0)" class="sortable numero-column">N <i class="fas fa-sort" data-column="0"></i></th>
-                        <th onclick="sortTable(1)" class="sortable">Título <i class="fas fa-sort" data-column="1"></i></th>
-                        <th onclick="sortTable(2)" class="sortable">Año <i class="fas fa-sort" data-column="2"></i></th>
+                        <th onclick="sortTable(1)" class="sortable">Nombre <i class="fas fa-sort" data-column="1"></i></th>
+                        <th onclick="sortTable(2)" class="sortable">A�o <i class="fas fa-sort" data-column="2"></i></th>
                         <th>Idioma</th>
-                        <th>Subtítulo</th>
+                        <th>Subt�tulo</th>
                         <th>Clip</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody>                    
                     <tr>
                         <td>23</td>
-                        <td><a href="https://www.imdb.com/title/tt18272208" target="_blank">Aquí</a></td>
+                        <td><a href="https://www.imdb.com/title/tt18272208" target="_blank">Aqu�</a></td>
                         <td>2024</td>
-                        <td>Inglés</td>
+                        <td>Ingl�s</td>
                         <td>Esp, Ing</td>
                         <td><button class="btn btn-danger btn-sm" onclick="showTrailer('lqgtMPvVVgo')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>
+                    </tr>                    
                     <tr>
                         <td>22</td>
                         <td><a href="https://www.imdb.com/title/tt9218128" target="_blank">Gladiator II</a></td>
                         <td>2024</td>
-                        <td>Español</td>
+                        <td>Espa�ol</td>
                         <td>Ninguno</td>
                         <td><button class="btn btn-danger btn-sm" onclick="showTrailer('kdSdHxf6tio')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>
+                    </tr>                    
                     <tr>
                         <td>21</td>
-                        <td><a href="https://www.imdb.com/title/tt7093904" target="_blank">La Leyenda del Dragón</a></td>
+                        <td><a href="https://www.imdb.com/title/tt7093904" target="_blank">La Leyenda del Drag�n</a></td>
                         <td>2024</td>
                         <td>Ing, Esp</td>
                         <td>Esp, Ing</td>
                         <td><button class="btn btn-danger btn-sm" onclick="showTrailer('LCFEY2gytgs')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>
+                    </tr>                    
                     <tr>
                         <td>20</td>
                         <td><a href="https://www.imdb.com/title/tt27911000" target="_blank">Terrifier 3: Payaso Siniestro</a></td>
@@ -130,15 +78,15 @@
                         <td>Ing, Esp</td>
                         <td>Esp, Ing</td>
                         <td><button class="btn btn-danger btn-sm" onclick="showTrailer('6mO-y0Xeq7U')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>
+                    </tr>                    
                     <tr>
                         <td>19</td>
                         <td><a href="https://www.imdb.com/title/tt7737800" target="_blank">El Asesino del Juego de Citas</a></td>
                         <td>2023</td>
-                        <td>Inglés</td>
+                        <td>Ingl�s</td>
                         <td>Esp, Ing</td>
                         <td><button class="btn btn-danger btn-sm" onclick="showTrailer('szC-6xP6-bQ')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>
+                    </tr>                    
                     <tr>
                         <td>18</td>
                         <td><a href="https://www.imdb.com/title/tt12584954" target="_blank">Tornados</a></td>
@@ -146,7 +94,7 @@
                         <td>Ing, Esp</td>
                         <td>Esp, Ing</td>
                         <td><button class="btn btn-danger btn-sm" onclick="showTrailer('r-faf-bxqB8')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>
+                    </tr>                    
                     <tr>
                         <td>17</td>
                         <td><a href="https://www.imdb.com/title/tt8864596" target="_blank">Transformers One</a></td>
@@ -154,7 +102,7 @@
                         <td>Ing, Esp</td>
                         <td>Esp, Ing</td>
                         <td><button class="btn btn-danger btn-sm" onclick="showTrailer('nG4cgTxrbDI')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>
+                    </tr>                    
                     <tr>
                         <td>16</td>
                         <td><a href="https://www.imdb.com/title/tt29623480" target="_blank">Robot Salvaje</a></td>
@@ -162,7 +110,7 @@
                         <td>Ing, Esp</td>
                         <td>Esp, Ing</td>
                         <td><button class="btn btn-danger btn-sm" onclick="showTrailer('sEXyPinA4lE')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>
+                    </tr>                    
                     <tr>
                         <td>15</td>
                         <td><a href="https://www.imdb.com/title/tt17526714" target="_blank">La Sustancia</a></td>
@@ -170,7 +118,7 @@
                         <td>Ing, Esp</td>
                         <td>Esp, Ing</td>
                         <td><button class="btn btn-danger btn-sm" onclick="showTrailer('LL7-o30o9ec')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>
+                    </tr>                    
                     <tr>
                         <td>14</td>
                         <td><a href="https://www.imdb.com/title/tt24169886" target="_blank">Incitadores</a></td>
@@ -178,7 +126,7 @@
                         <td>Ing, Esp</td>
                         <td>Esp, Ing</td>
                         <td><button class="btn btn-danger btn-sm" onclick="showTrailer('Fc_ygBFA-nU')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>
+                    </tr>                    
                     <tr>
                         <td>13</td>
                         <td><a href="https://www.imdb.com/title/tt5779228" target="_blank">Garfield: Fuera de casa</a></td>
@@ -186,23 +134,23 @@
                         <td>Ing, Esp</td>
                         <td>Esp, Ing</td>
                         <td><button class="btn btn-danger btn-sm" onclick="showTrailer('Ua3PLSNGVBE')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>
+                    </tr>                    
                     <tr>
                         <td>12</td>
                         <td><a href="https://www.imdb.com/title/tt20113412" target="_blank">The Convert</a></td>
                         <td>2023</td>
-                        <td>Inglés</td>
+                        <td>Ingl�s</td>
                         <td>Esp, Ing</td>
                         <td><button class="btn btn-danger btn-sm" onclick="showTrailer('h_OdkvaPjSs')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>
+                    </tr>                    
                     <tr>
                         <td>11</td>
-                        <td><a href="https://www.imdb.com/title/tt8609660" target="_blank">Mi Amigo El Pingüino</a></td>
+                        <td><a href="https://www.imdb.com/title/tt8609660" target="_blank">Mi Amigo El Ping�ino</a></td>
                         <td>2024</td>
                         <td>Ing, Esp</td>
                         <td>Esp, Ing</td>
                         <td><button class="btn btn-danger btn-sm" onclick="showTrailer('mNbKy0cmNjM')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>
+                    </tr>                    
                     <tr>
                         <td>10</td>
                         <td><a href="https://www.imdb.com/title/tt11389872" target="_blank">El Planeta de los Simios: Nuevo Reino</a></td>
@@ -210,23 +158,23 @@
                         <td>Ing, Esp</td>
                         <td>Esp, Ing</td>
                         <td><button class="btn btn-danger btn-sm" onclick="showTrailer('DDWWwEiWHJw')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>
+                    </tr>                    
                     <tr>
                         <td>9</td>
-                        <td><a href="https://www.imdb.com/title/tt11315808" target="_blank">Guasón 2: Folie À Deux</a></td>
+                        <td><a href="https://www.imdb.com/title/tt11315808" target="_blank">Guas�n 2: Folie � Deux</a></td>
                         <td>2024</td>
                         <td>Ing, Esp</td>
                         <td>Esp, Ing</td>
                         <td><button class="btn btn-danger btn-sm" onclick="showTrailer('hqx1NcHoiq0')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>
+                    </tr>                    
                     <tr>
                         <td>8</td>
-                        <td><a href="https://www.imdb.com/title/tt10655524" target="_blank">Romper El Círculo</a></td>
+                        <td><a href="https://www.imdb.com/title/tt10655524" target="_blank">Romper El C�rculo</a></td>
                         <td>2024</td>
                         <td>Ing, Esp</td>
                         <td>Esp, Ing</td>
                         <td><button class="btn btn-danger btn-sm" onclick="showTrailer('pzxJbIX9yMk')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>
+                    </tr>                    
                     <tr>
                         <td>7</td>
                         <td><a href="https://www.imdb.com/title/tt22022452" target="_blank">Intensa-Mente 2</a></td>
@@ -234,7 +182,7 @@
                         <td>Ing, Esp</td>
                         <td>Esp, Ing</td>
                         <td><button class="btn btn-danger btn-sm" onclick="showTrailer('9bol4Yyx9Gs')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>
+                    </tr>                    
                     <tr>
                         <td>6</td>
                         <td><a href="https://www.imdb.com/title/tt26757462" target="_blank">Hellboy: The Crooked Man</a></td>
@@ -242,7 +190,7 @@
                         <td>Ing, Esp</td>
                         <td>Esp, Ing</td>
                         <td><button class="btn btn-danger btn-sm" onclick="showTrailer('3-B60QAmto0')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>
+                    </tr>                    
                     <tr>
                         <td>5</td>
                         <td><a href="https://www.imdb.com/title/tt7510222" target="_blank">Mi Villano Favorito 4</a></td>
@@ -250,7 +198,7 @@
                         <td>Ing, Esp</td>
                         <td>Esp, Ing</td>
                         <td><button class="btn btn-danger btn-sm" onclick="showTrailer('I0_qFoptZ4Y')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>
+                    </tr>                    
                     <tr>
                         <td>4</td>
                         <td><a href="https://www.imdb.com/title/tt6263850" target="_blank">Deadpool & Wolverine</a></td>
@@ -258,7 +206,7 @@
                         <td>Ing, Esp</td>
                         <td>Esp, Ing</td>
                         <td><button class="btn btn-danger btn-sm" onclick="showTrailer('UzFZR2dRsSY')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>
+                    </tr>                    
                     <tr>
                         <td>3</td>
                         <td><a href="https://www.imdb.com/title/tt2049403" target="_blank">Beetlejuice Beetlejuice</a></td>
@@ -266,7 +214,7 @@
                         <td>Ing, Esp</td>
                         <td>Esp, Ing</td>
                         <td><button class="btn btn-danger btn-sm" onclick="showTrailer('Lrx7c3ElVks')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>
+                    </tr>                    
                     <tr>
                         <td>2</td>
                         <td><a href="https://www.imdb.com/title/tt4919268" target="_blank">Bad Boys Hasta La Muerte</a></td>
@@ -274,7 +222,7 @@
                         <td>Ing, Esp</td>
                         <td>Esp, Ing</td>
                         <td><button class="btn btn-danger btn-sm" onclick="showTrailer('8KXy_GZZKLA')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>
+                    </tr>                    
                     <tr>
                         <td>1</td>
                         <td><a href="https://www.imdb.com/title/tt18412256" target="_blank">Alien: Romulus</a></td>
@@ -287,7 +235,7 @@
             </table>
         </div>
     </div>
-
+    
     <!-- Modal para mostrar los trailers -->
     <div class="modal fade" id="trailerModal" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
@@ -305,106 +253,10 @@
         </div>
     </div>
 
-    <!-- Importación de scripts externos -->
+    <!-- Importaci�n de scripts externos -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Variables globales para el seguimiento del estado de ordenamiento
-        let lastSortedColumn = -1; // Almacena la última columna ordenada
-        let sortDirection = 'asc';  // Almacena la dirección actual del ordenamiento
-
-        /**
-         * Actualiza los iconos de ordenamiento en la tabla
-         * @param {number} column - Índice de la columna actual
-         * @param {string} direction - Dirección del ordenamiento ('asc' o 'desc')
-         */
-        function updateSortIcons(column, direction) {
-            // Resetea todos los iconos a su estado inicial
-            document.querySelectorAll('thead i.fas').forEach(icon => {
-                icon.className = 'fas fa-sort';
-            });
-
-            // Actualiza el icono de la columna actualmente ordenada
-            const currentIcon = document.querySelector(`thead i[data-column="${column}"]`);
-            // Cambia el icono según la dirección del ordenamiento
-            if (direction === 'asc') {
-                currentIcon.className = 'fas fa-sort-up';    // Flecha hacia arriba
-            } else {
-                currentIcon.className = 'fas fa-sort-down';  // Flecha hacia abajo
-            }
-        }
-
-        /**
-         * Ordena la tabla por la columna especificada
-         * @param {number} n - Índice de la columna a ordenar
-         */
-        function sortTable(n) {
-            var table = document.querySelector("table");
-            var switching = true;
-
-            // Determina la dirección del ordenamiento
-            if (lastSortedColumn === n) {
-                // Si es la misma columna, alterna la dirección
-                sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
-            } else {
-                // Si es una nueva columna, comienza con orden ascendente
-                sortDirection = 'asc';
-            }
-
-            lastSortedColumn = n;  // Actualiza la última columna ordenada
-            updateSortIcons(n, sortDirection);  // Actualiza los iconos
-
-            // Proceso de ordenamiento de burbuja
-            while (switching) {
-                switching = false;
-                var rows = table.rows;
-
-                // Compara cada par de filas
-                for (var i = 1; i < (rows.length - 1); i++) {
-                    var shouldSwitch = false;
-                    var x = rows[i].getElementsByTagName("TD")[n];
-                    var y = rows[i + 1].getElementsByTagName("TD")[n];
-
-                    // Determina el tipo de comparación según la columna
-                    let comparison;
-                    if (n === 0 || n === 2) {
-                        // Para columnas numéricas (N° y Año)
-                        comparison = Number(x.innerHTML) - Number(y.innerHTML);
-                    } else {
-                        // Para columnas de texto
-                        comparison = x.innerHTML.toLowerCase().localeCompare(y.innerHTML.toLowerCase());
-                    }
-
-                    // Determina si se debe hacer el intercambio
-                    if (sortDirection === 'asc' ? comparison > 0 : comparison < 0) {
-                        shouldSwitch = true;
-                        break;
-                    }
-                }
-
-                // Realiza el intercambio si es necesario
-                if (shouldSwitch) {
-                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-                    switching = true;
-                }
-            }
-        }
-
-        /**
-         * Muestra el modal con el trailer de YouTube
-         * @param {string} videoId - ID del video de YouTube
-         */
-        function showTrailer(videoId) {
-            // Inicializa y muestra el modal de Bootstrap
-            const modal = new bootstrap.Modal(document.getElementById('trailerModal'));
-            // Establece la URL del video
-            document.getElementById('youtubeFrame').src = `https://www.youtube.com/embed/${videoId}`;
-            modal.show();
-
-            // Limpia la URL del iframe cuando se cierra el modal
-            document.getElementById('trailerModal').addEventListener('hidden.bs.modal', function () {
-                document.getElementById('youtubeFrame').src = '';
-            });
-        }
-    </script>
+    <!-- Importaci�n de scripts internos -->
+    <script src="js/scripts.js"></script>
 </body>
 </html>
+
