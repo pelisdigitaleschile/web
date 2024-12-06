@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>.::Pelis Digitales Chile::.</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <!-- Importación de estilos externos -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
     <style>
@@ -83,7 +82,7 @@
 
     <!-- Contenedor principal -->
     <div class="container mt-4">
-        <h3 class="text-center mb-4">Pelis Digitales Chile<br>(Actualizada: 05-12-2024)</h3>
+        <h3 class="text-center mb-4">Pelis Digitales Chile<br>(Actualizada: 06-12-2024)</h3>
         <!-- Contenedor responsive para la tabla -->
         <div class="table-responsive">
             <table class="table table-striped table-hover">
@@ -92,7 +91,7 @@
                     <tr>
                         <!-- Columnas ordenables con iconos de ordenamiento -->
                         <th onclick="sortTable(0)" class="sortable numero-column">N <i class="fas fa-sort" data-column="0"></i></th>
-                        <th onclick="sortTable(1)" class="sortable">Nombre <i class="fas fa-sort" data-column="1"></i></th>
+                        <th onclick="sortTable(1)" class="sortable">Título <i class="fas fa-sort" data-column="1"></i></th>
                         <th onclick="sortTable(2)" class="sortable">Año <i class="fas fa-sort" data-column="2"></i></th>
                         <th>Idioma</th>
                         <th>Subtítulo</th>
@@ -100,6 +99,14 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <tr>
+                        <td>23</td>
+                        <td><a href="https://www.imdb.com/title/tt18272208" target="_blank">Aquí</a></td>
+                        <td>2024</td>
+                        <td>Inglés</td>
+                        <td>Esp, Ing</td>
+                        <td><button class="btn btn-danger btn-sm" onclick="showTrailer('lqgtMPvVVgo')"><i class="fab fa-youtube"></i></button></td>
+                    </tr>
                     <tr>
                         <td>22</td>
                         <td><a href="https://www.imdb.com/title/tt9218128" target="_blank">Gladiator II</a></td>
