@@ -1,144 +1,270 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Reservas</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        form {
-            max-width: 600px;
-            margin: auto;
-        }
-        label {
-            display: block;
-            margin: 10px 0 5px;
-        }
-        input, textarea, select, button {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .cart {
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin-top: 20px;
-        }
-        .cart-item {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
-        }
-        .total {
-            font-weight: bold;
-            text-align: right;
-        }
-        button {
-            background-color: #25D366;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #1da850;
-        }
-    </style>
-</head>
-<body>
-    <h1>Formulario de Reservas</h1>
-    <form id="reservationForm">
-        <label for="datetime">Fecha y Hora:</label>
-        <input type="datetime-local" id="datetime" required>
-        
-        <label for="people">Cantidad de Personas:</label>
-        <input type="number" id="people" min="1" required>
-        
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" required>
-        
-        <label for="surname">Apellidos:</label>
-        <input type="text" id="surname" required>
-        
-        <label for="phone">Celular:</label>
-        <input type="tel" id="phone" required>
-        
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" required>
-        
-        <label for="comments">Comentarios:</label>
-        <textarea id="comments"></textarea>
-        
-        <div class="cart">
-            <h3>Productos</h3>
-            <div class="cart-item">
-                <div>
-                    <strong>Producto 1</strong><br>
-                    Descripción Producto 1<br>
-                    Precio: $10,000 CLP
-                </div>
-                <input type="number" class="quantity" data-price="10000" min="0" placeholder="Cantidad">
-            </div>
-            <div class="total">Total: $<span id="total">0</span> CLP</div>
+import React, { useState } from 'react';
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
+import { Label } from '@/components/ui/label';
+import { Textarea } from '@/components/ui/textarea';
+import { Calendar } from '@/components/ui/calendar';
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
+import { CalendarIcon } from 'lucide-react';
+import { format } from 'date-fns';
+import { es } from 'date-fns/locale';
+
+const productos = [
+  {
+    id: 1,
+    nombre: 'Hamburguesa Clásica',
+    descripcion: 'Hamburguesa de carne con queso y verduras',
+    precio: 5990
+  },
+  {
+    id: 2,
+    nombre: 'Pizza Margherita',
+    descripcion: 'Pizza tradicional con tomate, mozzarella y albahaca',
+    precio: 7990
+  },
+  {
+    id: 3,
+    nombre: 'Ensalada César',
+    descripcion: 'Ensalada con pollo, croutones y aderezo César',
+    precio: 4990
+  }
+];
+
+const ReservationForm = () => {
+  const [formData, setFormData] = useState({
+    fechaHora: null,
+    cantidadPersonas: '',
+    nombre: '',
+    apellidos: '',
+    celular: '+569-',
+    email: '',
+    comentarios: ''
+  });
+
+  const [carrito, setCarrito] = useState(
+    productos.map(producto => ({
+      ...producto, 
+      cantidad: 0
+    }))
+  );
+
+  const handleFormChange = (e) => {
+    const { name, value } = e.target;
+    
+    // Validación especial para celular
+    if (name === 'celular') {
+      // Permitir solo números después del +569-
+      const formattedValue = value.replace(/[^\d]/g, '');
+      const formattedPhone = formattedValue.length > 0 
+        ? `+569-${formattedValue}` 
+        : '+569-';
+      
+      setFormData(prevState => ({
+        ...prevState,
+        [name]: formattedPhone
+      }));
+    } else {
+      setFormData(prevState => ({
+        ...prevState,
+        [name]: value
+      }));
+    }
+  };
+
+  const handleCantidadChange = (productoId, cantidad) => {
+    setCarrito(prevCarrito => 
+      prevCarrito.map(item => 
+        item.id === productoId 
+          ? { ...item, cantidad: Math.max(0, cantidad) }
+          : item
+      )
+    );
+  };
+
+  const calcularSubtotal = (producto) => {
+    return producto.precio * producto.cantidad;
+  };
+
+  const calcularTotal = () => {
+    return carrito.reduce((total, producto) => 
+      total + calcularSubtotal(producto), 0
+    );
+  };
+
+  const generarMensajeWhatsApp = () => {
+    let mensaje = "🛒 *Formulario de Reserva*\n\n";
+    
+    // Datos personales
+    mensaje += `*Datos Personales:*\n`;
+    mensaje += `Fecha y Hora: ${formData.fechaHora ? format(formData.fechaHora, 'PPp', { locale: es }) : 'No seleccionada'}\n`;
+    mensaje += `Cantidad de Personas: ${formData.cantidadPersonas}\n`;
+    mensaje += `Nombre: ${formData.nombre}\n`;
+    mensaje += `Apellidos: ${formData.apellidos}\n`;
+    mensaje += `Celular: ${formData.celular}\n`;
+    mensaje += `E-mail: ${formData.email}\n`;
+    mensaje += `Comentarios: ${formData.comentarios}\n\n`;
+    
+    // Productos
+    mensaje += `*Productos:*\n`;
+    carrito.filter(p => p.cantidad > 0).forEach(producto => {
+      mensaje += `${producto.nombre} - Cantidad: ${producto.cantidad} - Subtotal: $${calcularSubtotal(producto).toLocaleString('es-CL')}\n`;
+    });
+    
+    mensaje += `\n*Total:* $${calcularTotal().toLocaleString('es-CL')}`;
+
+    // Codificar el mensaje para WhatsApp
+    const mensajeEncoded = encodeURIComponent(mensaje);
+    const whatsappUrl = `https://wa.me/TUNUMERODEWHATSAPP?text=${mensajeEncoded}`;
+    
+    window.open(whatsappUrl, '_blank');
+  };
+
+  return (
+    <div className="max-w-md mx-auto p-4 bg-white shadow-md rounded-lg">
+      <h2 className="text-2xl font-bold mb-4">Formulario de Reservas</h2>
+      
+      {/* Información Personal */}
+      <div className="space-y-4">
+        <div>
+          <Label>Fecha y Hora</Label>
+          <Popover>
+            <PopoverTrigger asChild>
+              <Button
+                variant={"outline"}
+                className={`w-full justify-start text-left font-normal ${
+                  !formData.fechaHora && "text-muted-foreground"
+                }`}
+              >
+                <CalendarIcon className="mr-2 h-4 w-4" />
+                {formData.fechaHora ? (
+                  format(formData.fechaHora, 'PPp', { locale: es })
+                ) : (
+                  <span>Selecciona fecha y hora</span>
+                )}
+              </Button>
+            </PopoverTrigger>
+            <PopoverContent className="w-auto p-0">
+              <Calendar
+                mode="single"
+                selected={formData.fechaHora}
+                onSelect={(date) => setFormData(prev => ({
+                  ...prev, 
+                  fechaHora: date
+                }))}
+                locale={es}
+                initialFocus
+              />
+            </PopoverContent>
+          </Popover>
         </div>
-        
-        <button type="button" onclick="sendWhatsApp()">Enviar por WhatsApp</button>
-    </form>
+        <div>
+          <Label>Cantidad de Personas</Label>
+          <Input 
+            type="number" 
+            name="cantidadPersonas"
+            value={formData.cantidadPersonas}
+            onChange={handleFormChange}
+            min="1"
+          />
+        </div>
+        <div>
+          <Label>Nombre</Label>
+          <Input 
+            name="nombre"
+            value={formData.nombre}
+            onChange={handleFormChange}
+          />
+        </div>
+        <div>
+          <Label>Apellidos</Label>
+          <Input 
+            name="apellidos"
+            value={formData.apellidos}
+            onChange={handleFormChange}
+          />
+        </div>
+        <div>
+          <Label>Celular</Label>
+          <Input 
+            name="celular"
+            value={formData.celular}
+            onChange={handleFormChange}
+            placeholder="+569-12345678"
+          />
+        </div>
+        <div>
+          <Label>E-mail</Label>
+          <Input 
+            type="email" 
+            name="email"
+            value={formData.email}
+            onChange={handleFormChange}
+          />
+        </div>
+        <div>
+          <Label>Comentarios</Label>
+          <Textarea
+            name="comentarios"
+            value={formData.comentarios}
+            onChange={handleFormChange}
+          />
+        </div>
+      </div>
 
-    <script>
-        const quantities = document.querySelectorAll('.quantity');
-        const totalSpan = document.getElementById('total');
+      {/* Carrito de Productos */}
+      <div className="mt-6">
+        <h3 className="text-xl font-semibold mb-4">Productos</h3>
+        {carrito.map(producto => (
+          <div key={producto.id} className="flex items-center mb-4 space-x-4">
+            <div className="flex-grow">
+              <h4 className="font-medium">{producto.nombre}</h4>
+              <p className="text-sm text-gray-500">{producto.descripcion}</p>
+              <p className="text-sm">Precio: ${producto.precio.toLocaleString('es-CL')}</p>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Button 
+                variant="outline" 
+                size="sm"
+                onClick={() => handleCantidadChange(producto.id, producto.cantidad - 1)}
+              >
+                -
+              </Button>
+              <Input 
+                type="number" 
+                value={producto.cantidad}
+                onChange={(e) => handleCantidadChange(producto.id, parseInt(e.target.value))}
+                className="w-16 text-center"
+                min="0"
+              />
+              <Button 
+                variant="outline" 
+                size="sm"
+                onClick={() => handleCantidadChange(producto.id, producto.cantidad + 1)}
+              >
+                +
+              </Button>
+            </div>
+          </div>
+        ))}
 
-        quantities.forEach(input => {
-            input.addEventListener('input', updateTotal);
-        });
+        {/* Resumen de Compra */}
+        <div className="mt-4 border-t pt-4">
+          <div className="flex justify-between">
+            <span>Total:</span>
+            <span className="font-bold">${calcularTotal().toLocaleString('es-CL')}</span>
+          </div>
+        </div>
+      </div>
 
-        function updateTotal() {
-            let total = 0;
-            quantities.forEach(input => {
-                const price = parseInt(input.dataset.price);
-                const quantity = parseInt(input.value) || 0;
-                total += price * quantity;
-            });
-            totalSpan.textContent = total.toLocaleString('es-CL');
-        }
+      {/* Botón de Envío */}
+      <Button 
+        className="w-full mt-6"
+        onClick={generarMensajeWhatsApp}
+      >
+        Enviar por WhatsApp
+      </Button>
+    </div>
+  );
+};
 
-        function sendWhatsApp() {
-            const datetime = document.getElementById('datetime').value;
-            const people = document.getElementById('people').value;
-            const name = document.getElementById('name').value;
-            const surname = document.getElementById('surname').value;
-            const phone = document.getElementById('phone').value;
-            const email = document.getElementById('email').value;
-            const comments = document.getElementById('comments').value;
-            let message = `*Formulario de Reservas*\n\n`;
-            message += `Fecha y Hora: ${datetime}\n`;
-            message += `Cantidad de Personas: ${people}\n`;
-            message += `Nombre: ${name} ${surname}\n`;
-            message += `Celular: ${phone}\n`;
-            message += `E-mail: ${email}\n`;
-            message += `Comentarios: ${comments}\n\n`;
-            message += `*Productos:*\n`;
-            
-            quantities.forEach((input, index) => {
-                const quantity = parseInt(input.value) || 0;
-                if (quantity > 0) {
-                    const price = input.dataset.price;
-                    message += `Producto ${index + 1}: ${quantity} unidades - $${(quantity * price).toLocaleString('es-CL')} CLP\n`;
-                }
-            });
-
-            const total = totalSpan.textContent;
-            message += `\n*Total: $${total} CLP*`;
-
-            const encodedMessage = encodeURIComponent(message);
-            const whatsappURL = `https://wa.me/?text=${encodedMessage}`;
-            window.open(whatsappURL, '_blank');
-        }
-    </script>
-</body>
-</html>
+export default ReservationForm;
