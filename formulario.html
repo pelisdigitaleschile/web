@@ -8,10 +8,19 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            padding: 0;
+            box-sizing: border-box;
         }
         form {
-            max-width: 600px;
+            max-width: 800px;
             margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
         }
         label {
             display: block;
@@ -34,6 +43,13 @@
             justify-content: space-between;
             margin-bottom: 10px;
         }
+        .cart-item div {
+            flex: 1;
+        }
+        .cart-item input {
+            max-width: 80px;
+            margin-left: 10px;
+        }
         .total {
             font-weight: bold;
             text-align: right;
@@ -43,36 +59,47 @@
             color: white;
             border: none;
             cursor: pointer;
+            font-size: 16px;
         }
         button:hover {
             background-color: #1da850;
+        }
+        @media (max-width: 600px) {
+            .cart-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .cart-item input {
+                margin: 10px 0 0;
+                max-width: 100%;
+            }
         }
     </style>
 </head>
 <body>
     <h1>Formulario de Reservas</h1>
-    <form id="reservationForm">
+    <form id="reservationForm" onsubmit="validateForm(event)">
         <label for="datetime">Fecha y Hora:</label>
         <input type="datetime-local" id="datetime" required>
-        
+
         <label for="people">Cantidad de Personas:</label>
-        <input type="number" id="people" min="1" required>
-        
+        <input type="number" id="people" min="1">
+
         <label for="name">Nombre:</label>
-        <input type="text" id="name" required>
-        
+        <input type="text" id="name" required pattern="[A-Za-zÁÉÍÓÚÑáéíóúñ\s]+" title="Solo letras y espacios permitidos.">
+
         <label for="surname">Apellidos:</label>
-        <input type="text" id="surname" required>
-        
+        <input type="text" id="surname" required pattern="[A-Za-zÁÉÍÓÚÑáéíóúñ\s]+" title="Solo letras y espacios permitidos.">
+
         <label for="phone">Celular:</label>
-        <input type="tel" id="phone" required>
-        
+        <input type="tel" id="phone" required pattern="\+?[0-9]{8,15}" title="Ingrese un número de teléfono válido con o sin código de país.">
+
         <label for="email">E-mail:</label>
         <input type="email" id="email" required>
-        
+
         <label for="comments">Comentarios:</label>
         <textarea id="comments"></textarea>
-        
+
         <div class="cart">
             <h3>Productos</h3>
             <div class="cart-item">
@@ -83,10 +110,34 @@
                 </div>
                 <input type="number" class="quantity" data-price="10000" min="0" placeholder="Cantidad">
             </div>
+            <div class="cart-item">
+                <div>
+                    <strong>Producto 2</strong><br>
+                    Descripción Producto 2<br>
+                    Precio: $15,000 CLP
+                </div>
+                <input type="number" class="quantity" data-price="15000" min="0" placeholder="Cantidad">
+            </div>
+            <div class="cart-item">
+                <div>
+                    <strong>Producto 3</strong><br>
+                    Descripción Producto 3<br>
+                    Precio: $20,000 CLP
+                </div>
+                <input type="number" class="quantity" data-price="20000" min="0" placeholder="Cantidad">
+            </div>
+            <div class="cart-item">
+                <div>
+                    <strong>Producto 4</strong><br>
+                    Descripción Producto 4<br>
+                    Precio: $25,000 CLP
+                </div>
+                <input type="number" class="quantity" data-price="25000" min="0" placeholder="Cantidad">
+            </div>
             <div class="total">Total: $<span id="total">0</span> CLP</div>
         </div>
-        
-        <button type="button" onclick="sendWhatsApp()">Enviar por WhatsApp</button>
+
+        <button type="submit">Enviar por WhatsApp</button>
     </form>
 
     <script>
@@ -107,14 +158,26 @@
             totalSpan.textContent = total.toLocaleString('es-CL');
         }
 
+        function validateForm(event) {
+            event.preventDefault(); // Evita el envío automático del formulario
+
+            const form = document.getElementById('reservationForm');
+            if (!form.checkValidity()) {
+                form.reportValidity(); // Muestra mensajes de validación del navegador
+                return;
+            }
+
+            sendWhatsApp();
+        }
+
         function sendWhatsApp() {
             const datetime = document.getElementById('datetime').value;
-            const people = document.getElementById('people').value;
+            const people = document.getElementById('people').value || "No especificado";
             const name = document.getElementById('name').value;
             const surname = document.getElementById('surname').value;
             const phone = document.getElementById('phone').value;
             const email = document.getElementById('email').value;
-            const comments = document.getElementById('comments').value;
+            const comments = document.getElementById('comments').value || "Sin comentarios.";
             let message = `*Formulario de Reservas*\n\n`;
             message += `Fecha y Hora: ${datetime}\n`;
             message += `Cantidad de Personas: ${people}\n`;
@@ -123,7 +186,7 @@
             message += `E-mail: ${email}\n`;
             message += `Comentarios: ${comments}\n\n`;
             message += `*Productos:*\n`;
-            
+
             quantities.forEach((input, index) => {
                 const quantity = parseInt(input.value) || 0;
                 if (quantity > 0) {
