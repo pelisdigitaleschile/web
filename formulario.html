@@ -3,40 +3,24 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
-import { Calendar } from '@/components/ui/calendar';
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
-import { CalendarIcon } from 'lucide-react';
-import { format } from 'date-fns';
-import { es } from 'date-fns/locale';
 
 const productos = [
   {
     id: 1,
-    nombre: 'Hamburguesa Clásica',
-    descripcion: 'Hamburguesa de carne con queso y verduras',
-    precio: 5990
-  },
-  {
-    id: 2,
-    nombre: 'Pizza Margherita',
-    descripcion: 'Pizza tradicional con tomate, mozzarella y albahaca',
-    precio: 7990
-  },
-  {
-    id: 3,
-    nombre: 'Ensalada César',
-    descripcion: 'Ensalada con pollo, croutones y aderezo César',
-    precio: 4990
+    nombre: 'Producto 1',
+    descripcion: 'Descripción Producto 1',
+    precio: 10.00
   }
+  // Puedes agregar más productos aquí
 ];
 
 const ReservationForm = () => {
   const [formData, setFormData] = useState({
-    fechaHora: null,
+    fechaHora: '',
     cantidadPersonas: '',
     nombre: '',
     apellidos: '',
-    celular: '+569-',
+    celular: '',
     email: '',
     comentarios: ''
   });
@@ -50,25 +34,10 @@ const ReservationForm = () => {
 
   const handleFormChange = (e) => {
     const { name, value } = e.target;
-    
-    // Validación especial para celular
-    if (name === 'celular') {
-      // Permitir solo números después del +569-
-      const formattedValue = value.replace(/[^\d]/g, '');
-      const formattedPhone = formattedValue.length > 0 
-        ? `+569-${formattedValue}` 
-        : '+569-';
-      
-      setFormData(prevState => ({
-        ...prevState,
-        [name]: formattedPhone
-      }));
-    } else {
-      setFormData(prevState => ({
-        ...prevState,
-        [name]: value
-      }));
-    }
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value
+    }));
   };
 
   const handleCantidadChange = (productoId, cantidad) => {
@@ -96,7 +65,7 @@ const ReservationForm = () => {
     
     // Datos personales
     mensaje += `*Datos Personales:*\n`;
-    mensaje += `Fecha y Hora: ${formData.fechaHora ? format(formData.fechaHora, 'PPp', { locale: es }) : 'No seleccionada'}\n`;
+    mensaje += `Fecha y Hora: ${formData.fechaHora}\n`;
     mensaje += `Cantidad de Personas: ${formData.cantidadPersonas}\n`;
     mensaje += `Nombre: ${formData.nombre}\n`;
     mensaje += `Apellidos: ${formData.apellidos}\n`;
@@ -107,10 +76,10 @@ const ReservationForm = () => {
     // Productos
     mensaje += `*Productos:*\n`;
     carrito.filter(p => p.cantidad > 0).forEach(producto => {
-      mensaje += `${producto.nombre} - Cantidad: ${producto.cantidad} - Subtotal: $${calcularSubtotal(producto).toLocaleString('es-CL')}\n`;
+      mensaje += `${producto.nombre} - Cantidad: ${producto.cantidad} - Subtotal: $${calcularSubtotal(producto).toFixed(2)}\n`;
     });
     
-    mensaje += `\n*Total:* $${calcularTotal().toLocaleString('es-CL')}`;
+    mensaje += `\n*Total:* $${calcularTotal().toFixed(2)}`;
 
     // Codificar el mensaje para WhatsApp
     const mensajeEncoded = encodeURIComponent(mensaje);
@@ -127,35 +96,12 @@ const ReservationForm = () => {
       <div className="space-y-4">
         <div>
           <Label>Fecha y Hora</Label>
-          <Popover>
-            <PopoverTrigger asChild>
-              <Button
-                variant={"outline"}
-                className={`w-full justify-start text-left font-normal ${
-                  !formData.fechaHora && "text-muted-foreground"
-                }`}
-              >
-                <CalendarIcon className="mr-2 h-4 w-4" />
-                {formData.fechaHora ? (
-                  format(formData.fechaHora, 'PPp', { locale: es })
-                ) : (
-                  <span>Selecciona fecha y hora</span>
-                )}
-              </Button>
-            </PopoverTrigger>
-            <PopoverContent className="w-auto p-0">
-              <Calendar
-                mode="single"
-                selected={formData.fechaHora}
-                onSelect={(date) => setFormData(prev => ({
-                  ...prev, 
-                  fechaHora: date
-                }))}
-                locale={es}
-                initialFocus
-              />
-            </PopoverContent>
-          </Popover>
+          <Input 
+            type="datetime-local" 
+            name="fechaHora"
+            value={formData.fechaHora}
+            onChange={handleFormChange}
+          />
         </div>
         <div>
           <Label>Cantidad de Personas</Label>
@@ -186,10 +132,10 @@ const ReservationForm = () => {
         <div>
           <Label>Celular</Label>
           <Input 
+            type="tel" 
             name="celular"
             value={formData.celular}
             onChange={handleFormChange}
-            placeholder="+569-12345678"
           />
         </div>
         <div>
@@ -219,7 +165,7 @@ const ReservationForm = () => {
             <div className="flex-grow">
               <h4 className="font-medium">{producto.nombre}</h4>
               <p className="text-sm text-gray-500">{producto.descripcion}</p>
-              <p className="text-sm">Precio: ${producto.precio.toLocaleString('es-CL')}</p>
+              <p className="text-sm">Precio: ${producto.precio.toFixed(2)}</p>
             </div>
             <div className="flex items-center space-x-2">
               <Button 
@@ -251,7 +197,7 @@ const ReservationForm = () => {
         <div className="mt-4 border-t pt-4">
           <div className="flex justify-between">
             <span>Total:</span>
-            <span className="font-bold">${calcularTotal().toLocaleString('es-CL')}</span>
+            <span className="font-bold">${calcularTotal().toFixed(2)}</span>
           </div>
         </div>
       </div>
