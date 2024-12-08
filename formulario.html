@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Reservas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, textarea, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .cart {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .total {
+            font-weight: bold;
+            text-align: right;
+        }
+        button {
+            background-color: #25D366;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1da850;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Reservas</h1>
+    <form id="reservationForm">
+        <label for="datetime">Fecha y Hora:</label>
+        <input type="datetime-local" id="datetime" required>
+        
+        <label for="people">Cantidad de Personas:</label>
+        <input type="number" id="people" min="1" required>
+        
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" required>
+        
+        <label for="surname">Apellidos:</label>
+        <input type="text" id="surname" required>
+        
+        <label for="phone">Celular:</label>
+        <input type="tel" id="phone" required>
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" required>
+        
+        <label for="comments">Comentarios:</label>
+        <textarea id="comments"></textarea>
+        
+        <div class="cart">
+            <h3>Productos</h3>
+            <div class="cart-item">
+                <div>
+                    <strong>Producto 1</strong><br>
+                    Descripción Producto 1<br>
+                    Precio: $10,000 CLP
+                </div>
+                <input type="number" class="quantity" data-price="10000" min="0" placeholder="Cantidad">
+            </div>
+            <div class="total">Total: $<span id="total">0</span> CLP</div>
+        </div>
+        
+        <button type="button" onclick="sendWhatsApp()">Enviar por WhatsApp</button>
+    </form>
+
+    <script>
+        const quantities = document.querySelectorAll('.quantity');
+        const totalSpan = document.getElementById('total');
+
+        quantities.forEach(input => {
+            input.addEventListener('input', updateTotal);
+        });
+
+        function updateTotal() {
+            let total = 0;
+            quantities.forEach(input => {
+                const price = parseInt(input.dataset.price);
+                const quantity = parseInt(input.value) || 0;
+                total += price * quantity;
+            });
+            totalSpan.textContent = total.toLocaleString('es-CL');
+        }
+
+        function sendWhatsApp() {
+            const datetime = document.getElementById('datetime').value;
+            const people = document.getElementById('people').value;
+            const name = document.getElementById('name').value;
+            const surname = document.getElementById('surname').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const comments = document.getElementById('comments').value;
+            let message = `*Formulario de Reservas*\n\n`;
+            message += `Fecha y Hora: ${datetime}\n`;
+            message += `Cantidad de Personas: ${people}\n`;
+            message += `Nombre: ${name} ${surname}\n`;
+            message += `Celular: ${phone}\n`;
+            message += `E-mail: ${email}\n`;
+            message += `Comentarios: ${comments}\n\n`;
+            message += `*Productos:*\n`;
+            
+            quantities.forEach((input, index) => {
+                const quantity = parseInt(input.value) || 0;
+                if (quantity > 0) {
+                    const price = input.dataset.price;
+                    message += `Producto ${index + 1}: ${quantity} unidades - $${(quantity * price).toLocaleString('es-CL')} CLP\n`;
+                }
+            });
+
+            const total = totalSpan.textContent;
+            message += `\n*Total: $${total} CLP*`;
+
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappURL = `https://wa.me/?text=${encodedMessage}`;
+            window.open(whatsappURL, '_blank');
+        }
+    </script>
+</body>
+</html>
