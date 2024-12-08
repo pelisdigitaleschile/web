@@ -27,16 +27,19 @@
             flex-wrap: wrap;
             gap: 15px;
             margin-bottom: 15px;
+            justify-content: center;
         }
         .form-group label {
             flex-basis: 100%;
+            text-align: left;
         }
         .form-group input, .form-group textarea {
             flex: 1;
-            min-width: 100px;
+            max-width: 350px;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            text-align: center;
         }
         .cart {
             border: 1px solid #ddd;
@@ -52,7 +55,7 @@
         }
         .cart-item div {
             flex: 1;
-            min-width: 100px;
+            min-width: 250px;
         }
         .cart-controls {
             display: flex;
@@ -86,13 +89,14 @@
             cursor: pointer;
             font-size: 16px;
             width: 100%;
+            margin-top: 20px;
         }
         button.submit-btn:hover {
             background-color: #1da850;
         }
         @media (max-width: 600px) {
             .form-group input, .form-group textarea {
-                min-width: 100%;
+                max-width: 100%;
             }
             .cart-item div {
                 min-width: 100%;
@@ -109,12 +113,16 @@
     <h1>Formulario de Reservas</h1>
     <form id="reservationForm" onsubmit="validateForm(event)">
         <div class="form-group">
-            <label for="datetime">Fecha y Hora:</label>
-            <input type="datetime-local" id="datetime" required>
+            <label for="date">Fecha:</label>
+            <input type="date" id="date" required>
+        </div>
+        <div class="form-group">
+            <label for="time">Hora:</label>
+            <input type="time" id="time" required>
         </div>
         <div class="form-group">
             <label for="people">Cantidad de Personas:</label>
-            <input type="number" id="people" min="1">
+            <input type="number" id="people" min="1" placeholder="Ej. 4">
         </div>
         <div class="form-group">
             <label for="name">Nombre:</label>
@@ -126,7 +134,7 @@
         </div>
         <div class="form-group">
             <label for="phone">Celular:</label>
-            <input type="tel" id="phone" required pattern="\+?[0-9]{8,15}" title="Ingrese un número de teléfono válido con o sin código de país.">
+            <input type="tel" id="phone" placeholder="+569-1234567" required>
         </div>
         <div class="form-group">
             <label for="email">E-mail:</label>
@@ -152,45 +160,7 @@
                     <button type="button" onclick="changeQuantity(1, 1)">+</button>
                 </div>
             </div>
-            <div class="cart-item">
-                <input type="checkbox" class="product-check" data-id="2">
-                <div>
-                    <strong>Producto 2</strong><br>
-                    Descripción Producto 2<br>
-                    Precio: $15,000 CLP
-                </div>
-                <div class="cart-controls">
-                    <button type="button" onclick="changeQuantity(2, -1)">-</button>
-                    <input type="number" class="quantity" id="product-2" data-price="15000" min="0" value="0" readonly>
-                    <button type="button" onclick="changeQuantity(2, 1)">+</button>
-                </div>
-            </div>
-            <div class="cart-item">
-                <input type="checkbox" class="product-check" data-id="3">
-                <div>
-                    <strong>Producto 3</strong><br>
-                    Descripción Producto 3<br>
-                    Precio: $20,000 CLP
-                </div>
-                <div class="cart-controls">
-                    <button type="button" onclick="changeQuantity(3, -1)">-</button>
-                    <input type="number" class="quantity" id="product-3" data-price="20000" min="0" value="0" readonly>
-                    <button type="button" onclick="changeQuantity(3, 1)">+</button>
-                </div>
-            </div>
-            <div class="cart-item">
-                <input type="checkbox" class="product-check" data-id="4">
-                <div>
-                    <strong>Producto 4</strong><br>
-                    Descripción Producto 4<br>
-                    Precio: $25,000 CLP
-                </div>
-                <div class="cart-controls">
-                    <button type="button" onclick="changeQuantity(4, -1)">-</button>
-                    <input type="number" class="quantity" id="product-4" data-price="25000" min="0" value="0" readonly>
-                    <button type="button" onclick="changeQuantity(4, 1)">+</button>
-                </div>
-            </div>
+            <!-- Añadir más productos si es necesario -->
             <div class="total">Total: $<span id="total">0</span> CLP</div>
         </div>
 
@@ -205,11 +175,33 @@
             if (newValue < 0) newValue = 0;
             quantityInput.value = newValue;
 
-            // Si hay cantidad, selecciona el producto automáticamente
-            productCheckbox.checked = newValue > 0;
+            // Si la cantidad es 0, deseleccionar automáticamente el checkbox
+            if (newValue === 0) {
+                productCheckbox.checked = false;
+            } else {
+                productCheckbox.checked = true;
+            }
 
             updateTotal();
         }
+
+        document.querySelectorAll('.product-check').forEach((checkbox) => {
+            checkbox.addEventListener('change', (e) => {
+                const productId = e.target.dataset.id;
+                if (!e.target.checked) {
+                    document.getElementById(`product-${productId}`).value = 0;
+                    updateTotal();
+                }
+            });
+        });
+
+        document.getElementById('phone').addEventListener('input', (e) => {
+            let value = e.target.value.replace(/\D/g, '').slice(0, 11);
+            if (value.length >= 8) {
+                value = `+56${value.slice(0, 1)}-${value.slice(1)}`;
+            }
+            e.target.value = value;
+        });
 
         function updateTotal() {
             let total = 0;
@@ -220,20 +212,6 @@
                 total += price * quantity;
             });
             document.getElementById('total').textContent = total.toLocaleString('es-CL');
-        }
-
-        function validateForm(event) {
-            event.preventDefault();
-            const form = document.getElementById('reservationForm');
-            if (!form.checkValidity()) {
-                form.reportValidity();
-                return;
-            }
-            sendWhatsApp();
-        }
-
-        function sendWhatsApp() {
-            // Similar lógica al código anterior para crear y enviar el mensaje
         }
     </script>
 </body>
