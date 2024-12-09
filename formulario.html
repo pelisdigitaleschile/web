@@ -27,7 +27,6 @@
             flex-wrap: wrap;
             gap: 15px;
             margin-bottom: 15px;
-            justify-content: center;
         }
         .form-group label {
             flex-basis: 100%;
@@ -137,7 +136,7 @@
         </div>
         <div class="form-group">
             <label for="phone">Celular:</label>
-            <input type="tel" id="phone" placeholder="+569-12345678" required>
+            <input type="tel" id="phone" placeholder="+###-########" required pattern="^\+\d{3}-\d{8}$">
         </div>
         <div class="form-group">
             <label for="email">E-mail:</label>
@@ -226,56 +225,76 @@
             if (newValue === 0) productCheckbox.checked = false;
             else productCheckbox.checked = true;
 
-            // Actualizar subtotal
-            const subtotal = newValue * price;
-            subtotalSpan.textContent = `Subtotal: $${subtotal.toLocaleString('es-CL')} CLP`;
+            // Actualizar el subtotal del producto
+            subtotalSpan.textContent = `Subtotal: $${newValue * price} CLP`;
 
-            updateTotal();
+            // Calcular el total general
+            calculateTotal();
         }
 
-        function updateTotal() {
+        function calculateTotal() {
             let total = 0;
-            document.querySelectorAll('.quantity').forEach(input => {
-                const price = parseInt(input.dataset.price);
-                const quantity = parseInt(input.value) || 0;
-                total += price * quantity;
+            const quantities = document.querySelectorAll('.quantity');
+            quantities.forEach((quantityInput) => {
+                const quantity = parseInt(quantityInput.value);
+                const price = parseInt(quantityInput.dataset.price);
+                total += quantity * price;
             });
-            document.getElementById('total').textContent = total.toLocaleString('es-CL');
+            document.getElementById('total').textContent = total.toLocaleString();
         }
 
         function sendToWhatsApp() {
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            const people = document.getElementById('people').value;
             const name = document.getElementById('name').value;
             const surname = document.getElementById('surname').value;
             const phone = document.getElementById('phone').value;
             const email = document.getElementById('email').value;
-            const date = document.getElementById('date').value;
-            const time = document.getElementById('time').value;
-            const comments = document.getElementById('comments').value || 'Sin comentarios';
+            const comments = document.getElementById('comments').value;
 
-            let productList = '';
-            document.querySelectorAll('.product-check:checked').forEach((checkbox, index) => {
-                const productId = checkbox.dataset.id;
-                const productName = document.querySelector(`#product-${productId} strong`).textContent;
+            // Recopilar información de los productos seleccionados
+            let productInfo = '';
+            const checkboxes = document.querySelectorAll('.product-check:checked');
+            checkboxes.forEach((checkbox) => {
+                const productId = checkbox.getAttribute('data-id');
                 const quantity = document.querySelector(`#product-${productId} .quantity`).value;
-                const subtotal = document.querySelector(`#subtotal-${productId}`).textContent.replace("Subtotal: ", "");
-                productList += `${index + 1}. ${productName} - Cantidad: ${quantity} - ${subtotal}\n`;
+                const productName = document.querySelector(`#product-${productId} strong`).textContent;
+                const subtotal = document.getElementById(`subtotal-${productId}`).textContent;
+                productInfo += `${productName} - Cantidad: ${quantity} - ${subtotal}\n`;
             });
 
-            const total = document.getElementById('total').textContent;
+            const message = `
+                *Reserva de Evento* \n
+                Fecha: ${date}\n
+                Hora: ${time}\n
+                Personas: ${people}\n
+                Nombre: ${name} ${surname}\n
+                Celular: ${phone}\n
+                E-mail: ${email}\n
+                Comentarios: ${comments}\n\n
+                *Productos Seleccionados:* \n
+                ${productInfo}
+                *Total: $${document.getElementById('total').textContent} CLP*\n
+            `;
 
-            const message = `*Formulario de Reservas*\n\n` +
-                `*Fecha:* ${date}\n` +
-                `*Hora:* ${time}\n` +
-                `*Nombre:* ${name} ${surname}\n` +
-                `*Celular:* ${phone}\n` +
-                `*E-mail:* ${email}\n\n` +
-                `*Productos Seleccionados:*\n${productList}\n` +
-                `*Total:* $${total} CLP\n\n` +
-                `*Comentarios:* ${comments}`;
+            const phoneNumber = '56932334235'; // Número de WhatsApp
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
-            const whatsappURL = `https://wa.me/56932334235?text=${encodeURIComponent(message)}`;
-            window.open(whatsappURL, '_blank');
+            window.open(url, '_blank');
         }
+
+        // Evento para resetear la cantidad al desmarcar un producto
+        document.querySelectorAll('.product-check').forEach((checkbox) => {
+            checkbox.addEventListener('change', (event) => {
+                const productId = event.target.getAttribute('data-id');
+                if (!event.target.checked) {
+                    document.querySelector(`#product-${productId} .quantity`).value = 0;
+                    document.getElementById(`subtotal-${productId}`).textContent = 'Subtotal: $0 CLP';
+                    calculateTotal();
+                }
+            });
+        });
     </script>
 </body>
 </html>
