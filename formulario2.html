@@ -37,7 +37,7 @@
       margin-bottom: 5px;
     }
 
-    input[type="text"], input[type="email"], input[type="date"], input[type="time"], input[type="number"], textarea {
+    input[type="text"], input[type="email"], input[type="date"], input[type="time"], input[type="number"], textarea, input[type="tel"] {
       width: 100%;
       padding: 8px;
       margin-bottom: 10px;
@@ -58,6 +58,11 @@
       display: flex;
       align-items: center;
       margin-bottom: 10px;
+      border: 1px solid #ddd;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      background-color: #fafafa;
     }
 
     .product label {
@@ -118,13 +123,19 @@
         width: 30px;
       }
 
-      .subtotal {
-        font-size: 14px;
-      }
-
       .product {
         flex-direction: column;
         align-items: flex-start;
+      }
+
+      .product label, .product p {
+        font-size: 12px;
+        word-wrap: break-word;
+        margin-bottom: 5px;
+      }
+
+      .quantity {
+        margin-top: 5px;
       }
     }
   </style>
@@ -247,7 +258,7 @@
       </div>
 
       <!-- Botón para enviar por WhatsApp -->
-      <button id="whatsapp-btn" disabled onclick="sendWhatsApp()">Enviar Reserva</button>
+      <button id="whatsapp-btn" onclick="sendWhatsApp()">Enviar Reserva</button>
     </form>
   </div>
 
@@ -264,7 +275,7 @@
     // Calcula el subtotal de un producto
     function updateSubtotal(productId) {
       var quantity = document.getElementById('quantity' + productId.charAt(productId.length - 1)).value;
-      var price = parseInt(productId.charAt(productId.length - 1)) * 5000 + 10000; // Precios ejemplo
+      var price = parseInt(document.getElementById(productId).nextElementSibling.innerText.split(' - ')[1].replace('.', '').replace(' ', ''));
       var subtotal = quantity * price;
       document.getElementById('subtotal' + productId.charAt(productId.length - 1)).innerText = "Subtotal: " + subtotal.toLocaleString();
       updateTotal();
@@ -275,11 +286,10 @@
       var total = 0;
       for (var i = 1; i <= 5; i++) {
         var quantity = document.getElementById('quantity' + i).value;
-        var price = i * 5000 + 10000;
+        var price = parseInt(document.getElementById('product' + i).nextElementSibling.innerText.split(' - ')[1].replace('.', '').replace(' ', ''));
         total += quantity * price;
       }
       document.getElementById('total').innerText = total.toLocaleString();
-      validateForm();
     }
 
     // Marca o desmarca el producto y actualiza la cantidad
@@ -293,22 +303,6 @@
       updateSubtotal(productId);
     }
 
-    // Valida si el formulario está completo
-    function validateForm() {
-      var name = document.getElementById('name').value;
-      var lastname = document.getElementById('lastname').value;
-      var phone = document.getElementById('phone').value;
-      var email = document.getElementById('email').value;
-      var date = document.getElementById('date').value;
-      var time = document.getElementById('time').value;
-
-      if (name && lastname && phone && email && date && time) {
-        document.getElementById('whatsapp-btn').disabled = false;
-      } else {
-        document.getElementById('whatsapp-btn').disabled = true;
-      }
-    }
-
     // Envía la reserva por WhatsApp
     function sendWhatsApp() {
       var name = document.getElementById('name').value;
@@ -320,17 +314,23 @@
       var comments = document.getElementById('comments').value;
       var total = document.getElementById('total').innerText;
 
-      var message = `*Reserva de Evento*\n\n`;
-      message += `Nombre: ${name} ${lastname}\n`;
-      message += `Celular: ${phone}\n`;
-      message += `E-mail: ${email}\n`;
-      message += `Fecha: ${date}\n`;
-      message += `Hora: ${time}\n`;
-      message += `Comentarios: ${comments}\n`;
-      message += `Total General: $${total}\n`;
+      // Crear el mensaje de WhatsApp con los datos de la reserva
+      var message = `Reserva de Evento:
+Nombre: ${name} ${lastname}
+Celular: ${phone}
+E-mail: ${email}
+Fecha: ${date}
+Hora: ${time}
+Cantidad de Personas: ${document.getElementById('people').value || 'No especificada'}
+Comentarios: ${comments || 'Ninguno'}
+Total: ${total}`;
 
-      var url = `https://wa.me/56932334235?text=${encodeURIComponent(message)}`;
-      window.open(url, '_blank');
+      // Reemplaza los espacios en el mensaje para que sea adecuado para WhatsApp
+      var encodedMessage = encodeURIComponent(message);
+
+      // Redirige a la URL de WhatsApp con el mensaje codificado
+      var whatsappUrl = `https://wa.me/?text=${encodedMessage}`;
+      window.open(whatsappUrl, '_blank');
     }
   </script>
 
