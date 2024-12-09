@@ -7,293 +7,245 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            background-color: #f4f4f4;
+            margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
-        form {
-            max-width: 800px;
+
+        .container {
+            width: 80%;
             margin: auto;
             padding: 20px;
-            border: 1px solid #ccc;
+            background-color: white;
             border-radius: 10px;
-            background-color: #f9f9f9;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1 {
-            text-align: center;
+
+        h1, h2 {
+            color: #333;
         }
-        .form-group {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
             margin-bottom: 15px;
-        }
-        .form-group label {
-            flex-basis: 100%;
-            text-align: left;
-        }
-        .form-group input, .form-group textarea {
-            flex: 1;
-            max-width: 350px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            text-align: left;
-        }
-        .cart {
             border: 1px solid #ddd;
-            padding: 15px;
-            margin-top: 20px;
-        }
-        .cart-item {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 10px;
-            flex-wrap: wrap;
-        }
-        .cart-item div {
-            flex: 1;
-            min-width: 250px;
-        }
-        .cart-controls {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .cart-controls button {
-            background-color: #ddd;
-            border: 1px solid #ccc;
-            padding: 5px 10px;
             border-radius: 5px;
-            cursor: pointer;
         }
-        .cart-controls button:hover {
-            background-color: #bbb;
+
+        input[type="number"] {
+            width: 60px;
+            display: inline-block;
         }
-        .cart-item input[type="checkbox"] {
-            margin-right: 10px;
-        }
-        .subtotal {
-            font-weight: bold;
-        }
-        .total {
-            font-weight: bold;
-            text-align: right;
-            margin-top: 15px;
-        }
-        button.submit-btn {
-            background-color: #25D366;
+
+        button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
             color: white;
             border: none;
-            padding: 15px;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 16px;
-            width: 100%;
-            margin-top: 20px;
         }
-        button.submit-btn:hover {
-            background-color: #1da850;
+
+        button:hover {
+            background-color: #45a049;
         }
+
+        .product {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .product input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .product span {
+            margin-right: 10px;
+        }
+
+        .subtotal {
+            margin-left: auto;
+        }
+
         @media (max-width: 600px) {
-            .form-group input, .form-group textarea {
-                max-width: 100%;
-            }
-            .cart-item div {
-                min-width: 100%;
-                margin-bottom: 10px;
-            }
-            .cart-controls {
-                justify-content: space-between;
+            .container {
                 width: 100%;
             }
         }
     </style>
 </head>
 <body>
-    <h1>Formulario de Reservas</h1>
-    <form id="reservationForm">
-        <div class="form-group">
+    <div class="container">
+        <h1>Formulario de Reserva</h1>
+
+        <!-- Formulario de reserva -->
+        <form id="reservationForm">
             <label for="date">Fecha:</label>
             <input type="date" id="date" required>
-        </div>
-        <div class="form-group">
+
             <label for="time">Hora:</label>
             <input type="time" id="time" required>
-        </div>
-        <div class="form-group">
+
             <label for="people">Cantidad de Personas:</label>
             <input type="number" id="people" min="1">
-        </div>
-        <div class="form-group">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" required pattern="[A-Za-zÁÉÍÓÚÑáéíóúñ\s]+" title="Solo letras y espacios permitidos.">
-        </div>
-        <div class="form-group">
-            <label for="surname">Apellidos:</label>
-            <input type="text" id="surname" required pattern="[A-Za-zÁÉÍÓÚÑáéíóúñ\s]+" title="Solo letras y espacios permitidos.">
-        </div>
-        <div class="form-group">
+
+            <label for="firstName">Nombre:</label>
+            <input type="text" id="firstName" required>
+
+            <label for="lastName">Apellidos:</label>
+            <input type="text" id="lastName" required>
+
             <label for="phone">Celular:</label>
-            <input type="tel" id="phone" placeholder="+###-########" required pattern="^\+\d{3}-\d{8}$">
-        </div>
-        <div class="form-group">
+            <input type="tel" id="phone" pattern="^[0-9]{9}$" required>
+
             <label for="email">E-mail:</label>
             <input type="email" id="email" required>
-        </div>
-        <div class="form-group">
+
             <label for="comments">Comentarios:</label>
             <textarea id="comments"></textarea>
-        </div>
 
-        <div class="cart">
-            <h3>Productos</h3>
-            <div class="cart-item" id="product-1">
-                <input type="checkbox" class="product-check" data-id="1">
-                <div>
-                    <strong>Producto 1</strong><br>
-                    Descripción Producto 1<br>
-                    Precio: $10,000 CLP<br>
-                    <span class="subtotal" id="subtotal-1">Subtotal: $0 CLP</span>
+            <h2>Carrito de Compras</h2>
+            <div id="productList">
+                <!-- Productos con checkbox y cantidad -->
+                <div class="product">
+                    <input type="checkbox" id="product1" data-price="15000">
+                    <label for="product1">Producto 1</label>
+                    <span>Descripción 1</span>
+                    <span>$15,000 CLP</span>
+                    <input type="number" id="quantity1" value="0" min="0" readonly>
+                    <button type="button" onclick="adjustQuantity(1, '+')">+</button>
+                    <button type="button" onclick="adjustQuantity(1, '-')">-</button>
+                    <span class="subtotal" id="subtotal1">$0</span>
                 </div>
-                <div class="cart-controls">
-                    <button type="button" onclick="changeQuantity(1, -1)">-</button>
-                    <input type="number" class="quantity" data-price="10000" min="0" value="0" readonly>
-                    <button type="button" onclick="changeQuantity(1, 1)">+</button>
+                <div class="product">
+                    <input type="checkbox" id="product2" data-price="20000">
+                    <label for="product2">Producto 2</label>
+                    <span>Descripción 2</span>
+                    <span>$20,000 CLP</span>
+                    <input type="number" id="quantity2" value="0" min="0" readonly>
+                    <button type="button" onclick="adjustQuantity(2, '+')">+</button>
+                    <button type="button" onclick="adjustQuantity(2, '-')">-</button>
+                    <span class="subtotal" id="subtotal2">$0</span>
                 </div>
-            </div>
-            <div class="cart-item" id="product-2">
-                <input type="checkbox" class="product-check" data-id="2">
-                <div>
-                    <strong>Producto 2</strong><br>
-                    Descripción Producto 2<br>
-                    Precio: $15,000 CLP<br>
-                    <span class="subtotal" id="subtotal-2">Subtotal: $0 CLP</span>
+                <div class="product">
+                    <input type="checkbox" id="product3" data-price="25000">
+                    <label for="product3">Producto 3</label>
+                    <span>Descripción 3</span>
+                    <span>$25,000 CLP</span>
+                    <input type="number" id="quantity3" value="0" min="0" readonly>
+                    <button type="button" onclick="adjustQuantity(3, '+')">+</button>
+                    <button type="button" onclick="adjustQuantity(3, '-')">-</button>
+                    <span class="subtotal" id="subtotal3">$0</span>
                 </div>
-                <div class="cart-controls">
-                    <button type="button" onclick="changeQuantity(2, -1)">-</button>
-                    <input type="number" class="quantity" data-price="15000" min="0" value="0" readonly>
-                    <button type="button" onclick="changeQuantity(2, 1)">+</button>
+                <div class="product">
+                    <input type="checkbox" id="product4" data-price="30000">
+                    <label for="product4">Producto 4</label>
+                    <span>Descripción 4</span>
+                    <span>$30,000 CLP</span>
+                    <input type="number" id="quantity4" value="0" min="0" readonly>
+                    <button type="button" onclick="adjustQuantity(4, '+')">+</button>
+                    <button type="button" onclick="adjustQuantity(4, '-')">-</button>
+                    <span class="subtotal" id="subtotal4">$0</span>
                 </div>
-            </div>
-            <div class="cart-item" id="product-3">
-                <input type="checkbox" class="product-check" data-id="3">
-                <div>
-                    <strong>Producto 3</strong><br>
-                    Descripción Producto 3<br>
-                    Precio: $12,000 CLP<br>
-                    <span class="subtotal" id="subtotal-3">Subtotal: $0 CLP</span>
-                </div>
-                <div class="cart-controls">
-                    <button type="button" onclick="changeQuantity(3, -1)">-</button>
-                    <input type="number" class="quantity" data-price="12000" min="0" value="0" readonly>
-                    <button type="button" onclick="changeQuantity(3, 1)">+</button>
-                </div>
-            </div>
-            <div class="cart-item" id="product-4">
-                <input type="checkbox" class="product-check" data-id="4">
-                <div>
-                    <strong>Producto 4</strong><br>
-                    Descripción Producto 4<br>
-                    Precio: $18,000 CLP<br>
-                    <span class="subtotal" id="subtotal-4">Subtotal: $0 CLP</span>
-                </div>
-                <div class="cart-controls">
-                    <button type="button" onclick="changeQuantity(4, -1)">-</button>
-                    <input type="number" class="quantity" data-price="18000" min="0" value="0" readonly>
-                    <button type="button" onclick="changeQuantity(4, 1)">+</button>
+                <div class="product">
+                    <input type="checkbox" id="product5" data-price="35000">
+                    <label for="product5">Producto 5</label>
+                    <span>Descripción 5</span>
+                    <span>$35,000 CLP</span>
+                    <input type="number" id="quantity5" value="0" min="0" readonly>
+                    <button type="button" onclick="adjustQuantity(5, '+')">+</button>
+                    <button type="button" onclick="adjustQuantity(5, '-')">-</button>
+                    <span class="subtotal" id="subtotal5">$0</span>
                 </div>
             </div>
-            <div class="total">Total: $<span id="total">0</span> CLP</div>
-        </div>
 
-        <button type="button" class="submit-btn" onclick="sendToWhatsApp()">Enviar por WhatsApp</button>
-    </form>
+            <h3>Total General: <span id="total">$0</span></h3>
+            <button type="submit">Reservar y Enviar a WhatsApp</button>
+        </form>
+    </div>
 
     <script>
-        function changeQuantity(productId, delta) {
-            const productCheckbox = document.querySelector(`.product-check[data-id="${productId}"]`);
-            const quantityInput = document.querySelector(`#product-${productId} .quantity`);
-            const subtotalSpan = document.getElementById(`subtotal-${productId}`);
-            const price = parseInt(quantityInput.dataset.price);
-            let newValue = parseInt(quantityInput.value) + delta;
-            if (newValue < 0) newValue = 0;
-            quantityInput.value = newValue;
+        // Función para ajustar la cantidad de productos
+        function adjustQuantity(productId, action) {
+            const quantityInput = document.getElementById('quantity' + productId);
+            let currentQuantity = parseInt(quantityInput.value);
+            
+            if (action === '+') {
+                currentQuantity++;
+            } else if (action === '-' && currentQuantity > 0) {
+                currentQuantity--;
+            }
 
-            // Activar o desactivar checkbox
-            if (newValue === 0) productCheckbox.checked = false;
-            else productCheckbox.checked = true;
+            quantityInput.value = currentQuantity;
 
-            // Actualizar el subtotal del producto
-            subtotalSpan.textContent = `Subtotal: $${newValue * price} CLP`;
-
-            // Calcular el total general
-            calculateTotal();
+            updateSubtotal(productId, currentQuantity);
         }
 
-        function calculateTotal() {
+        // Función para calcular el subtotal de cada producto
+        function updateSubtotal(productId, quantity) {
+            const product = document.getElementById('product' + productId);
+            const price = parseInt(product.getAttribute('data-price'));
+            const subtotal = document.getElementById('subtotal' + productId);
+
+            let newSubtotal = price * quantity;
+            subtotal.textContent = `$${newSubtotal.toLocaleString()}`;
+
+            updateTotal();
+        }
+
+        // Función para actualizar el total general
+        function updateTotal() {
             let total = 0;
-            const quantities = document.querySelectorAll('.quantity');
-            quantities.forEach((quantityInput) => {
-                const quantity = parseInt(quantityInput.value);
-                const price = parseInt(quantityInput.dataset.price);
-                total += quantity * price;
-            });
-            document.getElementById('total').textContent = total.toLocaleString();
+
+            for (let i = 1; i <= 5; i++) {
+                const product = document.getElementById('product' + i);
+                if (product.checked) {
+                    const quantity = parseInt(document.getElementById('quantity' + i).value);
+                    const price = parseInt(product.getAttribute('data-price'));
+                    total += price * quantity;
+                }
+            }
+
+            document.getElementById('total').textContent = `$${total.toLocaleString()}`;
         }
 
-        function sendToWhatsApp() {
+        // Enviar datos a WhatsApp
+        document.getElementById('reservationForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
             const date = document.getElementById('date').value;
             const time = document.getElementById('time').value;
             const people = document.getElementById('people').value;
-            const name = document.getElementById('name').value;
-            const surname = document.getElementById('surname').value;
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
             const phone = document.getElementById('phone').value;
             const email = document.getElementById('email').value;
             const comments = document.getElementById('comments').value;
 
-            // Recopilar información de los productos seleccionados
-            let productInfo = '';
-            const checkboxes = document.querySelectorAll('.product-check:checked');
-            checkboxes.forEach((checkbox) => {
-                const productId = checkbox.getAttribute('data-id');
-                const quantity = document.querySelector(`#product-${productId} .quantity`).value;
-                const productName = document.querySelector(`#product-${productId} strong`).textContent;
-                const subtotal = document.getElementById(`subtotal-${productId}`).textContent;
-                productInfo += `${productName} - Cantidad: ${quantity} - ${subtotal}\n`;
-            });
+            let products = '';
+            for (let i = 1; i <= 5; i++) {
+                const product = document.getElementById('product' + i);
+                const quantity = parseInt(document.getElementById('quantity' + i).value);
 
-            const message = `
-                *Reserva de Evento* \n
-                Fecha: ${date}\n
-                Hora: ${time}\n
-                Personas: ${people}\n
-                Nombre: ${name} ${surname}\n
-                Celular: ${phone}\n
-                E-mail: ${email}\n
-                Comentarios: ${comments}\n\n
-                *Productos Seleccionados:* \n
-                ${productInfo}
-                *Total: $${document.getElementById('total').textContent} CLP*\n
-            `;
-
-            const phoneNumber = '56932334235'; // Número de WhatsApp
-            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-
-            window.open(url, '_blank');
-        }
-
-        // Evento para resetear la cantidad al desmarcar un producto
-        document.querySelectorAll('.product-check').forEach((checkbox) => {
-            checkbox.addEventListener('change', (event) => {
-                const productId = event.target.getAttribute('data-id');
-                if (!event.target.checked) {
-                    document.querySelector(`#product-${productId} .quantity`).value = 0;
-                    document.getElementById(`subtotal-${productId}`).textContent = 'Subtotal: $0 CLP';
-                    calculateTotal();
+                if (product.checked && quantity > 0) {
+                    const productName = product.nextElementSibling.textContent.trim();
+                    const productPrice = product.getAttribute('data-price');
+                    products += `${productName} - Cantidad: ${quantity} - Precio: $${(productPrice * quantity).toLocaleString()} CLP\n`;
                 }
-            });
+            }
+
+            const message = `Reserva:\nFecha: ${date}\nHora: ${time}\nPersonas: ${people}\nNombre: ${firstName} ${lastName}\nTeléfono: ${phone}\nEmail: ${email}\nComentarios: ${comments}\n\nProductos seleccionados:\n${products}\nTotal: $${document.getElementById('total').textContent}`;
+
+            const whatsappLink = `https://wa.me/56932334235?text=${encodeURIComponent(message)}`;
+            window.open(whatsappLink, '_blank');
         });
     </script>
 </body>
