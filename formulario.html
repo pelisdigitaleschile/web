@@ -5,210 +5,214 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Reservas</title>
     <style>
-        /* Estilos generales */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
+            padding: 20px;
+            background-color: #f4f4f4;
         }
-
         .container {
             max-width: 600px;
-            margin: 20px auto;
+            margin: auto;
             background: white;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
-        h1 {
+        h2 {
             text-align: center;
-            color: #333;
         }
-
+        .form-group {
+            margin-bottom: 15px;
+        }
         label {
             display: block;
             margin-bottom: 5px;
-            font-weight: bold;
         }
-
-        input, textarea, select, button {
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="time"],
+        input[type="number"],
+        textarea {
             width: 100%;
-            margin-bottom: 15px;
-            padding: 10px;
-            font-size: 14px;
+            padding: 8px;
             border: 1px solid #ccc;
-            border-radius: 5px;
+            border-radius: 4px;
         }
-
-        input[type="number"] {
+        .product {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .product input[type="number"] {
+            width: 50px;
             text-align: center;
         }
-
+        .total {
+            font-weight: bold;
+            margin-top: 20px;
+        }
         button {
-            background-color: #007bff;
+            padding: 10px 15px;
+            background-color: #28a745;
             color: white;
             border: none;
+            border-radius: 4px;
             cursor: pointer;
         }
-
         button:hover {
-            background-color: #0056b3;
-        }
-
-        .product-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-
-        .subtotal, .total {
-            font-weight: bold;
-            text-align: right;
-            color: #333;
-        }
-
-        .total {
-            font-size: 1.2em;
-        }
-
-        @media (max-width: 600px) {
-            .product-row {
-                flex-wrap: wrap;
-            }
+            background-color: #218838;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Formulario de Reservas</h1>
 
-        <!-- Formulario de Reservas -->
-        <form id="reservationForm">
-            <label for="date">Fecha:</label>
+<div class="container">
+    <h2>Formulario de Reservas</h2>
+    <form id="reservationForm">
+        <!-- Campos del formulario -->
+        <div class="form-group">
+            <label for="date">Fecha <span style="color:red;">*</span></label>
             <input type="date" id="date" required>
-
-            <label for="time">Hora:</label>
+        </div>
+        <div class="form-group">
+            <label for="time">Hora <span style="color:red;">*</span></label>
             <input type="time" id="time" required>
-
-            <label for="people">Cantidad de Personas:</label>
-            <input type="number" id="people" min="1" max="20">
-
-            <label for="firstName">Nombre:</label>
-            <input type="text" id="firstName" required>
-
-            <label for="lastName">Apellidos:</label>
-            <input type="text" id="lastName" required>
-
-            <label for="phone">Celular:</label>
-            <input type="tel" id="phone" pattern="[0-9]{9}" required placeholder="Ej: 987654321">
-
-            <label for="email">E-mail:</label>
+        </div>
+        <div class="form-group">
+            <label for="people">Cantidad de Personas</label>
+            <input type="number" id="people" min="1">
+        </div>
+        <div class="form-group">
+            <label for="name">Nombre <span style="color:red;">*</span></label>
+            <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="surname">Apellidos <span style="color:red;">*</span></label>
+            <input type="text" id="surname" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Celular <span style="color:red;">*</span></label>
+            <input type="tel" id="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail <span style="color:red;">*</span></label>
             <input type="email" id="email" required>
-
-            <label for="comments">Comentarios:</label>
-            <textarea id="comments" rows="3"></textarea>
-        </form>
-
-        <!-- Carrito de Compras -->
-        <h2>Carrito de Compras</h2>
-        <div id="cart">
-            <div class="product-row">
-                <label><input type="checkbox" class="product-checkbox" data-price="10000"> Producto 1</label>
-                <input type="number" class="quantity" value="0" readonly>
-                <button type="button" class="minus">-</button>
-                <button type="button" class="plus">+</button>
-                <div class="subtotal">$0</div>
-            </div>
-            <!-- Más productos -->
-            <div class="total">Total: $0</div>
+        </div>
+        <div class="form-group">
+            <label for="comments">Comentarios</label>
+            <textarea id="comments" rows="4"></textarea>
         </div>
 
-        <!-- Botón Enviar por WhatsApp -->
-        <button id="sendWhatsApp">Enviar por WhatsApp</button>
-    </div>
+        <!-- Productos -->
+        <h3>Productos</h3>
+        <div id="products">
+            <!-- Producto 1 -->
+            <div class="product">
+                <input type="checkbox" id="product1" onchange="updateSubtotal(1)">
+                <label for="product1">Producto 1 - Descripción - $10.000</label>
+                <input type="number" id="quantity1" value="0" readonly>
+                <button type="button" onclick="changeQuantity(1, 1)">+</button>
+                <button type="button" onclick="changeQuantity(1, -1)">-</button>
+                <span id="subtotal1">Subtotal: $0</span>
+            </div>
+            <!-- Producto 2 -->
+            <div class="product">
+                <input type="checkbox" id=" product2" onchange="updateSubtotal(2)">
+                <label for="product2">Producto 2 - Descripción - $15.000</label>
+                <input type="number" id="quantity2" value="0" readonly>
+                <button type="button" onclick="changeQuantity(2, 1)">+</button>
+                <button type="button" onclick="changeQuantity(2, -1)">-</button>
+                <span id="subtotal2">Subtotal: $0</span>
+            </div>
+            <!-- Producto 3 -->
+            <div class="product">
+                <input type="checkbox" id="product3" onchange="updateSubtotal(3)">
+                <label for="product3">Producto 3 - Descripción - $20.000</label>
+                <input type="number" id="quantity3" value="0" readonly>
+                <button type="button" onclick="changeQuantity(3, 1)">+</button>
+                <button type="button" onclick="changeQuantity(3, -1)">-</button>
+                <span id="subtotal3">Subtotal: $0</span>
+            </div>
+            <!-- Producto 4 -->
+            <div class="product">
+                <input type="checkbox" id="product4" onchange="updateSubtotal(4)">
+                <label for="product4">Producto 4 - Descripción - $25.000</label>
+                <input type="number" id="quantity4" value="0" readonly>
+                <button type="button" onclick="changeQuantity(4, 1)">+</button>
+                <button type="button" onclick="changeQuantity(4, -1)">-</button>
+                <span id="subtotal4">Subtotal: $0</span>
+            </div>
+            <!-- Producto 5 -->
+            <div class="product">
+                <input type="checkbox" id="product5" onchange="updateSubtotal(5)">
+                <label for="product5">Producto 5 - Descripción - $30.000</label>
+                <input type="number" id="quantity5" value="0" readonly>
+                <button type="button" onclick="changeQuantity(5, 1)">+</button>
+                <button type="button" onclick="changeQuantity(5, -1)">-</button>
+                <span id="subtotal5">Subtotal: $0</span>
+            </div>
+        </div>
 
-    <script>
-        // Actualización del total y subtotales
-        const cart = document.querySelector("#cart");
-        const totalDisplay = cart.querySelector(".total");
-        const checkboxes = cart.querySelectorAll(".product-checkbox");
-        const updateTotals = () => {
-            let total = 0;
-            checkboxes.forEach((checkbox) => {
-                const row = checkbox.closest(".product-row");
-                const quantity = parseInt(row.querySelector(".quantity").value);
-                const price = parseInt(checkbox.dataset.price);
-                const subtotal = checkbox.checked ? quantity * price : 0;
-                row.querySelector(".subtotal").innerText = `$${subtotal.toLocaleString("es-CL")}`;
-                total += subtotal;
-            });
-            totalDisplay.innerText = `Total: $${total.toLocaleString("es-CL")}`;
-        };
+        <div class="total">
+            Total General: <span id="total">0</span>
+        </div>
 
-        // Botones de incremento y decremento
-        cart.addEventListener("click", (e) => {
-            if (e.target.classList.contains("plus") || e.target.classList.contains("minus")) {
-                const row = e.target.closest(".product-row");
-                const checkbox = row.querySelector(".product-checkbox");
-                const quantityInput = row.querySelector(".quantity");
-                let quantity = parseInt(quantityInput.value);
+        <button type="button" onclick="sendWhatsApp()">Enviar por WhatsApp</button>
+    </form>
+</div>
 
-                if (e.target.classList.contains("plus")) {
-                    checkbox.checked = true;
-                    quantity++;
-                } else if (quantity > 0) {
-                    quantity--;
-                    if (quantity === 0) checkbox.checked = false;
-                }
+<script>
+    function changeQuantity(productId, change) {
+        const quantityInput = document.getElementById(`quantity${productId}`);
+        let quantity = parseInt(quantityInput.value) + change;
+        if (quantity < 0) quantity = 0;
+        quantityInput.value = quantity;
+        updateSubtotal(productId);
+    }
 
-                quantityInput.value = quantity;
-                updateTotals();
-            }
-        });
+    function updateSubtotal(productId) {
+        const quantity = parseInt(document.getElementById(`quantity${productId}`).value);
+        const price = [10000, 15000, 20000, 25000, 30000][productId - 1];
+        const subtotal = quantity * price;
+        document.getElementById(`subtotal${productId}`).innerText = `Subtotal: $${subtotal.toLocaleString()}`;
+        calculateTotal();
+    }
 
-        // Recalcular al marcar/desmarcar
-        checkboxes.forEach((checkbox) => {
-            checkbox.addEventListener("change", () => {
-                const row = checkbox.closest(".product-row");
-                if (!checkbox.checked) row.querySelector(".quantity").value = 0;
-                updateTotals();
-            });
-        });
+    function calculateTotal() {
+        let total = 0;
+        for (let i = 1; i <= 5; i++) {
+            const subtotal = parseInt(document.getElementById(`subtotal${i}`).innerText.replace('Subtotal: $', '').replace('.', '').replace(',', '')) || 0;
+            total += subtotal;
+        }
+        document.getElementById('total').innerText = total.toLocaleString();
+    }
 
-        // Enviar por WhatsApp
-        document.querySelector("#sendWhatsApp").addEventListener("click", () => {
-            const form = document.querySelector("#reservationForm");
-            const cartItems = Array.from(checkboxes)
-                .filter((checkbox) => checkbox.checked)
-                .map((checkbox) => {
-                    const row = checkbox.closest(".product-row");
-                    const name = checkbox.nextElementSibling.textContent.trim();
-                    const quantity = row.querySelector(".quantity").value;
-                    const subtotal = row.querySelector(".subtotal").textContent;
-                    return `${name} - Cantidad: ${quantity} - Subtotal: ${subtotal}`;
-                }).join("\n");
+    function sendWhatsApp() {
+        const date = document.getElementById('date').value;
+        const time = document.getElementById('time').value;
+        const people = document.getElementById('people').value || 'No especificado';
+        const name = document.getElementById('name').value;
+        const surname = document.getElementById('surname').value;
+        const phone = document.getElementById('phone').value;
+        const email = document.getElementById('email').value;
+        const comments = document.getElementById('comments').value || 'Sin comentarios';
+        const total = document.getElementById('total').innerText;
 
-            const message = `
-Reserva:
-Fecha: ${form.date.value}
-Hora: ${form.time.value}
-Nombre: ${form.firstName.value} ${form.lastName.value}
-Celular: ${form.phone.value}
-E-mail: ${form.email.value}
+        let message = `Reserva:\nFecha: ${date}\nHora: ${time}\nCantidad de Personas: ${people}\nNombre: ${name}\nApellidos:
+        ${surname}\nCelular: ${phone}\nE-mail: ${email}\nComentarios: ${comments}\nTotal General: $${total}`;
 
-Carrito:
-${cartItems}
+        // Generar el enlace de WhatsApp
+        const phoneNumber = '56932334235';
+        const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+        
+        // Abrir el enlace en una nueva ventana
+        window.open(url, '_blank');
+    }
+</script>
 
-Total: ${totalDisplay.innerText}
-            `.trim();
-
-            const phoneNumber = "56932334235";
-            const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-            window.open(whatsappURL, "_blank");
-        });
-    </script>
 </body>
 </html>
