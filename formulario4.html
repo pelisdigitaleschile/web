@@ -52,14 +52,14 @@
                 <div class="card-body d-flex justify-content-between align-items-center">
                     <div>
                         <input type="checkbox" class="form-check-input me-2 product-checkbox">
-                        <strong>Producto 1 - $10.00</strong>
+                        <strong>Producto 1 - $10.000</strong>
                         <p class="mb-0">Descripción del producto 1.</p>
                     </div>
                     <div>
                         <button type="button" class="btn btn-outline-secondary btn-sm decrease">-</button>
                         <input type="number" class="form-control d-inline-block text-center mx-2 quantity" style="width: 60px;" value="0" min="0" readonly>
                         <button type="button" class="btn btn-outline-secondary btn-sm increase">+</button>
-                        <span class="ms-3">Subtotal: $<span class="subtotal">0.00</span></span>
+                        <span class="ms-3">Subtotal: $<span class="subtotal">0</span></span>
                     </div>
                 </div>
             </div>
@@ -67,20 +67,20 @@
                 <div class="card-body d-flex justify-content-between align-items-center">
                     <div>
                         <input type="checkbox" class="form-check-input me-2 product-checkbox">
-                        <strong>Producto 2 - $20.00</strong>
+                        <strong>Producto 2 - $20.000</strong>
                         <p class="mb-0">Descripción del producto 2.</p>
                     </div>
                     <div>
                         <button type="button" class="btn btn-outline-secondary btn-sm decrease">-</button>
                         <input type="number" class="form-control d-inline-block text-center mx-2 quantity" style="width: 60px;" value="0" min="0" readonly>
                         <button type="button" class="btn btn-outline-secondary btn-sm increase">+</button>
-                        <span class="ms-3">Subtotal: $<span class="subtotal">0.00</span></span>
+                        <span class="ms-3">Subtotal: $<span class="subtotal">0</span></span>
                     </div>
                 </div>
             </div>
         </div>
 
-        <h4 class="text-end mt-4">Total: $<span id="total">0.00</span></h4>
+        <h4 class="text-end mt-4">Total: $<span id="total">0</span></h4>
 
         <!-- Botón de Enviar -->
         <button type="button" class="btn btn-primary mt-3" id="sendWhatsApp">Enviar por WhatsApp</button>
@@ -88,6 +88,17 @@
 </div>
 
 <script>
+    // Función para formatear número al estilo chileno
+    function formatPriceCL(number) {
+        return number.toLocaleString('es-CL', { maximumFractionDigits: 0 });
+    }
+
+    // Formato de fecha chilena DD-MM-YYYY
+    function formatDateCL(date) {
+        const [year, month, day] = date.split('-');
+        return `${day}-${month}-${year}`;
+    }
+
     // Actualiza subtotales y totales
     document.querySelectorAll('.card').forEach(card => {
         const checkbox = card.querySelector('.product-checkbox');
@@ -95,12 +106,12 @@
         const decreaseBtn = card.querySelector('.decrease');
         const increaseBtn = card.querySelector('.increase');
         const subtotalSpan = card.querySelector('.subtotal');
-        const price = parseFloat(card.querySelector('strong').textContent.match(/\$(\d+\.?\d*)/)[1]);
+        const price = parseInt(card.querySelector('strong').textContent.match(/\$(\d+)/)[1].replace('.', ''));
 
         function updateSubtotal() {
             const quantity = parseInt(quantityInput.value);
             const subtotal = price * quantity;
-            subtotalSpan.textContent = subtotal.toFixed(2);
+            subtotalSpan.textContent = formatPriceCL(subtotal);
             updateTotal();
         }
 
@@ -126,15 +137,15 @@
 
     function updateTotal() {
         const total = Array.from(document.querySelectorAll('.subtotal')).reduce((sum, subtotal) => {
-            return sum + parseFloat(subtotal.textContent);
+            return sum + parseInt(subtotal.textContent.replace(/\./g, '') || 0);
         }, 0);
-        document.getElementById('total').textContent = total.toFixed(2);
+        document.getElementById('total').textContent = formatPriceCL(total);
     }
 
     // Genera mensaje de WhatsApp
     document.getElementById('sendWhatsApp').addEventListener('click', () => {
         const formData = {
-            date: document.getElementById('date').value,
+            date: formatDateCL(document.getElementById('date').value),
             time: document.getElementById('time').value,
             people: document.getElementById('people').value,
             firstName: document.getElementById('firstName').value,
