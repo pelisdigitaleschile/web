@@ -5,150 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Reservas</title>
     <style>
+        /* Estilos generales */
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            background-color: #f8f9fa;
         }
 
         .container {
-            width: 90%;
-            max-width: 800px;
+            max-width: 600px;
             margin: 20px auto;
+            background: white;
             padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        h1, h2 {
-            color: #333;
+        h1 {
             text-align: center;
-            margin-bottom: 20px;
+            color: #333;
         }
 
         label {
             display: block;
-            margin-top: 10px;
+            margin-bottom: 5px;
             font-weight: bold;
         }
 
-        input, textarea, button {
+        input, textarea, select, button {
             width: 100%;
-            padding: 8px;
-            margin-top: 5px;
             margin-bottom: 15px;
-            border: 1px solid #ddd;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
             border-radius: 5px;
-            box-sizing: border-box;
         }
 
         input[type="number"] {
-            width: 60px;
-            display: inline-block;
             text-align: center;
         }
 
         button {
-            background-color: #4CAF50;
+            background-color: #007bff;
             color: white;
             border: none;
-            border-radius: 5px;
             cursor: pointer;
-            font-size: 16px;
         }
 
         button:hover {
-            background-color: #45a049;
+            background-color: #0056b3;
         }
 
-        .product {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            margin-bottom: 15px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background-color: #fafafa;
-            box-sizing: border-box;
-        }
-
-        .product input[type="checkbox"] {
-            margin-right: 10px;
-        }
-
-        .product label {
-            flex-basis: 100%;
-            margin-bottom: 10px;
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        .product span {
-            flex-basis: 100%;
-            font-size: 14px;
-            color: #555;
-        }
-
-        .product .price {
-            font-weight: bold;
-            font-size: 16px;
-        }
-
-        .product .actions {
-            flex-basis: 100%;
+        .product-row {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 10px;
         }
 
-        .subtotal {
-            font-size: 16px;
+        .subtotal, .total {
             font-weight: bold;
+            text-align: right;
             color: #333;
         }
 
         .total {
-            font-size: 18px;
-            font-weight: bold;
-            color: #333;
-            text-align: right;
+            font-size: 1.2em;
         }
 
         @media (max-width: 600px) {
-            .container {
-                width: 100%;
-                padding: 10px;
-            }
-
-            .product label,
-            .product span {
-                font-size: 14px;
-            }
-
-            .product .actions {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            input, textarea, button {
-                font-size: 14px;
-            }
-
-            button {
-                font-size: 14px;
+            .product-row {
+                flex-wrap: wrap;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Formulario de Reserva</h1>
+        <h1>Formulario de Reservas</h1>
 
-        <!-- Formulario de reserva -->
+        <!-- Formulario de Reservas -->
         <form id="reservationForm">
             <label for="date">Fecha:</label>
             <input type="date" id="date" required>
@@ -157,7 +94,7 @@
             <input type="time" id="time" required>
 
             <label for="people">Cantidad de Personas:</label>
-            <input type="number" id="people" min="1">
+            <input type="number" id="people" min="1" max="20">
 
             <label for="firstName">Nombre:</label>
             <input type="text" id="firstName" required>
@@ -166,168 +103,111 @@
             <input type="text" id="lastName" required>
 
             <label for="phone">Celular:</label>
-            <input type="tel" id="phone" pattern="^[0-9]{9}$" required>
+            <input type="tel" id="phone" pattern="[0-9]{9}" required placeholder="Ej: 987654321">
 
             <label for="email">E-mail:</label>
             <input type="email" id="email" required>
 
             <label for="comments">Comentarios:</label>
-            <textarea id="comments"></textarea>
-
-            <h2>Carrito de Compras</h2>
-            <div id="productList">
-                <!-- Productos con checkbox y cantidad -->
-                <div class="product">
-                    <input type="checkbox" id="product1" data-price="15000">
-                    <label for="product1">Producto 1</label>
-                    <span>Descripción 1</span>
-                    <span class="price">$15,000 CLP</span>
-                    <div class="actions">
-                        <input type="number" id="quantity1" value="0" min="0" readonly>
-                        <div>
-                            <button type="button" onclick="adjustQuantity(1, '+')">+</button>
-                            <button type="button" onclick="adjustQuantity(1, '-')">-</button>
-                        </div>
-                        <span class="subtotal" id="subtotal1">$0</span>
-                    </div>
-                </div>
-                <div class="product">
-                    <input type="checkbox" id="product2" data-price="20000">
-                    <label for="product2">Producto 2</label>
-                    <span>Descripción 2</span>
-                    <span class="price">$20,000 CLP</span>
-                    <div class="actions">
-                        <input type="number" id="quantity2" value="0" min="0" readonly>
-                        <div>
-                            <button type="button" onclick="adjustQuantity(2, '+')">+</button>
-                            <button type="button" onclick="adjustQuantity(2, '-')">-</button>
-                        </div>
-                        <span class="subtotal" id="subtotal2">$0</span>
-                    </div>
-                </div>
-                <div class="product">
-                    <input type="checkbox" id="product3" data-price="25000">
-                    <label for="product3">Producto 3</label>
-                    <span>Descripción 3</span>
-                    <span class="price">$25,000 CLP</span>
-                    <div class="actions">
-                        <input type="number" id="quantity3" value="0" min="0" readonly>
-                        <div>
-                            <button type="button" onclick="adjustQuantity(3, '+')">+</button>
-                            <button type="button" onclick="adjustQuantity(3, '-')">-</button>
-                        </div>
-                        <span class="subtotal" id="subtotal3">$0</span>
-                    </div>
-                </div>
-                <div class="product">
-                    <input type="checkbox" id="product4" data-price="30000">
-                    <label for="product4">Producto 4</label>
-                    <span>Descripción 4</span>
-                    <span class="price">$30,000 CLP</span>
-                    <div class="actions">
-                        <input type="number" id="quantity4" value="0" min="0" readonly>
-                        <div>
-                            <button type="button" onclick="adjustQuantity(4, '+')">+</button>
-                            <button type="button" onclick="adjustQuantity(4, '-')">-</button>
-                        </div>
-                        <span class="subtotal" id="subtotal4">$0</span>
-                    </div>
-                </div>
-                <div class="product">
-                    <input type="checkbox" id="product5" data-price="35000">
-                    <label for="product5">Producto 5</label>
-                    <span>Descripción 5</span>
-                    <span class="price">$35,000 CLP</span>
-                    <div class="actions">
-                        <input type="number" id="quantity5" value="0" min="0" readonly>
-                        <div>
-                            <button type="button" onclick="adjustQuantity(5, '+')">+</button>
-                            <button type="button" onclick="adjustQuantity(5, '-')">-</button>
-                        </div>
-                        <span class="subtotal" id="subtotal5">$0</span>
-                    </div>
-                </div>
-            </div>
-
-            <h3 class="total">Total General: <span id="total">$0</span></h3>
-            <button type="submit">Reservar y Enviar a WhatsApp</button>
+            <textarea id="comments" rows="3"></textarea>
         </form>
+
+        <!-- Carrito de Compras -->
+        <h2>Carrito de Compras</h2>
+        <div id="cart">
+            <div class="product-row">
+                <label><input type="checkbox" class="product-checkbox" data-price="10000"> Producto 1</label>
+                <input type="number" class="quantity" value="0" readonly>
+                <button type="button" class="minus">-</button>
+                <button type="button" class="plus">+</button>
+                <div class="subtotal">$0</div>
+            </div>
+            <!-- Más productos -->
+            <div class="total">Total: $0</div>
+        </div>
+
+        <!-- Botón Enviar por WhatsApp -->
+        <button id="sendWhatsApp">Enviar por WhatsApp</button>
     </div>
 
     <script>
-        // Función para ajustar la cantidad de productos
-        function adjustQuantity(productId, action) {
-            const quantityInput = document.getElementById('quantity' + productId);
-            let currentQuantity = parseInt(quantityInput.value);
-            
-            if (action === '+') {
-                currentQuantity++;
-            } else if (action === '-' && currentQuantity > 0) {
-                currentQuantity--;
-            }
-
-            quantityInput.value = currentQuantity;
-
-            updateSubtotal(productId, currentQuantity);
-        }
-
-        // Función para calcular el subtotal de cada producto
-        function updateSubtotal(productId, quantity) {
-            const product = document.getElementById('product' + productId);
-            const price = parseInt(product.getAttribute('data-price'));
-            const subtotal = document.getElementById('subtotal' + productId);
-
-            let newSubtotal = price * quantity;
-            subtotal.textContent = `$${newSubtotal.toLocaleString()}`;
-
-            updateTotal();
-        }
-
-        // Función para actualizar el total general
-        function updateTotal() {
+        // Actualización del total y subtotales
+        const cart = document.querySelector("#cart");
+        const totalDisplay = cart.querySelector(".total");
+        const checkboxes = cart.querySelectorAll(".product-checkbox");
+        const updateTotals = () => {
             let total = 0;
+            checkboxes.forEach((checkbox) => {
+                const row = checkbox.closest(".product-row");
+                const quantity = parseInt(row.querySelector(".quantity").value);
+                const price = parseInt(checkbox.dataset.price);
+                const subtotal = checkbox.checked ? quantity * price : 0;
+                row.querySelector(".subtotal").innerText = `$${subtotal.toLocaleString("es-CL")}`;
+                total += subtotal;
+            });
+            totalDisplay.innerText = `Total: $${total.toLocaleString("es-CL")}`;
+        };
 
-            for (let i = 1; i <= 5; i++) {
-                const product = document.getElementById('product' + i);
-                if (product.checked) {
-                    const quantity = parseInt(document.getElementById('quantity' + i).value);
-                    const price = parseInt(product.getAttribute('data-price'));
-                    total += price * quantity;
+        // Botones de incremento y decremento
+        cart.addEventListener("click", (e) => {
+            if (e.target.classList.contains("plus") || e.target.classList.contains("minus")) {
+                const row = e.target.closest(".product-row");
+                const checkbox = row.querySelector(".product-checkbox");
+                const quantityInput = row.querySelector(".quantity");
+                let quantity = parseInt(quantityInput.value);
+
+                if (e.target.classList.contains("plus")) {
+                    checkbox.checked = true;
+                    quantity++;
+                } else if (quantity > 0) {
+                    quantity--;
+                    if (quantity === 0) checkbox.checked = false;
                 }
+
+                quantityInput.value = quantity;
+                updateTotals();
             }
+        });
 
-            document.getElementById('total').textContent = `$${total.toLocaleString()}`;
-        }
+        // Recalcular al marcar/desmarcar
+        checkboxes.forEach((checkbox) => {
+            checkbox.addEventListener("change", () => {
+                const row = checkbox.closest(".product-row");
+                if (!checkbox.checked) row.querySelector(".quantity").value = 0;
+                updateTotals();
+            });
+        });
 
-        // Enviar datos a WhatsApp
-        document.getElementById('reservationForm').addEventListener('submit', function (e) {
-            e.preventDefault();
+        // Enviar por WhatsApp
+        document.querySelector("#sendWhatsApp").addEventListener("click", () => {
+            const form = document.querySelector("#reservationForm");
+            const cartItems = Array.from(checkboxes)
+                .filter((checkbox) => checkbox.checked)
+                .map((checkbox) => {
+                    const row = checkbox.closest(".product-row");
+                    const name = checkbox.nextElementSibling.textContent.trim();
+                    const quantity = row.querySelector(".quantity").value;
+                    const subtotal = row.querySelector(".subtotal").textContent;
+                    return `${name} - Cantidad: ${quantity} - Subtotal: ${subtotal}`;
+                }).join("\n");
 
-            const date = document.getElementById('date').value;
-            const time = document.getElementById('time').value;
-            const people = document.getElementById('people').value;
-            const firstName = document.getElementById('firstName').value;
-            const lastName = document.getElementById('lastName').value;
-            const phone = document.getElementById('phone').value;
-            const email = document.getElementById('email').value;
-            const comments = document.getElementById('comments').value;
+            const message = `
+Reserva:
+Fecha: ${form.date.value}
+Hora: ${form.time.value}
+Nombre: ${form.firstName.value} ${form.lastName.value}
+Celular: ${form.phone.value}
+E-mail: ${form.email.value}
 
-            let products = '';
-            for (let i = 1; i <= 5; i++) {
-                const product = document.getElementById('product' + i);
-                const quantity = parseInt(document.getElementById('quantity' + i).value);
+Carrito:
+${cartItems}
 
-                if (product.checked && quantity > 0) {
-                    const productName = product.nextElementSibling.textContent.trim();
-                    const productPrice = product.getAttribute('data-price');
-                    products += `${productName} - Cantidad: ${quantity} - Precio: $${(productPrice * quantity).toLocaleString()} CLP\n`;
-                }
-            }
+Total: ${totalDisplay.innerText}
+            `.trim();
 
-            const message = `Reserva:\nFecha: ${date}\nHora: ${time}\nPersonas: ${people}\nNombre: ${firstName} ${lastName}\nTeléfono: ${phone}\nEmail: ${email}\nComentarios: ${comments}\n\nProductos seleccionados:\n${products}\nTotal: $${document.getElementById('total').textContent}`;
-
-            const whatsappLink = `https://wa.me/56932334235?text=${encodeURIComponent(message)}`;
-            window.open(whatsappLink, '_blank');
+            const phoneNumber = "56932334235";
+            const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappURL, "_blank");
         });
     </script>
 </body>
