@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Inventario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        input[type="number"] {
+            width: 60px;
+            padding: 5px;
+            text-align: center;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Control de Inventario de Licores</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Categoría</th>
+                <th>Proveedor</th>
+                <th>Precio</th>
+                <th>Stock Óptimo</th>
+                <th>Cantidad Actual</th>
+                <th>Compra Necesaria</th>
+            </tr>
+        </thead>
+        <tbody id="inventoryTable">
+            <tr>
+                <td><input type="text" value="Mojito" disabled></td>
+                <td><input type="text" value="Cóctel" disabled></td>
+                <td><input type="text" value="Proveedor A" disabled></td>
+                <td><input type="number" value="150" disabled></td>
+                <td><input type="number" value="100" disabled></td>
+                <td><input type="number" id="quantity1" value="120"></td>
+                <td><input type="number" id="purchase1" value="0" disabled></td>
+            </tr>
+            <tr>
+                <td><input type="text" value="Piña Colada" disabled></td>
+                <td><input type="text" value="Cóctel" disabled></td>
+                <td><input type="text" value="Proveedor B" disabled></td>
+                <td><input type="number" value="180" disabled></td>
+                <td><input type="number" value="150" disabled></td>
+                <td><input type="number" id="quantity2" value="160"></td>
+                <td><input type="number" id="purchase2" value="0" disabled></td>
+            </tr>
+            <!-- Puedes agregar más filas según sea necesario -->
+        </tbody>
+    </table>
+
+    <button onclick="calculatePurchase()">Calcular Cantidad a Comprar</button>
+    <br><br>
+    <button onclick="sendWhatsApp()">Enviar por WhatsApp</button>
+
+    <script>
+        function calculatePurchase() {
+            let rows = document.querySelectorAll("#inventoryTable tr");
+            rows.forEach((row, index) => {
+                let quantity = parseInt(row.querySelector(`#quantity${index + 1}`).value);
+                let optimalStock = parseInt(row.cells[4].querySelector("input").value);
+                let purchaseField = row.querySelector(`#purchase${index + 1}`);
+                let purchaseQuantity = optimalStock - quantity;
+
+                // Si la cantidad actual es mayor o igual al stock óptimo, no se compra más
+                purchaseQuantity = purchaseQuantity > 0 ? purchaseQuantity : 0;
+                purchaseField.value = purchaseQuantity;
+            });
+        }
+
+        function sendWhatsApp() {
+            let inventoryDetails = "Inventario del bar:\n";
+            let rows = document.querySelectorAll("#inventoryTable tr");
+
+            rows.forEach((row, index) => {
+                let name = row.querySelector("td input[type='text']").value;
+                let category = row.cells[1].querySelector("input").value;
+                let supplier = row.cells[2].querySelector("input").value;
+                let price = row.cells[3].querySelector("input").value;
+                let stock = row.cells[4].querySelector("input").value;
+                let quantity = row.querySelector(`#quantity${index + 1}`).value;
+                let purchase = row.querySelector(`#purchase${index + 1}`).value;
+
+                inventoryDetails += `${name} (${category}) - Proveedor: ${supplier} - Precio: $${price} - Stock Óptimo: ${stock} - Cantidad Actual: ${quantity} - Compra Necesaria: ${purchase}\n`;
+            });
+
+            // Reemplazar el texto con espacios para que sea legible en WhatsApp
+            let encodedMessage = encodeURIComponent(inventoryDetails);
+            let whatsappUrl = `https://wa.me/?text=${encodedMessage}`;
+            window.open(whatsappUrl, "_blank");
+        }
+    </script>
+
+</body>
+</html>
