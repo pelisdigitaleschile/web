@@ -1,276 +1,309 @@
-import React, { useState } from 'react';
-import { format } from 'date-fns';
-import { Calendar } from '@/components/ui/calendar';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
-import { Button } from '@/components/ui/button';
-import { WhatsappLogo } from 'lucide-react';
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserva de Evento</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
 
-// Datos de productos predefinidos
-const PRODUCTOS = [
-  { 
-    id: 1, 
-    nombre: 'Menú Ejecutivo', 
-    descripcion: 'Incluye entrada, plato principal y postre', 
-    precio: 15000 
-  },
-  { 
-    id: 2, 
-    nombre: 'Café Gourmet', 
-    descripcion: 'Café especial con snack', 
-    precio: 5000 
-  },
-  { 
-    id: 3, 
-    nombre: 'Postre del Día', 
-    descripcion: 'Postre especial de temporada', 
-    precio: 4000 
-  }
-];
+    .container {
+      width: 100%;
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-const ReservationForm = () => {
-  // Estados para formulario
-  const [fecha, setFecha] = useState(null);
-  const [hora, setHora] = useState('');
-  const [cantidadPersonas, setCantidadPersonas] = useState(1);
-  const [nombre, setNombre] = useState('');
-  const [apellidos, setApellidos] = useState('');
-  const [celular, setCelular] = useState('');
-  const [email, setEmail] = useState('');
-  const [comentarios, setComentarios] = useState('');
+    h1 {
+      text-align: center;
+      color: #333;
+    }
 
-  // Estados para carrito
-  const [carrito, setCarrito] = useState(
-    PRODUCTOS.map(producto => ({
-      ...producto, 
-      seleccionado: false, 
-      cantidad: 0
-    }))
-  );
+    .form-group {
+      margin-bottom: 15px;
+    }
 
-  // Validación de nombre y apellidos
-  const validarNombreApellido = (valor) => {
-    return /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]*$/.test(valor);
-  };
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
 
-  // Validación de email
-  const validarEmail = (email) => {
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return regex.test(email);
-  };
+    input[type="text"], input[type="email"], input[type="date"], input[type="time"], input[type="number"], textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
 
-  // Actualizar cantidad de producto
-  const actualizarCantidad = (id, delta) => {
-    setCarrito(carrito.map(item => 
-      item.id === id 
-        ? { 
-            ...item, 
-            cantidad: Math.max(0, item.cantidad + delta),
-            seleccionado: item.cantidad + delta > 0
-          }
-        : item
-    ));
-  };
+    .checkbox-group {
+      margin-bottom: 20px;
+    }
 
-  // Calcular subtotal de un producto
-  const calcularSubtotal = (producto) => {
-    return producto.seleccionado 
-      ? producto.precio * producto.cantidad 
-      : 0;
-  };
+    .product {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
 
-  // Calcular total del carrito
-  const calcularTotal = () => {
-    return carrito.reduce((total, producto) => 
-      total + calcularSubtotal(producto), 0
-    );
-  };
+    .product label {
+      flex-grow: 1;
+    }
 
-  // Generar mensaje de WhatsApp
-  const generarMensajeWhatsApp = () => {
-    const productosSeleccionados = carrito
-      .filter(p => p.seleccionado)
-      .map(p => `${p.nombre} x${p.cantidad}: $${calcularSubtotal(p).toLocaleString('es-CL')}`)
-      .join('\n');
+    .quantity {
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+    }
 
-    return `Reserva:
-Fecha: ${format(fecha, 'dd/MM/yyyy')}
-Hora: ${hora}
-Personas: ${cantidadPersonas}
+    .quantity input {
+      width: 40px;
+      text-align: center;
+    }
 
-Datos Personales:
-${nombre} ${apellidos}
-Celular: ${celular}
-Email: ${email}
+    .subtotal {
+      margin-left: 10px;
+    }
 
-Productos:
-${productosSeleccionados}
+    .total {
+      font-weight: bold;
+      text-align: right;
+    }
 
-Total: $${calcularTotal().toLocaleString('es-CL')}
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
 
-${comentarios ? `Comentarios: ${comentarios}` : ''}`;
-  };
+    button:disabled {
+      background-color: #ccc;
+    }
 
-  // Enviar por WhatsApp
-  const enviarWhatsApp = () => {
-    const mensaje = encodeURIComponent(generarMensajeWhatsApp());
-    window.open(`https://wa.me/56932334235?text=${mensaje}`, '_blank');
-  };
+    /* Responsive design */
+    @media screen and (max-width: 600px) {
+      .container {
+        padding: 15px;
+      }
 
-  return (
-    <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg">
-      <h1 className="text-2xl font-bold mb-6 text-center">Formulario de Reservas</h1>
+      h1 {
+        font-size: 18px;
+      }
 
-      {/* Datos Personales */}
-      <div className="grid md:grid-cols-2 gap-4 mb-6">
-        <div>
-          <Label>Fecha</Label>
-          <Calendar
-            mode="single"
-            selected={fecha}
-            onSelect={setFecha}
-            className="rounded-md border"
-          />
-        </div>
-        
-        <div className="space-y-4">
-          <div>
-            <Label>Hora</Label>
-            <Input 
-              type="time" 
-              value={hora}
-              onChange={(e) => setHora(e.target.value)}
-              required 
-            />
-          </div>
-          
-          <div>
-            <Label>Cantidad de Personas</Label>
-            <Input 
-              type="number" 
-              min="1"
-              value={cantidadPersonas}
-              onChange={(e) => setCantidadPersonas(e.target.value)}
-            />
-          </div>
-        </div>
+      input[type="text"], input[type="email"], input[type="date"], input[type="time"], input[type="number"], textarea {
+        font-size: 14px;
+      }
+
+      .quantity input {
+        width: 30px;
+      }
+
+      .subtotal {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Reserva de Evento</h1>
+
+    <!-- Formulario de reserva -->
+    <form id="reservation-form" onsubmit="return false;">
+      
+      <!-- Información de contacto -->
+      <div class="form-group">
+        <label for="date">Fecha <span>*</span></label>
+        <input type="date" id="date" required>
       </div>
 
-      {/* Formulario Personal */}
-      <div className="grid md:grid-cols-2 gap-4 mb-6">
-        <Input 
-          placeholder="Nombre"
-          value={nombre}
-          onChange={(e) => {
-            const valor = e.target.value;
-            if (validarNombreApellido(valor)) setNombre(valor);
-          }}
-          required 
-        />
-        <Input 
-          placeholder="Apellidos"
-          value={apellidos}
-          onChange={(e) => {
-            const valor = e.target.value;
-            if (validarNombreApellido(valor)) setApellidos(valor);
-          }}
-          required 
-        />
-        <Input 
-          placeholder="+569-12345678"
-          value={celular}
-          onChange={(e) => setCelular(e.target.value)}
-          required 
-        />
-        <Input 
-          placeholder="Email"
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className={`${validarEmail(email) ? '' : 'border-red-500'}`}
-          required 
-        />
+      <div class="form-group">
+        <label for="time">Hora <span>*</span></label>
+        <input type="time" id="time" required>
       </div>
 
-      {/* Carrito de Productos */}
-      <div className="mb-6">
-        <h2 className="text-xl font-semibold mb-4">Productos</h2>
-        {carrito.map(producto => (
-          <div 
-            key={producto.id} 
-            className="flex items-center border-b py-2 space-x-4"
-          >
-            <input 
-              type="checkbox"
-              checked={producto.seleccionado}
-              onChange={() => {
-                setCarrito(carrito.map(p => 
-                  p.id === producto.id 
-                    ? { ...p, seleccionado: !p.seleccionado, cantidad: !p.seleccionado ? 1 : 0 }
-                    : p
-                ));
-              }}
-            />
-            <div className="flex-grow">
-              <div className="font-semibold">{producto.nombre}</div>
-              <div className="text-sm text-gray-600">
-                {producto.descripcion}
-              </div>
-              <div className="text-sm">
-                ${producto.precio.toLocaleString('es-CL')}
-              </div>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Button 
-                variant="outline" 
-                size="sm"
-                onClick={() => actualizarCantidad(producto.id, -1)}
-                disabled={!producto.seleccionado}
-              >
-                -
-              </Button>
-              <span>{producto.cantidad}</span>
-              <Button 
-                variant="outline" 
-                size="sm"
-                onClick={() => actualizarCantidad(producto.id, 1)}
-                disabled={!producto.seleccionado}
-              >
-                +
-              </Button>
-            </div>
-            <div className="font-semibold">
-              ${calcularSubtotal(producto).toLocaleString('es-CL')}
-            </div>
+      <div class="form-group">
+        <label for="name">Nombre <span>*</span></label>
+        <input type="text" id="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="lastname">Apellidos <span>*</span></label>
+        <input type="text" id="lastname" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Celular <span>*</span></label>
+        <input type="text" id="phone" pattern="^\d{9}$" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail <span>*</span></label>
+        <input type="email" id="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="comments">Comentarios</label>
+        <textarea id="comments" rows="4"></textarea>
+      </div>
+
+      <!-- Carrito de compras -->
+      <div class="checkbox-group">
+        <h2>Productos</h2>
+        <div class="product">
+          <input type="checkbox" id="product1" class="product-checkbox">
+          <label for="product1">Producto 1 - $10,000 CLP</label>
+          <div class="quantity">
+            <button type="button" onclick="updateQuantity('product1', -1)">-</button>
+            <input type="number" id="quantity1" value="0" min="0" onchange="updateSubtotal('product1')">
+            <button type="button" onclick="updateQuantity('product1', 1)">+</button>
           </div>
-        ))}
-        <div className="text-right font-bold mt-4">
-          Total: ${calcularTotal().toLocaleString('es-CL')}
+          <span class="subtotal" id="subtotal1">Subtotal: $0</span>
+        </div>
+
+        <div class="product">
+          <input type="checkbox" id="product2" class="product-checkbox">
+          <label for="product2">Producto 2 - $15,000 CLP</label>
+          <div class="quantity">
+            <button type="button" onclick="updateQuantity('product2', -1)">-</button>
+            <input type="number" id="quantity2" value="0" min="0" onchange="updateSubtotal('product2')">
+            <button type="button" onclick="updateQuantity('product2', 1)">+</button>
+          </div>
+          <span class="subtotal" id="subtotal2">Subtotal: $0</span>
+        </div>
+
+        <div class="product">
+          <input type="checkbox" id="product3" class="product-checkbox">
+          <label for="product3">Producto 3 - $20,000 CLP</label>
+          <div class="quantity">
+            <button type="button" onclick="updateQuantity('product3', -1)">-</button>
+            <input type="number" id="quantity3" value="0" min="0" onchange="updateSubtotal('product3')">
+            <button type="button" onclick="updateQuantity('product3', 1)">+</button>
+          </div>
+          <span class="subtotal" id="subtotal3">Subtotal: $0</span>
+        </div>
+
+        <div class="product">
+          <input type="checkbox" id="product4" class="product-checkbox">
+          <label for="product4">Producto 4 - $25,000 CLP</label>
+          <div class="quantity">
+            <button type="button" onclick="updateQuantity('product4', -1)">-</button>
+            <input type="number" id="quantity4" value="0" min="0" onchange="updateSubtotal('product4')">
+            <button type="button" onclick="updateQuantity('product4', 1)">+</button>
+          </div>
+          <span class="subtotal" id="subtotal4">Subtotal: $0</span>
+        </div>
+
+        <div class="product">
+          <input type="checkbox" id="product5" class="product-checkbox">
+          <label for="product5">Producto 5 - $30,000 CLP</label>
+          <div class="quantity">
+            <button type="button" onclick="updateQuantity('product5', -1)">-</button>
+            <input type="number" id="quantity5" value="0" min="0" onchange="updateSubtotal('product5')">
+            <button type="button" onclick="updateQuantity('product5', 1)">+</button>
+          </div>
+          <span class="subtotal" id="subtotal5">Subtotal: $0</span>
+        </div>
+
+        <div class="total">
+          <p>Total General: <span id="total">0</span> CLP</p>
         </div>
       </div>
 
-      {/* Comentarios */}
-      <div className="mb-6">
-        <Label>Comentarios Adicionales</Label>
-        <Textarea
-          value={comentarios}
-          onChange={(e) => setComentarios(e.target.value)}
-          placeholder="Comentarios opcionales..."
-        />
-      </div>
+      <!-- Botón para enviar por WhatsApp -->
+      <button id="whatsapp-btn" disabled onclick="sendWhatsApp()">Enviar Reserva</button>
+    </form>
+  </div>
 
-      {/* Botón WhatsApp */}
-      <div className="text-center">
-        <Button 
-          className="bg-green-500 hover:bg-green-600 text-white"
-          onClick={enviarWhatsApp}
-        >
-          <WhatsappLogo className="mr-2" /> Enviar por WhatsApp
-        </Button>
-      </div>
-    </div>
-  );
-};
+  <script>
+    // Función para actualizar la cantidad y la selección de checkbox
+    function updateQuantity(productId, change) {
+      var quantityInput = document.getElementById('quantity' + productId.charAt(productId.length - 1));
+      var quantity = parseInt(quantityInput.value) + change;
+      if (quantity < 0) quantity = 0;
+      quantityInput.value = quantity;
+      updateSubtotal(productId);
+    }
 
-export default ReservationForm;
+    // Función para actualizar el subtotal de un producto
+    function updateSubtotal(productId) {
+      var quantity = document.getElementById('quantity' + productId.charAt(productId.length - 1)).value;
+      var price = parseInt(productId.charAt(productId.length - 1)) * 5000 + 10000; // Precios ejemplo
+      var subtotal = quantity * price;
+      document.getElementById('subtotal' + productId.charAt(productId.length - 1)).innerText = "Subtotal: $" + subtotal;
+      document.getElementById(productId).checked = quantity > 0;
+      updateTotal();
+    }
+
+    // Función para actualizar el total general
+    function updateTotal() {
+      var total = 0;
+      for (var i = 1; i <= 5; i++) {
+        var quantity = document.getElementById('quantity' + i).value;
+        var price = i * 5000 + 10000;
+        total += quantity * price;
+      }
+      document.getElementById('total').innerText = total;
+      validateForm();
+    }
+
+    // Función para validar el formulario y habilitar/deshabilitar el botón de WhatsApp
+    function validateForm() {
+      var name = document.getElementById('name').value;
+      var lastname = document.getElementById('lastname').value;
+      var phone = document.getElementById('phone').value;
+      var email = document.getElementById('email').value;
+      var date = document.getElementById('date').value;
+      var time = document.getElementById('time').value;
+
+      // Verifica si los campos obligatorios están completos
+      if (name && lastname && phone && email && date && time) {
+        document.getElementById('whatsapp-btn').disabled = false;
+      } else {
+        document.getElementById('whatsapp-btn').disabled = true;
+      }
+    }
+
+    // Función para enviar la reserva por WhatsApp
+    function sendWhatsApp() {
+      var name = document.getElementById('name').value;
+      var lastname = document.getElementById('lastname').value;
+      var phone = document.getElementById('phone').value;
+      var email = document.getElementById('email').value;
+      var date = document.getElementById('date').value;
+      var time = document.getElementById('time').value;
+      var comments = document.getElementById('comments').value;
+      var total = document.getElementById('total').innerText;
+
+      var message = `*Reserva de Evento*\n\n`;
+      message += `Nombre: ${name} ${lastname}\n`;
+      message += `Celular: ${phone}\n`;
+      message += `E-mail: ${email}\n`;
+      message += `Fecha: ${date}\n`;
+      message += `Hora: ${time}\n`;
+      message += `Comentarios: ${comments}\n`;
+      message += `Total General: $${total}\n`;
+
+      var url = `https://wa.me/56932334235?text=${encodeURIComponent(message)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+
+</body>
+</html>
