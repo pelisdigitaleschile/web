@@ -29,7 +29,7 @@
 <div class="container">
     <div class="form-container">
         <h2>Reserva de Evento</h2>
-        <form id="reservationForm">
+        <form id="reservationForm" onsubmit="sendWhatsApp(event)">
             <div class="form-group">
                 <label for="date">Fecha:</label>
                 <input type="date" class="form-control" id="date" required>
@@ -66,7 +66,7 @@
             <h4>Carrito de Compras</h4>
             <div id="products">
                 <div class="product-container">
-                    <input type="checkbox" class="product-checkbox" data-price="100" data-name="Producto 1" onchange="updateTotal()">
+                    <input type="checkbox" class="product-checkbox" data-price="100" data-name="Producto 1" onchange="updateTotal(this)">
                     Producto 1 - $100
                     <div>Descripción Producto 1.</div>
                     Cantidad: <button type="button" class="btn btn-sm btn-secondary" onclick="changeQuantity(this, -1)">-</button>
@@ -75,7 +75,7 @@
                     <span class="subtotal">Subtotal: $<span class="subtotal-value">0</span></span>
                 </div>
                 <div class="product-container">
-                    <input type="checkbox" class="product-checkbox" data-price="150" data-name="Producto 2" onchange="updateTotal()">
+                    <input type="checkbox" class="product-checkbox" data-price="150" data-name="Producto 2" onchange="updateTotal(this)">
                     Producto 2 - $150
                     <div>Descripción Producto 2.</div>
                     Cantidad: <button type="button" class="btn btn-sm btn-secondary" onclick="changeQuantity(this, -1)">-</button>
@@ -84,15 +84,16 @@
                     <span class="subtotal">Subtotal: $<span class="subtotal-value">0</span></span>
                 </div>
                 <div class="product-container">
-                    <input type="checkbox" class="product-checkbox" data-price="200" data-name="Producto 3" onchange="updateTotal()">
-                    Producto 3 - $200 <div>Descripción Producto 3.</div>
+                    <input type="checkbox" class="product-checkbox" data-price="200" data-name="Producto 3" onchange="updateTotal(this)">
+                    Producto 3 - $200
+                    <div>Descripción Producto 3.</div>
                     Cantidad: <button type="button" class="btn btn-sm btn-secondary" onclick="changeQuantity(this, -1)">-</button>
                     <input type="number" class="quantity" value="0" min="0" onchange="updateCheckbox(this)">
                     <button type="button" class="btn btn-sm btn-secondary" onclick="changeQuantity(this, 1)">+</button>
                     <span class="subtotal">Subtotal: $<span class="subtotal-value">0</span></span>
                 </div>
                 <div class="product-container">
-                    <input type="checkbox" class="product-checkbox" data-price="250" data-name="Producto 4" onchange="updateTotal()">
+                    <input type="checkbox" class="product-checkbox" data-price="250" data-name="Producto 4" onchange="updateTotal(this)">
                     Producto 4 - $250
                     <div>Descripción Producto 4.</div>
                     Cantidad: <button type="button" class="btn btn-sm btn-secondary" onclick="changeQuantity(this, -1)">-</button>
@@ -101,7 +102,7 @@
                     <span class="subtotal">Subtotal: $<span class="subtotal-value">0</span></span>
                 </div>
                 <div class="product-container">
-                    <input type="checkbox" class="product-checkbox" data-price="300" data-name="Producto 5" onchange="updateTotal()">
+                    <input type="checkbox" class="product-checkbox" data-price="300" data-name="Producto 5" onchange="updateTotal(this)">
                     Producto 5 - $300
                     <div>Descripción Producto 5.</div>
                     Cantidad: <button type="button" class="btn btn-sm btn-secondary" onclick="changeQuantity(this, -1)">-</button>
@@ -128,11 +129,16 @@
 
     function updateCheckbox(input) {
         const checkbox = input.parentElement.parentElement.querySelector('.product-checkbox');
-        checkbox.checked = input.value > 0;
+        if (input.value > 0) {
+            checkbox.checked = true;
+        } else {
+            checkbox.checked = false;
+            input.value = 0; // Reset quantity to 0
+        }
         updateTotal();
     }
 
-    function updateTotal() {
+    function updateTotal(checkbox) {
         let total = 0;
         const products = document.querySelectorAll('.product-container');
         products.forEach(product => {
@@ -141,11 +147,15 @@
             const price = checkbox.getAttribute('data-price');
             const subtotalElement = product.querySelector('.subtotal-value');
             if (checkbox.checked) {
+                if (quantity == 0) {
+                    product.querySelector('.quantity').value = 1; // Set quantity to 1 when checked
+                }
                 const subtotal = price * quantity;
                 subtotalElement.textContent = subtotal;
                 total += subtotal;
             } else {
                 subtotalElement.textContent = 0;
+                product.querySelector('.quantity').value = 0; // Reset quantity to 0 when unchecked
             }
         });
         document.getElementById('total').textContent = total;
@@ -158,6 +168,36 @@
             if (!input.value) return false;
         }
         return true;
+    }
+
+    function sendWhatsApp(event) {
+        event.preventDefault();
+        const date = document.getElementById('date').value;
+        const time = document.getElementById('time').value;
+        const people = document.getElementById('people').value;
+        const name = document.getElementById('name').value;
+        const surname = document.getElementById('surname').value;
+        const cell = document.getElementById('cell').value;
+        const email = document.getElementById('email').value;
+        const comments = document.getElementById('comments').value;
+        const total = document.getElementById('total').textContent;
+
+        let message = `Reserva de Evento:\nFecha: ${date}\nHora: ${time}\nCantidad de Personas: ${people}\nNombre: ${name}\nApellidos: ${surname}\nCelular: ${cell}\nE-mail: ${email}\nComentarios: ${comments}\nTotal General: $${total}\n`;
+
+        const products = document.querySelectorAll('.product-container');
+        products.forEach(product => {
+            const checkbox = product.querySelector('.product-checkbox');
+            const quantity = product.querySelector('.quantity').value;
+            const productName = checkbox.getAttribute('data-name');
+            const price = checkbox.getAttribute('data-price');
+            if (checkbox.checked) {
+                message += `${productName} - Cantidad: ${quantity} - Precio: $${price}\n`;
+            }
+        });
+
+        const whatsappNumber = '56932334235';
+        const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, '_blank');
     }
 </script>
 
