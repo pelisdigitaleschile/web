@@ -1,0 +1,276 @@
+import React, { useState } from 'react';
+import { format } from 'date-fns';
+import { Calendar } from '@/components/ui/calendar';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { Textarea } from '@/components/ui/textarea';
+import { Button } from '@/components/ui/button';
+import { WhatsappLogo } from 'lucide-react';
+
+// Datos de productos predefinidos
+const PRODUCTOS = [
+  { 
+    id: 1, 
+    nombre: 'Menú Ejecutivo', 
+    descripcion: 'Incluye entrada, plato principal y postre', 
+    precio: 15000 
+  },
+  { 
+    id: 2, 
+    nombre: 'Café Gourmet', 
+    descripcion: 'Café especial con snack', 
+    precio: 5000 
+  },
+  { 
+    id: 3, 
+    nombre: 'Postre del Día', 
+    descripcion: 'Postre especial de temporada', 
+    precio: 4000 
+  }
+];
+
+const ReservationForm = () => {
+  // Estados para formulario
+  const [fecha, setFecha] = useState(null);
+  const [hora, setHora] = useState('');
+  const [cantidadPersonas, setCantidadPersonas] = useState(1);
+  const [nombre, setNombre] = useState('');
+  const [apellidos, setApellidos] = useState('');
+  const [celular, setCelular] = useState('');
+  const [email, setEmail] = useState('');
+  const [comentarios, setComentarios] = useState('');
+
+  // Estados para carrito
+  const [carrito, setCarrito] = useState(
+    PRODUCTOS.map(producto => ({
+      ...producto, 
+      seleccionado: false, 
+      cantidad: 0
+    }))
+  );
+
+  // Validación de nombre y apellidos
+  const validarNombreApellido = (valor) => {
+    return /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]*$/.test(valor);
+  };
+
+  // Validación de email
+  const validarEmail = (email) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  };
+
+  // Actualizar cantidad de producto
+  const actualizarCantidad = (id, delta) => {
+    setCarrito(carrito.map(item => 
+      item.id === id 
+        ? { 
+            ...item, 
+            cantidad: Math.max(0, item.cantidad + delta),
+            seleccionado: item.cantidad + delta > 0
+          }
+        : item
+    ));
+  };
+
+  // Calcular subtotal de un producto
+  const calcularSubtotal = (producto) => {
+    return producto.seleccionado 
+      ? producto.precio * producto.cantidad 
+      : 0;
+  };
+
+  // Calcular total del carrito
+  const calcularTotal = () => {
+    return carrito.reduce((total, producto) => 
+      total + calcularSubtotal(producto), 0
+    );
+  };
+
+  // Generar mensaje de WhatsApp
+  const generarMensajeWhatsApp = () => {
+    const productosSeleccionados = carrito
+      .filter(p => p.seleccionado)
+      .map(p => `${p.nombre} x${p.cantidad}: $${calcularSubtotal(p).toLocaleString('es-CL')}`)
+      .join('\n');
+
+    return `Reserva:
+Fecha: ${format(fecha, 'dd/MM/yyyy')}
+Hora: ${hora}
+Personas: ${cantidadPersonas}
+
+Datos Personales:
+${nombre} ${apellidos}
+Celular: ${celular}
+Email: ${email}
+
+Productos:
+${productosSeleccionados}
+
+Total: $${calcularTotal().toLocaleString('es-CL')}
+
+${comentarios ? `Comentarios: ${comentarios}` : ''}`;
+  };
+
+  // Enviar por WhatsApp
+  const enviarWhatsApp = () => {
+    const mensaje = encodeURIComponent(generarMensajeWhatsApp());
+    window.open(`https://wa.me/56932334235?text=${mensaje}`, '_blank');
+  };
+
+  return (
+    <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg">
+      <h1 className="text-2xl font-bold mb-6 text-center">Formulario de Reservas</h1>
+
+      {/* Datos Personales */}
+      <div className="grid md:grid-cols-2 gap-4 mb-6">
+        <div>
+          <Label>Fecha</Label>
+          <Calendar
+            mode="single"
+            selected={fecha}
+            onSelect={setFecha}
+            className="rounded-md border"
+          />
+        </div>
+        
+        <div className="space-y-4">
+          <div>
+            <Label>Hora</Label>
+            <Input 
+              type="time" 
+              value={hora}
+              onChange={(e) => setHora(e.target.value)}
+              required 
+            />
+          </div>
+          
+          <div>
+            <Label>Cantidad de Personas</Label>
+            <Input 
+              type="number" 
+              min="1"
+              value={cantidadPersonas}
+              onChange={(e) => setCantidadPersonas(e.target.value)}
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Formulario Personal */}
+      <div className="grid md:grid-cols-2 gap-4 mb-6">
+        <Input 
+          placeholder="Nombre"
+          value={nombre}
+          onChange={(e) => {
+            const valor = e.target.value;
+            if (validarNombreApellido(valor)) setNombre(valor);
+          }}
+          required 
+        />
+        <Input 
+          placeholder="Apellidos"
+          value={apellidos}
+          onChange={(e) => {
+            const valor = e.target.value;
+            if (validarNombreApellido(valor)) setApellidos(valor);
+          }}
+          required 
+        />
+        <Input 
+          placeholder="+569-12345678"
+          value={celular}
+          onChange={(e) => setCelular(e.target.value)}
+          required 
+        />
+        <Input 
+          placeholder="Email"
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className={`${validarEmail(email) ? '' : 'border-red-500'}`}
+          required 
+        />
+      </div>
+
+      {/* Carrito de Productos */}
+      <div className="mb-6">
+        <h2 className="text-xl font-semibold mb-4">Productos</h2>
+        {carrito.map(producto => (
+          <div 
+            key={producto.id} 
+            className="flex items-center border-b py-2 space-x-4"
+          >
+            <input 
+              type="checkbox"
+              checked={producto.seleccionado}
+              onChange={() => {
+                setCarrito(carrito.map(p => 
+                  p.id === producto.id 
+                    ? { ...p, seleccionado: !p.seleccionado, cantidad: !p.seleccionado ? 1 : 0 }
+                    : p
+                ));
+              }}
+            />
+            <div className="flex-grow">
+              <div className="font-semibold">{producto.nombre}</div>
+              <div className="text-sm text-gray-600">
+                {producto.descripcion}
+              </div>
+              <div className="text-sm">
+                ${producto.precio.toLocaleString('es-CL')}
+              </div>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Button 
+                variant="outline" 
+                size="sm"
+                onClick={() => actualizarCantidad(producto.id, -1)}
+                disabled={!producto.seleccionado}
+              >
+                -
+              </Button>
+              <span>{producto.cantidad}</span>
+              <Button 
+                variant="outline" 
+                size="sm"
+                onClick={() => actualizarCantidad(producto.id, 1)}
+                disabled={!producto.seleccionado}
+              >
+                +
+              </Button>
+            </div>
+            <div className="font-semibold">
+              ${calcularSubtotal(producto).toLocaleString('es-CL')}
+            </div>
+          </div>
+        ))}
+        <div className="text-right font-bold mt-4">
+          Total: ${calcularTotal().toLocaleString('es-CL')}
+        </div>
+      </div>
+
+      {/* Comentarios */}
+      <div className="mb-6">
+        <Label>Comentarios Adicionales</Label>
+        <Textarea
+          value={comentarios}
+          onChange={(e) => setComentarios(e.target.value)}
+          placeholder="Comentarios opcionales..."
+        />
+      </div>
+
+      {/* Botón WhatsApp */}
+      <div className="text-center">
+        <Button 
+          className="bg-green-500 hover:bg-green-600 text-white"
+          onClick={enviarWhatsApp}
+        >
+          <WhatsappLogo className="mr-2" /> Enviar por WhatsApp
+        </Button>
+      </div>
+    </div>
+  );
+};
+
+export default ReservationForm;
