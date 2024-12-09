@@ -196,7 +196,7 @@
         document.getElementById('phone').addEventListener('input', (e) => {
             let value = e.target.value.replace(/\D/g, '').slice(0, 11);
             if (value.length >= 8) {
-                value = `+56${value.slice(0, 1)}-${value.slice(1)}`;
+                value = `+569${value.slice(0, 1)}-${value.slice(1)}`;
             }
             e.target.value = value;
         });
