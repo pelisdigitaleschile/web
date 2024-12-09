@@ -24,6 +24,7 @@
         th {
             background-color: #4CAF50;
             color: white;
+            cursor: pointer;
         }
         input[type="number"] {
             width: 60px;
@@ -47,38 +48,120 @@
 
     <h2>Control de Inventario de Licores</h2>
 
-    <table>
+    <table id="inventoryTable">
         <thead>
             <tr>
-                <th>Nombre</th>
-                <th>Categoría</th>
-                <th>Proveedor</th>
+                <th>N°</th>
+                <th onclick="sortTable(1)">Nombre</th>
+                <th onclick="sortTable(2)">Categoría</th>
+                <th onclick="sortTable(3)">Proveedor</th>
                 <th>Precio</th>
                 <th>Stock Óptimo</th>
                 <th>Cantidad Actual</th>
                 <th>Compra Necesaria</th>
             </tr>
         </thead>
-        <tbody id="inventoryTable">
+        <tbody>
             <tr>
+                <td>1</td>
                 <td><input type="text" value="Mojito" disabled></td>
                 <td><input type="text" value="Cóctel" disabled></td>
                 <td><input type="text" value="Proveedor A" disabled></td>
                 <td><input type="number" value="150" disabled></td>
-                <td><input type="number" value="100" disabled></td>
-                <td><input type="number" id="quantity1" value="120"></td>
-                <td><input type="number" id="purchase1" value="0" disabled></td>
+                <td><input type="number" value="100"></td>
+                <td><input type="number" value="120"></td>
+                <td><input type="number" value="0" disabled></td>
             </tr>
             <tr>
+                <td>2</td>
                 <td><input type="text" value="Piña Colada" disabled></td>
                 <td><input type="text" value="Cóctel" disabled></td>
                 <td><input type="text" value="Proveedor B" disabled></td>
                 <td><input type="number" value="180" disabled></td>
-                <td><input type="number" value="150" disabled></td>
-                <td><input type="number" id="quantity2" value="160"></td>
-                <td><input type="number" id="purchase2" value="0" disabled></td>
+                <td><input type="number" value="150"></td>
+                <td><input type="number" value="160"></td>
+                <td><input type="number" value="0" disabled></td>
             </tr>
-            <!-- Puedes agregar más filas según sea necesario -->
+            <tr>
+                <td>3</td>
+                <td><input type="text" value="Campari" disabled></td>
+                <td><input type="text" value="Aperitivo" disabled></td>
+                <td><input type="text" value="Proveedor C" disabled></td>
+                <td><input type="number" value="220" disabled></td>
+                <td><input type="number" value="120"></td>
+                <td><input type="number" value="100"></td>
+                <td><input type="number" value="0" disabled></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><input type="text" value="Aperol" disabled></td>
+                <td><input type="text" value="Aperitivo" disabled></td>
+                <td><input type="text" value="Proveedor D" disabled></td>
+                <td><input type="number" value="200" disabled></td>
+                <td><input type="number" value="100"></td>
+                <td><input type="number" value="130"></td>
+                <td><input type="number" value="0" disabled></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><input type="text" value="Ron Bacardi" disabled></td>
+                <td><input type="text" value="Ron" disabled></td>
+                <td><input type="text" value="Proveedor E" disabled></td>
+                <td><input type="number" value="250" disabled></td>
+                <td><input type="number" value="180"></td>
+                <td><input type="number" value="150"></td>
+                <td><input type="number" value="0" disabled></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><input type="text" value="Tequila José Cuervo" disabled></td>
+                <td><input type="text" value="Tequila" disabled></td>
+                <td><input type="text" value="Proveedor F" disabled></td>
+                <td><input type="number" value="300" disabled></td>
+                <td><input type="number" value="200"></td>
+                <td><input type="number" value="250"></td>
+                <td><input type="number" value="0" disabled></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td><input type="text" value="Vodka Smirnoff" disabled></td>
+                <td><input type="text" value="Vodka" disabled></td>
+                <td><input type="text" value="Proveedor G" disabled></td>
+                <td><input type="number" value="220" disabled></td>
+                <td><input type="number" value="100"></td>
+                <td><input type="number" value="50"></td>
+                <td><input type="number" value="70" disabled></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td><input type="text" value="Ginebra Tanqueray" disabled></td>
+                <td><input type="text" value="Ginebra" disabled></td>
+                <td><input type="text" value="Proveedor H" disabled></td>
+                <td><input type="number" value="350" disabled></td>
+                <td><input type="number" value="250"></td>
+                <td><input type="number" value="270"></td>
+                <td><input type="number" value="0" disabled></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td><input type="text" value="Pisco Mistral" disabled></td>
+                <td><input type="text" value="Pisco" disabled></td>
+                <td><input type="text" value="Proveedor I" disabled></td>
+                <td><input type="number" value="150" disabled></td>
+                <td><input type="number" value="120"></td>
+                <td><input type="number" value="90"></td>
+                <td><input type="number" value="30" disabled></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td><input type="text" value="Whisky Chivas Regal" disabled></td>
+                <td><input type="text" value="Whisky" disabled></td>
+                <td><input type="text" value="Proveedor J" disabled></td>
+                <td><input type="number" value="500" disabled></td>
+                <td><input type="number" value="400"></td>
+                <td><input type="number" value="350"></td>
+                <td><input type="number" value="50" disabled></td>
+            </tr>
         </tbody>
     </table>
 
@@ -91,11 +174,10 @@
             let rows = document.querySelectorAll("#inventoryTable tr");
             rows.forEach((row, index) => {
                 let quantity = parseInt(row.querySelector(`#quantity${index + 1}`).value);
-                let optimalStock = parseInt(row.cells[4].querySelector("input").value);
+                let optimalStock = parseInt(row.cells[5].querySelector("input").value);
                 let purchaseField = row.querySelector(`#purchase${index + 1}`);
                 let purchaseQuantity = optimalStock - quantity;
 
-                // Si la cantidad actual es mayor o igual al stock óptimo, no se compra más
                 purchaseQuantity = purchaseQuantity > 0 ? purchaseQuantity : 0;
                 purchaseField.value = purchaseQuantity;
             });
@@ -107,20 +189,30 @@
 
             rows.forEach((row, index) => {
                 let name = row.querySelector("td input[type='text']").value;
-                let category = row.cells[1].querySelector("input").value;
-                let supplier = row.cells[2].querySelector("input").value;
-                let price = row.cells[3].querySelector("input").value;
-                let stock = row.cells[4].querySelector("input").value;
+                let category = row.cells[2].querySelector("input").value;
+                let supplier = row.cells[3].querySelector("input").value;
+                let price = row.cells[4].querySelector("input").value;
+                let stock = row.cells[5].querySelector("input").value;
                 let quantity = row.querySelector(`#quantity${index + 1}`).value;
                 let purchase = row.querySelector(`#purchase${index + 1}`).value;
 
                 inventoryDetails += `${name} (${category}) - Proveedor: ${supplier} - Precio: $${price} - Stock Óptimo: ${stock} - Cantidad Actual: ${quantity} - Compra Necesaria: ${purchase}\n`;
             });
 
-            // Reemplazar el texto con espacios para que sea legible en WhatsApp
             let encodedMessage = encodeURIComponent(inventoryDetails);
             let whatsappUrl = `https://wa.me/?text=${encodedMessage}`;
             window.open(whatsappUrl, "_blank");
+        }
+
+        function sortTable(columnIndex) {
+            let table = document.getElementById("inventoryTable");
+            let rows = Array.from(table.rows).slice(1);  // Exclude the header row
+            let sortedRows = rows.sort((a, b) => {
+                let cellA = a.cells[columnIndex].querySelector("input").value.toLowerCase();
+                let cellB = b.cells[columnIndex].querySelector("input").value.toLowerCase();
+                return cellA < cellB ? -1 : (cellA > cellB ? 1 : 0);
+            });
+            table.tBodies[0].append(...sortedRows);
         }
     </script>
 
