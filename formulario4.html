@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Evento</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .product-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .product-item input[type="checkbox"] {
+            margin-right: 10px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('input[type="checkbox"]').change(function(){
+                var checkbox = $(this);
+                var quantityInput = checkbox.closest('.product-item').find('input[type="number"]');
+                if(checkbox.is(':checked')){
+                    quantityInput.val(1);
+                } else {
+                    quantityInput.val(0);
+                }
+                updateSubtotal();
+                updateTotal();
+            });
+
+            $('input[type="number"]').change(function(){
+                updateSubtotal();
+                updateTotal();
+            });
+
+            function updateSubtotal(){
+                $('.product-item').each(function(){
+                    var quantity = $(this).find('input[type="number"]').val();
+                    var price = $(this).find('.product-price').text();
+                    var subtotal = quantity * price;
+                    $(this).find('.product-subtotal').text(subtotal.toFixed(2));
+                });
+            }
+
+            function updateTotal(){
+                var total = 0;
+                $('.product-subtotal').each(function(){
+                    total += parseFloat($(this).text());
+                });
+                $('#total').text(total.toFixed(2));
+            }
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+    <h1 class="mt-4">Reserva de Evento</h1>
+    <form action="https://api.whatsapp.com/send?phone=56932334235" method="get" target="_blank">
+        <div class="form-group">
+            <label for="fecha">Fecha:</label>
+            <input type="date" class="form-control" id="fecha" name="fecha" required>
+        </div>
+        <div class="form-group">
+            <label for="hora">Hora:</label>
+            <input type="time" class="form-control" id="hora" name="hora" required>
+        </div>
+        <div class="form-group">
+            <label for="cantidad">Cantidad de Personas:</label>
+            <input type="number" class="form-control" id="cantidad" name="cantidad" required>
+        </div>
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" class="form-control" id="apellidos" name="apellidos" required>
+        </div>
+        <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" class="form-control" id="telefono" name="telefono" required>
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="comentarios">Comentarios:</label>
+            <textarea class="form-control" id="comentarios" name="comentarios"></textarea>
+        </div>
+
+        <h2 class="mt-4">Carrito de Compras</h2>
+        <div class="product-item">
+            <input type="checkbox" class="form-check-input">
+            <span class="product-name">Producto 1 - $<span class="product-price">1000</span></span>
+            <p class="product-description">Descripción del producto 1.</p>
+            <div>
+                Cantidad: <input type="number" class="form-control d-inline-block" value="0" min="0" style="width: 60px;">
+                Subtotal: $<span class="product-subtotal">0.00</span>
+            </div>
+        </div>
+        <div class="product-item">
+            <input type="checkbox" class="form-check-input">
+            <span class="product-name">Producto 2 - $<span class="product-price">2000</span></span>
+            <p class="product-description">Descripción del producto 2.</p>
+            <div>
+                Cantidad: <input type="number" class="form-control d-inline-block" value="0" min="0" style="width: 60px;">
+                Subtotal: $<span class="product-subtotal">0.00</span>
+            </div>
+        </div>
+        <div class="product-item">
+            <input type="checkbox" class="form-check-input">
+            <span class="product-name">Producto 3 - $<span class="product-price">1500</span></span>
+            <p class="product-description">Descripción del producto 3.</p>
+            <div>
+                Cantidad: <input type="number" class="form-control d-inline-block" value="0" min="0" style="width: 60px;">
+                Subtotal: $<span class="product-subtotal">0.00</span>
+            </div>
+        </div>
+        <div class="product-item">
+            <input type="checkbox" class="form-check-input">
+            <span class="product-name">Producto 4 - $<span class="product-price">2500</span></span>
+            <p class="product-description">Descripción del producto 4.</p>
+            <div>
+                Cantidad: <input type="number" class="form-control d-inline-block" value="0" min="0" style="width: 60px;">
+                Subtotal: $<span class="product-subtotal">0.00</span>
+            </div>
+        </div>
+        <div class="product-item">
+            <input type="checkbox" class="form-check-input">
+            <span class="product-name">Producto 5 - $<span class="product-price">3000</span></span>
+            <p class="product-description">Descripción del producto 5.</p>
+            <div>
+                Cantidad: <input type="number" class="form-control d-inline-block" value="0" min="0" style="width: 60px;">
+                Subtotal: $<span class="product-subtotal">0.00</span>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <h4>Total: $<span id="total">0.00</span></h4>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-4">Enviar Reserva por WhatsApp</button>
+    </form>
+</div>
+</body>
+</html>
