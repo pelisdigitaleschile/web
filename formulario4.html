@@ -2,151 +2,215 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Reserva de Evento</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .product-item {
-            border: 1px solid #ddd;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 5px;
+        .producto-card {
+            cursor: pointer;
+            transition: all 0.3s ease;
         }
-        .product-item input[type="checkbox"] {
-            margin-right: 10px;
+        .producto-card:hover {
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .producto-seleccionado {
+            background-color: #e9ecef;
         }
     </style>
-    <script>
-        $(document).ready(function(){
-            $('input[type="checkbox"]').change(function(){
-                var checkbox = $(this);
-                var quantityInput = checkbox.closest('.product-item').find('input[type="number"]');
-                if(checkbox.is(':checked')){
-                    quantityInput.val(1);
-                } else {
-                    quantityInput.val(0);
-                }
-                updateSubtotal();
-                updateTotal();
-            });
-
-            $('input[type="number"]').change(function(){
-                updateSubtotal();
-                updateTotal();
-            });
-
-            function updateSubtotal(){
-                $('.product-item').each(function(){
-                    var quantity = $(this).find('input[type="number"]').val();
-                    var price = $(this).find('.product-price').text();
-                    var subtotal = quantity * price;
-                    $(this).find('.product-subtotal').text(subtotal.toFixed(2));
-                });
-            }
-
-            function updateTotal(){
-                var total = 0;
-                $('.product-subtotal').each(function(){
-                    total += parseFloat($(this).text());
-                });
-                $('#total').text(total.toFixed(2));
-            }
-        });
-    </script>
 </head>
 <body>
-<div class="container">
-    <h1 class="mt-4">Reserva de Evento</h1>
-    <form action="https://api.whatsapp.com/send?phone=56932334235" method="get" target="_blank">
-        <div class="form-group">
-            <label for="fecha">Fecha:</label>
-            <input type="date" class="form-control" id="fecha" name="fecha" required>
-        </div>
-        <div class="form-group">
-            <label for="hora">Hora:</label>
-            <input type="time" class="form-control" id="hora" name="hora" required>
-        </div>
-        <div class="form-group">
-            <label for="cantidad">Cantidad de Personas:</label>
-            <input type="number" class="form-control" id="cantidad" name="cantidad" required>
-        </div>
-        <div class="form-group">
-            <label for="nombre">Nombre:</label>
-            <input type="text" class="form-control" id="nombre" name="nombre" required>
-        </div>
-        <div class="form-group">
-            <label for="apellidos">Apellidos:</label>
-            <input type="text" class="form-control" id="apellidos" name="apellidos" required>
-        </div>
-        <div class="form-group">
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" class="form-control" id="telefono" name="telefono" required>
-        </div>
-        <div class="form-group">
-            <label for="email">E-mail:</label>
-            <input type="email" class="form-control" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="comentarios">Comentarios:</label>
-            <textarea class="form-control" id="comentarios" name="comentarios"></textarea>
-        </div>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Reserva de Evento</h2>
+        
+        <form id="reservaForm">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Fecha</label>
+                    <input type="date" class="form-control" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Hora</label>
+                    <input type="time" class="form-control" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Cantidad de Personas</label>
+                    <input type="number" class="form-control" min="1" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Nombre</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">E-mail</label>
+                    <input type="email" class="form-control" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Comentarios</label>
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+            </div>
 
-        <h2 class="mt-4">Carrito de Compras</h2>
-        <div class="product-item">
-            <input type="checkbox" class="form-check-input">
-            <span class="product-name">Producto 1 - $<span class="product-price">1000</span></span>
-            <p class="product-description">Descripción del producto 1.</p>
-            <div>
-                Cantidad: <input type="number" class="form-control d-inline-block" value="0" min="0" style="width: 60px;">
-                Subtotal: $<span class="product-subtotal">0.00</span>
+            <h3 class="mt-4 mb-3">Carrito de Productos</h3>
+            
+            <div class="row" id="productosContainer">
+                <!-- Los productos serán generados dinámicamente con JavaScript -->
             </div>
-        </div>
-        <div class="product-item">
-            <input type="checkbox" class="form-check-input">
-            <span class="product-name">Producto 2 - $<span class="product-price">2000</span></span>
-            <p class="product-description">Descripción del producto 2.</p>
-            <div>
-                Cantidad: <input type="number" class="form-control d-inline-block" value="0" min="0" style="width: 60px;">
-                Subtotal: $<span class="product-subtotal">0.00</span>
-            </div>
-        </div>
-        <div class="product-item">
-            <input type="checkbox" class="form-check-input">
-            <span class="product-name">Producto 3 - $<span class="product-price">1500</span></span>
-            <p class="product-description">Descripción del producto 3.</p>
-            <div>
-                Cantidad: <input type="number" class="form-control d-inline-block" value="0" min="0" style="width: 60px;">
-                Subtotal: $<span class="product-subtotal">0.00</span>
-            </div>
-        </div>
-        <div class="product-item">
-            <input type="checkbox" class="form-check-input">
-            <span class="product-name">Producto 4 - $<span class="product-price">2500</span></span>
-            <p class="product-description">Descripción del producto 4.</p>
-            <div>
-                Cantidad: <input type="number" class="form-control d-inline-block" value="0" min="0" style="width: 60px;">
-                Subtotal: $<span class="product-subtotal">0.00</span>
-            </div>
-        </div>
-        <div class="product-item">
-            <input type="checkbox" class="form-check-input">
-            <span class="product-name">Producto 5 - $<span class="product-price">3000</span></span>
-            <p class="product-description">Descripción del producto 5.</p>
-            <div>
-                Cantidad: <input type="number" class="form-control d-inline-block" value="0" min="0" style="width: 60px;">
-                Subtotal: $<span class="product-subtotal">0.00</span>
-            </div>
-        </div>
 
-        <div class="mt-4">
-            <h4>Total: $<span id="total">0.00</span></h4>
-        </div>
+            <div class="row mt-3">
+                <div class="col-12">
+                    <h4>Total: $<span id="totalCompra">0</span></h4>
+                </div>
+            </div>
 
-        <button type="submit" class="btn btn-primary mt-4">Enviar Reserva por WhatsApp</button>
-    </form>
-</div>
+            <div class="text-center mt-4">
+                <a href="https://wa.me/56932334235?text=Reserva%20de%20Evento" class="btn btn-success btn-lg">
+                    Enviar Reserva por WhatsApp
+                </a>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    const productos = [
+        {
+            nombre: "Menú Infantil",
+            precio: 5000,
+            descripcion: "Incluye pizza, bebida y postre"
+        },
+        {
+            nombre: "Menú Adulto",
+            precio: 8000,
+            descripcion: "Entrada, plato principal y postre"
+        },
+        {
+            nombre: "Torta Cumpleaños",
+            precio: 15000,
+            descripcion: "Torta personalizada para 10 personas"
+        },
+        {
+            nombre: "Decoración Básica",
+            precio: 10000,
+            descripcion: "Globos, banderines y centro de mesa"
+        },
+        {
+            nombre: "Decoración Premium",
+            precio: 25000,
+            descripcion: "Decoración temática completa"
+        }
+    ];
+
+    function renderProductos() {
+        const container = document.getElementById('productosContainer');
+        container.innerHTML = productos.map((producto, index) => `
+            <div class="col-md-6 mb-3">
+                <div class="card producto-card" data-index="${index}">
+                    <div class="card-body">
+                        <div class="form-check">
+                            <input class="form-check-input producto-checkbox" 
+                                   type="checkbox" 
+                                   id="producto${index}">
+                            <label class="form-check-label" for="producto${index}">
+                                ${producto.nombre} - $${producto.precio.toLocaleString()}
+                            </label>
+                        </div>
+                        <p class="card-text text-muted">${producto.descripcion}</p>
+                        <div class="input-group mt-2">
+                            <button class="btn btn-outline-secondary cantidad-menos" type="button" disabled>-</button>
+                            <input type="number" 
+                                   class="form-control text-center cantidad-input" 
+                                   value="0" 
+                                   min="0" 
+                                   max="10" 
+                                   readonly>
+                            <button class="btn btn-outline-secondary cantidad-mas" type="button" disabled>+</button>
+                        </div>
+                        <p class="mt-2">Subtotal: $<span class="subtotal">0</span></p>
+                    </div>
+                </div>
+            </div>
+        `).join('');
+
+        inicializarEventos();
+    }
+
+    function inicializarEventos() {
+        const cards = document.querySelectorAll('.producto-card');
+        
+        cards.forEach(card => {
+            const checkbox = card.querySelector('.producto-checkbox');
+            const cantidadInput = card.querySelector('.cantidad-input');
+            const subtotalSpan = card.querySelector('.subtotal');
+            const menosBtn = card.querySelector('.cantidad-menos');
+            const masBtn = card.querySelector('.cantidad-mas');
+            const index = card.getAttribute('data-index');
+            const producto = productos[index];
+
+            card.addEventListener('click', function(e) {
+                if (!e.target.closest('button')) {
+                    checkbox.checked = !checkbox.checked;
+                    checkbox.dispatchEvent(new Event('change'));
+                }
+            });
+
+            checkbox.addEventListener('change', function() {
+                if (this.checked) {
+                    cantidadInput.value = 1;
+                    card.classList.add('producto-seleccionado');
+                    menosBtn.disabled = false;
+                    masBtn.disabled = false;
+                    subtotalSpan.textContent = producto.precio.toLocaleString();
+                } else {
+                    cantidadInput.value = 0;
+                    card.classList.remove('producto-seleccionado');
+                    menosBtn.disabled = true;
+                    masBtn.disabled = true;
+                    subtotalSpan.textContent = '0';
+                }
+                calcularTotal();
+            });
+
+            menosBtn.addEventListener('click', function() {
+                let cantidad = parseInt(cantidadInput.value);
+                if (cantidad > 1) {
+                    cantidad--;
+                    cantidadInput.value = cantidad;
+                    subtotalSpan.textContent = (cantidad * producto.precio).toLocaleString();
+                    calcularTotal();
+                }
+            });
+
+            masBtn.addEventListener('click', function() {
+                let cantidad = parseInt(cantidadInput.value);
+                if (cantidad < 10) {
+                    cantidad++;
+                    cantidadInput.value = cantidad;
+                    subtotalSpan.textContent = (cantidad * producto.precio).toLocaleString();
+                    calcularTotal();
+                }
+            });
+        });
+    }
+
+    function calcularTotal() {
+        const totalSpan = document.getElementById('totalCompra');
+        const subtotales = document.querySelectorAll('.subtotal');
+        const total = Array.from(subtotales)
+            .map(span => parseInt(span.textContent.replace(/\./g, '')) || 0)
+            .reduce((a, b) => a + b, 0);
+        
+        totalSpan.textContent = total.toLocaleString();
+    }
+
+    renderProductos();
+    </script>
 </body>
 </html>
