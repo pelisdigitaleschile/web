@@ -88,9 +88,14 @@
 </div>
 
 <script>
-    // Función para formatear número al estilo chileno
+    // Formato chileno para precios
     function formatPriceCL(number) {
         return number.toLocaleString('es-CL', { maximumFractionDigits: 0 });
+    }
+
+    // Convierte string con formato chileno a número
+    function parsePriceCL(priceString) {
+        return parseInt(priceString.replace(/\./g, ''), 10);
     }
 
     // Formato de fecha chilena DD-MM-YYYY
@@ -106,10 +111,10 @@
         const decreaseBtn = card.querySelector('.decrease');
         const increaseBtn = card.querySelector('.increase');
         const subtotalSpan = card.querySelector('.subtotal');
-        const price = parseInt(card.querySelector('strong').textContent.match(/\$(\d+)/)[1].replace('.', ''));
+        const price = parsePriceCL(card.querySelector('strong').textContent.match(/\$([\d.]+)/)[1]);
 
         function updateSubtotal() {
-            const quantity = parseInt(quantityInput.value);
+            const quantity = parseInt(quantityInput.value, 10);
             const subtotal = price * quantity;
             subtotalSpan.textContent = formatPriceCL(subtotal);
             updateTotal();
@@ -137,7 +142,7 @@
 
     function updateTotal() {
         const total = Array.from(document.querySelectorAll('.subtotal')).reduce((sum, subtotal) => {
-            return sum + parseInt(subtotal.textContent.replace(/\./g, '') || 0);
+            return sum + parsePriceCL(subtotal.textContent);
         }, 0);
         document.getElementById('total').textContent = formatPriceCL(total);
     }
