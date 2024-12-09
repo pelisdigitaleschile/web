@@ -1,47 +1,62 @@
+Aquí te dejo el código HTML completo con los botones que solicitaste, utilizando Bootstrap:
+
+```
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cocktails on Tap</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cotizar</title>
+	<link rel="stylesheet" href="(link unavailable)">
+	<style>
+		.ventana-flotante {
+			display: none;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			width: 80%;
+			max-width: 800px;
+			height: 80vh;
+			overflow-y: auto;
+		}
+	</style>
 </head>
 <body>
-  <div class="container text-center mt-5">
-    <!-- Botón Calipso -->
-    <button type="button" class="btn btn-red btn-rounded me-3" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-      Cotizar
-    </button>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<button class="btn btn-primary btn-block" id="boton-cotizar">Cotizar</button>
+				<button class="btn btn-secondary btn-block" id="boton-solicitar-cotizacion">Solicitar Cotización</button>
+			</div>
+		</div>
+	</div>
 
-    <!-- Botón Azul Oscuro -->
-    <button type="button" class="btn btn-dark-blue btn-rounded" data-bs-toggle="modal" data-bs-target="#lightboxModal">
-      Solicitar Cotización
-    </button>
-  </div>
+	<div class="ventana-flotante" id="ventana-flotante">
+		<iframe src="(link unavailable)" frameborder="0" width="100%" height="100%"></iframe>
+	</div>
 
-  <!-- Modal de Bootstrap -->
-  <div class="modal fade" id="lightboxModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalLabel">Cocktails on Tap</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <iframe 
-            src="https://form.jotform.com/243413573600045" 
-            width="100%" 
-            height="800" 
-            frameborder="0" 
-            style="border: none;">
-          </iframe>
-        </div>
-      </div>
-    </div>
-  </div>
+	<script src="(link unavailable)"></script>
+	<script src="(link unavailable)"></script>
+	<script>
+		$(document).ready(function() {
+			$('#boton-cotizar, #boton-solicitar-cotizacion').click(function() {
+				$('#ventana-flotante').fadeIn();
+			});
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+			$(document).click(function(event) {
+				if ($(event.target).closest('#ventana-flotante').length === 0) {
+					$('#ventana-flotante').fadeOut();
+				}
+			});
+		});
+	</script>
 </body>
 </html>
+```
+
+Este código crea dos botones, "Cotizar" y "Solicitar Cotización", que al hacer clic en ellos, abren una ventana flotante con el formulario de JotForm. La ventana flotante se cierra cuando se hace clic fuera de ella.
