@@ -6,15 +6,17 @@
     <title>Formulario de Reservas</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         .container {
-            width: 80%;
-            margin: auto;
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
             padding: 20px;
             background-color: white;
             border-radius: 10px;
@@ -23,34 +25,39 @@
 
         h1, h2 {
             color: #333;
+            text-align: center;
+            margin-bottom: 20px;
         }
 
         label {
             display: block;
             margin-top: 10px;
+            font-weight: bold;
         }
 
-        input, textarea {
+        input, textarea, button {
             width: 100%;
             padding: 8px;
             margin-top: 5px;
             margin-bottom: 15px;
             border: 1px solid #ddd;
             border-radius: 5px;
+            box-sizing: border-box;
         }
 
         input[type="number"] {
             width: 60px;
             display: inline-block;
+            text-align: center;
         }
 
         button {
-            padding: 5px 10px;
             background-color: #4CAF50;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            font-size: 16px;
         }
 
         button:hover {
@@ -59,25 +66,80 @@
 
         .product {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fafafa;
+            box-sizing: border-box;
         }
 
         .product input[type="checkbox"] {
             margin-right: 10px;
         }
 
+        .product label {
+            flex-basis: 100%;
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
         .product span {
-            margin-right: 10px;
+            flex-basis: 100%;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .product .price {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .product .actions {
+            flex-basis: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .subtotal {
-            margin-left: auto;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .total {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            text-align: right;
         }
 
         @media (max-width: 600px) {
             .container {
                 width: 100%;
+                padding: 10px;
+            }
+
+            .product label,
+            .product span {
+                font-size: 14px;
+            }
+
+            .product .actions {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            input, textarea, button {
+                font-size: 14px;
+            }
+
+            button {
+                font-size: 14px;
             }
         }
     </style>
@@ -119,55 +181,75 @@
                     <input type="checkbox" id="product1" data-price="15000">
                     <label for="product1">Producto 1</label>
                     <span>Descripción 1</span>
-                    <span>$15,000 CLP</span>
-                    <input type="number" id="quantity1" value="0" min="0" readonly>
-                    <button type="button" onclick="adjustQuantity(1, '+')">+</button>
-                    <button type="button" onclick="adjustQuantity(1, '-')">-</button>
-                    <span class="subtotal" id="subtotal1">$0</span>
+                    <span class="price">$15,000 CLP</span>
+                    <div class="actions">
+                        <input type="number" id="quantity1" value="0" min="0" readonly>
+                        <div>
+                            <button type="button" onclick="adjustQuantity(1, '+')">+</button>
+                            <button type="button" onclick="adjustQuantity(1, '-')">-</button>
+                        </div>
+                        <span class="subtotal" id="subtotal1">$0</span>
+                    </div>
                 </div>
                 <div class="product">
                     <input type="checkbox" id="product2" data-price="20000">
                     <label for="product2">Producto 2</label>
                     <span>Descripción 2</span>
-                    <span>$20,000 CLP</span>
-                    <input type="number" id="quantity2" value="0" min="0" readonly>
-                    <button type="button" onclick="adjustQuantity(2, '+')">+</button>
-                    <button type="button" onclick="adjustQuantity(2, '-')">-</button>
-                    <span class="subtotal" id="subtotal2">$0</span>
+                    <span class="price">$20,000 CLP</span>
+                    <div class="actions">
+                        <input type="number" id="quantity2" value="0" min="0" readonly>
+                        <div>
+                            <button type="button" onclick="adjustQuantity(2, '+')">+</button>
+                            <button type="button" onclick="adjustQuantity(2, '-')">-</button>
+                        </div>
+                        <span class="subtotal" id="subtotal2">$0</span>
+                    </div>
                 </div>
                 <div class="product">
                     <input type="checkbox" id="product3" data-price="25000">
                     <label for="product3">Producto 3</label>
                     <span>Descripción 3</span>
-                    <span>$25,000 CLP</span>
-                    <input type="number" id="quantity3" value="0" min="0" readonly>
-                    <button type="button" onclick="adjustQuantity(3, '+')">+</button>
-                    <button type="button" onclick="adjustQuantity(3, '-')">-</button>
-                    <span class="subtotal" id="subtotal3">$0</span>
+                    <span class="price">$25,000 CLP</span>
+                    <div class="actions">
+                        <input type="number" id="quantity3" value="0" min="0" readonly>
+                        <div>
+                            <button type="button" onclick="adjustQuantity(3, '+')">+</button>
+                            <button type="button" onclick="adjustQuantity(3, '-')">-</button>
+                        </div>
+                        <span class="subtotal" id="subtotal3">$0</span>
+                    </div>
                 </div>
                 <div class="product">
                     <input type="checkbox" id="product4" data-price="30000">
                     <label for="product4">Producto 4</label>
                     <span>Descripción 4</span>
-                    <span>$30,000 CLP</span>
-                    <input type="number" id="quantity4" value="0" min="0" readonly>
-                    <button type="button" onclick="adjustQuantity(4, '+')">+</button>
-                    <button type="button" onclick="adjustQuantity(4, '-')">-</button>
-                    <span class="subtotal" id="subtotal4">$0</span>
+                    <span class="price">$30,000 CLP</span>
+                    <div class="actions">
+                        <input type="number" id="quantity4" value="0" min="0" readonly>
+                        <div>
+                            <button type="button" onclick="adjustQuantity(4, '+')">+</button>
+                            <button type="button" onclick="adjustQuantity(4, '-')">-</button>
+                        </div>
+                        <span class="subtotal" id="subtotal4">$0</span>
+                    </div>
                 </div>
                 <div class="product">
                     <input type="checkbox" id="product5" data-price="35000">
                     <label for="product5">Producto 5</label>
                     <span>Descripción 5</span>
-                    <span>$35,000 CLP</span>
-                    <input type="number" id="quantity5" value="0" min="0" readonly>
-                    <button type="button" onclick="adjustQuantity(5, '+')">+</button>
-                    <button type="button" onclick="adjustQuantity(5, '-')">-</button>
-                    <span class="subtotal" id="subtotal5">$0</span>
+                    <span class="price">$35,000 CLP</span>
+                    <div class="actions">
+                        <input type="number" id="quantity5" value="0" min="0" readonly>
+                        <div>
+                            <button type="button" onclick="adjustQuantity(5, '+')">+</button>
+                            <button type="button" onclick="adjustQuantity(5, '-')">-</button>
+                        </div>
+                        <span class="subtotal" id="subtotal5">$0</span>
+                    </div>
                 </div>
             </div>
 
-            <h3>Total General: <span id="total">$0</span></h3>
+            <h3 class="total">Total General: <span id="total">$0</span></h3>
             <button type="submit">Reservar y Enviar a WhatsApp</button>
         </form>
     </div>
