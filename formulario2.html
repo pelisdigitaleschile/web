@@ -46,6 +46,10 @@
       box-sizing: border-box;
     }
 
+    input[type="number"] {
+      width: 60px;
+    }
+
     .checkbox-group {
       margin-bottom: 20px;
     }
@@ -58,6 +62,7 @@
 
     .product label {
       flex-grow: 1;
+      font-size: 14px;
     }
 
     .quantity {
@@ -116,6 +121,11 @@
       .subtotal {
         font-size: 14px;
       }
+
+      .product {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
   </style>
 </head>
@@ -139,6 +149,11 @@
       </div>
 
       <div class="form-group">
+        <label for="people">Cantidad de Personas</label>
+        <input type="number" id="people" min="1" placeholder="Número de personas">
+      </div>
+
+      <div class="form-group">
         <label for="name">Nombre <span>*</span></label>
         <input type="text" id="name" required>
       </div>
@@ -150,7 +165,7 @@
 
       <div class="form-group">
         <label for="phone">Celular <span>*</span></label>
-        <input type="text" id="phone" pattern="^\d{9}$" required>
+        <input type="tel" id="phone" pattern="^\d{9}$" required>
       </div>
 
       <div class="form-group">
@@ -167,62 +182,67 @@
       <div class="checkbox-group">
         <h2>Productos</h2>
         <div class="product">
-          <input type="checkbox" id="product1" class="product-checkbox">
-          <label for="product1">Producto 1 - $10,000 CLP</label>
+          <input type="checkbox" id="product1" class="product-checkbox" onchange="toggleProductSelection('product1')">
+          <label for="product1">Producto 1 - 10.000</label>
+          <p>Descripción del producto 1.</p>
           <div class="quantity">
             <button type="button" onclick="updateQuantity('product1', -1)">-</button>
             <input type="number" id="quantity1" value="0" min="0" onchange="updateSubtotal('product1')">
             <button type="button" onclick="updateQuantity('product1', 1)">+</button>
           </div>
-          <span class="subtotal" id="subtotal1">Subtotal: $0</span>
+          <span class="subtotal" id="subtotal1">Subtotal: 0</span>
         </div>
 
         <div class="product">
-          <input type="checkbox" id="product2" class="product-checkbox">
-          <label for="product2">Producto 2 - $15,000 CLP</label>
+          <input type="checkbox" id="product2" class="product-checkbox" onchange="toggleProductSelection('product2')">
+          <label for="product2">Producto 2 - 15.000</label>
+          <p>Descripción del producto 2.</p>
           <div class="quantity">
             <button type="button" onclick="updateQuantity('product2', -1)">-</button>
             <input type="number" id="quantity2" value="0" min="0" onchange="updateSubtotal('product2')">
             <button type="button" onclick="updateQuantity('product2', 1)">+</button>
           </div>
-          <span class="subtotal" id="subtotal2">Subtotal: $0</span>
+          <span class="subtotal" id="subtotal2">Subtotal: 0</span>
         </div>
 
         <div class="product">
-          <input type="checkbox" id="product3" class="product-checkbox">
-          <label for="product3">Producto 3 - $20,000 CLP</label>
+          <input type="checkbox" id="product3" class="product-checkbox" onchange="toggleProductSelection('product3')">
+          <label for="product3">Producto 3 - 20.000</label>
+          <p>Descripción del producto 3.</p>
           <div class="quantity">
             <button type="button" onclick="updateQuantity('product3', -1)">-</button>
             <input type="number" id="quantity3" value="0" min="0" onchange="updateSubtotal('product3')">
             <button type="button" onclick="updateQuantity('product3', 1)">+</button>
           </div>
-          <span class="subtotal" id="subtotal3">Subtotal: $0</span>
+          <span class="subtotal" id="subtotal3">Subtotal: 0</span>
         </div>
 
         <div class="product">
-          <input type="checkbox" id="product4" class="product-checkbox">
-          <label for="product4">Producto 4 - $25,000 CLP</label>
+          <input type="checkbox" id="product4" class="product-checkbox" onchange="toggleProductSelection('product4')">
+          <label for="product4">Producto 4 - 25.000</label>
+          <p>Descripción del producto 4.</p>
           <div class="quantity">
             <button type="button" onclick="updateQuantity('product4', -1)">-</button>
             <input type="number" id="quantity4" value="0" min="0" onchange="updateSubtotal('product4')">
             <button type="button" onclick="updateQuantity('product4', 1)">+</button>
           </div>
-          <span class="subtotal" id="subtotal4">Subtotal: $0</span>
+          <span class="subtotal" id="subtotal4">Subtotal: 0</span>
         </div>
 
         <div class="product">
-          <input type="checkbox" id="product5" class="product-checkbox">
-          <label for="product5">Producto 5 - $30,000 CLP</label>
+          <input type="checkbox" id="product5" class="product-checkbox" onchange="toggleProductSelection('product5')">
+          <label for="product5">Producto 5 - 30.000</label>
+          <p>Descripción del producto 5.</p>
           <div class="quantity">
             <button type="button" onclick="updateQuantity('product5', -1)">-</button>
             <input type="number" id="quantity5" value="0" min="0" onchange="updateSubtotal('product5')">
             <button type="button" onclick="updateQuantity('product5', 1)">+</button>
           </div>
-          <span class="subtotal" id="subtotal5">Subtotal: $0</span>
+          <span class="subtotal" id="subtotal5">Subtotal: 0</span>
         </div>
 
         <div class="total">
-          <p>Total General: <span id="total">0</span> CLP</p>
+          <p>Total General: <span id="total">0</span></p>
         </div>
       </div>
 
@@ -232,7 +252,7 @@
   </div>
 
   <script>
-    // Función para actualizar la cantidad y la selección de checkbox
+    // Actualiza la cantidad de un producto
     function updateQuantity(productId, change) {
       var quantityInput = document.getElementById('quantity' + productId.charAt(productId.length - 1));
       var quantity = parseInt(quantityInput.value) + change;
@@ -241,17 +261,16 @@
       updateSubtotal(productId);
     }
 
-    // Función para actualizar el subtotal de un producto
+    // Calcula el subtotal de un producto
     function updateSubtotal(productId) {
       var quantity = document.getElementById('quantity' + productId.charAt(productId.length - 1)).value;
       var price = parseInt(productId.charAt(productId.length - 1)) * 5000 + 10000; // Precios ejemplo
       var subtotal = quantity * price;
-      document.getElementById('subtotal' + productId.charAt(productId.length - 1)).innerText = "Subtotal: $" + subtotal;
-      document.getElementById(productId).checked = quantity > 0;
+      document.getElementById('subtotal' + productId.charAt(productId.length - 1)).innerText = "Subtotal: " + subtotal.toLocaleString();
       updateTotal();
     }
 
-    // Función para actualizar el total general
+    // Actualiza el total general
     function updateTotal() {
       var total = 0;
       for (var i = 1; i <= 5; i++) {
@@ -259,11 +278,22 @@
         var price = i * 5000 + 10000;
         total += quantity * price;
       }
-      document.getElementById('total').innerText = total;
+      document.getElementById('total').innerText = total.toLocaleString();
       validateForm();
     }
 
-    // Función para validar el formulario y habilitar/deshabilitar el botón de WhatsApp
+    // Marca o desmarca el producto y actualiza la cantidad
+    function toggleProductSelection(productId) {
+      var quantityInput = document.getElementById('quantity' + productId.charAt(productId.length - 1));
+      if (document.getElementById(productId).checked) {
+        quantityInput.value = 1;
+      } else {
+        quantityInput.value = 0;
+      }
+      updateSubtotal(productId);
+    }
+
+    // Valida si el formulario está completo
     function validateForm() {
       var name = document.getElementById('name').value;
       var lastname = document.getElementById('lastname').value;
@@ -272,7 +302,6 @@
       var date = document.getElementById('date').value;
       var time = document.getElementById('time').value;
 
-      // Verifica si los campos obligatorios están completos
       if (name && lastname && phone && email && date && time) {
         document.getElementById('whatsapp-btn').disabled = false;
       } else {
@@ -280,7 +309,7 @@
       }
     }
 
-    // Función para enviar la reserva por WhatsApp
+    // Envía la reserva por WhatsApp
     function sendWhatsApp() {
       var name = document.getElementById('name').value;
       var lastname = document.getElementById('lastname').value;
