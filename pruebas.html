@@ -1,67 +1,157 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Botones de Cotización</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-        }
-        .btn-custom {
-            margin: 10px;
-            padding: 10px 20px;
-            font-size: 18px;
-        }
-        .modal-dialog {
-            width: 800px;
-        }
-        .modal-content {
-            height: 800px;
-        }
-        .iframe-container {
-            width: 100%;
-            height: 100%;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Restaurante</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f5f2;
+      color: #333;
+    }
+    header {
+      background-color: #d35400;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      background-color: #e67e22;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+    }
+    .menu-item {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .menu-item img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .form-group {
+      margin-bottom: 1rem;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .form-group input, .form-group select {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #d35400;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e67e22;
+    }
+  </style>
 </head>
 <body>
-    <div class="text-center">
-        <button type="button" class="btn btn-primary btn-custom" data-bs-toggle="modal" data-bs-target="#cotizacionModal">
-            Cotizar
-        </button>
-        <button type="button" class="btn btn-success btn-custom" data-bs-toggle="modal" data-bs-target="#cotizacionModal">
-            Solicitar Cotización
-        </button>
-    </div>
+  <header>
+    <h1>Sistema de Gestión de Restaurante</h1>
+  </header>
+  <nav>
+    <a href="#menu">Menú Digital</a>
+    <a href="#fidelizacion">Fidelización</a>
+    <a href="#reservas">Reservas</a>
+  </nav>
 
-    <!-- Modal -->
-    <div class="modal fade" id="cotizacionModal" tabindex="-1" aria-labelledby="cotizacionModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="cotizacionModalLabel">Formulario de Cotización</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body p-0">
-                    <iframe src="https://form.jotform.com/243413573600045" 
-                            width="100%" 
-                            height="100%" 
-                            frameborder="0" 
-                            class="iframe-container">
-                    </iframe>
-                </div>
-            </div>
-        </div>
+  <section id="menu">
+    <h2>Menú Digital</h2>
+    <div class="menu-item">
+      <img src="https://via.placeholder.com/80" alt="Ensalada César">
+      <div>
+        <h3>Ensalada César</h3>
+        <p>Clásica ensalada César con aderezo especial.</p>
+      </div>
     </div>
+    <div class="menu-item">
+      <img src="https://via.placeholder.com/80" alt="Filete a la parrilla">
+      <div>
+        <h3>Filete a la parrilla</h3>
+        <p>Filete jugoso acompañado de guarniciones.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Bootstrap JS y dependencias -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <section id="fidelizacion">
+    <h2>Programa de Fidelización</h2>
+    <p>Registra tus visitas escaneando nuestro código QR.</p>
+    <button onclick="registrarVisita()">Registrar Visita</button>
+    <p id="puntos">Puntos acumulados: 0</p>
+  </section>
+
+  <section id="reservas">
+    <h2>Reservas</h2>
+    <form onsubmit="hacerReserva(event)">
+      <div class="form-group">
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" required>
+      </div>
+      <div class="form-group">
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" required>
+      </div>
+      <div class="form-group">
+        <label for="personas">Número de personas:</label>
+        <select id="personas" required>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </div>
+      <button type="submit">Reservar</button>
+    </form>
+    <p id="confirmacion"></p>
+  </section>
+
+  <script>
+    let puntos = 0;
+
+    function registrarVisita() {
+      puntos += 10;
+      document.getElementById('puntos').textContent = `Puntos acumulados: ${puntos}`;
+      alert("Visita registrada. ¡Gracias por venir!");
+    }
+
+    function hacerReserva(event) {
+      event.preventDefault();
+      const fecha = document.getElementById('fecha').value;
+      const hora = document.getElementById('hora').value;
+      const personas = document.getElementById('personas').value;
+
+      document.getElementById('confirmacion').textContent = 
+        `Reserva confirmada para ${personas} personas el ${fecha} a las ${hora}.`;
+    }
+  </script>
 </body>
 </html>
