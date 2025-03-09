@@ -2,45 +2,133 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>:: Pelis Digitales Chile ::</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Ajustes para mejorar responsividad */
+    .modal-movie-image {
+      max-height: 300px;
+      object-fit: contain;
+    }
+
+    /* Para pantallas pequeñas */
+    @media (max-width: 768px) {
+      .table-responsive {
+        font-size: 0.9rem;
+      }
+      .modal-dialog {
+        margin: 0.5rem;
+      }
+      .movie-link {
+        white-space: normal;
+        word-break: break-word;
+      }
+    }
+
+    /* Personalización para tarjeta de película */
+    .movie-card {
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    /* Animación para los iconos sociales */
+    .social-icon {
+      transition: transform 0.3s;
+    }
+    .social-icon:hover {
+      transform: scale(1.2);
+    }
+    
+    /* Estilos para barra de iconos fija */
+    .fixed-icons {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1030;
+      background-color: #212529;
+      padding: 10px 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .fixed-icons .icon-link {
+      color: white;
+      font-size: 1.2rem;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    
+    /* Espacio adicional para contenido principal para compensar la barra fija */
+    .content-wrapper {
+      padding-top: 60px;
+    }
+  </style>
 </head>
 <body>
-  <div class="container my-4">
-    <!-- Encabezado con iconos -->
-    <div class="d-flex justify-content-center mb-3">
-      <a href="mailto:pelisdigitaleschile@gmail.com" class="mx-2 text-dark" title="E-mail">
-        <i class="fas fa-envelope fa-2x"></i>
+  <div class="container-fluid px-0">
+    <!-- Iconos fijos en la parte superior -->
+    <div class="fixed-icons text-center">
+      <a href="#" class="icon-link brand-icon" title="Pelis Digitales Chile">
+        <i class="fas fa-film"></i>
       </a>
-      <a href="https://instagram.com/pelisdigitaleschile" class="mx-2 text-dark" title="Instagram" target="_blank">
-        <i class="fab fa-instagram fa-2x"></i>
+      <a href="mailto:pelisdigitaleschile@gmail.com" class="icon-link social-icon" title="E-mail">
+        <i class="fas fa-envelope"></i>
       </a>
-      <a href="https://docs.google.com/spreadsheets/d/1ztMEK2YIFsrTX9Yh5F5v7yE53to18-8GnkYe-W3sp8E/edit?usp=sharing" class="mx-2 text-dark" title="Lista" target="_blank">
-        <i class="fas fa-file-excel fa-2x"></i>
+      <a href="https://instagram.com/pelisdigitaleschile" class="icon-link social-icon" title="Instagram" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://docs.google.com/spreadsheets/d/1ztMEK2YIFsrTX9Yh5F5v7yE53to18-8GnkYe-W3sp8E/edit?usp=sharing" class="icon-link social-icon" title="Lista" target="_blank">
+        <i class="fas fa-file-excel"></i>
       </a>
     </div>
 
-    <h1 class="text-center mb-4">Catálogo de Películas</h1>
-    <div class="table-responsive">
-      <table id="moviesTable" class="table table-striped table-hover">
-        <thead class="table-dark">
-          <tr>
-            <th data-column="Number" style="cursor:pointer;">N° <i class="fas fa-sort"></i></th>
-            <th data-column="TranslatedTitle" style="cursor:pointer;">Nombre <i class="fas fa-sort"></i></th>
-            <th data-column="OriginalTitle" style="cursor:pointer;">N. Original <i class="fas fa-sort"></i></th>
-            <th data-column="Year" style="cursor:pointer;">Año <i class="fas fa-sort"></i></th>
-            <th data-column="Rating" style="cursor:pointer;">Rating <i class="fas fa-sort"></i></th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Las filas se insertarán dinámicamente -->
-        </tbody>
-      </table>
+    <!-- Contenido principal -->
+    <div class="container content-wrapper my-4">
+      <h1 class="text-center mb-4">Catálogo de Películas</h1>
+
+      <!-- Barra de búsqueda -->
+      <div class="row mb-4">
+        <div class="col-md-6 mx-auto">
+          <div class="input-group">
+            <input type="text" id="searchInput" class="form-control" placeholder="Buscar película...">
+            <button class="btn btn-primary" type="button">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tabla responsive -->
+      <div class="table-responsive">
+        <table id="moviesTable" class="table table-striped table-hover">
+          <thead class="table-dark">
+            <tr>
+              <th data-column="Number" style="cursor:pointer;">N° <i class="fas fa-sort"></i></th>
+              <th data-column="TranslatedTitle" style="cursor:pointer;">Nombre <i class="fas fa-sort"></i></th>
+              <th data-column="OriginalTitle" class="d-none d-md-table-cell" style="cursor:pointer;">N. Original <i class="fas fa-sort"></i></th>
+              <th data-column="Year" style="cursor:pointer;">Año <i class="fas fa-sort"></i></th>
+              <th data-column="Rating" style="cursor:pointer;">Rating <i class="fas fa-sort"></i></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Las filas se insertarán dinámicamente -->
+          </tbody>
+        </table>
+      </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+      <div class="container">
+        <p class="mb-0">&copy; 2023 Pelis Digitales Chile. Todos los derechos reservados.</p>
+      </div>
+    </footer>
   </div>
 
   <!-- Modal de Ficha de la Película -->
@@ -69,7 +157,7 @@
           <h5 class="modal-title" id="videoModalLabel">Trailer</h5>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body p-0">
           <div class="ratio ratio-16x9">
             <iframe id="youtubeIframe" src="" title="YouTube video" allowfullscreen></iframe>
           </div>
@@ -103,39 +191,52 @@
       tbody.innerHTML = '';
       movies.forEach(movie => {
         const tr = document.createElement('tr');
-        
+
         // Columna N° (Number)
         const tdNumber = document.createElement('td');
         tdNumber.textContent = movie['Number'] || '';
         tr.appendChild(tdNumber);
-        
+
         // Columna Nombre (TranslatedTitle) con enlace para abrir la ficha
         const tdName = document.createElement('td');
         const link = document.createElement('a');
         link.href = "#";
         link.textContent = movie['TranslatedTitle'] || '';
+        link.className = 'movie-link text-decoration-none';
         link.addEventListener('click', function(e) {
           e.preventDefault();
           openMovieModal(movie);
         });
         tdName.appendChild(link);
         tr.appendChild(tdName);
-        
-        // Columna N. Original (OriginalTitle)
+
+        // Columna N. Original (OriginalTitle) - oculta en móviles
         const tdOriginal = document.createElement('td');
+        tdOriginal.className = 'd-none d-md-table-cell';
         tdOriginal.textContent = movie['OriginalTitle'] || '';
         tr.appendChild(tdOriginal);
-        
+
         // Columna Año (Year)
         const tdYear = document.createElement('td');
         tdYear.textContent = movie['Year'] || '';
         tr.appendChild(tdYear);
-        
-        // Columna Rating (Rating) mostrado como número
+
+        // Columna Rating (Rating) mostrado como estrellas en vez de número
         const tdRating = document.createElement('td');
-        tdRating.textContent = movie['Rating'] || '';
+        const rating = parseFloat(movie['Rating']) || 0;
+        if (rating > 0) {
+          // En dispositivos móviles mostrar solo un número
+          if (window.innerWidth < 768) {
+            tdRating.textContent = rating.toFixed(1);
+          } else {
+            // En pantallas más grandes mostrar estrellas
+            tdRating.innerHTML = getStarRatingHTML(rating);
+          }
+        } else {
+          tdRating.textContent = '';
+        }
         tr.appendChild(tdRating);
-        
+
         tbody.appendChild(tr);
       });
     }
@@ -212,7 +313,7 @@
       const day = ("0" + date.getDate()).slice(-2);
       const month = ("0" + (date.getMonth() + 1)).slice(-2);
       const year = date.getFullYear();
-      return + day + "-" + month + "-" + year;
+      return day + "-" + month + "-" + year;
     }
 
     // Función para abrir el modal con la ficha de la película con diseño tipo card
@@ -220,52 +321,87 @@
       document.getElementById('movieModalLabel').textContent = movie['TranslatedTitle'] || 'Detalles de la película';
 
       // Construir la ficha en formato Card de Bootstrap
-      let html = '<div class="card mb-3">';
-      html += '<div class="row g-0">';
-      
-      // Columna con imagen y botón Trailer debajo
-      if (movie['Picture']) {
-        html += '<div class="col-md-4 text-center p-3">';
-        html += `<img src="${movie['Picture']}" alt="${movie['TranslatedTitle']}" class="img-fluid rounded">`;
+      let html = '<div class="card movie-card">';
+
+      // Si hay imagen, mostrarla en la parte superior en móviles, a un lado en escritorio
+      if (window.innerWidth < 768) {
+        // Diseño para móviles - imagen arriba
+        if (movie['Picture']) {
+          html += '<div class="text-center p-3">';
+          html += `<img src="${movie['Picture']}" alt="${movie['TranslatedTitle']}" class="img-fluid rounded modal-movie-image">`;
+          html += '</div>';
+        }
+
+        // Contenido debajo de la imagen
+        html += '<div class="card-body">';
+
+        // Botón de trailer prominente si existe
         if (movie['Comments']) {
-          html += `<div class="mt-2">
+          html += `<div class="mb-3 text-center">
                      <button class="btn btn-danger" onclick="openVideoModal('${movie['Comments']}')">
-                       <i class="fab fa-youtube"></i> Trailer
+                       <i class="fab fa-youtube"></i> Ver Trailer
                      </button>
                    </div>`;
         }
-        html += '</div>';
+
+        // Detalles de la película
+        html += '<dl class="row g-2">';
+      } else {
+        // Diseño para escritorio - dos columnas
+        html += '<div class="row g-0">';
+
+        // Columna con imagen y botón Trailer debajo
+        if (movie['Picture']) {
+          html += '<div class="col-md-4 text-center p-3">';
+          html += `<img src="${movie['Picture']}" alt="${movie['TranslatedTitle']}" class="img-fluid rounded">`;
+          if (movie['Comments']) {
+            html += `<div class="mt-3">
+                       <button class="btn btn-danger" onclick="openVideoModal('${movie['Comments']}')">
+                         <i class="fab fa-youtube"></i> Ver Trailer
+                       </button>
+                     </div>`;
+          }
+          html += '</div>';
+        }
+
+        // Columna con los detalles
+        html += '<div class="col-md-8">';
+        html += '<div class="card-body">';
+        html += '<dl class="row">';
       }
-      
-      // Columna con los detalles (dentro de card-body)
-      html += '<div class="col-md-8">';
-      html += '<div class="card-body">';
-      html += '<dl class="row">';
+
+      // Contenido común para ambos diseños
       html += `<dt class="col-sm-4">Añadida:</dt><dd class="col-sm-8">${formatDateChile(movie['Date'] || '')}</dd>`;
       html += `<dt class="col-sm-4">Nombre:</dt><dd class="col-sm-8">${movie['TranslatedTitle'] || ''}</dd>`;
       html += `<dt class="col-sm-4">N. Original:</dt><dd class="col-sm-8">${movie['OriginalTitle'] || ''}</dd>`;
       html += `<dt class="col-sm-4">Año:</dt><dd class="col-sm-8">${movie['Year'] || ''}</dd>`;
       html += `<dt class="col-sm-4">Idiomas:</dt><dd class="col-sm-8">${movie['Languages'] || ''}</dd>`;
       html += `<dt class="col-sm-4">Subtítulos:</dt><dd class="col-sm-8">${movie['Subtitles'] || ''}</dd>`;
-      // Duración y Certificación justo después de Subtítulos
       html += `<dt class="col-sm-4">Duración:</dt><dd class="col-sm-8">${movie['Length'] ? movie['Length'] + ' min' : ''}</dd>`;
       html += `<dt class="col-sm-4">Certificación:</dt><dd class="col-sm-8">${movie['Certification'] || ''}</dd>`;
-      // Rating: se muestra solo como estrellas y se envuelve en un link usando URL
       html += `<dt class="col-sm-4">IMDB:</dt><dd class="col-sm-8"><a href="${movie['URL'] || '#'}" target="_blank">${getStarRatingHTML(parseFloat(movie['Rating']))}</a></dd>`;
       html += `<dt class="col-sm-4">País:</dt><dd class="col-sm-8">${movie['Country'] || ''}</dd>`;
       html += `<dt class="col-sm-4">Categoría:</dt><dd class="col-sm-8">${movie['Category'] || ''}</dd>`;
       html += `<dt class="col-sm-4">Director:</dt><dd class="col-sm-8">${movie['Director'] || ''}</dd>`;
       html += `<dt class="col-sm-4">Actores:</dt><dd class="col-sm-8">${movie['Actors'] || ''}</dd>`;
-      html += `<dt class="col-sm-4">Sinopsis:</dt><dd class="col-sm-8">${movie['Description'] || ''}</dd>`;
+
+      // Sinopsis con más espacio
+      html += `<dt class="col-12 mt-3">Sinopsis:</dt><dd class="col-12 border-top pt-2">${movie['Description'] || ''}</dd>`;
       html += '</dl>';
-      html += '</div>'; // Fin de card-body
-      html += '</div>'; // Fin de col-md-8
-      
-      html += '</div>'; // Fin de row
+
+      // Cerrar las etiquetas según el diseño
+      if (window.innerWidth < 768) {
+        html += '</div>'; // Fin de card-body
+      } else {
+        html += '</div>'; // Fin de card-body
+        html += '</div>'; // Fin de col-md-8
+        html += '</div>'; // Fin de row
+      }
+
       html += '</div>'; // Fin de card
-      
+
       document.querySelector('#movieModal .modal-body').innerHTML = html;
-      
+
       const movieModal = new bootstrap.Modal(document.getElementById('movieModal'));
       movieModal.show();
     }
@@ -280,6 +416,27 @@
         iframe.src = "";
       });
     }
+
+    // Funcionalidad de búsqueda
+    document.getElementById('searchInput').addEventListener('keyup', function() {
+      const searchTerm = this.value.toLowerCase();
+      const filteredMovies = moviesData.filter(movie => {
+        return (
+          (movie['TranslatedTitle'] || '').toLowerCase().includes(searchTerm) ||
+          (movie['OriginalTitle'] || '').toLowerCase().includes(searchTerm) ||
+          (movie['Director'] || '').toLowerCase().includes(searchTerm) ||
+          (movie['Actors'] || '').toLowerCase().includes(searchTerm) ||
+          (movie['Category'] || '').toLowerCase().includes(searchTerm)
+        );
+      });
+      displayMovies(filteredMovies);
+    });
+
+    // Actualizar diseño cuando cambia el tamaño de la ventana
+    window.addEventListener('resize', function() {
+      // Actualizar visualización de la tabla
+      displayMovies(moviesData);
+    });
   </script>
 </body>
 </html>
