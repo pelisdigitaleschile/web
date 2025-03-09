@@ -1,262 +1,284 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>.::Pelis Digitales Chile::.</title>
-    <!-- Favicon generado en https://favicon.io/ -->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon/site.webmanifest">
-    <!-- Importación de hestilos propios -->
-    <link href="css/styles.css" rel="stylesheet">
-    <!-- Importación de estilos externos -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">    
+  <meta charset="UTF-8">
+  <title>:: Pelis Digitales Chile ::</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-    <!-- Barra superior fija con iconos sociales -->
-    <div class="sticky-top">
-        <div class="container">
-            <div class="text-center social-icons">
-                <a href="mailto:pelisdigitaleschile@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="https://instagram.com/pelisdigitaleschile" target="_blank"><i class="fab fa-instagram"></i></a>                
-                <a href="https://docs.google.com/spreadsheets/d/1ztMEK2YIFsrTX9Yh5F5v7yE53to18-8GnkYe-W3sp8E/edit?usp=sharing" target="_blank"><i class="fa-regular fa-file-excel"></i></a>
-            </div>
-        </div>
+  <div class="container my-4">
+    <!-- Encabezado con iconos -->
+    <div class="d-flex justify-content-center mb-3">
+      <a href="mailto:pelisdigitaleschile@gmail.com" class="mx-2 text-dark" title="E-mail">
+        <i class="fas fa-envelope fa-2x"></i>
+      </a>
+      <a href="https://instagram.com/pelisdigitaleschile" class="mx-2 text-dark" title="Instagram" target="_blank">
+        <i class="fab fa-instagram fa-2x"></i>
+      </a>
+      <a href="https://docs.google.com/spreadsheets/d/1ztMEK2YIFsrTX9Yh5F5v7yE53to18-8GnkYe-W3sp8E/edit?usp=sharing" class="mx-2 text-dark" title="Lista" target="_blank">
+        <i class="fas fa-file-excel fa-2x"></i>
+      </a>
     </div>
 
-    <!-- Contenedor principal -->
-    <div class="container mt-4">
-        <h3 class="text-center mb-4">Pelis Digitales Chile<br>(Actualizada: 06-12-2024)</h3>
-        <!-- Contenedor responsive para la tabla -->
-        <div class="table-responsive">
-            <table class="table table-striped table-hover">
-                <!-- Encabezado de la tabla -->
-                <thead>
-                    <tr>
-                        <!-- Columnas ordenables con iconos de ordenamiento -->
-                        <th onclick="sortTable(0)" class="sortable numero-column">N <i class="fas fa-sort" data-column="0"></i></th>
-                        <th onclick="sortTable(1)" class="sortable">Nombre <i class="fas fa-sort" data-column="1"></i></th>
-                        <th onclick="sortTable(2)" class="sortable">Año <i class="fas fa-sort" data-column="2"></i></th>
-                        <th>Idioma</th>
-                        <th>Subtítulo</th>
-                        <th>Clip</th>
-                    </tr>
-                </thead>
-                <tbody>                    
-                    <tr>
-                        <td>23</td>
-                        <td><a href="https://www.imdb.com/title/tt18272208" target="_blank">Aquí</a></td>
-                        <td>2024</td>
-                        <td>Inglés</td>
-                        <td>Esp, Ing</td>
-                        <td><button class="btn btn-danger btn-sm" onclick="showTrailer('lqgtMPvVVgo')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>                    
-                    <tr>
-                        <td>22</td>
-                        <td><a href="https://www.imdb.com/title/tt9218128" target="_blank">Gladiator II</a></td>
-                        <td>2024</td>
-                        <td>Español</td>
-                        <td>Ninguno</td>
-                        <td><button class="btn btn-danger btn-sm" onclick="showTrailer('kdSdHxf6tio')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>                    
-                    <tr>
-                        <td>21</td>
-                        <td><a href="https://www.imdb.com/title/tt7093904" target="_blank">La Leyenda del Dragón</a></td>
-                        <td>2024</td>
-                        <td>Ing, Esp</td>
-                        <td>Esp, Ing</td>
-                        <td><button class="btn btn-danger btn-sm" onclick="showTrailer('LCFEY2gytgs')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>                    
-                    <tr>
-                        <td>20</td>
-                        <td><a href="https://www.imdb.com/title/tt27911000" target="_blank">Terrifier 3: Payaso Siniestro</a></td>
-                        <td>2024</td>
-                        <td>Ing, Esp</td>
-                        <td>Esp, Ing</td>
-                        <td><button class="btn btn-danger btn-sm" onclick="showTrailer('6mO-y0Xeq7U')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>                    
-                    <tr>
-                        <td>19</td>
-                        <td><a href="https://www.imdb.com/title/tt7737800" target="_blank">El Asesino del Juego de Citas</a></td>
-                        <td>2023</td>
-                        <td>Inglés</td>
-                        <td>Esp, Ing</td>
-                        <td><button class="btn btn-danger btn-sm" onclick="showTrailer('szC-6xP6-bQ')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>                    
-                    <tr>
-                        <td>18</td>
-                        <td><a href="https://www.imdb.com/title/tt12584954" target="_blank">Tornados</a></td>
-                        <td>2024</td>
-                        <td>Ing, Esp</td>
-                        <td>Esp, Ing</td>
-                        <td><button class="btn btn-danger btn-sm" onclick="showTrailer('r-faf-bxqB8')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>                    
-                    <tr>
-                        <td>17</td>
-                        <td><a href="https://www.imdb.com/title/tt8864596" target="_blank">Transformers One</a></td>
-                        <td>2024</td>
-                        <td>Ing, Esp</td>
-                        <td>Esp, Ing</td>
-                        <td><button class="btn btn-danger btn-sm" onclick="showTrailer('nG4cgTxrbDI')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>                    
-                    <tr>
-                        <td>16</td>
-                        <td><a href="https://www.imdb.com/title/tt29623480" target="_blank">Robot Salvaje</a></td>
-                        <td>2024</td>
-                        <td>Ing, Esp</td>
-                        <td>Esp, Ing</td>
-                        <td><button class="btn btn-danger btn-sm" onclick="showTrailer('sEXyPinA4lE')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>                    
-                    <tr>
-                        <td>15</td>
-                        <td><a href="https://www.imdb.com/title/tt17526714" target="_blank">La Sustancia</a></td>
-                        <td>2024</td>
-                        <td>Ing, Esp</td>
-                        <td>Esp, Ing</td>
-                        <td><button class="btn btn-danger btn-sm" onclick="showTrailer('LL7-o30o9ec')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>                    
-                    <tr>
-                        <td>14</td>
-                        <td><a href="https://www.imdb.com/title/tt24169886" target="_blank">Incitadores</a></td>
-                        <td>2024</td>
-                        <td>Ing, Esp</td>
-                        <td>Esp, Ing</td>
-                        <td><button class="btn btn-danger btn-sm" onclick="showTrailer('Fc_ygBFA-nU')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>                    
-                    <tr>
-                        <td>13</td>
-                        <td><a href="https://www.imdb.com/title/tt5779228" target="_blank">Garfield: Fuera de casa</a></td>
-                        <td>2024</td>
-                        <td>Ing, Esp</td>
-                        <td>Esp, Ing</td>
-                        <td><button class="btn btn-danger btn-sm" onclick="showTrailer('Ua3PLSNGVBE')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>                    
-                    <tr>
-                        <td>12</td>
-                        <td><a href="https://www.imdb.com/title/tt20113412" target="_blank">The Convert</a></td>
-                        <td>2023</td>
-                        <td>Inglés</td>
-                        <td>Esp, Ing</td>
-                        <td><button class="btn btn-danger btn-sm" onclick="showTrailer('h_OdkvaPjSs')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>                    
-                    <tr>
-                        <td>11</td>
-                        <td><a href="https://www.imdb.com/title/tt8609660" target="_blank">Mi Amigo El Pingüino</a></td>
-                        <td>2024</td>
-                        <td>Ing, Esp</td>
-                        <td>Esp, Ing</td>
-                        <td><button class="btn btn-danger btn-sm" onclick="showTrailer('mNbKy0cmNjM')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>                    
-                    <tr>
-                        <td>10</td>
-                        <td><a href="https://www.imdb.com/title/tt11389872" target="_blank">El Planeta de los Simios: Nuevo Reino</a></td>
-                        <td>2024</td>
-                        <td>Ing, Esp</td>
-                        <td>Esp, Ing</td>
-                        <td><button class="btn btn-danger btn-sm" onclick="showTrailer('DDWWwEiWHJw')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>                    
-                    <tr>
-                        <td>9</td>
-                        <td><a href="https://www.imdb.com/title/tt11315808" target="_blank">Guasón 2: Folie À Deux</a></td>
-                        <td>2024</td>
-                        <td>Ing, Esp</td>
-                        <td>Esp, Ing</td>
-                        <td><button class="btn btn-danger btn-sm" onclick="showTrailer('hqx1NcHoiq0')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>                    
-                    <tr>
-                        <td>8</td>
-                        <td><a href="https://www.imdb.com/title/tt10655524" target="_blank">Romper El Círculo</a></td>
-                        <td>2024</td>
-                        <td>Ing, Esp</td>
-                        <td>Esp, Ing</td>
-                        <td><button class="btn btn-danger btn-sm" onclick="showTrailer('pzxJbIX9yMk')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>                    
-                    <tr>
-                        <td>7</td>
-                        <td><a href="https://www.imdb.com/title/tt22022452" target="_blank">Intensa-Mente 2</a></td>
-                        <td>2024</td>
-                        <td>Ing, Esp</td>
-                        <td>Esp, Ing</td>
-                        <td><button class="btn btn-danger btn-sm" onclick="showTrailer('9bol4Yyx9Gs')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>                    
-                    <tr>
-                        <td>6</td>
-                        <td><a href="https://www.imdb.com/title/tt26757462" target="_blank">Hellboy: The Crooked Man</a></td>
-                        <td>2024</td>
-                        <td>Ing, Esp</td>
-                        <td>Esp, Ing</td>
-                        <td><button class="btn btn-danger btn-sm" onclick="showTrailer('3-B60QAmto0')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>                    
-                    <tr>
-                        <td>5</td>
-                        <td><a href="https://www.imdb.com/title/tt7510222" target="_blank">Mi Villano Favorito 4</a></td>
-                        <td>2024</td>
-                        <td>Ing, Esp</td>
-                        <td>Esp, Ing</td>
-                        <td><button class="btn btn-danger btn-sm" onclick="showTrailer('I0_qFoptZ4Y')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>                    
-                    <tr>
-                        <td>4</td>
-                        <td><a href="https://www.imdb.com/title/tt6263850" target="_blank">Deadpool & Wolverine</a></td>
-                        <td>2024</td>
-                        <td>Ing, Esp</td>
-                        <td>Esp, Ing</td>
-                        <td><button class="btn btn-danger btn-sm" onclick="showTrailer('UzFZR2dRsSY')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>                    
-                    <tr>
-                        <td>3</td>
-                        <td><a href="https://www.imdb.com/title/tt2049403" target="_blank">Beetlejuice Beetlejuice</a></td>
-                        <td>2024</td>
-                        <td>Ing, Esp</td>
-                        <td>Esp, Ing</td>
-                        <td><button class="btn btn-danger btn-sm" onclick="showTrailer('Lrx7c3ElVks')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>                    
-                    <tr>
-                        <td>2</td>
-                        <td><a href="https://www.imdb.com/title/tt4919268" target="_blank">Bad Boys Hasta La Muerte</a></td>
-                        <td>2024</td>
-                        <td>Ing, Esp</td>
-                        <td>Esp, Ing</td>
-                        <td><button class="btn btn-danger btn-sm" onclick="showTrailer('8KXy_GZZKLA')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>                    
-                    <tr>
-                        <td>1</td>
-                        <td><a href="https://www.imdb.com/title/tt18412256" target="_blank">Alien: Romulus</a></td>
-                        <td>2024</td>
-                        <td>Ing, Esp</td>
-                        <td>Esp, Ing</td>
-                        <td><button class="btn btn-danger btn-sm" onclick="showTrailer('XeVTkMkQr_s')"><i class="fab fa-youtube"></i></button></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+    <h1 class="text-center mb-4">Catálogo de Películas</h1>
+    <div class="table-responsive">
+      <table id="moviesTable" class="table table-striped table-hover">
+        <thead class="table-dark">
+          <tr>
+            <th data-column="Number" style="cursor:pointer;">N° <i class="fas fa-sort"></i></th>
+            <th data-column="TranslatedTitle" style="cursor:pointer;">Nombre <i class="fas fa-sort"></i></th>
+            <th data-column="OriginalTitle" style="cursor:pointer;">N. Original <i class="fas fa-sort"></i></th>
+            <th data-column="Year" style="cursor:pointer;">Año <i class="fas fa-sort"></i></th>
+            <th data-column="Rating" style="cursor:pointer;">Rating <i class="fas fa-sort"></i></th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Las filas se insertarán dinámicamente -->
+        </tbody>
+      </table>
     </div>
-    
-    <!-- Modal para mostrar los trailers -->
-    <div class="modal fade" id="trailerModal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Trailer</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="responsive-iframe">
-                        <iframe id="youtubeFrame" src="" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  </div>
 
-    <!-- Importación de scripts externos -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-    <!-- Importación de scripts internos -->
-    <script src="js/scripts.js"></script>
+  <!-- Modal de Ficha de la Película -->
+  <div class="modal fade" id="movieModal" tabindex="-1" aria-labelledby="movieModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="movieModalLabel">Ficha de la Película</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Se mostrará la ficha de la película en formato Card -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal para Trailer de YouTube -->
+  <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-danger text-white">
+          <h5 class="modal-title" id="videoModalLabel">Trailer</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="ratio ratio-16x9">
+            <iframe id="youtubeIframe" src="" title="YouTube video" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Papa Parse para parsear el CSV -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+  <!-- Bootstrap Bundle JS (incluye Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    let moviesData = [];
+    let currentSortColumn = null;
+    let currentSortOrder = 'asc';
+
+    // Cargar y parsear el archivo movies.txt
+    fetch('movies.txt')
+      .then(response => response.text())
+      .then(data => {
+        const result = Papa.parse(data, { header: true, skipEmptyLines: true });
+        moviesData = result.data;
+        displayMovies(moviesData);
+      })
+      .catch(error => console.error('Error al cargar el archivo:', error));
+
+    // Función para mostrar el listado principal (Rating como número)
+    function displayMovies(movies) {
+      const tbody = document.querySelector('#moviesTable tbody');
+      tbody.innerHTML = '';
+      movies.forEach(movie => {
+        const tr = document.createElement('tr');
+        
+        // Columna N° (Number)
+        const tdNumber = document.createElement('td');
+        tdNumber.textContent = movie['Number'] || '';
+        tr.appendChild(tdNumber);
+        
+        // Columna Nombre (TranslatedTitle) con enlace para abrir la ficha
+        const tdName = document.createElement('td');
+        const link = document.createElement('a');
+        link.href = "#";
+        link.textContent = movie['TranslatedTitle'] || '';
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          openMovieModal(movie);
+        });
+        tdName.appendChild(link);
+        tr.appendChild(tdName);
+        
+        // Columna N. Original (OriginalTitle)
+        const tdOriginal = document.createElement('td');
+        tdOriginal.textContent = movie['OriginalTitle'] || '';
+        tr.appendChild(tdOriginal);
+        
+        // Columna Año (Year)
+        const tdYear = document.createElement('td');
+        tdYear.textContent = movie['Year'] || '';
+        tr.appendChild(tdYear);
+        
+        // Columna Rating (Rating) mostrado como número
+        const tdRating = document.createElement('td');
+        tdRating.textContent = movie['Rating'] || '';
+        tr.appendChild(tdRating);
+        
+        tbody.appendChild(tr);
+      });
+    }
+
+    // Función para convertir calificación (1-10) a estrellas sobre 5
+    function getStarRatingHTML(rating) {
+      const starTotal = 5;
+      const ratingOutOfFive = rating / 2; // Conversión de 10 a 5
+      const fullStars = Math.floor(ratingOutOfFive);
+      const halfStar = (ratingOutOfFive - fullStars) >= 0.5 ? 1 : 0;
+      const emptyStars = starTotal - fullStars - halfStar;
+      let html = '';
+      for (let i = 0; i < fullStars; i++) {
+        html += '<i class="fas fa-star text-warning"></i>';
+      }
+      if (halfStar) {
+        html += '<i class="fas fa-star-half-alt text-warning"></i>';
+      }
+      for (let i = 0; i < emptyStars; i++) {
+        html += '<i class="far fa-star text-warning"></i>';
+      }
+      return html;
+    }
+
+    // Funcionalidad de ordenación al hacer clic en las cabeceras
+    document.querySelectorAll('#moviesTable thead th').forEach(th => {
+      th.addEventListener('click', function() {
+        const column = th.getAttribute('data-column');
+        sortMovies(column);
+      });
+    });
+
+    function sortMovies(column) {
+      if (currentSortColumn === column) {
+        currentSortOrder = currentSortOrder === 'asc' ? 'desc' : 'asc';
+      } else {
+        currentSortOrder = 'asc';
+        currentSortColumn = column;
+      }
+      moviesData.sort((a, b) => {
+        let valA = a[column] || '';
+        let valB = b[column] || '';
+        if (['Rating', 'Year', 'Number'].includes(column)) {
+          valA = parseFloat(valA) || 0;
+          valB = parseFloat(valB) || 0;
+        } else {
+          valA = valA.toString().toLowerCase();
+          valB = valB.toString().toLowerCase();
+        }
+        if (valA < valB) return currentSortOrder === 'asc' ? -1 : 1;
+        if (valA > valB) return currentSortOrder === 'asc' ? 1 : -1;
+        return 0;
+      });
+      updateSortIcons();
+      displayMovies(moviesData);
+    }
+
+    function updateSortIcons() {
+      document.querySelectorAll('#moviesTable thead th').forEach(th => {
+        const column = th.getAttribute('data-column');
+        const icon = th.querySelector('i');
+        if (column === currentSortColumn) {
+          icon.className = currentSortOrder === 'asc' ? 'fas fa-sort-up' : 'fas fa-sort-down';
+        } else {
+          icon.className = 'fas fa-sort';
+        }
+      });
+    }
+
+    // Función para formatear la fecha a "DD-MM-YYYY"
+    function formatDateChile(dateStr) {
+      const date = new Date(dateStr);
+      if (isNaN(date)) return dateStr;
+      const day = ("0" + date.getDate()).slice(-2);
+      const month = ("0" + (date.getMonth() + 1)).slice(-2);
+      const year = date.getFullYear();
+      return + day + "-" + month + "-" + year;
+    }
+
+    // Función para abrir el modal con la ficha de la película con diseño tipo card
+    function openMovieModal(movie) {
+      document.getElementById('movieModalLabel').textContent = movie['TranslatedTitle'] || 'Detalles de la película';
+
+      // Construir la ficha en formato Card de Bootstrap
+      let html = '<div class="card mb-3">';
+      html += '<div class="row g-0">';
+      
+      // Columna con imagen y botón Trailer debajo
+      if (movie['Picture']) {
+        html += '<div class="col-md-4 text-center p-3">';
+        html += `<img src="${movie['Picture']}" alt="${movie['TranslatedTitle']}" class="img-fluid rounded">`;
+        if (movie['Comments']) {
+          html += `<div class="mt-2">
+                     <button class="btn btn-danger" onclick="openVideoModal('${movie['Comments']}')">
+                       <i class="fab fa-youtube"></i> Trailer
+                     </button>
+                   </div>`;
+        }
+        html += '</div>';
+      }
+      
+      // Columna con los detalles (dentro de card-body)
+      html += '<div class="col-md-8">';
+      html += '<div class="card-body">';
+      html += '<dl class="row">';
+      html += `<dt class="col-sm-4">Añadida:</dt><dd class="col-sm-8">${formatDateChile(movie['Date'] || '')}</dd>`;
+      html += `<dt class="col-sm-4">Nombre:</dt><dd class="col-sm-8">${movie['TranslatedTitle'] || ''}</dd>`;
+      html += `<dt class="col-sm-4">N. Original:</dt><dd class="col-sm-8">${movie['OriginalTitle'] || ''}</dd>`;
+      html += `<dt class="col-sm-4">Año:</dt><dd class="col-sm-8">${movie['Year'] || ''}</dd>`;
+      html += `<dt class="col-sm-4">Idiomas:</dt><dd class="col-sm-8">${movie['Languages'] || ''}</dd>`;
+      html += `<dt class="col-sm-4">Subtítulos:</dt><dd class="col-sm-8">${movie['Subtitles'] || ''}</dd>`;
+      // Duración y Certificación justo después de Subtítulos
+      html += `<dt class="col-sm-4">Duración:</dt><dd class="col-sm-8">${movie['Length'] || ''}</dd>`;
+      html += `<dt class="col-sm-4">Certificación:</dt><dd class="col-sm-8">${movie['Certification'] || ''}</dd>`;
+      // Rating: se muestra solo como estrellas y se envuelve en un link usando URL
+      html += `<dt class="col-sm-4">IMDB:</dt><dd class="col-sm-8"><a href="${movie['URL'] || '#'}" target="_blank">${getStarRatingHTML(parseFloat(movie['Rating']))}</a></dd>`;
+      html += `<dt class="col-sm-4">País:</dt><dd class="col-sm-8">${movie['Country'] || ''}</dd>`;
+      html += `<dt class="col-sm-4">Categoría:</dt><dd class="col-sm-8">${movie['Category'] || ''}</dd>`;
+      html += `<dt class="col-sm-4">Director:</dt><dd class="col-sm-8">${movie['Director'] || ''}</dd>`;
+      html += `<dt class="col-sm-4">Actores:</dt><dd class="col-sm-8">${movie['Actors'] || ''}</dd>`;
+      html += `<dt class="col-sm-4">Sinopsis:</dt><dd class="col-sm-8">${movie['Description'] || ''}</dd>`;
+      html += '</dl>';
+      html += '</div>'; // Fin de card-body
+      html += '</div>'; // Fin de col-md-8
+      
+      html += '</div>'; // Fin de row
+      html += '</div>'; // Fin de card
+      
+      document.querySelector('#movieModal .modal-body').innerHTML = html;
+      
+      const movieModal = new bootstrap.Modal(document.getElementById('movieModal'));
+      movieModal.show();
+    }
+
+    // Función para abrir el modal de Trailer de YouTube
+    function openVideoModal(videoCode) {
+      const iframe = document.getElementById('youtubeIframe');
+      iframe.src = `https://www.youtube.com/embed/${videoCode}?autoplay=1`;
+      const videoModal = new bootstrap.Modal(document.getElementById('videoModal'));
+      videoModal.show();
+      document.getElementById('videoModal').addEventListener('hidden.bs.modal', function () {
+        iframe.src = "";
+      });
+    }
+  </script>
 </body>
 </html>
-
