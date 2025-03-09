@@ -1,21 +1,21 @@
 (() => {
   let moviesData = [], currentSortColumn = null, currentSortOrder = 'asc', displayedMovies = [];
   const tbody = document.querySelector('#moviesTable tbody'),
-    searchInput = document.getElementById('searchInput');
+        searchInput = document.getElementById('searchInput');
 
   const getStarRatingHTML = rating => {
     const r = rating / 2, full = Math.floor(r), half = r - full >= 0.5 ? 1 : 0, empty = 5 - full - half;
     return '<i class="fas fa-star text-warning"></i>'.repeat(full) +
-      (half ? '<i class="fas fa-star-half-alt text-warning"></i>' : '') +
-      '<i class="far fa-star text-warning"></i>'.repeat(empty);
+           (half ? '<i class="fas fa-star-half-alt text-warning"></i>' : '') +
+           '<i class="far fa-star text-warning"></i>'.repeat(empty);
   };
 
   const displayMovies = movies => {
     displayedMovies = movies;
     tbody.innerHTML = movies.map((movie, i) => {
       const num = movie['Number'] || '', name = movie['TranslatedTitle'] || '', orig = movie['OriginalTitle'] || '',
-        year = movie['Year'] || '', rating = parseFloat(movie['Rating']) || 0,
-        ratingHTML = window.innerWidth < 768 ? rating.toFixed(1) : getStarRatingHTML(rating);
+            year = movie['Year'] || '', rating = parseFloat(movie['Rating']) || 0,
+            ratingHTML = window.innerWidth < 768 ? rating.toFixed(1) : getStarRatingHTML(rating);
       return `<tr>
         <td>${num}</td>
         <td><a href="#" class="movie-link" data-index="${i}">${name}</a></td>
@@ -31,7 +31,7 @@
     currentSortColumn = column;
     moviesData.sort((a, b) => {
       let valA = a[column] || '', valB = b[column] || '';
-      if (['Rating', 'Year', 'Number'].includes(column)) {
+      if (['Rating','Year','Number'].includes(column)) {
         valA = parseFloat(valA) || 0;
         valB = parseFloat(valB) || 0;
         return currentSortOrder === 'asc' ? valA - valB : valB - valA;
@@ -47,7 +47,7 @@
   const updateSortIcons = () => {
     document.querySelectorAll('#moviesTable thead th').forEach(th => {
       const col = th.getAttribute('data-column'),
-        icon = th.querySelector('i');
+            icon = th.querySelector('i');
       icon.className = col === currentSortColumn
         ? (currentSortOrder === 'asc' ? 'fas fa-sort-up' : 'fas fa-sort-down')
         : 'fas fa-sort';
@@ -56,14 +56,17 @@
 
   const openMovieModal = movie => {
     const title = movie['TranslatedTitle'] || 'Ficha de Película',
-      year = movie['Year'] ? ` (${movie['Year']})` : '';
+          year = movie['Year'] ? ` (${movie['Year']})` : '';
     document.getElementById('movieModalLabel').textContent = title + year;
     document.querySelector('#movieModal .modal-body').innerHTML = `
       <div class="card movie-card">
         <div class="row g-0">
           ${movie['Picture'] ? `<div class="col-md-4 text-center p-3">
             <img src="${movie['Picture']}" class="img-fluid rounded border">
-            ${movie['Comments'] ? `<div class="mt-3"><button class="btn btn-danger" onclick="openVideoModal('${movie['Comments']}')"><i class="fab fa-youtube"></i> Trailer</button></div>` : ''}
+            ${ (movie['Comments'] && movie['Comments'].trim() !== "") 
+                ? `<div class="mt-3"><button class="btn btn-danger" onclick="openVideoModal('${movie['Comments']}')"><i class="fab fa-youtube"></i> Trailer</button></div>`
+                : `<div class="mt-3"><a href="https://www.youtube.com/results?search_query=${encodeURIComponent((movie['OriginalTitle'] || '') + ' (' + (movie['Year'] || '') + ') trailer latino')}" target="_blank" class="btn btn-danger"><i class="fab fa-youtube"></i> Trailer</a></div>`
+            }
           </div>` : ''}
           <div class="${movie['Picture'] ? 'col-md-8' : 'col-12'}">
             <div class="card-body">
