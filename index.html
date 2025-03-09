@@ -247,7 +247,7 @@
       html += `<dt class="col-sm-4">Idiomas:</dt><dd class="col-sm-8">${movie['Languages'] || ''}</dd>`;
       html += `<dt class="col-sm-4">Subtítulos:</dt><dd class="col-sm-8">${movie['Subtitles'] || ''}</dd>`;
       // Duración y Certificación justo después de Subtítulos
-      html += `<dt class="col-sm-4">Duración:</dt><dd class="col-sm-8">${movie['Length'] || ''}</dd>`;
+      html += `<dt class="col-sm-4">Duración:</dt><dd class="col-sm-8">${movie['Length'] ? movie['Length'] + ' min' : ''}</dd>`;
       html += `<dt class="col-sm-4">Certificación:</dt><dd class="col-sm-8">${movie['Certification'] || ''}</dd>`;
       // Rating: se muestra solo como estrellas y se envuelve en un link usando URL
       html += `<dt class="col-sm-4">IMDB:</dt><dd class="col-sm-8"><a href="${movie['URL'] || '#'}" target="_blank">${getStarRatingHTML(parseFloat(movie['Rating']))}</a></dd>`;
