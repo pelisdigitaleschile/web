@@ -1,36 +1,172 @@
 (() => {
-  let moviesData = [], currentSortColumn = null, currentSortOrder = 'asc', displayedMovies = [];
-  const tbody = document.querySelector('#moviesTable tbody'),
-        searchInput = document.getElementById('searchInput');
+  let moviesData = [];
+  let filteredMovies = [];
+  let currentSortColumn = null;
+  let currentSortOrder = 'asc';
+  let currentPage = 1;
+  const itemsPerPage = 50;
+
+  const tbody = document.querySelector('#moviesTable tbody');
+  const searchInput = document.getElementById('searchInput');
+  const pagination = document.getElementById('pagination');
 
   const getStarRatingHTML = rating => {
-    const r = rating / 2, full = Math.floor(r), half = r - full >= 0.5 ? 1 : 0, empty = 5 - full - half;
+    const r = rating / 2;
+    const full = Math.floor(r);
+    const half = r - full >= 0.5 ? 1 : 0;
+    const empty = 5 - full - half;
     return '<i class="fas fa-star text-warning"></i>'.repeat(full) +
            (half ? '<i class="fas fa-star-half-alt text-warning"></i>' : '') +
            '<i class="far fa-star text-warning"></i>'.repeat(empty);
   };
 
-  const displayMovies = movies => {
-    displayedMovies = movies;
-    tbody.innerHTML = movies.map((movie, i) => {
-      const num = movie['Number'] || '', name = movie['TranslatedTitle'] || '', orig = movie['OriginalTitle'] || '',
-            year = movie['Year'] || '', rating = parseFloat(movie['Rating']) || 0,
-            ratingHTML = window.innerWidth < 768 ? rating.toFixed(1) : getStarRatingHTML(rating);
-      return `<tr>
+  const displayMovies = (page, moviesArray) => {
+    tbody.innerHTML = '';
+    const start = (page - 1) * itemsPerPage;
+    const end = start + itemsPerPage;
+    const paginatedMovies = moviesArray.slice(start, end);
+
+    paginatedMovies.forEach((movie, index) => {
+      const absoluteIndex = start + index;
+      const tr = document.createElement('tr');
+      // Construir las celdas de la fila
+      const num = movie['Number'] || '';
+      const name = movie['TranslatedTitle'] || '';
+      const orig = movie['OriginalTitle'] || '';
+      const year = movie['Year'] || '';
+      const rating = parseFloat(movie['Rating']) || 0;
+      const url = movie['URL'] ? movie['URL'] : '#';
+      const ratingHTML = window.innerWidth < 768 
+        ? rating.toFixed(1) 
+        : `<a href="${url}" target="_blank" class="rating-link">${getStarRatingHTML(rating)}</a>`;
+
+      tr.innerHTML = `
         <td>${num}</td>
-        <td><a href="#" class="movie-link" data-index="${i}">${name}</a></td>
+        <td><a href="#" class="movie-link" data-index="${absoluteIndex}">${name}</a></td>
         <td class="d-none d-md-table-cell">${orig}</td>
         <td>${year}</td>
         <td>${ratingHTML}</td>
-      </tr>`;
-    }).join('');
+      `;
+      // Evitar que el clic en el enlace del rating propague al tr
+      const ratingLink = tr.querySelector('.rating-link');
+      if(ratingLink){
+        ratingLink.addEventListener('click', e => {
+          e.stopPropagation();
+        });
+      }
+      // Agregar evento para abrir modal al hacer clic en la fila
+      tr.addEventListener('click', (e) => {
+        // Si se hizo clic en el enlace con la clase movie-link, se maneja aparte
+        if(e.target.closest('a.movie-link')) return;
+        openMovieModal(filteredMovies[absoluteIndex]);
+      });
+      // Manejar clic en el enlace del título para evitar doble llamado
+      const movieLink = tr.querySelector('a.movie-link');
+      if(movieLink){
+        movieLink.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          openMovieModal(filteredMovies[absoluteIndex]);
+        });
+      }
+      tbody.appendChild(tr);
+    });
+    updatePagination(moviesArray);
+  };
+
+  const updatePagination = (moviesArray) => {
+    pagination.innerHTML = '';
+    const totalPages = Math.ceil(moviesArray.length / itemsPerPage);
+
+    // Ajustar tamaño de paginación para móviles
+    if(window.innerWidth < 576){
+      pagination.classList.add('pagination-sm');
+    } else {
+      pagination.classList.remove('pagination-sm');
+    }
+
+    // Botón « (Retrocede una página)
+    const liPrev = document.createElement('li');
+    liPrev.className = `page-item ${currentPage === 1 ? 'disabled' : ''}`;
+    liPrev.innerHTML = `<a class="page-link" href="#">«</a>`;
+    liPrev.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (currentPage > 1) {
+        currentPage--;
+        displayMovies(currentPage, filteredMovies);
+      }
+    });
+    pagination.appendChild(liPrev);
+
+    // Botón Inicio
+    const liInicio = document.createElement('li');
+    liInicio.className = `page-item ${currentPage === 1 ? 'disabled' : ''}`;
+    liInicio.innerHTML = `<a class="page-link" href="#">Inicio</a>`;
+    liInicio.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (currentPage !== 1) {
+        currentPage = 1;
+        displayMovies(currentPage, filteredMovies);
+      }
+    });
+    pagination.appendChild(liInicio);
+
+    // Mostrar máximo 5 botones numéricos
+    let startPage = Math.max(1, currentPage - 2);
+    let endPage = Math.min(totalPages, currentPage + 2);
+    if (currentPage <= 3) {
+      startPage = 1;
+      endPage = Math.min(5, totalPages);
+    } else if (currentPage + 2 >= totalPages) {
+      endPage = totalPages;
+      startPage = Math.max(1, totalPages - 4);
+    }
+
+    for (let i = startPage; i <= endPage; i++) {
+      const li = document.createElement('li');
+      li.className = `page-item ${i === currentPage ? 'active' : ''}`;
+      li.innerHTML = `<a class="page-link" href="#">${i}</a>`;
+      li.addEventListener('click', (e) => {
+        e.preventDefault();
+        currentPage = i;
+        displayMovies(currentPage, filteredMovies);
+      });
+      pagination.appendChild(li);
+    }
+
+    // Botón Fin (salta a la última página)
+    const liFin = document.createElement('li');
+    liFin.className = `page-item ${currentPage === totalPages ? 'disabled' : ''}`;
+    liFin.innerHTML = `<a class="page-link" href="#">Fin</a>`;
+    liFin.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (currentPage !== totalPages) {
+        currentPage = totalPages;
+        displayMovies(currentPage, filteredMovies);
+      }
+    });
+    pagination.appendChild(liFin);
+
+    // Botón » (Avanza una página)
+    const liNext = document.createElement('li');
+    liNext.className = `page-item ${currentPage === totalPages ? 'disabled' : ''}`;
+    liNext.innerHTML = `<a class="page-link" href="#">»</a>`;
+    liNext.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (currentPage < totalPages) {
+        currentPage++;
+        displayMovies(currentPage, filteredMovies);
+      }
+    });
+    pagination.appendChild(liNext);
   };
 
   const sortMovies = column => {
     currentSortOrder = currentSortColumn === column ? (currentSortOrder === 'asc' ? 'desc' : 'asc') : 'asc';
     currentSortColumn = column;
     moviesData.sort((a, b) => {
-      let valA = a[column] || '', valB = b[column] || '';
+      let valA = a[column] || '';
+      let valB = b[column] || '';
       if (['Rating','Year','Number'].includes(column)) {
         valA = parseFloat(valA) || 0;
         valB = parseFloat(valB) || 0;
@@ -40,14 +176,23 @@
         ? valA.toLowerCase().localeCompare(valB.toLowerCase())
         : valB.toLowerCase().localeCompare(valA.toLowerCase());
     });
+    // Reaplicar filtro de búsqueda si corresponde
+    const term = searchInput.value.toLowerCase();
+    filteredMovies = term
+      ? moviesData.filter(movie =>
+          (movie['TranslatedTitle'] && movie['TranslatedTitle'].toLowerCase().includes(term)) ||
+          (movie['OriginalTitle'] && movie['OriginalTitle'].toLowerCase().includes(term))
+        )
+      : moviesData;
+    currentPage = 1;
     updateSortIcons();
-    displayMovies(moviesData);
+    displayMovies(currentPage, filteredMovies);
   };
 
   const updateSortIcons = () => {
     document.querySelectorAll('#moviesTable thead th').forEach(th => {
-      const col = th.getAttribute('data-column'),
-            icon = th.querySelector('i');
+      const col = th.getAttribute('data-column');
+      const icon = th.querySelector('i');
       icon.className = col === currentSortColumn
         ? (currentSortOrder === 'asc' ? 'fas fa-sort-up' : 'fas fa-sort-down')
         : 'fas fa-sort';
@@ -55,8 +200,8 @@
   };
 
   const openMovieModal = movie => {
-    const title = movie['TranslatedTitle'] || 'Ficha de Película',
-          year = movie['Year'] ? ` (${movie['Year']})` : '';
+    const title = movie['TranslatedTitle'] || 'Ficha de la Película';
+    const year = movie['Year'] ? ` (${movie['Year']})` : '';
     document.getElementById('movieModalLabel').textContent = title + year;
     document.querySelector('#movieModal .modal-body').innerHTML = `
       <div class="card movie-card">
@@ -111,35 +256,34 @@
     document.getElementById('videoModal').addEventListener('hidden.bs.modal', () => iframe.src = "", { once: true });
   };
 
+  // Ordenamiento al hacer click en los encabezados
   document.querySelectorAll('#moviesTable thead th').forEach(th =>
     th.addEventListener('click', () => sortMovies(th.getAttribute('data-column')))
   );
 
-  tbody.addEventListener('click', e => {
-    const link = e.target.closest('.movie-link');
-    if (link) {
-      e.preventDefault();
-      openMovieModal(displayedMovies[parseInt(link.getAttribute('data-index'))]);
-    }
-  });
-
+  // Búsqueda en tiempo real
   searchInput.addEventListener('keyup', () => {
     const term = searchInput.value.toLowerCase();
-    displayMovies(moviesData.filter(movie =>
-      (movie['TranslatedTitle'] && movie['TranslatedTitle'].toLowerCase().includes(term)) ||
-      (movie['OriginalTitle'] && movie['OriginalTitle'].toLowerCase().includes(term))
-    ));
+    filteredMovies = term
+      ? moviesData.filter(movie =>
+          (movie['TranslatedTitle'] && movie['TranslatedTitle'].toLowerCase().includes(term)) ||
+          (movie['OriginalTitle'] && movie['OriginalTitle'].toLowerCase().includes(term))
+        )
+      : moviesData;
+    currentPage = 1;
+    displayMovies(currentPage, filteredMovies);
   });
 
   const loadMovies = () => {
-    fetch('data/movies.txt')
+    fetch('data/movies.csv')
       .then(res => {
         if (!res.ok) throw new Error('Network response was not ok');
         return res.text();
       })
       .then(data => {
         moviesData = Papa.parse(data, { header: true, skipEmptyLines: true }).data;
-        displayMovies(moviesData);
+        filteredMovies = moviesData;
+        displayMovies(currentPage, filteredMovies);
       })
       .catch(error => {
         console.error(error);
@@ -152,4 +296,9 @@
   };
 
   loadMovies();
+
+  // Ajustar paginación al cambiar el tamaño de la ventana
+  window.addEventListener('resize', () => {
+    updatePagination(filteredMovies);
+  });
 })();
