@@ -275,7 +275,7 @@
   });
 
   const loadMovies = () => {
-    fetch('data/movies.csv')
+    fetch('movies.csv')
       .then(res => {
         if (!res.ok) throw new Error('Network response was not ok');
         return res.text();
