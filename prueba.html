@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktails On Tap - Cócteles Premium</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --color-naranja: #FF6B35;
+            --color-naranja-claro: #FFA500;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, var(--color-naranja), var(--color-naranja-claro));
+            color: white;
+        }
+        
+        .navbar {
+            background: rgba(255,255,255,0.1) !important;
+            backdrop-filter: blur(10px);
+        }
+        
+        .hero {
+            height: 70vh;
+            background: linear-gradient(rgba(255,107,53,0.8), rgba(255,165,0,0.8)),
+                        url('https://placehold.co/1920x1080?text=Cocktails+On+Tap') center/cover;
+        }
+        
+        .card-servicio {
+            background: rgba(255,255,255,0.15);
+            border: none;
+            transition: transform 0.3s;
+        }
+        
+        .card-servicio:hover {
+            transform: translateY(-10px);
+        }
+        
+        .btn-whatsapp {
+            background: #25D366 !important;
+            color: white !important;
+        }
+        
+        .carousel-img {
+            height: 300px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="min-vh-100">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand text-white" href="#">Cocktails On Tap</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link text-white" href="#nosotros">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#cocteles">Cócteles</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#servicios">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#cotizar">Cotizar</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero d-flex align-items-center">
+    <div class="container text-center">
+        <h1 class="display-1 fw-bold">Cocktails On Tap</h1>
+        <p class="lead fs-3">Transformando eventos con cócteles premium</p>
+    </div>
+</section>
+
+<!-- Nosotros -->
+<section id="nosotros" class="py-5">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <p class="fs-5">Ofrecemos cócteles en barril preparados por profesionales con más de 20 años de experiencia. Nuestro sistema revolucionario garantiza calidad y frescura en cada evento.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Cócteles -->
+<section id="cocteles" class="py-5">
+    <div class="container">
+        <div id="carouselCocteles" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://placehold.co/800x600?text=Mojito+Clásico" class="d-block w-100 carousel-img">
+                    <div class="carousel-caption">
+                        <h5>Mojito Clásico</h5>
+                    </div>
+                </div>
+                <!-- Repetir para otros 3 cócteles -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCocteles" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCocteles" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Servicios -->
+<section id="servicios" class="py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card-servicio h-100 p-4 text-center">
+                    <img src="https://placehold.co/400x300?text=Eventos+Generales" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Eventos Generales</h5>
+                        <p class="card-text">Dispensador portátil auto-servicio con 2 opciones de cócteles</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repetir para Bodas y Grandes Eventos -->
+        </div>
+    </div>
+</section>
+
+<!-- Cotización -->
+<section id="cotizar" class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Tipo de evento">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="datetime-local" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" class="form-control" placeholder="Número de invitados">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Dirección">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Apellidos">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="tel" class="form-control" placeholder="Celular">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" placeholder="E-mail">
+                    </div>
+                    <div class="col-12">
+                        <textarea class="form-control" placeholder="Comentarios" rows="3"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-whatsapp w-100">
+                            <i class="fab fa-whatsapp"></i> Enviar por WhatsApp
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-4">
+    <div class="container text-center">
+        <div class="d-flex justify-content-center gap-4 mb-3">
+            <a href="https://instagram.com/cocktailsontap.chile" class="text-white">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://tiktok.com/@cocktailsontap.chile" class="text-white">
+                <i class="fab fa-tiktok fa-2x"></i>
+            </a>
+            <a href="https://wa.me/56932334235" class="text-white">
+                <i class="fab fa-whatsapp fa-2x"></i>
+            </a>
+            <a href="mailto:CoctelesEnBarril@gmail.com" class="text-white">
+                <i class="fas fa-envelope fa-2x"></i>
+            </a>
+        </div>
+        <p class="mb-0">© 2023 Cocktails On Tap. Todos los derechos reservados</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
