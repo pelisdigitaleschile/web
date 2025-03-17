@@ -1,166 +1,217 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Web de Cócteles</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitio Web de Cócteles</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      background: linear-gradient(45deg, #FFA500, #FF8C00);
+      margin: 0;
+      padding: 0;
+    }
+    .hero {
+      height: 100vh;
+      background: url("https://placehold.co/1920x1080") center/cover no-repeat;
+      position: relative;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+    .hero-content {
+      z-index: 1;
+    }
+    .nosotros {
+      background: linear-gradient(45deg, #004d00, #66ff66);
+      color: #fff;
+      padding: 60px 20px;
+    }
+    .cocteles {
+      background: linear-gradient(45deg, #87CEEB, #0000FF);
+      color: #fff;
+      padding: 60px 20px;
+    }
+    .servicio {
+      background: linear-gradient(45deg, #FF0000, #FF7F7F);
+      color: #fff;
+      padding: 60px 20px;
+    }
+    .cotizacion {
+      background: linear-gradient(45deg, #C71585, #FFC0CB);
+      color: #fff;
+      padding: 60px 20px;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    footer a {
+      color: #fff;
+      margin: 0 10px;
+    }
+  </style>
 </head>
 <body>
-    <div class="main-background">
-        <header class="hero">
-            <div class="hero-overlay">
-                <div class="container text-center text-white">
-                    <h1 class="display-4">Los mejores cócteles para tus eventos</h1>
-                    <p class="lead">Descubre nuestra variedad y solicita tu cotización.</p>
-                    <a href="#cotizacion" class="btn btn-lg btn-outline-light">¡Cotiza ahora!</a>
-                </div>
-            </div>
-        </header>
 
-        <section id="nosotros" class="py-5">
-            <div class="container text-center">
-                <h2>Nosotros</h2>
-                <p class="lead">Somos un equipo apasionado por la coctelería, dedicado a ofrecer experiencias únicas y personalizadas para cada ocasión. Nos encargamos de llevar la barra a tu evento, con ingredientes frescos y la mejor atención.</p>
-            </div>
-        </section>
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1 class="display-3">Bienvenido a nuestro mundo de cócteles</h1>
+    <p>¡Descubre sabores únicos y experiencias inolvidables!</p>
+  </div>
+</section>
 
-        <section id="cocteles" class="py-5">
-            <div class="container text-center">
-                <h2>Cócteles</h2>
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://via.placeholder.com/300x300" class="d-block w-100 rounded" alt="Cóctel 1">
-                            <div class="carousel-caption d-none d-md-block">
-                                <p>Descripción del Cóctel 1.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://via.placeholder.com/300x300" class="d-block w-100 rounded" alt="Cóctel 2">
-                            <div class="carousel-caption d-none d-md-block">
-                                <p>Descripción del Cóctel 2.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://via.placeholder.com/300x300" class="d-block w-100 rounded" alt="Cóctel 3">
-                            <div class="carousel-caption d-none d-md-block">
-                                <p>Descripción del Cóctel 3.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://via.placeholder.com/300x300" class="d-block w-100 rounded" alt="Cóctel 4">
-                            <div class="carousel-caption d-none d-md-block">
-                                <p>Descripción del Cóctel 4.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Anterior</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Siguiente</span>
-                    </a>
-                </div>
-            </div>
-        </section>
+<!-- Nosotros Section -->
+<section class="nosotros text-center">
+  <h2>Nosotros</h2>
+  <p>Somos expertos en cócteles, llevando innovación y calidad a cada evento. Nuestro objetivo es brindar experiencias únicas.</p>
+</section>
 
-        <section id="servicio" class="py-5">
-            <div class="container text-center">
-                <h2>Servicio</h2>
-                <div class="row mt-4">
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top rounded-circle mx-auto mt-3" alt="Eventos Generales">
-                            <div class="card-body">
-                                <h5 class="card-title">Eventos Generales</h5>
-                                <p class="card-text">Cobertura completa para todo tipo de eventos: cumpleaños, aniversarios, fiestas empresariales y más.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top rounded-circle mx-auto mt-3" alt="Bodas">
-                            <div class="card-body">
-                                <h5 class="card-title">Bodas</h5>
-                                <p class="card-text">Servicio de coctelería elegante y personalizado para hacer de tu boda un momento inolvidable.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top rounded-circle mx-auto mt-3" alt="Grandes Eventos">
-                            <div class="card-body">
-                                <h5 class="card-title">Grandes Eventos</h5>
-                                <p class="card-text">Capacidad y experiencia para atender eventos de gran escala con eficiencia y calidad.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="cotizacion" class="py-5">
-            <div class="container">
-                <h2>Cotización</h2>
-                <form class="row">
-                    <div class="col-md-6 mb-3">
-                        <input type="text" class="form-control" placeholder="Tipo de evento">
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <input type="datetime-local" class="form-control" placeholder="Fecha y hora">
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <input type="number" class="form-control" placeholder="Número de invitados">
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <input type="text" class="form-control" placeholder="Dirección">
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <input type="text" class="form-control" placeholder="Nombre">
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <input type="text" class="form-control" placeholder="Apellidos">
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <input type="tel" class="form-control" placeholder="Celular">
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <input type="email" class="form-control" placeholder="E-mail">
-                    </div>
-                    <div class="col-12 mb-3">
-                        <textarea class="form-control" rows="3" placeholder="Comentarios"></textarea>
-                    </div>
-                    <div class="col-12 text-center">
-                        <button type="submit" class="btn btn-success btn-lg">Enviar por Whatsapp</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-
-        <footer class="py-4 text-center">
-            <div class="container">
-                <a href="#" class="text-dark mx-2"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="#" class="text-dark mx-2"><i class="fab fa-tiktok fa-2x"></i></a>
-                <a href="#" class="text-dark mx-2"><i class="fab fa-whatsapp fa-2x"></i></a>
-                <a href="#" class="text-dark mx-2"><i class="far fa-envelope fa-2x"></i></a>
-                <p class="mt-3">&copy; 2025 Todos los derechos reservados.</p>
-            </div>
-        </footer>
+<!-- Cócteles Section -->
+<section class="cocteles text-center">
+  <h2>Cócteles</h2>
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://placehold.co/300x300" class="d-block mx-auto" alt="Cóctel 1">
+        <p>Cóctel 1: Tropical</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://placehold.co/300x300" class="d-block mx-auto" alt="Cóctel 2">
+        <p>Cóctel 2: Fresco</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://placehold.co/300x300" class="d-block mx-auto" alt="Cóctel 3">
+        <p>Cóctel 3: Exótico</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://placehold.co/300x300" class="d-block mx-auto" alt="Cóctel 4">
+        <p>Cóctel 4: Clásico</p>
+      </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Servicio Section -->
+<section class="servicio">
+  <h2 class="text-center">Servicio</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://placehold.co/300x200" class="card-img-top" alt="Eventos Generales">
+          <div class="card-body">
+            <h5 class="card-title">Eventos Generales</h5>
+            <p class="card-text">Perfecto para celebraciones de todo tipo.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://placehold.co/300x200" class="card-img-top" alt="Bodas">
+          <div class="card-body">
+            <h5 class="card-title">Bodas</h5>
+            <p class="card-text">Creando recuerdos mágicos para tu gran día.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://placehold.co/300x200" class="card-img-top" alt="Grandes Eventos">
+          <div class="card-body">
+            <h5 class="card-title">Grandes Eventos</h5>
+            <p class="card-text">Producción impecable para eventos a gran escala.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Cotización Section -->
+<section class="cotizacion">
+  <h2 class="text-center">Cotización</h2>
+  <div class="container">
+    <form>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Tipo de evento">
+        </div>
+        <div class="col-md-6">
+          <input type="datetime-local" class="form-control" placeholder="Fecha y hora">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <input type="number" class="form-control" placeholder="Número de invitados">
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Dirección">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Nombre">
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Apellidos">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <input type="tel" class="form-control" placeholder="Celular">
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="E-mail">
+        </div>
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" rows="3" placeholder="Comentarios"></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-success">Enviar por Whatsapp</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div>
+    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+    <a href="#"><i class="fab fa-tiktok fa-2x"></i></a>
+    <a href="#"><i class="fab fa-whatsapp fa-2x"></i></a>
+    <a href="mailto:correo@ejemplo.com"><i class="fas fa-envelope fa-2x"></i></a>
+  </div>
+  <p>&copy; 2025 Sitio de Cócteles. Todos los derechos reservados.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
