@@ -16,8 +16,8 @@
     const half = r - full >= 0.5 ? 1 : 0;
     const empty = 5 - full - half;
     return '<i class="fas fa-star text-warning"></i>'.repeat(full) +
-           (half ? '<i class="fas fa-star-half-alt text-warning"></i>' : '') +
-           '<i class="far fa-star text-warning"></i>'.repeat(empty);
+      (half ? '<i class="fas fa-star-half-alt text-warning"></i>' : '') +
+      '<i class="far fa-star text-warning"></i>'.repeat(empty);
   };
 
   const displayMovies = (page, moviesArray) => {
@@ -29,15 +29,14 @@
     paginatedMovies.forEach((movie, index) => {
       const absoluteIndex = start + index;
       const tr = document.createElement('tr');
-      // Construir las celdas de la fila
       const num = movie['Number'] || '';
       const name = movie['TranslatedTitle'] || '';
       const orig = movie['OriginalTitle'] || '';
       const year = movie['Year'] || '';
       const rating = parseFloat(movie['Rating']) || 0;
       const url = movie['URL'] ? movie['URL'] : '#';
-      const ratingHTML = window.innerWidth < 768 
-        ? rating.toFixed(1) 
+      const ratingHTML = window.innerWidth < 768
+        ? rating.toFixed(1)
         : `<a href="${url}" target="_blank" class="rating-link">${getStarRatingHTML(rating)}</a>`;
 
       tr.innerHTML = `
@@ -47,22 +46,18 @@
         <td>${year}</td>
         <td>${ratingHTML}</td>
       `;
-      // Evitar que el clic en el enlace del rating propague al tr
       const ratingLink = tr.querySelector('.rating-link');
-      if(ratingLink){
+      if (ratingLink) {
         ratingLink.addEventListener('click', e => {
           e.stopPropagation();
         });
       }
-      // Agregar evento para abrir modal al hacer clic en la fila
       tr.addEventListener('click', (e) => {
-        // Si se hizo clic en el enlace con la clase movie-link, se maneja aparte
-        if(e.target.closest('a.movie-link')) return;
+        if (e.target.closest('a.movie-link')) return;
         openMovieModal(filteredMovies[absoluteIndex]);
       });
-      // Manejar clic en el enlace del título para evitar doble llamado
       const movieLink = tr.querySelector('a.movie-link');
-      if(movieLink){
+      if (movieLink) {
         movieLink.addEventListener('click', (e) => {
           e.preventDefault();
           e.stopPropagation();
@@ -78,14 +73,12 @@
     pagination.innerHTML = '';
     const totalPages = Math.ceil(moviesArray.length / itemsPerPage);
 
-    // Ajustar tamaño de paginación para móviles
-    if(window.innerWidth < 576){
+    if (window.innerWidth < 576) {
       pagination.classList.add('pagination-sm');
     } else {
       pagination.classList.remove('pagination-sm');
     }
 
-    // Botón « (Retrocede una página)
     const liPrev = document.createElement('li');
     liPrev.className = `page-item ${currentPage === 1 ? 'disabled' : ''}`;
     liPrev.innerHTML = `<a class="page-link" href="#">«</a>`;
@@ -98,7 +91,6 @@
     });
     pagination.appendChild(liPrev);
 
-    // Botón Inicio
     const liInicio = document.createElement('li');
     liInicio.className = `page-item ${currentPage === 1 ? 'disabled' : ''}`;
     liInicio.innerHTML = `<a class="page-link" href="#">Inicio</a>`;
@@ -111,7 +103,6 @@
     });
     pagination.appendChild(liInicio);
 
-    // Mostrar máximo 5 botones numéricos
     let startPage = Math.max(1, currentPage - 2);
     let endPage = Math.min(totalPages, currentPage + 2);
     if (currentPage <= 3) {
@@ -134,7 +125,6 @@
       pagination.appendChild(li);
     }
 
-    // Botón Fin (salta a la última página)
     const liFin = document.createElement('li');
     liFin.className = `page-item ${currentPage === totalPages ? 'disabled' : ''}`;
     liFin.innerHTML = `<a class="page-link" href="#">Fin</a>`;
@@ -147,7 +137,6 @@
     });
     pagination.appendChild(liFin);
 
-    // Botón » (Avanza una página)
     const liNext = document.createElement('li');
     liNext.className = `page-item ${currentPage === totalPages ? 'disabled' : ''}`;
     liNext.innerHTML = `<a class="page-link" href="#">»</a>`;
@@ -167,7 +156,7 @@
     moviesData.sort((a, b) => {
       let valA = a[column] || '';
       let valB = b[column] || '';
-      if (['Rating','Year','Number'].includes(column)) {
+      if (['Rating', 'Year', 'Number'].includes(column)) {
         valA = parseFloat(valA) || 0;
         valB = parseFloat(valB) || 0;
         return currentSortOrder === 'asc' ? valA - valB : valB - valA;
@@ -176,13 +165,12 @@
         ? valA.toLowerCase().localeCompare(valB.toLowerCase())
         : valB.toLowerCase().localeCompare(valA.toLowerCase());
     });
-    // Reaplicar filtro de búsqueda si corresponde
     const term = searchInput.value.toLowerCase();
     filteredMovies = term
       ? moviesData.filter(movie =>
-          (movie['TranslatedTitle'] && movie['TranslatedTitle'].toLowerCase().includes(term)) ||
-          (movie['OriginalTitle'] && movie['OriginalTitle'].toLowerCase().includes(term))
-        )
+        (movie['TranslatedTitle'] && movie['TranslatedTitle'].toLowerCase().includes(term)) ||
+        (movie['OriginalTitle'] && movie['OriginalTitle'].toLowerCase().includes(term))
+      )
       : moviesData;
     currentPage = 1;
     updateSortIcons();
@@ -208,10 +196,10 @@
         <div class="row g-0">
           ${movie['Picture'] ? `<div class="col-md-4 text-center p-3">
             <img src="${movie['Picture']}" class="img-fluid rounded border">
-            ${ (movie['Comments'] && movie['Comments'].trim() !== "") 
-                ? `<div class="mt-3"><button class="btn btn-danger" onclick="openVideoModal('${movie['Comments']}')"><i class="fab fa-youtube"></i> Trailer</button></div>`
-                : `<div class="mt-3"><a href="https://www.youtube.com/results?search_query=${encodeURIComponent((movie['OriginalTitle'] || '') + ' (' + (movie['Year'] || '') + ') trailer latino')}" target="_blank" class="btn btn-danger"><i class="fab fa-youtube"></i> Trailer</a></div>`
-            }
+            ${(movie['Comments'] && movie['Comments'].trim() !== "")
+          ? `<div class="mt-3"><button class="btn btn-danger" onclick="openVideoModal('${movie['Comments']}')"><i class="fab fa-youtube"></i> Trailer</button></div>`
+          : `<div class="mt-3"><a href="https://www.youtube.com/results?search_query=${encodeURIComponent((movie['OriginalTitle'] || '') + ' (' + (movie['Year'] || '') + ') trailer latino')}" target="_blank" class="btn btn-danger"><i class="fab fa-youtube"></i> Trailer</a></div>`
+        }
           </div>` : ''}
           <div class="${movie['Picture'] ? 'col-md-8' : 'col-12'}">
             <div class="card-body">
@@ -256,19 +244,17 @@
     document.getElementById('videoModal').addEventListener('hidden.bs.modal', () => iframe.src = "", { once: true });
   };
 
-  // Ordenamiento al hacer click en los encabezados
   document.querySelectorAll('#moviesTable thead th').forEach(th =>
     th.addEventListener('click', () => sortMovies(th.getAttribute('data-column')))
   );
 
-  // Búsqueda en tiempo real
   searchInput.addEventListener('keyup', () => {
     const term = searchInput.value.toLowerCase();
     filteredMovies = term
       ? moviesData.filter(movie =>
-          (movie['TranslatedTitle'] && movie['TranslatedTitle'].toLowerCase().includes(term)) ||
-          (movie['OriginalTitle'] && movie['OriginalTitle'].toLowerCase().includes(term))
-        )
+        (movie['TranslatedTitle'] && movie['TranslatedTitle'].toLowerCase().includes(term)) ||
+        (movie['OriginalTitle'] && movie['OriginalTitle'].toLowerCase().includes(term))
+      )
       : moviesData;
     currentPage = 1;
     displayMovies(currentPage, filteredMovies);
@@ -297,7 +283,6 @@
 
   loadMovies();
 
-  // Ajustar paginación al cambiar el tamaño de la ventana
   window.addEventListener('resize', () => {
     updatePagination(filteredMovies);
   });
