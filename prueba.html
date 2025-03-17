@@ -1,333 +1,200 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sitio Web de Cócteles</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    body {
-      background: linear-gradient(45deg, #FFA500, #FF8C00);
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .hero {
-      height: 100vh;
-      background: url("/api/placeholder/1920/1080") center/cover no-repeat;
-      position: relative;
-      color: #fff;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      z-index: 0;
-    }
-    .hero-content {
-      z-index: 1;
-      max-width: 800px;
-      padding: 20px;
-    }
-    .hero h1 {
-      font-weight: 700;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    }
-    .hero p {
-      font-size: 1.5rem;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    }
-    .nosotros {
-      background: linear-gradient(45deg, #004d00, #66ff66);
-      color: #fff;
-      padding: 80px 20px;
-    }
-    .nosotros p {
-      max-width: 800px;
-      margin: 0 auto;
-      font-size: 1.2rem;
-      line-height: 1.8;
-    }
-    .cocteles {
-      background: linear-gradient(45deg, #87CEEB, #0000FF);
-      color: #fff;
-      padding: 80px 20px;
-    }
-    .cocteles .carousel-item img {
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    }
-    .cocteles .carousel-item p {
-      margin-top: 15px;
-      font-size: 1.2rem;
-      font-weight: 500;
-    }
-    .servicio {
-      background: linear-gradient(45deg, #FF0000, #FF7F7F);
-      color: #fff;
-      padding: 80px 20px;
-    }
-    .servicio .card {
-      transition: transform 0.3s ease;
-      margin-bottom: 20px;
-      border: none;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    .servicio .card:hover {
-      transform: translateY(-10px);
-    }
-    .servicio .card-body {
-      background-color: #fff;
-      color: #333;
-    }
-    .cotizacion {
-      background: linear-gradient(45deg, #C71585, #FFC0CB);
-      color: #fff;
-      padding: 80px 20px;
-    }
-    .cotizacion form {
-      max-width: 800px;
-      margin: 0 auto;
-      background: rgba(255, 255, 255, 0.1);
-      padding: 30px;
-      border-radius: 10px;
-      backdrop-filter: blur(5px);
-    }
-    .cotizacion .form-control {
-      background-color: rgba(255, 255, 255, 0.2);
-      border: none;
-      color: #fff;
-      margin-bottom: 15px;
-    }
-    .cotizacion .form-control::placeholder {
-      color: rgba(255, 255, 255, 0.7);
-    }
-    .cotizacion .btn-success {
-      background-color: #28a745;
-      border: none;
-      padding: 10px 30px;
-      font-weight: 600;
-      transition: all 0.3s ease;
-    }
-    .cotizacion .btn-success:hover {
-      background-color: #218838;
-      transform: scale(1.05);
-    }
-    footer {
-      background: #222;
-      color: #fff;
-      text-align: center;
-      padding: 30px 20px;
-    }
-    footer a {
-      color: #fff;
-      margin: 0 15px;
-      transition: color 0.3s ease, transform 0.3s ease;
-      display: inline-block;
-    }
-    footer a:hover {
-      color: #FFA500;
-      transform: scale(1.2);
-    }
-    h2 {
-      margin-bottom: 40px;
-      font-weight: 700;
-      position: relative;
-      display: inline-block;
-      padding-bottom: 10px;
-    }
-    h2::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100px;
-      height: 3px;
-      background-color: #fff;
-    }
-    section {
-      overflow: hidden;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktails On Tap - Cócteles Premium</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --color-naranja: #FF6B35;
+            --color-naranja-claro: #FFA500;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, var(--color-naranja), var(--color-naranja-claro));
+            color: white;
+        }
+        
+        .navbar {
+            background: rgba(255,255,255,0.1) !important;
+            backdrop-filter: blur(10px);
+        }
+        
+        .hero {
+            height: 70vh;
+            background: linear-gradient(rgba(255,107,53,0.8), rgba(255,165,0,0.8)),
+                        url('https://placehold.co/1920x1080?text=Cocktails+On+Tap') center/cover;
+        }
+        
+        .card-servicio {
+            background: rgba(255,255,255,0.15);
+            border: none;
+            transition: transform 0.3s;
+        }
+        
+        .card-servicio:hover {
+            transform: translateY(-10px);
+        }
+        
+        .btn-whatsapp {
+            background: #25D366 !important;
+            color: white !important;
+        }
+        
+        .carousel-img {
+            height: 300px;
+            object-fit: cover;
+        }
+    </style>
 </head>
-<body>
+<body class="min-vh-100">
 
-<!-- Hero Section -->
-<section class="hero">
-  <div class="hero-content">
-    <h1 class="display-3">Bienvenido a nuestro mundo de cócteles</h1>
-    <p>¡Descubre sabores únicos y experiencias inolvidables!</p>
-  </div>
-</section>
-
-<!-- Nosotros Section -->
-<section class="nosotros text-center">
-  <div class="container">
-    <h2>Nosotros</h2>
-    <p>Somos expertos en cócteles, llevando innovación y calidad a cada evento. Con más de 10 años de experiencia, hemos perfeccionado el arte de la mixología para crear momentos memorables. Nuestro equipo de bartenders profesionales está comprometido con la excelencia y la creatividad, ofreciendo a nuestros clientes una experiencia única y personalizada que excede sus expectativas.</p>
-  </div>
-</section>
-
-<!-- Cócteles Section -->
-<section class="cocteles text-center">
-  <div class="container">
-    <h2>Cócteles</h2>
-    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="/api/placeholder/400/400" class="d-block mx-auto" alt="Cóctel Tropical">
-          <p>Tropical Paradise: Una explosión de frutas exóticas</p>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand text-white" href="#">Cocktails On Tap</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link text-white" href="#nosotros">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#cocteles">Cócteles</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#servicios">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#cotizar">Cotizar</a></li>
+            </ul>
         </div>
-        <div class="carousel-item">
-          <img src="/api/placeholder/400/400" class="d-block mx-auto" alt="Cóctel Fresco">
-          <p>Fresco Mint: Refrescante combinación cítrica con menta</p>
-        </div>
-        <div class="carousel-item">
-          <img src="/api/placeholder/400/400" class="d-block mx-auto" alt="Cóctel Exótico">
-          <p>Exotic Passion: Sabores intensos con un toque de maracuyá</p>
-        </div>
-        <div class="carousel-item">
-          <img src="/api/placeholder/400/400" class="d-block mx-auto" alt="Cóctel Clásico">
-          <p>Classic Revival: Una elegante reinterpretación de los clásicos</p>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
     </div>
-  </div>
-</section>
+</nav>
 
-<!-- Servicio Section -->
-<section class="servicio">
-  <div class="container">
-    <h2 class="text-center">Servicio</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card">
-          <img src="/api/placeholder/400/300" class="card-img-top" alt="Eventos Generales">
-          <div class="card-body">
-            <h5 class="card-title">Eventos Generales</h5>
-            <p class="card-text">Perfecto para celebraciones de cumpleaños, aniversarios, reuniones corporativas y todo tipo de eventos sociales. Adaptamos nuestro servicio a tus necesidades específicas.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src="/api/placeholder/400/300" class="card-img-top" alt="Bodas">
-          <div class="card-body">
-            <h5 class="card-title">Bodas</h5>
-            <p class="card-text">Creamos experiencias mágicas para tu gran día con cócteles personalizados que reflejan tu historia de amor. Servicio premium con atención especializada.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src="/api/placeholder/400/300" class="card-img-top" alt="Grandes Eventos">
-          <div class="card-body">
-            <h5 class="card-title">Grandes Eventos</h5>
-            <p class="card-text">Producción impecable para eventos a gran escala. Contamos con la logística y el personal necesario para atender festivales, conciertos y eventos corporativos masivos.</p>
-          </div>
-        </div>
-      </div>
+<!-- Hero -->
+<section class="hero d-flex align-items-center">
+    <div class="container text-center">
+        <h1 class="display-1 fw-bold">Cocktails On Tap</h1>
+        <p class="lead fs-3">Transformando eventos con cócteles premium</p>
     </div>
-  </div>
 </section>
 
-<!-- Cotización Section -->
-<section class="cotizacion">
-  <div class="container">
-    <h2 class="text-center">Cotización</h2>
-    <form>
-      <div class="row">
-        <div class="col-md-6">
-          <input type="text" class="form-control" placeholder="Tipo de evento">
+<!-- Nosotros -->
+<section id="nosotros" class="py-5">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <p class="fs-5">Ofrecemos cócteles en barril preparados por profesionales con más de 20 años de experiencia. Nuestro sistema revolucionario garantiza calidad y frescura en cada evento.</p>
+            </div>
         </div>
-        <div class="col-md-6">
-          <input type="datetime-local" class="form-control">
+    </div>
+</section>
+
+<!-- Cócteles -->
+<section id="cocteles" class="py-5">
+    <div class="container">
+        <div id="carouselCocteles" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://placehold.co/800x600?text=Mojito+Clásico" class="d-block w-100 carousel-img">
+                    <div class="carousel-caption">
+                        <h5>Mojito Clásico</h5>
+                    </div>
+                </div>
+                <!-- Repetir para otros 3 cócteles -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCocteles" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCocteles" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <input type="number" class="form-control" placeholder="Número de invitados">
+    </div>
+</section>
+
+<!-- Servicios -->
+<section id="servicios" class="py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card-servicio h-100 p-4 text-center">
+                    <img src="https://placehold.co/400x300?text=Eventos+Generales" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Eventos Generales</h5>
+                        <p class="card-text">Dispensador portátil auto-servicio con 2 opciones de cócteles</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repetir para Bodas y Grandes Eventos -->
         </div>
-        <div class="col-md-6">
-          <input type="text" class="form-control" placeholder="Dirección">
+    </div>
+</section>
+
+<!-- Cotización -->
+<section id="cotizar" class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Tipo de evento">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="datetime-local" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" class="form-control" placeholder="Número de invitados">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Dirección">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Apellidos">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="tel" class="form-control" placeholder="Celular">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" placeholder="E-mail">
+                    </div>
+                    <div class="col-12">
+                        <textarea class="form-control" placeholder="Comentarios" rows="3"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-whatsapp w-100">
+                            <i class="fab fa-whatsapp"></i> Enviar por WhatsApp
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <input type="text" class="form-control" placeholder="Nombre">
-        </div>
-        <div class="col-md-6">
-          <input type="text" class="form-control" placeholder="Apellidos">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <input type="tel" class="form-control" placeholder="Celular">
-        </div>
-        <div class="col-md-6">
-          <input type="email" class="form-control" placeholder="E-mail">
-        </div>
-      </div>
-      <div class="mb-3">
-        <textarea class="form-control" rows="3" placeholder="Comentarios"></textarea>
-      </div>
-      <div class="text-center">
-        <button type="submit" class="btn btn-success">Enviar por Whatsapp</button>
-      </div>
-    </form>
-  </div>
+    </div>
 </section>
 
 <!-- Footer -->
-<footer>
-  <div class="social-icons mb-3">
-    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-    <a href="#"><i class="fab fa-tiktok fa-2x"></i></a>
-    <a href="#"><i class="fab fa-whatsapp fa-2x"></i></a>
-    <a href="mailto:correo@ejemplo.com"><i class="fas fa-envelope fa-2x"></i></a>
-  </div>
-  <p>&copy; 2025 Sitio de Cócteles. Todos los derechos reservados.</p>
+<footer class="py-4">
+    <div class="container text-center">
+        <div class="d-flex justify-content-center gap-4 mb-3">
+            <a href="https://instagram.com/cocktailsontap.chile" class="text-white">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://tiktok.com/@cocktailsontap.chile" class="text-white">
+                <i class="fab fa-tiktok fa-2x"></i>
+            </a>
+            <a href="https://wa.me/56932334235" class="text-white">
+                <i class="fab fa-whatsapp fa-2x"></i>
+            </a>
+            <a href="mailto:CoctelesEnBarril@gmail.com" class="text-white">
+                <i class="fas fa-envelope fa-2x"></i>
+            </a>
+        </div>
+        <p class="mb-0">© 2023 Cocktails On Tap. Todos los derechos reservados</p>
+    </div>
 </footer>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Script para enviar formulario por WhatsApp -->
-<script>
-  document.querySelector('form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const tipoEvento = encodeURIComponent(this.querySelector('input[placeholder="Tipo de evento"]').value);
-    const fechaHora = encodeURIComponent(this.querySelector('input[type="datetime-local"]').value);
-    const invitados = encodeURIComponent(this.querySelector('input[placeholder="Número de invitados"]').value);
-    const direccion = encodeURIComponent(this.querySelector('input[placeholder="Dirección"]').value);
-    const nombre = encodeURIComponent(this.querySelector('input[placeholder="Nombre"]').value);
-    const apellidos = encodeURIComponent(this.querySelector('input[placeholder="Apellidos"]').value);
-    const celular = encodeURIComponent(this.querySelector('input[placeholder="Celular"]').value);
-    const email = encodeURIComponent(this.querySelector('input[placeholder="E-mail"]').value);
-    const comentarios = encodeURIComponent(this.querySelector('textarea').value);
-    
-    const mensaje = `¡Hola! Me gustaría cotizar un servicio de cócteles.%0A%0A*Tipo de Evento:* ${tipoEvento}%0A*Fecha y Hora:* ${fechaHora}%0A*Número de Invitados:* ${invitados}%0A*Dirección:* ${direccion}%0A*Nombre:* ${nombre} ${apellidos}%0A*Celular:* ${celular}%0A*Email:* ${email}%0A*Comentarios:* ${comentarios}`;
-    
-    window.open(`https://wa.me/+123456789?text=${mensaje}`, '_blank');
-  });
-</script
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
