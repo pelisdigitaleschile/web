@@ -3,198 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cocktails On Tap - Cócteles Premium</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Cocktails on Tap Chile - Cócteles en Barril</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root {
-            --color-naranja: #FF6B35;
-            --color-naranja-claro: #FFA500;
+        /* Estilos Generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
         }
-        
+
         body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(to bottom, var(--color-naranja), var(--color-naranja-claro));
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Sección Hero */
+        .hero {
+            background: linear-gradient(135deg, #FF6B35, #FF9F1C);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
             color: white;
         }
-        
-        .navbar {
-            background: rgba(255,255,255,0.1) !important;
-            backdrop-filter: blur(10px);
+
+        .logo {
+            width: 250px;
+            margin-bottom: 2rem;
         }
-        
-        .hero {
-            height: 70vh;
-            background: linear-gradient(rgba(255,107,53,0.8), rgba(255,165,0,0.8)),
-                        url('https://placehold.co/1920x1080?text=Cocktails+On+Tap') center/cover;
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
         }
-        
-        .card-servicio {
-            background: rgba(255,255,255,0.15);
-            border: none;
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: white;
+            color: #FF6B35;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            margin-top: 2rem;
             transition: transform 0.3s;
         }
-        
-        .card-servicio:hover {
-            transform: translateY(-10px);
+
+        /* Secciones Generales */
+        .section {
+            padding: 5rem 2rem;
         }
-        
-        .btn-whatsapp {
-            background: #25D366 !important;
-            color: white !important;
+
+        .section-dark {
+            background: #f8f9fa;
         }
-        
-        .carousel-img {
-            height: 300px;
-            object-fit: cover;
+
+        /* Nuestros Barriles */
+        .barrels-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .barrel-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Formulario */
+        .quote-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        /* Contacto */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .social-icon {
+            font-size: 1.5rem;
+            color: #FF6B35;
+            transition: transform 0.3s;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .section {
+                padding: 3rem 1rem;
+            }
         }
     </style>
 </head>
-<body class="min-vh-100">
-
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-        <a class="navbar-brand text-white" href="#">Cocktails On Tap</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link text-white" href="#nosotros">Nosotros</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#cocteles">Cócteles</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#servicios">Servicios</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#cotizar">Cotizar</a></li>
-            </ul>
+<body>
+    <!-- Sección Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="logo-cocktailsontap.png" alt="Logo" class="logo">
+            <h1>Lleva la calidad de un bar a tu hogar</h1>
+            <p>Cocktails on Tap Chile ofrece una solución práctica y elegante para tus celebraciones. ¡Más fácil, más rápido y con calidad profesional!</p>
+            <a href="#precios" class="cta-button">Ver Lista de Precios</a>
         </div>
-    </div>
-</nav>
+    </section>
 
-<!-- Hero -->
-<section class="hero d-flex align-items-center">
-    <div class="container text-center">
-        <h1 class="display-1 fw-bold">Cocktails On Tap</h1>
-        <p class="lead fs-3">Transformando eventos con cócteles premium</p>
-    </div>
-</section>
-
-<!-- Nosotros -->
-<section id="nosotros" class="py-5">
-    <div class="container py-5">
-        <div class="row justify-content-center">
-            <div class="col-md-8 text-center">
-                <p class="fs-5">Ofrecemos cócteles en barril preparados por profesionales con más de 20 años de experiencia. Nuestro sistema revolucionario garantiza calidad y frescura en cada evento.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Cócteles -->
-<section id="cocteles" class="py-5">
-    <div class="container">
-        <div id="carouselCocteles" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://placehold.co/800x600?text=Mojito+Clásico" class="d-block w-100 carousel-img">
-                    <div class="carousel-caption">
-                        <h5>Mojito Clásico</h5>
-                    </div>
+    <!-- Sobre Nosotros -->
+    <section class="section">
+        <div class="container">
+            <h2>La Revolución de los Cócteles en Barril</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Con más de 20 años de experiencia en mixología, nuestro bartender profesional ha creado la fórmula perfecta para llevar la excelencia de un bar premium directamente a tus eventos.</p>
+                    <h3>¿En qué nos diferenciamos?</h3>
+                    <ul>
+                        <li>Sin personal adicional en tu evento</li>
+                        <li>Instalación rápida y discreta</li>
+                        <li>Costos hasta 40% menores que una barra móvil</li>
+                    </ul>
                 </div>
-                <!-- Repetir para otros 3 cócteles -->
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCocteles" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselCocteles" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-        </div>
-    </div>
-</section>
-
-<!-- Servicios -->
-<section id="servicios" class="py-5">
-    <div class="container">
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card-servicio h-100 p-4 text-center">
-                    <img src="https://placehold.co/400x300?text=Eventos+Generales" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Eventos Generales</h5>
-                        <p class="card-text">Dispensador portátil auto-servicio con 2 opciones de cócteles</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Repetir para Bodas y Grandes Eventos -->
-        </div>
-    </div>
-</section>
-
-<!-- Cotización -->
-<section id="cotizar" class="py-5">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <form class="row g-3">
-                    <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="Tipo de evento">
-                    </div>
-                    <div class="col-md-6">
-                        <input type="datetime-local" class="form-control">
-                    </div>
-                    <div class="col-md-6">
-                        <input type="number" class="form-control" placeholder="Número de invitados">
-                    </div>
-                    <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="Dirección">
-                    </div>
-                    <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="Nombre">
-                    </div>
-                    <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="Apellidos">
-                    </div>
-                    <div class="col-md-6">
-                        <input type="tel" class="form-control" placeholder="Celular">
-                    </div>
-                    <div class="col-md-6">
-                        <input type="email" class="form-control" placeholder="E-mail">
-                    </div>
-                    <div class="col-12">
-                        <textarea class="form-control" placeholder="Comentarios" rows="3"></textarea>
-                    </div>
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-whatsapp w-100">
-                            <i class="fab fa-whatsapp"></i> Enviar por WhatsApp
-                        </button>
-                    </div>
-                </form>
+                <img src="dispensador.jpg" alt="Dispensador" class="about-image">
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Footer -->
-<footer class="py-4">
-    <div class="container text-center">
-        <div class="d-flex justify-content-center gap-4 mb-3">
-            <a href="https://instagram.com/cocktailsontap.chile" class="text-white">
-                <i class="fab fa-instagram fa-2x"></i>
-            </a>
-            <a href="https://tiktok.com/@cocktailsontap.chile" class="text-white">
-                <i class="fab fa-tiktok fa-2x"></i>
-            </a>
-            <a href="https://wa.me/56932334235" class="text-white">
-                <i class="fab fa-whatsapp fa-2x"></i>
-            </a>
-            <a href="mailto:CoctelesEnBarril@gmail.com" class="text-white">
-                <i class="fas fa-envelope fa-2x"></i>
-            </a>
+    <!-- Nuestros Barriles -->
+    <section class="section section-dark" id="precios">
+        <h2>Nuestra Carta de Cócteles</h2>
+        <div class="barrels-grid">
+            <!-- Repetir este bloque por cada cóctel -->
+            <div class="barrel-card">
+                <h3>Pisco Sour 🍋</h3>
+                <p class="price">5L - $69.990</p>
+                <p class="price">10L - $129.990</p>
+                <p>Rinde 25-30 cócteles</p>
+            </div>
+            <!-- ... otros cócteles ... -->
         </div>
-        <p class="mb-0">© 2023 Cocktails On Tap. Todos los derechos reservados</p>
-    </div>
-</footer>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Formulario -->
+    <section class="section">
+        <form class="quote-form" id="cotizador">
+            <h2>Cotiza tu Evento</h2>
+            <div class="form-group">
+                <input type="text" placeholder="Nombre" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" placeholder="Teléfono" required>
+            </div>
+            <div class="form-group">
+                <select>
+                    <option>Tipo de Evento</option>
+                    <option>Boda</option>
+                    <option>Cumpleaños</option>
+                    <option>Reunión Social</option>
+                </select>
+            </div>
+            <a href="https://wa.me/56932334235" class="cta-button">Enviar por WhatsApp</a>
+        </form>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section section-dark">
+        <div class="social-icons">
+            <a href="https://instagram.com/cocktailsontap.chile" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com/@cocktailsontap.chile" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="mailto:CoctelesEnBarril@gmail.com" class="social-icon"><i class="far fa-envelope"></i></a>
+        </div>
+        <p class="text-center">📞 WhatsApp: +56 9 3233 4235</p>
+    </section>
 </body>
 </html>
