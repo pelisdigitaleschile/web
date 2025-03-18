@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktails on Tap Chile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="text-center text-white py-5" style="background: linear-gradient(45deg, #FF6F00, #FFA726);">
+        <img src="https://placehold.co/150x150" alt="Logo" class="mb-3">
+        <h1>Cocktails on Tap Chile</h1>
+        <p>Disfruta de cócteles listos al instante con nuestro innovador dispensador de autoservicio.</p>
+        <a href="#precios" class="btn btn-light">Ver Lista de Precios</a>
+    </header>
+
+    <!-- Sobre Nosotros -->
+    <section class="container text-center py-5">
+        <h2>Sobre Nosotros</h2>
+        <p>Traemos la experiencia de un bar premium a tu evento con cócteles en barril listos para servir. Menos invasivo, más íntimo y fácil de disfrutar.</p>
+    </section>
+
+    <!-- Lista de Barriles -->
+    <section class="container py-5" id="precios">
+        <h2 class="text-center">Nuestros Barriles</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <img src="https://placehold.co/200x200" class="img-fluid rounded" alt="Pisco Sour">
+                <h4>Pisco Sour</h4>
+                <p>5L - $69.990 | 10L - $129.990</p>
+            </div>
+            <div class="col-md-4">
+                <img src="https://placehold.co/200x200" class="img-fluid rounded" alt="Gin and Tonic">
+                <h4>Gin and Tonic</h4>
+                <p>5L - $79.990 | 10L - $149.990</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="bg-light text-center py-5">
+        <h2>¿Por qué elegirnos?</h2>
+        <ul class="list-unstyled">
+            <li><i class="fa-solid fa-check"></i> Cócteles listos al instante, sin esperas.</li>
+            <li><i class="fa-solid fa-check"></i> Auto-servicio fácil y elegante.</li>
+            <li><i class="fa-solid fa-check"></i> Menos invasivo que una barra móvil.</li>
+            <li><i class="fa-solid fa-check"></i> Despacho y retiro gratuito en Santiago.</li>
+        </ul>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="container text-center py-5">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div id="carouselTestimonios" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <p>"¡Me encantó! Cócteles perfectos y sin complicaciones." - María</p>
+                </div>
+                <div class="carousel-item">
+                    <p>"La mejor opción para eventos, fácil y delicioso." - Juan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Cotización con Vue.js -->
+    <section class="container py-5" id="cotizacion">
+        <h2 class="text-center">Cotiza tu Pedido</h2>
+        <div id="app">
+            <form @submit.prevent="enviarCotizacion" class="row g-3">
+                <div class="col-md-6">
+                    <input type="text" v-model="nombre" class="form-control" placeholder="Tu Nombre" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="tel" v-model="telefono" class="form-control" placeholder="Tu Teléfono" required>
+                </div>
+                <div class="col-12">
+                    <input type="email" v-model="correo" class="form-control" placeholder="Tu Correo" required>
+                </div>
+                <div class="col-12">
+                    <input type="text" v-model="evento" class="form-control" placeholder="Tipo de Evento" required>
+                </div>
+                <div class="col-12">
+                    <textarea v-model="detalle" class="form-control" placeholder="Detalles adicionales"></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary">Enviar por WhatsApp</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Contacto:</p>
+        <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/56932334235" class="text-white">+56 9 3233 4235</a></p>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:CoctelesEnBarril@gmail.com" class="text-white">CoctelesEnBarril@gmail.com</a></p>
+        <p><i class="fa-brands fa-instagram"></i> <a href="https://instagram.com/cocktailsontap.chile" class="text-white">@cocktailsontap.chile</a></p>
+        <p><i class="fa-brands fa-tiktok"></i> <a href="https://tiktok.com/@cocktailsontap.chile" class="text-white">@cocktailsontap.chile</a></p>
+        <p><i class="fa-solid fa-globe"></i> <a href="https://www.cocktailsontap.cl" class="text-white">www.cocktailsontap.cl</a></p>
+    </footer>
+
+    <script>
+        const { createApp } = Vue;
+
+        createApp({
+            data() {
+                return {
+                    nombre: '',
+                    telefono: '',
+                    correo: '',
+                    evento: '',
+                    detalle: ''
+                };
+            },
+            methods: {
+                enviarCotizacion() {
+                    const mensaje = `Hola, quiero cotizar cócteles en barril:\n\nNombre: ${this.nombre}\nTeléfono: ${this.telefono}\nCorreo: ${this.correo}\nEvento: ${this.evento}\nDetalle: ${this.detalle}`;
+                    const url = `https://wa.me/56932334235?text=${encodeURIComponent(mensaje)}`;
+                    window.open(url, '_blank');
+                }
+            }
+        }).mount('#app');
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
