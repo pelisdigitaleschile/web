@@ -3,200 +3,469 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cocktails on Tap Chile - Cócteles en Barril</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Cotización de Cócteles en Barril</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
-        /* Estilos Generales */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-            line-height: 1.6;
-            color: #333;
-        }
-
-        /* Sección Hero */
-        .hero {
-            background: linear-gradient(135deg, #FF6B35, #FF9F1C);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 2rem;
-            color: white;
-        }
-
-        .logo {
-            width: 250px;
-            margin-bottom: 2rem;
-        }
-
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-            font-weight: 700;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 1rem 2rem;
-            background: white;
-            color: #FF6B35;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: 600;
-            margin-top: 2rem;
-            transition: transform 0.3s;
-        }
-
-        /* Secciones Generales */
-        .section {
-            padding: 5rem 2rem;
-        }
-
-        .section-dark {
-            background: #f8f9fa;
-        }
-
-        /* Nuestros Barriles */
-        .barrels-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .barrel-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        /* Formulario */
-        .quote-form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        input, select {
-            width: 100%;
-            padding: 0.8rem;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-        }
-
-        /* Contacto */
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .social-icon {
-            font-size: 1.5rem;
-            color: #FF6B35;
-            transition: transform 0.3s;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .section {
-                padding: 3rem 1rem;
-            }
+        .floating-form {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 300px;
+            z-index: 1000;
         }
     </style>
 </head>
 <body>
-    <!-- Sección Hero -->
-    <section class="hero">
-        <div class="hero-content">
-            <img src="logo-cocktailsontap.png" alt="Logo" class="logo">
-            <h1>Lleva la calidad de un bar a tu hogar</h1>
-            <p>Cocktails on Tap Chile ofrece una solución práctica y elegante para tus celebraciones. ¡Más fácil, más rápido y con calidad profesional!</p>
-            <a href="#precios" class="cta-button">Ver Lista de Precios</a>
-        </div>
-    </section>
+    <div id="app">
+        <div class="container py-5">
+            <h2>¡Cotiza tus Cócteles en Barril!</h2>
+            <p class="lead">Selecciona tus cócteles y completa el formulario para recibir tu cotización.</p>
 
-    <!-- Sobre Nosotros -->
-    <section class="section">
-        <div class="container">
-            <h2>La Revolución de los Cócteles en Barril</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>Con más de 20 años de experiencia en mixología, nuestro bartender profesional ha creado la fórmula perfecta para llevar la excelencia de un bar premium directamente a tus eventos.</p>
-                    <h3>¿En qué nos diferenciamos?</h3>
-                    <ul>
-                        <li>Sin personal adicional en tu evento</li>
-                        <li>Instalación rápida y discreta</li>
-                        <li>Costos hasta 40% menores que una barra móvil</li>
-                    </ul>
+            <div class="row row-cols-1 row-cols-md-2 g-4 mb-4">
+                <div v-for="(producto, index) in productos" :key="index" class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h6 class="fw-bold">{{ producto.nombre }}</h6>
+                            <p class="text-muted small">{{ producto.descripcion }}</p>
+                            <label for="tamaño" class="form-label small">Tamaño</label>
+                            <select
+                                class="form-select form-select-sm"
+                                v-model="producto.tamañoSeleccionado"
+                                @change="actualizarPrecio(producto)"
+                                id="tamaño"
+                            >
+                                <option v-for="(precio, tamaño) in producto.precios" :key="tamaño" :value="tamaño">
+                                    {{ tamaño }} - ${{ precio.toLocaleString('es-CL') }}
+                                </option>
+                            </select>
+                            <div class="d-flex gap-2 mt-2 align-items-center">
+                                <button type="button" class="btn btn-outline-secondary btn-sm" @click="decrementarCantidad(producto)">-</button>
+                                <input
+                                    type="number"
+                                    class="form-control form-control-sm text-center"
+                                    v-model.number="producto.cantidad"
+                                    @input="validarCantidad(producto)"
+                                >
+                                <button type="button" class="btn btn-outline-secondary btn-sm" @click="incrementarCantidad(producto)">+</button>
+                                <span class="ms-auto fw-bold small">Subtotal: ${{ calcularSubtotalProducto(producto).toLocaleString('es-CL') }}</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <img src="dispensador.jpg" alt="Dispensador" class="about-image">
+            </div>
+
+            <h3 class="mt-4">Tu Selección:</h3>
+            <ul v-if="productosSeleccionados.length > 0" class="list-group mb-4">
+                <li v-for="producto in productosSeleccionados" :key="producto.nombre" class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>{{ producto.nombre }} ({{ producto.tamañoSeleccionado }}, Cantidad: {{ producto.cantidad }})</span>
+                    <span class="badge bg-primary rounded-pill">${calcularSubtotalProducto(producto).toLocaleString('es-CL')}</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center fw-bold">
+                    <span>Total General:</span>
+                    <span>${totalGeneral.toLocaleString('es-CL')}</span>
+                </li>
+            </ul>
+            <p v-else>Aún no has seleccionado ningún cóctel.</p>
+
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h3 class="mb-3">Datos de tu Evento</h3>
+                    <form @submit.prevent="enviarCotizacionWhatsApp">
+                        <div class="mb-3">
+                            <label for="fechaHora" class="form-label">Fecha y Hora del Evento <span class="text-danger">*</span></label>
+                            <input type="datetime-local" class="form-control" id="fechaHora" v-model="formData.fechaHora" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="invitados" class="form-label">Número de Invitados</label>
+                            <input type="number" class="form-control" id="invitados" v-model="formData.invitados">
+                        </div>
+                        <div class="mb-3">
+                            <label for="direccion" class="form-label">Dirección del Evento <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="direccion" v-model="formData.direccion" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="nombreContacto" class="form-label">Nombre de Contacto <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="nombreContacto" v-model="formData.nombreContacto" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailContacto" class="form-label">Email de Contacto</label>
+                            <input type="email" class="form-control" id="emailContacto" v-model="formData.emailContacto">
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefonoContacto" class="form-label">Teléfono de Contacto <span class="text-danger">*</span></label>
+                            <input type="tel" class="form-control" id="telefonoContacto" v-model="formData.telefonoContacto" required>
+                        </div>
+                        <button type="submit" class="btn btn-success">Enviar Cotización por WhatsApp</button>
+                    </form>
+                </div>
             </div>
         </div>
-    </section>
 
-    <!-- Nuestros Barriles -->
-    <section class="section section-dark" id="precios">
-        <h2>Nuestra Carta de Cócteles</h2>
-        <div class="barrels-grid">
-            <!-- Repetir este bloque por cada cóctel -->
-            <div class="barrel-card">
-                <h3>Pisco Sour 🍋</h3>
-                <p class="price">5L - $69.990</p>
-                <p class="price">10L - $129.990</p>
-                <p>Rinde 25-30 cócteles</p>
-            </div>
-            <!-- ... otros cócteles ... -->
+        <div v-if="isDesktop && showFloatingForm" class="floating-form bg-light p-3 border rounded shadow">
+            <h5>Resumen de tu Cotización</h5>
+            <ul v-if="productosSeleccionados.length > 0" class="list-unstyled">
+                <li v-for="producto in productosSeleccionados" :key="producto.nombre" class="mb-1">
+                    {{ producto.nombre }} ({{ producto.tamañoSeleccionado }}): {{ producto.cantidad }}
+                </li>
+            </ul>
+            <p v-else class="small text-muted">Aún no has seleccionado nada.</p>
+            <p class="fw-bold mb-0">Total: ${{ totalGeneral.toLocaleString('es-CL') }}</p>
+            <button class="btn btn-primary btn-sm mt-2" @click="scrollToForm">Completar Datos</button>
         </div>
-    </section>
+    </div>
 
-    <!-- Formulario -->
-    <section class="section">
-        <form class="quote-form" id="cotizador">
-            <h2>Cotiza tu Evento</h2>
-            <div class="form-group">
-                <input type="text" placeholder="Nombre" required>
-            </div>
-            <div class="form-group">
-                <input type="tel" placeholder="Teléfono" required>
-            </div>
-            <div class="form-group">
-                <select>
-                    <option>Tipo de Evento</option>
-                    <option>Boda</option>
-                    <option>Cumpleaños</option>
-                    <option>Reunión Social</option>
-                </select>
-            </div>
-            <a href="https://wa.me/56932334235" class="cta-button">Enviar por WhatsApp</a>
-        </form>
-    </section>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="text/javascript">
+        const { createApp, ref, computed, reactive, onMounted, onBeforeUnmount } = Vue;
 
-    <!-- Contacto -->
-    <section class="section section-dark">
-        <div class="social-icons">
-            <a href="https://instagram.com/cocktailsontap.chile" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="https://tiktok.com/@cocktailsontap.chile" class="social-icon"><i class="fab fa-tiktok"></i></a>
-            <a href="mailto:CoctelesEnBarril@gmail.com" class="social-icon"><i class="far fa-envelope"></i></a>
-        </div>
-        <p class="text-center">📞 WhatsApp: +56 9 3233 4235</p>
-    </section>
+        createApp({
+            setup() {
+                const productosData = [
+                  {
+                    nombre: 'Pisco Sour',
+                    descripcion: 'El clásico cóctel peruano con limón y clara de huevo.',
+                    precios: {
+                      '5L': 69990,
+                      '10L': 129990,
+                    },
+                    tamañoSeleccionado: '5L',
+                    cantidad: 0,
+                  },
+                  {
+                    nombre: 'Caipiriña',
+                    descripcion: 'Refrescante cóctel brasileño a base de cachaza y lima.',
+                    precios: {
+                      '5L': 69990,
+                      '10L': 129990,
+                    },
+                    tamañoSeleccionado: '5L',
+                    cantidad: 0,
+                  },
+                  {
+                    nombre: 'Gin and Tonic',
+                    descripcion: 'La combinación perfecta de ginebra y agua tónica.',
+                    precios: {
+                      '5L': 79990,
+                      '10L': 149990,
+                    },
+                    tamañoSeleccionado: '5L',
+                    cantidad: 0,
+                  },
+                  {
+                    nombre: 'Sangría',
+                    descripcion: 'Bebida refrescante a base de vino tinto y frutas.',
+                    precios: {
+                      '5L': 79990,
+                      '10L': 149990,
+                    },
+                    tamañoSeleccionado: '5L',
+                    cantidad: 0,
+                  },
+                  {
+                    nombre: 'Mojito',
+                    descripcion: 'Cóctel cubano con ron, menta, azúcar, limón y soda.',
+                    precios: {
+                      '5L': 79990,
+                      '10L': 149990,
+                    },
+                    tamañoSeleccionado: '5L',
+                    cantidad: 0,
+                  },
+                  {
+                    nombre: 'Mojito Sabor',
+                    descripcion: 'Delicioso mojito con un toque de frutilla fresca.',
+                    precios: {
+                      '5L': 84990,
+                      '10L': 159990,
+                    },
+                    tamañoSeleccionado: '5L',
+                    cantidad: 0,
+                  },
+                  {
+                    nombre: 'Aperol Spritz',
+                    descripcion: 'El aperitivo italiano de moda con Aperol, Prosecco y soda.',
+                    precios: {
+                      '5L': 99990,
+                      '10L': 189990,
+                    },
+                    tamañoSeleccionado: '5L',
+                    cantidad: 0,
+                  },
+                  {
+                    nombre: 'Ramazzotti Spritz',
+                    descripcion: 'Una variante refrescante con el sabor único de Ramazzotti.',
+                    precios: {
+                      '5L': 99990,
+                      '10L': 189990,
+                    },
+                    tamañoSeleccionado: '5L',
+                    cantidad: 0,
+                  },
+                  {
+                    nombre: 'Tequila Margarita',
+                    descripcion: 'El clásico cóctel mexicano con tequila, limón y sal.',
+                    precios: {
+                      '5L': 99990,
+                      '10L': 189990,
+                    },
+                    tamañoSeleccionado: '5L',
+                    cantidad: 0,
+                  },
+                  {
+                    nombre: 'Tropical Gin',
+                    descripcion: 'Una explosión de sabores tropicales con ginebra.',
+                    precios: {
+                      '5L': 99990,
+                      '10L': 189990,
+                    },
+                    tamañoSeleccionado: '5L',
+                    cantidad: 0,
+                  },
+                  {
+                    nombre: 'Mojito Sin Alcohol',
+                    descripcion: 'El refrescante sabor del mojito, pero sin alcohol.',
+                    precios: {
+                      '5L': 59990,
+                      '10L': 110990,
+                    },
+                    tamañoSeleccionado: '5L',
+                    cantidad: 0,
+                  },
+                ];
+
+                const productos = ref(productosData);
+                const formData = reactive({
+                  fechaHora: '',
+                  invitados: '',
+                  direccion: '',
+                  nombreContacto: '',
+                  emailContacto: '',
+                  telefonoContacto: '',
+                });
+
+                const isDesktop = ref(window.innerWidth >= 992);
+                const showFloatingForm = ref(false);
+                const floatingFormOffset = ref(null);
+
+                onMounted(() => {
+                  window.addEventListener('resize', handleResize);
+                  window.addEventListener('scroll', handleScroll);
+                  floatingFormOffset.value = document.getElementById('fechaHora')?.offsetTop;
+                });
+
+                onBeforeUnmount(() => {
+                  window.removeEventListener('resize', handleResize);
+                  window.removeEventListener('scroll', handleScroll);
+                });
+
+                const handleResize = () => {
+                  isDesktop.value = window.innerWidth >= 992;
+                };
+
+                const handleScroll = () => {
+                  if (isDesktop.value && floatingFormOffset.value !== null) {
+                    showFloatingForm.value = window.scrollY >= floatingFormOffset.value;
+                  } else {
+                    showFloatingForm.value = false;
+                  }
+                };
+
+                const scrollToForm = () => {
+                  const formElement = document.querySelector('form');
+                  if (formElement) {
+                    formElement.scrollIntoView({ behavior: 'smooth' });
+                  }
+                };
+
+                const productosSeleccionados = computed(() => {
+                  return productos.value.filter(producto => producto.cantidad > 0);
+                });
+
+                const totalGeneral = computed(() => {
+                  return productosSeleccionados.value.reduce((total, producto) => {
+                    const precio = producto.precios[producto.tamañoSeleccionado] || 0;
+                    return total + precio * producto.cantidad;
+                  }, 0);
+                });
+
+                const actualizarPrecio = (producto) => {
+                    // No es necesario hacer nada extra aquí, el precio ya está en el objeto y se usa en el cálculo.
+                    // Este método podría ser útil si tuvieras lógica de precios más compleja.
+                };
+
+                const incrementarCantidad = (producto) => {
+                  producto.cantidad++;
+                };
+
+                const decrementarCantidad = (producto) => {
+                  if (producto.cantidad > 0) {
+                    producto.cantidad--;
+                  }
+                };
+
+                const validarCantidad = (producto) => {
+                  if (producto.cantidad < 0) {
+                    producto.cantidad = 0;
+                  }
+                };
+
+                const calcularSubtotalProducto = (producto) => {
+                  const precio = producto.precios[producto.tamañoSeleccionado] || 0;
+                  return precio * producto.cantidad;
+                };
+
+                const enviarCotizacionWhatsApp = () => {
+                  if (!formData.fechaHora || !formData.direccion || !formData.nombreContacto || !formData.telefonoContacto) {
+                    alert('Por favor, completa los campos obligatorios.');
+                    return;
+                  }
+
+                  const mensaje = `¡Hola! Quiero solicitar una cotización de cócteles en barril:\n\n`;
+                  mensaje += `*Datos del Evento:*\n`;
+                  mensaje += `Fecha y Hora: ${formData.fechaHora}\n`;
+                  if (formData.invitados) {
+                    mensaje += `Número de Invitados: ${formData.invitados}\n`;
+                  }
+                  mensaje += `Dirección: ${formData.direccion}\n`;
+                  mensaje += `\n*Contacto:*\n`;
+                  mensaje += `Nombre: ${formData.nombreContacto}\n`;
+                  if (formData.emailContacto) {
+                    mensaje += `Email: ${formData.emailContacto}\n`;
+                  }
+                  mensaje += `Teléfono: ${formData.telefonoContacto}\n`;
+                  mensaje += `\n*Productos Seleccionados:*\n`;
+
+                  if (productosSeleccionados.value.length > 0) {
+                    productosSeleccionados.value.forEach(producto => {
+                      mensaje += `- ${producto.nombre} (${producto.tamañoSeleccionado}) - Cantidad: ${producto.cantidad} - Subtotal: $${calcularSubtotalProducto(producto).toLocaleString('es-CL')}\n`;
+                    });
+                    mensaje += `\n*Total General: $${totalGeneral.value.toLocaleString('es-CL')}*\n`;
+                  } else {
+                    mensaje += `No se han seleccionado productos.\n`;
+                  }
+
+                  const telefonoWhatsApp = '+569XXXXXXXXX'; // Reemplaza con el número de teléfono de tu negocio
+                  const urlWhatsApp = `https://wa.me/${telefonoWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+                  window.open(urlWhatsApp, '_blank');
+                };
+
+                return {
+                  productos,
+                  formData,
+                  isDesktop,
+                  showFloatingForm,
+                  productosSeleccionados,
+                  totalGeneral,
+                  actualizarPrecio,
+                  incrementarCantidad,
+                  decrementarCantidad,
+                  validarCantidad,
+                  calcularSubtotalProducto,
+                  enviarCotizacionWhatsApp,
+                  scrollToForm,
+                };
+            },
+            template: `
+              <div>
+                <div class="container py-5">
+                  <h2>¡Cotiza tus Cócteles en Barril!</h2>
+                  <p class="lead">Selecciona tus cócteles y completa el formulario para recibir tu cotización.</p>
+
+                  <div class="row row-cols-1 row-cols-md-2 g-4 mb-4">
+                    <div v-for="(producto, index) in productos" :key="index" class="col">
+                      <div class="card h-100">
+                        <div class="card-body">
+                          <h6 class="fw-bold">{{ producto.nombre }}</h6>
+                          <p class="text-muted small">{{ producto.descripcion }}</p>
+                          <label for="tamaño" class="form-label small">Tamaño</label>
+                          <select
+                            class="form-select form-select-sm"
+                            v-model="producto.tamañoSeleccionado"
+                            @change="actualizarPrecio(producto)"
+                            id="tamaño"
+                          >
+                            <option v-for="(precio, tamaño) in producto.precios" :key="tamaño" :value="tamaño">
+                              {{ tamaño }} - ${{ precio.toLocaleString('es-CL') }}
+                            </option>
+                          </select>
+                          <div class="d-flex gap-2 mt-2 align-items-center">
+                            <button type="button" class="btn btn-outline-secondary btn-sm" @click="decrementarCantidad(producto)">-</button>
+                            <input
+                              type="number"
+                              class="form-control form-control-sm text-center"
+                              v-model.number="producto.cantidad"
+                              @input="validarCantidad(producto)"
+                            >
+                            <button type="button" class="btn btn-outline-secondary btn-sm" @click="incrementarCantidad(producto)">+</button>
+                            <span class="ms-auto fw-bold small">Subtotal: ${{ calcularSubtotalProducto(producto).toLocaleString('es-CL') }}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h3 class="mt-4">Tu Selección:</h3>
+                  <ul v-if="productosSeleccionados.length > 0" class="list-group mb-4">
+                    <li v-for="producto in productosSeleccionados" :key="producto.nombre" class="list-group-item d-flex justify-content-between align-items-center">
+                      <span>{{ producto.nombre }} ({{ producto.tamañoSeleccionado }}, Cantidad: {{ producto.cantidad }})</span>
+                      <span class="badge bg-primary rounded-pill">${calcularSubtotalProducto(producto).toLocaleString('es-CL')}</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center fw-bold">
+                      <span>Total General:</span>
+                      <span>${totalGeneral.toLocaleString('es-CL')}</span>
+                    </li>
+                  </ul>
+                  <p v-else>Aún no has seleccionado ningún cóctel.</p>
+
+                  <div class="card mt-4">
+                    <div class="card-body">
+                      <h3 class="mb-3">Datos de tu Evento</h3>
+                      <form @submit.prevent="enviarCotizacionWhatsApp">
+                        <div class="mb-3">
+                          <label for="fechaHora" class="form-label">Fecha y Hora del Evento <span class="text-danger">*</span></label>
+                          <input type="datetime-local" class="form-control" id="fechaHora" v-model="formData.fechaHora" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="invitados" class="form-label">Número de Invitados</label>
+                          <input type="number" class="form-control" id="invitados" v-model="formData.invitados">
+                        </div>
+                        <div class="mb-3">
+                          <label for="direccion" class="form-label">Dirección del Evento <span class="text-danger">*</span></label>
+                          <input type="text" class="form-control" id="direccion" v-model="formData.direccion" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="nombreContacto" class="form-label">Nombre de Contacto <span class="text-danger">*</span></label>
+                          <input type="text" class="form-control" id="nombreContacto" v-model="formData.nombreContacto" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="emailContacto" class="form-label">Email de Contacto</label>
+                          <input type="email" class="form-control" id="emailContacto" v-model="formData.emailContacto">
+                        </div>
+                        <div class="mb-3">
+                          <label for="telefonoContacto" class="form-label">Teléfono de Contacto <span class="text-danger">*</span></label>
+                          <input type="tel" class="form-control" id="telefonoContacto" v-model="formData.telefonoContacto" required>
+                        </div>
+                        <button type="submit" class="btn btn-success">Enviar Cotización por WhatsApp</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <div v-if="isDesktop && showFloatingForm" class="floating-form bg-light p-3 border rounded shadow">
+                  <h5>Resumen de tu Cotización</h5>
+                  <ul v-if="productosSeleccionados.length > 0" class="list-unstyled">
+                    <li v-for="producto in productosSeleccionados" :key="producto.nombre" class="mb-1">
+                      {{ producto.nombre }} ({{ producto.tamañoSeleccionado }}): {{ producto.cantidad }}
+                    </li>
+                  </ul>
+                  <p v-else class="small text-muted">Aún no has seleccionado nada.</p>
+                  <p class="fw-bold mb-0">Total: ${{ totalGeneral.toLocaleString('es-CL') }}</p>
+                  <button class="btn btn-primary btn-sm mt-2" @click="scrollToForm">Completar Datos</button>
+                </div>
+              </div>
+            `
+        }).mount('#app');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
