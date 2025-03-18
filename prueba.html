@@ -31,7 +31,7 @@
                             <select
                                 class="form-select form-select-sm"
                                 v-model="producto.tamañoSeleccionado"
-                                @change="actualizarPrecio(producto)"
+                                @change="/* actualizarPrecio(producto) - Eliminada por innecesaria */"
                                 id="tamaño"
                             >
                                 <option v-for="(precio, tamaño) in producto.precios" :key="tamaño" :value="tamaño">
@@ -288,11 +288,6 @@
                   }, 0);
                 });
 
-                const actualizarPrecio = (producto) => {
-                    // No es necesario hacer nada extra aquí, el precio ya está en el objeto y se usa en el cálculo.
-                    // Este método podría ser útil si tuvieras lógica de precios más compleja.
-                };
-
                 const incrementarCantidad = (producto) => {
                   producto.cantidad++;
                 };
@@ -356,7 +351,6 @@
                   showFloatingForm,
                   productosSeleccionados,
                   totalGeneral,
-                  actualizarPrecio,
                   incrementarCantidad,
                   decrementarCantidad,
                   validarCantidad,
@@ -381,7 +375,6 @@
                           <select
                             class="form-select form-select-sm"
                             v-model="producto.tamañoSeleccionado"
-                            @change="actualizarPrecio(producto)"
                             id="tamaño"
                           >
                             <option v-for="(precio, tamaño) in producto.precios" :key="tamaño" :value="tamaño">
