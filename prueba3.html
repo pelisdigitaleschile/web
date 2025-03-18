@@ -3,131 +3,290 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cocktails on Tap Chile</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Cocktails on Tap Chile - Cócteles Premium en Barril</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #FF6B35, #FF9F1C);
+            min-height: 100vh;
+        }
+        
+        .cocktail-card {
+            cursor: pointer;
+            transition: transform 0.3s;
+            border: 2px solid transparent;
+        }
+        
+        .cocktail-card.active {
+            border-color: #FF6B35;
+        }
+        
+        .summary-card {
+            position: sticky;
+            top: 20px;
+        }
+    </style>
 </head>
 <body>
-
-    <!-- Hero Section -->
-    <header class="text-center text-white py-5" style="background: linear-gradient(45deg, #FF6F00, #FFA726);">
-        <img src="https://placehold.co/150x150" alt="Logo" class="mb-3">
-        <h1>Cocktails on Tap Chile</h1>
-        <p>Disfruta de cócteles listos al instante con nuestro innovador dispensador de autoservicio.</p>
-        <a href="#precios" class="btn btn-light">Ver Lista de Precios</a>
-    </header>
-
-    <!-- Sobre Nosotros -->
-    <section class="container text-center py-5">
-        <h2>Sobre Nosotros</h2>
-        <p>Traemos la experiencia de un bar premium a tu evento con cócteles en barril listos para servir. Menos invasivo, más íntimo y fácil de disfrutar.</p>
-    </section>
-
-    <!-- Lista de Barriles -->
-    <section class="container py-5" id="precios">
-        <h2 class="text-center">Nuestros Barriles</h2>
-        <div class="row text-center">
-            <div class="col-md-4">
-                <img src="https://placehold.co/200x200" class="img-fluid rounded" alt="Pisco Sour">
-                <h4>Pisco Sour</h4>
-                <p>5L - $69.990 | 10L - $129.990</p>
-            </div>
-            <div class="col-md-4">
-                <img src="https://placehold.co/200x200" class="img-fluid rounded" alt="Gin and Tonic">
-                <h4>Gin and Tonic</h4>
-                <p>5L - $79.990 | 10L - $149.990</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Beneficios -->
-    <section class="bg-light text-center py-5">
-        <h2>¿Por qué elegirnos?</h2>
-        <ul class="list-unstyled">
-            <li><i class="fa-solid fa-check"></i> Cócteles listos al instante, sin esperas.</li>
-            <li><i class="fa-solid fa-check"></i> Auto-servicio fácil y elegante.</li>
-            <li><i class="fa-solid fa-check"></i> Menos invasivo que una barra móvil.</li>
-            <li><i class="fa-solid fa-check"></i> Despacho y retiro gratuito en Santiago.</li>
-        </ul>
-    </section>
-
-    <!-- Testimonios -->
-    <section class="container text-center py-5">
-        <h2>Lo que dicen nuestros clientes</h2>
-        <div id="carouselTestimonios" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <p>"¡Me encantó! Cócteles perfectos y sin complicaciones." - María</p>
-                </div>
-                <div class="carousel-item">
-                    <p>"La mejor opción para eventos, fácil y delicioso." - Juan</p>
+    <div id="app">
+        <!-- Menú -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Cocktails on Tap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#cotizar">Cotizar</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </nav>
 
-    <!-- Formulario de Cotización con Vue.js -->
-    <section class="container py-5" id="cotizacion">
-        <h2 class="text-center">Cotiza tu Pedido</h2>
-        <div id="app">
-            <form @submit.prevent="enviarCotizacion" class="row g-3">
-                <div class="col-md-6">
-                    <input type="text" v-model="nombre" class="form-control" placeholder="Tu Nombre" required>
-                </div>
-                <div class="col-md-6">
-                    <input type="tel" v-model="telefono" class="form-control" placeholder="Tu Teléfono" required>
-                </div>
-                <div class="col-12">
-                    <input type="email" v-model="correo" class="form-control" placeholder="Tu Correo" required>
-                </div>
-                <div class="col-12">
-                    <input type="text" v-model="evento" class="form-control" placeholder="Tipo de Evento" required>
-                </div>
-                <div class="col-12">
-                    <textarea v-model="detalle" class="form-control" placeholder="Detalles adicionales"></textarea>
-                </div>
-                <div class="col-12 text-center">
-                    <button type="submit" class="btn btn-primary">Enviar por WhatsApp</button>
-                </div>
-            </form>
-        </div>
-    </section>
+        <!-- Sección Hero -->
+        <section class="hero-section d-flex align-items-center text-white" id="inicio">
+            <div class="container text-center">
+                <h1 class="display-4 fw-bold mb-3">Cócteles Profesionales en Barril</h1>
+                <p class="lead mb-4">Servicio premium de autoservicio para tus eventos</p>
+                <a href="#productos" class="btn btn-light btn-lg">Ver Cócteles</a>
+            </div>
+        </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>Contacto:</p>
-        <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/56932334235" class="text-white">+56 9 3233 4235</a></p>
-        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:CoctelesEnBarril@gmail.com" class="text-white">CoctelesEnBarril@gmail.com</a></p>
-        <p><i class="fa-brands fa-instagram"></i> <a href="https://instagram.com/cocktailsontap.chile" class="text-white">@cocktailsontap.chile</a></p>
-        <p><i class="fa-brands fa-tiktok"></i> <a href="https://tiktok.com/@cocktailsontap.chile" class="text-white">@cocktailsontap.chile</a></p>
-        <p><i class="fa-solid fa-globe"></i> <a href="https://www.cocktailsontap.cl" class="text-white">www.cocktailsontap.cl</a></p>
-    </footer>
+        <!-- Sección Productos -->
+        <section class="py-5" id="productos">
+            <div class="container">
+                <h2 class="text-center mb-5">Nuestra Selección Premium</h2>
+                <div class="row g-4">
+                    <div class="col-md-4" v-for="(product, index) in products">
+                        <div class="card cocktail-card" 
+                             :class="{ 'active': selectedProduct === index }"
+                             @click="selectProduct(index)">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ product.name }}</h5>
+                                <img :src="product.image" class="img-fluid mb-3" alt="Cóctel">
+                                <div class="row g-2">
+                                    <div class="col-12">
+                                        <select class="form-select" v-model="product.selectedSize">
+                                            <option v-for="size in product.sizes" :value="size">
+                                                {{ size.size }} - ${{ size.price.toLocaleString('es-CL') }}
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="number" class="form-control" 
+                                               v-model="product.quantity" 
+                                               min="1" 
+                                               placeholder="Cantidad">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Sección Cotización -->
+        <section class="bg-light py-5" id="cotizar">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Formulario -->
+                    <div class="col-lg-6">
+                        <form @submit.prevent="sendWhatsApp">
+                            <h3 class="mb-4">Detalles del Evento</h3>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="datetime-local" class="form-control" 
+                                           v-model="form.eventDate" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="number" class="form-control" 
+                                           v-model="form.guests" 
+                                           placeholder="Invitados" required>
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" class="form-control" 
+                                           v-model="form.address" 
+                                           placeholder="Dirección exacta" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" 
+                                           v-model="form.fullName" 
+                                           placeholder="Nombre completo" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="tel" class="form-control" 
+                                           v-model="form.phone" 
+                                           placeholder="Celular" required>
+                                </div>
+                                <div class="col-12">
+                                    <input type="email" class="form-control" 
+                                           v-model="form.email" 
+                                           placeholder="Correo electrónico" required>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control" rows="4"
+                                              v-model="form.comments" 
+                                              placeholder="Comentarios adicionales"></textarea>
+                                </div>
+                            </div>
+                    </div>
+
+                    <!-- Resumen -->
+                    <div class="col-lg-6">
+                        <div class="card summary-card">
+                            <div class="card-body">
+                                <h4 class="card-title mb-4">Resumen de Cotización</h4>
+                                
+                                <div v-if="selectedProducts.length > 0">
+                                    <div class="d-flex justify-content-between mb-2" 
+                                         v-for="product in selectedProducts">
+                                        <div>
+                                            <p class="mb-0 fw-bold">{{ product.quantity }}x {{ product.name }}</p>
+                                            <small class="text-muted">{{ product.selectedSize.size }}</small>
+                                        </div>
+                                        <span>${{ (product.quantity * product.selectedSize.price).toLocaleString('es-CL') }}</span>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex justify-content-between fw-bold fs-5">
+                                        <span>Total:</span>
+                                        <span>${{ total.toLocaleString('es-CL') }}</span>
+                                    </div>
+                                </div>
+                                
+                                <div v-else class="text-center text-muted py-4">
+                                    <i class="fas fa-cocktail fa-2x mb-3"></i>
+                                    <p>Selecciona al menos un producto</p>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-white">
+                                <button type="submit" class="btn btn-success w-100" 
+                                        :disabled="selectedProducts.length === 0">
+                                    <i class="fab fa-whatsapp me-2"></i>Enviar Cotización
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pie de página -->
+        <footer class="bg-dark text-white py-4">
+            <div class="container text-center">
+                <div class="d-flex justify-content-center gap-4 mb-4">
+                    <a href="https://instagram.com/cocktailsontap.chile" class="text-white">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="https://tiktok.com/@cocktailsontap.chile" class="text-white">
+                        <i class="fab fa-tiktok fa-2x"></i>
+                    </a>
+                    <a href="https://wa.me/56932334235" class="text-white">
+                        <i class="fab fa-whatsapp fa-2x"></i>
+                    </a>
+                    <a href="mailto:CoctelesEnBarril@gmail.com" class="text-white">
+                        <i class="fas fa-envelope fa-2x"></i>
+                    </a>
+                </div>
+                <p class="mb-0 small">
+                    © 2024 Cocktails on Tap Chile - Todos los derechos reservados
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script>
         const { createApp } = Vue;
 
         createApp({
             data() {
                 return {
-                    nombre: '',
-                    telefono: '',
-                    correo: '',
-                    evento: '',
-                    detalle: ''
-                };
+                    selectedProduct: null,
+                    form: {
+                        eventDate: '',
+                        guests: '',
+                        address: '',
+                        fullName: '',
+                        phone: '',
+                        email: '',
+                        comments: ''
+                    },
+                    products: [
+                        {
+                            name: 'Pisco Sour Clásico',
+                            image: 'https://placehold.co/400x300',
+                            sizes: [
+                                { size: 'Barril 5L', price: 69990 },
+                                { size: 'Barril 10L', price: 129990 }
+                            ],
+                            selectedSize: { size: 'Barril 5L', price: 69990 },
+                            quantity: 1
+                        },
+                        {
+                            name: 'Mojito Tradicional',
+                            image: 'https://placehold.co/400x300',
+                            sizes: [
+                                { size: 'Barril 5L', price: 79990 },
+                                { size: 'Barril 10L', price: 149990 }
+                            ],
+                            selectedSize: { size: 'Barril 5L', price: 79990 },
+                            quantity: 1
+                        },
+                        {
+                            name: 'Aperol Spritz Premium',
+                            image: 'https://placehold.co/400x300',
+                            sizes: [
+                                { size: 'Barril 5L', price: 99990 },
+                                { size: 'Barril 10L', price: 189990 }
+                            ],
+                            selectedSize: { size: 'Barril 5L', price: 99990 },
+                            quantity: 1
+                        }
+                    ]
+                }
+            },
+            computed: {
+                selectedProducts() {
+                    return this.products.filter(p => p.quantity > 0);
+                },
+                total() {
+                    return this.selectedProducts.reduce((acc, product) => {
+                        return acc + (product.quantity * product.selectedSize.price);
+                    }, 0);
+                }
             },
             methods: {
-                enviarCotizacion() {
-                    const mensaje = `Hola, quiero cotizar cócteles en barril:\n\nNombre: ${this.nombre}\nTeléfono: ${this.telefono}\nCorreo: ${this.correo}\nEvento: ${this.evento}\nDetalle: ${this.detalle}`;
-                    const url = `https://wa.me/56932334235?text=${encodeURIComponent(mensaje)}`;
-                    window.open(url, '_blank');
+                selectProduct(index) {
+                    this.selectedProduct = index;
+                },
+                sendWhatsApp() {
+                    const productsList = this.selectedProducts.map(p => {
+                        return `➤ ${p.quantity}x ${p.name} (${p.selectedSize.size}) - $${(p.quantity * p.selectedSize.price).toLocaleString('es-CL')}`;
+                    }).join('%0A');
+
+                    const message = `*COTIZACIÓN COCKTAILS ON TAP*%0A%0A
+*📅 Fecha y Hora:* ${this.form.eventDate}%0A
+*👥 Invitados:* ${this.form.guests}%0A
+*📍 Dirección:* ${this.form.address}%0A%0A
+*📝 Detalles Cliente*%0A
+• Nombre: ${this.form.fullName}%0A
+• Celular: ${this.form.phone}%0A
+• Email: ${this.form.email}%0A%0A
+*🍸 Productos Seleccionados*%0A${productsList}%0A%0A
+*💵 Total Estimado:* $${this.total.toLocaleString('es-CL')}%0A%0A
+*📝 Comentarios:* ${this.form.comments || 'Ninguno'}`;
+
+                    window.open(`https://wa.me/56932334235?text=${message}`, '_blank');
                 }
             }
         }).mount('#app');
     </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
