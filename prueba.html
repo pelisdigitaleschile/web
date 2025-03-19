@@ -31,7 +31,6 @@
                             <select
                                 class="form-select form-select-sm"
                                 v-model="producto.tamañoSeleccionado"
-                                @change="/* actualizarPrecio(producto) - Eliminada por innecesaria */"
                                 id="tamaño"
                             >
                                 <option v-for="(precio, tamaño) in producto.precios" :key="tamaño" :value="tamaño">
