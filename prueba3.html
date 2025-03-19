@@ -9,24 +9,26 @@
 </head>
 <body class="bg-light">
   <div id="app" class="container py-4">
-    <h1 class="text-center mb-4">Cotiza tus Cócteles</h1>
+    <h1 class="text-center mb-4 fs-4">Cotiza tus Cócteles</h1>
     
-    <div class="alert alert-info mb-4">
+    <div class="alert alert-info mb-4 small">
       <p class="mb-1"><strong>Servicio incluido por la compra del Barril:</strong> Estación de Coctelería con Máquina Dispensadora, Cristalería, Bombillas, Hielo, Decoraciones para los Cócteles. Despacho y Retiro Gratis en Santiago.</p>
       <hr>
-      <p class="mb-1"><strong>*Cada barril de 5 Litros rinde entre 25 y 30 cócteles.</strong></p>
-      <p class="mb-0"><strong>*Cada Barril de 10 Litros rinde entre 50 y 60 cócteles.</strong></p>
+      <p class="mb-1"><strong>*Cada barril de 5L rinde 25-30 cócteles</strong></p>
+      <p class="mb-0"><strong>*Cada barril de 10L rinde 50-60 cócteles</strong></p>
     </div>
 
-    <div class="row row-cols-2 g-4 mb-4">
+    <div class="row row-cols-2 g-3 mb-4">
       <div v-for="(producto, index) in productos" :key="index" class="col">
         <div class="card h-100" :class="{ 'border-primary bg-light': producto.cantidad > 0 }" @click="toggleCantidad(producto, $event)">
-          <div class="card-body">
+          <div class="card-body p-3">
             <div class="d-flex justify-content-between align-items-center">
-              <h5 class="card-title fw-bold mb-0">{{ producto.nombre }}</h5>
-              <h5 :class="{ 'fw-bold': producto.cantidad > 0, 'text-muted': producto.cantidad < 1 }">${{ producto.cantidad > 0 ? formatPrice(producto.subtotal) : 0 }}</h5>
+              <h6 class="card-title fw-bold mb-0 fs-6">{{ producto.nombre }}</h6>
+              <span :class="{ 'fw-bold': producto.cantidad > 0, 'text-muted': producto.cantidad < 1 }" class="fs-6">
+                ${{ producto.cantidad > 0 ? formatPrice(producto.subtotal) : 0 }}
+              </span>
             </div>
-            <p class="card-text text-muted small mt-2">{{ producto.descripcion }}</p>
+            <p class="card-text text-muted small mb-1">{{ producto.descripcion }}</p>
             
             <select class="form-select form-select-sm mb-2" v-model="producto.tamanoSeleccionado" @change="calcularSubtotal(producto)">
               <option v-for="tamano in producto.tamanos" :key="tamano.id" :value="tamano">
@@ -35,15 +37,17 @@
             </select>
             
             <div class="d-flex align-items-center gap-2">
-              <button class="btn btn-outline-primary btn-sm" @click.stop="decrementarCantidad(producto)" :disabled="producto.cantidad <= 0">-</button>
-              <input type="text" class="form-control form-control-sm text-center" v-model.number="producto.cantidad" @input="validarCantidad(producto)">
-              <button class="btn btn-outline-primary btn-sm" @click.stop="incrementarCantidad(producto)">+</button>
+              <button class="btn btn-outline-primary btn-sm py-0 px-2" @click.stop="decrementarCantidad(producto)" :disabled="producto.cantidad <= 0">-</button>
+              <input type="text" class="form-control form-control-sm text-center px-1" v-model.number="producto.cantidad" @input="validarCantidad(producto)">
+              <button class="btn btn-outline-primary btn-sm py-0 px-2" @click.stop="incrementarCantidad(producto)">+</button>
             </div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- El resto del código se mantiene igual desde el formulario de contacto hacia abajo -->
+    <!-- ... (mantener mismo código del formulario y resumen de la versión anterior) ... -->
     <div class="row g-4">
       <div class="col-12">
         <div class="card">
