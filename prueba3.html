@@ -30,7 +30,7 @@
             </div>
             <p class="card-text text-muted small mb-1">{{ producto.descripcion }}</p>
             
-            <select class="form-select form-select-sm mb-2" v-model="producto.tamanoSeleccionado" @change="calcularSubtotal(producto)">
+            <select class="form-select form-select-sm mb-2 text-truncate" v-model="producto.tamanoSeleccionado" @change="calcularSubtotal(producto)" style="min-width: 100%">
               <option v-for="tamano in producto.tamanos" :key="tamano.id" :value="tamano">
                 {{ tamano.nombre }} - ${{ formatPrice(tamano.precio) }}
               </option>
@@ -46,9 +46,8 @@
       </div>
     </div>
 
-    <!-- El resto del código se mantiene igual desde el formulario de contacto hacia abajo -->
-    <!-- ... (mantener mismo código del formulario y resumen de la versión anterior) ... -->
-    <div class="row g-4">
+    <!-- Resto del código manteniendo la estructura anterior del formulario y resumen -->
+    <!-- ... (formulario y resumen se mantienen igual que en la versión anterior) ... -->
       <div class="col-12">
         <div class="card">
           <div class="card-body">
