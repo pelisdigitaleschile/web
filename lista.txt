@@ -1,0 +1,1390 @@
+1390	Duplicidad	Duplicity	2025	ING/ESP	Español	5.0	USA	Drama, Misterio	https://www.imdb.com/title/tt28239363
+1389	O'Dessa	O'Dessa	2025	ING/ESP	Español	4.8	Brasil, USA	Drama, Música, Musical	https://www.imdb.com/title/tt26304178
+1388	Babygirl: Deseo Prohibido	Babygirl	2024	ING/ESP	Español	6.0	Países Bajos,USA	Drama, Romance, Thriller	https://www.imdb.com/title/tt30057084
+1387	Novocaine: Sin dolor	Novocaine	2025	ING/ESP	Español	7.0	USA	Acción, Comedia, Thriller	https://www.imdb.com/title/tt29603959
+1386	Depravación	Depravity	2024	ING/ESP	Español	4.3	UK, Tailandia, USA	Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt1659324
+1385	Estado eléctrico	The Electric State	2025	ING/ESP	Español	6.1	USA	Acción, Aventura, Comedia, Drama, Sci-Fi	https://www.imdb.com/title/tt7766378
+1384	Blindado: Sin Salida	Armor	2024	ING/ESP	Español	3.5	USA	Acción, Crimen, Drama, Thriller	https://www.imdb.com/title/tt29252358
+1383	El Abismo Secreto	The Gorge	2025	ING/ESP	Español	6.7	UK, USA	Acción, Aventura, Terror, Romance, Sci-Fi	https://www.imdb.com/title/tt13654226
+1382	Delicious	Delicious	2025	ALE/ESP	Español	4.4	Alemania	Drama, Thriller	https://www.imdb.com/title/tt32047217
+1381	Paddington: Aventura en la Selva	Paddington in Peru	2024	ING/ESP	Español	6.7	Reino Unido, Francia, Japón,USA	Infantil	https://www.imdb.com/title/tt5822536
+1380	Better Man: La Historia de Robbie Williams	Better Man	2024	ING/ESP	Español	7.6	Reino Unido,USA, China, Francia, Australia	Biografía, Fantasía, Música, Musical	https://www.imdb.com/title/tt14260836
+1379	La Fuerza De Una Campeona	The Fire Inside	2024	ING/ESP	Español	6.8	USA	Biografía, Drama, Deporte	https://www.imdb.com/title/tt6133444
+1378	Hombre Lobo	Wolf Man	2025	ING/ESP	Español	5.6	USA, Nueva Zelanda, Irlanda	Terror	https://www.imdb.com/title/tt4216984
+1377	Escapada De Espanto	The Parenting	2025	ING/ESP	Español	5.6	USA	Comedia, Terror	https://www.imdb.com/title/tt14041896
+1376	Tormenta Ácida	Acide	2023	ING/ESP	Español	5.1	Francia, Bélgica	Drama, Sci-Fi	https://www.imdb.com/title/tt17569526
+1375	Dalia Y El Libro Rojo	Dalia y el Libro Rojo	2024	Español	Español	7.3	Argentina, España, Brasil, Perú, Colombia, Ecuador	Infantil	https://www.imdb.com/title/tt9881850
+1374	Compañera Perfecta	Companion	2025	ING/ESP	Español	7.0	USA	Sci-Fi, Thriller	https://www.imdb.com/title/tt26584495
+1373	Capitán América 4: Un Nuevo Mundo	Captain America: Brave New World	2025	ING/ESP	Español	6.0	USA, Canadá	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt14513804
+1372	Alien Romulus	Alien: Romulus	2024	Inglés	Español	7.1	UK, USA, Hungría, Australia, Nueva Zelanda, Canadá	Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt18412256
+1371	Amigos Imaginarios	If	2024	ING/ESP	Español	6.4	USA, Canadá	Animación, Comedia, Drama, Familia, Fantasía	https://www.imdb.com/title/tt11152168
+1370	Anora	Anora	2024	ING/ESP	Español	7.6	USA	Comedia, Drama, Romance	https://www.imdb.com/title/tt28607951
+1369	Aquí	Here	2024	ING/ESP	Español	6.3	USA	Drama	https://www.imdb.com/title/tt18272208
+1368	Bad Boys Hasta La Muerte	Bad Boys: Ride or Die	2024	ING/ESP	Español	6.5	USA	Acción, Aventura, Comedia, Crimen, Thriller	https://www.imdb.com/title/tt4919268
+1367	Beetlejuice Beetlejuice	Beetlejuice Beetlejuice	2024	ING/ESP	Español	6.7	USA, Francia	Comedia, Fantasía, Terror	https://www.imdb.com/title/tt2049403
+1366	Bob Marley: La Leyenda	Bob Marley: One Love	2024	Inglés	Español	6.2	USA	Biografía, Drama, Música	https://www.imdb.com/title/tt8521778
+1365	Cónclave	Conclave	2024	ING/ESP	Español	7.4	UK, USA	Drama, Thriller	https://www.imdb.com/title/tt20215234
+1364	Deadpool & Wolverine	Deadpool & Wolverine	2024	ING/ESP	Español	7.6	USA, UK, Nueva Zelanda, Canadá	Acción, Aventura, Comedia, Sci-Fi	https://www.imdb.com/title/tt6263850
+1363	El Brutalista	The Brutalist	2024	ING/ESP	Español	7.5	USA, UK, Canadá	Drama	https://www.imdb.com/title/tt8999762
+1362	El Planeta De Los Simios: Nuevo Reino	Kingdom of the Planet of the Apes	2024	ING/ESP	Español	6.9	USA	Acción, Aventura, Drama, Sci-Fi, Thriller	https://www.imdb.com/title/tt11389872
+1361	Garfield: Fuera De Casa	The Garfield Movie	2024	ING/ESP	Español	5.7	USA, UK, Hong Kong	Infantil	https://www.imdb.com/title/tt5779228
+1360	Gladiator II	Gladiator II	2024	ING/ESP	Español	6.6	USA, UK, Marruecos, Canadá, Malta	Acción, Aventura, Drama	https://www.imdb.com/title/tt9218128
+1359	Guasón 2: Folie À Deux	Joker: Folie à Deux	2024	ING/ESP	Español	5.2	USA, Canadá	Drama, Musical, Thriller	https://www.imdb.com/title/tt11315808
+1358	Hellboy The Crooked Man	Hellboy: The Crooked Man	2024	ING/ESP	Español	4.5	USA, UK, Alemania, Bulgaria	Acción, Terror, Misterio, Thriller	https://www.imdb.com/title/tt26757462
+1357	Incitadores	The Instigators	2024	ING/ESP	Español	6.2	USA	Acción, Comedia, Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt24169886
+1356	Intensa-Mente 2	Inside Out 2	2024	ING/ESP	Español	7.5	USA	Infantil	https://www.imdb.com/title/tt22022452
+1355	La Leyenda Del Dragón	Dragonkeeper	2024	ING/ESP	Español	5.7	España, China	Infantil	https://www.imdb.com/title/tt7093904
+1354	La Sustancia	The Substance	2024	ING/ESP	Español	7.3	UK, Francia	Drama, Terror, Sci-Fi	https://www.imdb.com/title/tt17526714
+1353	Megalópolis	Megalopolis	2024	Inglés	Español	4.7	USA	Drama, Fantasía, Sci-Fi	https://www.imdb.com/title/tt10128846
+1352	Mi Amigo El Pingüino	My Penguin Friend	2024	ING/ESP	Español	6.7	Brasil, USA, España	Aventura, Drama, Familia	https://www.imdb.com/title/tt8609660
+1351	Mi Villano Favorito 4	Despicable Me 4	2024	ING/ESP	Español	6.2	USA	Infantil	https://www.imdb.com/title/tt7510222
+1350	Moana 2	Moana 2	2024	ING/ESP	Español	6.8	USA, Canadá	Infantil	https://www.imdb.com/title/tt13622970
+1349	Mufasa: El Rey León	Mufasa: The Lion King	2024	ING/ESP	Español	6.6	USA, Canadá	Infantil	https://www.imdb.com/title/tt13186482
+1348	Nosferatu	Nosferatu	2024	ING/ESP	Español	7.3	USA, UK, Hungría	Fantasía, Terror, Misterio	https://www.imdb.com/title/tt5040012
+1347	Reagan	Reagan	2024	ING/ESP	Español	6.2	USA	Biografía, Drama, Historia	https://www.imdb.com/title/tt1723808
+1346	Recuerdos Mortales	Sleeping Dogs	2024	ING/ESP	Español	6.2	Australia, USA	Crimen, Misterio, Thriller	https://www.imdb.com/title/tt8542964
+1345	Road House	Road House	2024	ING/ESP	Español	6.2	USA	Acción, Drama, Thriller	https://www.imdb.com/title/tt3359350
+1344	Robot Salvaje	The Wild Robot	2024	ING/ESP	Español	8.2	USA, Japón	Infantil	https://www.imdb.com/title/tt29623480
+1343	Romper El Círculo	It Ends with Us	2024	ING/ESP	Español	6.4	USA	Drama, Romance	https://www.imdb.com/title/tt10655524
+1342	Terrifier 3: Payaso Siniestro	Terrifier 3	2024	ING/ESP	Español	6.3	USA	Terror	https://www.imdb.com/title/tt27911000
+1341	Tornados	Twisters	2024	ING/ESP	Español	6.5	Japón, USA	Acción, Aventura, Thriller	https://www.imdb.com/title/tt12584954
+1340	Transformers One	Transformers One	2024	ING/ESP	Español	7.6	USA	Animación, Acción, Aventura, Familia, Fantasía, Sci-Fi	https://www.imdb.com/title/tt8864596
+1339	¡Huye!	Get Out	2017	ING/ESP	Español	7.8	USA, Japón	Terror, Misterio, Thriller	https://www.imdb.com/title/tt5052448
+1338	¡Madre!	Mother!	2017	ING/ESP	Español	6.6	USA	Drama, Terror, Misterio	https://www.imdb.com/title/tt5109784
+1337	¡Oye Arnold! La Película De La Jungla	Hey Arnold!: The Jungle Movie	2017	ING/ESP	Español	7.4	USA, Corea del Sur	Infantil	https://www.imdb.com/title/tt5257726
+1336	¡Salve, César!	Hail, Caesar!	2016	ING/ESP	Español	6.3	USA, UK, Japón	Comedia, Drama, Misterio	https://www.imdb.com/title/tt0475290
+1335	¡Shazam!	Shazam!	2019	ING/ESP	Español	7.0	USA, Canadá	Acción, Aventura, Comedia, Fantasía	https://www.imdb.com/title/tt0448115
+1334	¡Shazam! La Furia De Los Dioses	Shazam! Fury of the Gods	2023	ING/ESP	Español	5.9	USA, Alemania, Nueva Zelanda, UK, India, Corea del Sur, Canadá	Acción, Aventura, Comedia, Fantasía, Sci-Fi	https://www.imdb.com/title/tt10151854
+1333	¡Te Atrapé!	Tag	2018	ING/ESP	Español	6.5	USA	Acción, Comedia	https://www.imdb.com/title/tt2854926
+1332	¿Podrás Perdonarme?	Can You Ever Forgive Me?	2018	ING/ESP	Español	7.1	USA	Biografía, Comedia, Crimen, Drama	https://www.imdb.com/title/tt4595882
+1331	¿Por Qué Él?	Why Him?	2016	ING/ESP	Español	6.2	USA	Comedia	https://www.imdb.com/title/tt4501244
+1330	¿Quién @#*%$ Es Mi Papá?	Father Figures	2017	ING/ESP	Español	5.5	USA	Comedia, Drama	https://www.imdb.com/title/tt1966359
+1329	¿Quién Mató A Los Puppets?	The Happytime Murders	2018	ING/ESP	Español	5.5	USA, China	Acción, Comedia, Crimen, Fantasía, Terror, Misterio, Thriller	https://www.imdb.com/title/tt1308728
+1328	3 Anuncios Por Un Crimenn	Three Billboards Outside Ebbing, Missouri	2017	ING/ESP	Español	8.1	UK, USA	Comedia, Crimen, Drama	https://www.imdb.com/title/tt5027774
+1327	6 Balloons	6 Balloons	2018	ING/ESP	Español	5.9	USA	Drama	https://www.imdb.com/title/tt6142496
+1326	6 Below Miracle On The Mountain	6 Below: Miracle on the Mountain	2017	ING/ESP	Español	5.7	USA	Biografía, Drama, Deporte, Thriller	https://www.imdb.com/title/tt5503688
+1325	6-Headed Shark Attack	6-Headed Shark Attack	2018	ING/ESP	Español	2.8	USA	Acción, Aventura, Comedia, Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt8360902
+1324	12 Horas Para Sobrevivir: El Año De La Elección	The Purge: Election Year	2016	ING/ESP	Español	6.0	USA	Acción, Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt4094724
+1323	12 Horas Para Sobrevivir: El Inicio	The First Purge	2018	ING/ESP	Español	5.2	USA, China, Japón	Acción, Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt6133466
+1322	13 Horas: Los Soldados Secretos De Bengasi	13 Hours: The Secret Soldiers of Benghazi	2016	ING/ESP	Español	7.3	USA, Malta	Acción, Drama, Historia, Thriller, Guerra	https://www.imdb.com/title/tt4172430
+1321	15:17 Tren A París	The 15:17 to Paris	2018	ING/ESP	Español	5.3	USA	Biografía, Drama, Thriller	https://www.imdb.com/title/tt6802308
+1320	24 Horas Para Sobrevivir	24 Hours to Live	2017	ING/ESP	Español	5.8	Sudáfrica, China, USA	Acción, Sci-Fi, Thriller	https://www.imdb.com/title/tt5442456
+1319	57 Segundos Atrás	57 Seconds	2023	Inglés	Español	5.4	USA	Sci-Fi, Thriller	https://www.imdb.com/title/tt18083578
+1318	68 Kill	68 Kill	2017	ING/ESP	Español	6.0	USA	Comedia, Crimen, Thriller	https://www.imdb.com/title/tt5189894
+1317	90 Minutes In Heaven	90 Minutes in Heaven	2015	ING/ESP	Español	4.9	USA	Drama	https://www.imdb.com/title/tt4337690
+1316	600 Millas	600 Millas	2015	Inglés	Español	5.5	México, USA	Drama, Thriller	https://www.imdb.com/title/tt3685622
+1315	1917	1917	2019	ING/ESP	Español	8.2	UK, USA, India, España, Canadá	Acción, Drama, Guerra	https://www.imdb.com/title/tt8579674
+1314	7500	Flight 7500	2014	Inglés	Español	4.8	Japón, USA	Drama, Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt1975159
+1313	A 47 Metros	47 Meters Down	2017	ING/ESP	Español	5.6	UK, USA, Dominican Republic	Terror, Misterio, Thriller	https://www.imdb.com/title/tt2932536
+1312	A Dark Song: Ritual Del Más Allá	A Dark Song	2016	Inglés	Español	6.2	Irlanda, UK	Drama, Fantasía, Terror, Misterio	https://www.imdb.com/title/tt4805316
+1311	A Dos Metros De Ti	Five Feet Apart	2019	ING/ESP	Español	7.2	USA	Drama, Romance	https://www.imdb.com/title/tt6472976
+1310	A Kind Of Murder	A Kind of Murder	2016	Inglés	Español	5.3	USA	Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt2726552
+1309	A La Deriva	Adrift	2018	Inglés	Español	6.6	Hong Kong, Islandia, USA, UK	Acción, Aventura, Biografía, Drama, Romance, Thriller	https://www.imdb.com/title/tt6306064
+1308	A Millones De Kilómetros	A Million Miles Away	2023	ING/ESP	Español	7.3	México, USA	Biografía, Drama	https://www.imdb.com/title/tt21940010
+1307	A Street Cat Named Bob	A Street Cat Named Bob	2016	Inglés	Español	7.3	UK, China	Biografía, Drama, Familia	https://www.imdb.com/title/tt3606888
+1306	A Uk	A UK	2016	Inglés	Español	6.9	Chequia, UK, Francia, USA	Biografía, Drama, Historia, Romance	https://www.imdb.com/title/tt3387266
+1305	A.I. Rising	A.I. Rising	2018	Inglés	Español	4.9	Serbia	Drama, Romance, Sci-Fi	https://www.imdb.com/title/tt5215088
+1304	Absolutely Anything	Absolutely Anything	2015	Inglés	Español	6.0	UK	Comedia, Sci-Fi	https://www.imdb.com/title/tt1727770
+1303	Ace Ventura: Un Detective Diferente	Ace Ventura: Pet Detective	1994	ING/ESP	Español	6.9	USA	Comedia	https://www.imdb.com/title/tt0109040
+1302	Ace Ventura: Un Loco En África	Ace Ventura: When Nature Calls	1995	ING/ESP	Español	6.4	USA	Aventura, Comedia, Crimen	https://www.imdb.com/title/tt0112281
+1301	Acción Point	Acción Point	2018	ING/ESP	Español	5.1	USA, Sudáfrica	Comedia	https://www.imdb.com/title/tt6495770
+1300	Actividad Paranormal: La Dimensión Fantasma	Paranormal Activity: The Ghost Dimension	2015	Inglés	Español	4.6	USA	Terror, Misterio	https://www.imdb.com/title/tt2473510
+1299	After: Aquí Empieza Todo	After	2019	ING/ESP	Español	5.3	USA	Drama, Romance	https://www.imdb.com/title/tt4126476
+1298	Agenda Payback	Unhinged	2018	Inglés	Español	4.1	USA	Thriller	https://www.imdb.com/title/tt4788744
+1297	Agente Bajo Fuego	Angel Has Fallen	2019	ING/ESP	Español	6.4	USA	Acción, Thriller	https://www.imdb.com/title/tt6189022
+1296	A-Ha Ending On A High Note The Final Concert	A-ha: Ending on a High Note - The Final Concert	2011	Inglés	Español	8.5	Alemania	Música	https://www.imdb.com/title/tt1883127
+1295	Al Final Del Túnel	Al final del túnel	2016	Inglés	Español	7.0	Argentina, España	Crimen, Drama, Thriller	https://www.imdb.com/title/tt5133308
+1294	Aladdin	Aladdin	2019	ING/ESP	Español	6.9	USA, UK, Singapur, Canadá, Chequia, Serbia, China	Aventura, Comedia, Familia, Fantasía, Musical, Romance	https://www.imdb.com/title/tt6139732
+1293	Alex Strangelove	Alex Strangelove	2018	ING/ESP	Español	6.3	USA	Comedia, Drama, Romance	https://www.imdb.com/title/tt5688996
+1292	Alex Y Yo	Alex & Me	2018	ING/ESP	Español	5.5	USA	Familia, Deporte	https://www.imdb.com/title/tt8179218
+1291	Alfa	Alpha	2018	Inglés	Español	6.6	USA, Canadá, China	Aventura, Drama	https://www.imdb.com/title/tt4244998
+1290	Alicia A Través Del Espejo	Alice Through the Looking Glass	2016	ING/ESP	Español	6.2	USA, Tailandia, UK, India, Canadá	Aventura, Familia, Fantasía, Misterio	https://www.imdb.com/title/tt2567026
+1289	Alien Covenant	Alien: Covenant	2017	ING/ESP	Español	6.4	UK, USA	Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt2316204
+1288	Alien Guerrafare	Alien Guerrafare	2019	ING/ESP	Español	2.6	USA	Acción, Misterio, Sci-Fi	https://www.imdb.com/title/tt9562694
+1287	All Eyez On Me	All Eyez on Me	2017	Inglés	Español	5.9	USA	Biografía, Drama, Música	https://www.imdb.com/title/tt1666185
+1286	Alone In Berlin	Alone in Berlin	2016	ING/ESP	Español	6.5	Alemania, Francia, UK	Drama, Historia, Guerra	https://www.imdb.com/title/tt3026488
+1285	Always Watching A Marble Hornets Story	Always Watching: A Marble Hornets Story	2015	Inglés	Español	4.7	USA	Terror	https://www.imdb.com/title/tt2737926
+1284	Amateur	Amateur	2018	ING/ESP	Español	5.9	USA	Drama, Deporte	https://www.imdb.com/title/tt5580392
+1283	American Animals	American Animals	2018	ING/ESP	Español	7.0	UK, USA	Biografía, Crimen, Drama, Historia, Thriller	https://www.imdb.com/title/tt6212478
+1282	Amigos De Armas	Guerra Dogs	2016	ING/ESP	Español	7.1	USA, Romania	Biografía, Comedia, Crimen, Drama, Guerra	https://www.imdb.com/title/tt2005151
+1281	Amigos Por Siempre	The Upside	2017	ING/ESP	Español	7.0	USA	Comedia, Drama	https://www.imdb.com/title/tt1987680
+1280	Amigos Salvajes 4: Tontos Por El Susto	Open Season: Scared Silly!	2015	ING/ESP	Español	5.0	USA, Canadá, Australia, Chequia, UK	Infantil	https://www.imdb.com/title/tt4938374
+1279	Amityville: El Despertar	Amityville: The Awakening	2017	ING/ESP	Español	4.8	USA, UK	Terror, Thriller	https://www.imdb.com/title/tt1935897
+1278	Amor De Medianoche	Midnight Sun	2018	ING/ESP	Español	6.6	USA	Drama, Romance	https://www.imdb.com/title/tt4799066
+1277	Amor De Vinilo	Juliet, Naked	2018	ING/ESP	Español	6.6	USA, UK	Comedia, Drama, Música, Romance	https://www.imdb.com/title/tt5607096
+1276	Amor.Com	Un profil pour deux	2017	ING/ESP	Español	6.3	Francia, Bélgica, Alemania, Austria	Comedia, Romance	https://www.imdb.com/title/tt4693612
+1275	Anabelle 2: La Creación	Annabelle: Creation	2017	ING/ESP	Español	6.5	USA	Terror, Misterio, Thriller	https://www.imdb.com/title/tt5140878
+1274	Anabelle 3: Viene A Casa	Annabelle Comes Home	2019	ING/ESP	Español	5.9	USA	Terror, Misterio, Thriller	https://www.imdb.com/title/tt8350360
+1273	Andhadhun	Andhadhun	2018	Inglés	Español	8.2	India	Crimen, Misterio, Thriller	https://www.imdb.com/title/tt8108198
+1272	Angry Birds - La Película	The Angry Birds Movie	2016	ING/ESP	Español	6.3	USA	Infantil	https://www.imdb.com/title/tt1985949
+1271	Animales Fantásticos Y Dónde Encontrarlos	Fantastic Beasts and Where to Find Them	2016	ING/ESP	Español	7.2	UK, USA, Canadá	Infantil	https://www.imdb.com/title/tt3183660
+1270	Animales Fantásticos: Los Crímenes De Grindelwald	Fantastic Beasts: The Crimens of Grindelwald	2018	ING/ESP	Español	6.5	UK, USA	Aventura, Familia, Fantasía	https://www.imdb.com/title/tt4123430
+1269	Animales Nocturnos	Nocturnal Animals	2016	ING/ESP	Español	7.4	USA, China	Drama, Thriller	https://www.imdb.com/title/tt4550098
+1268	Aniquilación	Annihilation	2018	ING/ESP	Español	6.8	USA, UK	Aventura, Drama, Terror, Misterio, Sci-Fi, Thriller	https://www.imdb.com/title/tt2798920
+1267	Anna, El Peligro Tiene Nombre	Anna	2019	ING/ESP	Español	6.7	Francia, USA, Canadá, Rusia, Serbia, Guadeloupe	Acción, Thriller	https://www.imdb.com/title/tt7456310
+1266	Anon	Anon	2018	ING/ESP	Español	6.1	UK, Canadá, USA, Alemania	Crimen, Misterio, Sci-Fi, Thriller	https://www.imdb.com/title/tt5397194
+1265	Anti Matter	Anti Matter	2016	ING/ESP	Español	5.7	UK	Terror, Misterio, Sci-Fi	https://www.imdb.com/title/tt4881364
+1264	Ant-Man Y La Avispa	Ant-Man and the Wasp	2018	ING/ESP	Español	7.0	USA, Canadá	Acción, Aventura, Comedia, Sci-Fi	https://www.imdb.com/title/tt5095030
+1263	Ant-Man. El Hombre Hormiga	Ant-Man	2015	ING/ESP	Español	7.2	USA	Acción, Comedia, Sci-Fi	https://www.imdb.com/title/tt0478970
+1262	Apex	Apex	2021	Inglés	Español	3.0	USA, Canadá	Sci-Fi	https://www.imdb.com/title/tt13265876
+1261	Apocalipsis Zombi	The Girl with All the Gifts	2016	ING/ESP	Español	6.6	UK	Acción, Aventura, Drama, Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt4547056
+1260	Apocalypto	Apocalypto	2006	ING/ESP	Español	7.8	USA, México	Acción, Aventura, Drama, Thriller	https://www.imdb.com/title/tt0472043
+1259	Apóstol	Apostle	2018	ING/ESP	Español	6.3	UK, USA	Drama, Fantasía, Terror, Misterio, Thriller	https://www.imdb.com/title/tt6217306
+1258	Apuesta Maestra	Molly's Game	2017	ING/ESP	Español	7.4	USA, Canadá, China	Biografía, Crimen, Drama	https://www.imdb.com/title/tt4209788
+1257	Aquaman	Aquaman	2018	ING/ESP	Español	6.8	USA	Acción, Aventura, Fantasía, Sci-Fi	https://www.imdb.com/title/tt1477834
+1256	Aquaman Y El Reino Perdido	Aquaman and the Lost Kingdom	2023	ING/ESP	Español	5.6	USA, UK, Canadá, Australia, Islandia	Acción, Aventura, Fantasía, Sci-Fi	https://www.imdb.com/title/tt9663764
+1255	Arizona	Arizona	2018	ING/ESP	Español	5.8	USA	Comedia, Thriller	https://www.imdb.com/title/tt2140629
+1254	Asalto En El Huracán	The Hurricane Heist	2018	ING/ESP	Español	5.1	UK, USA	Acción, Aventura, Crimen, Thriller	https://www.imdb.com/title/tt5360952
+1253	Asesinatos Accidentales	Accident Man	2018	Inglés	Español	6.2	UK	Acción, Aventura, Comedia, Crimen, Thriller	https://www.imdb.com/title/tt6237612
+1252	Asesino: Misión Venganza	American Assassin	2017	ING/ESP	Español	6.2	USA, Hong Kong	Acción, Thriller	https://www.imdb.com/title/tt1961175
+1251	Ashes In The Snow	Ashes in the Snow	2018	Inglés	Español	6.6	Lithuania	Drama, Historia, Romance, Guerra	https://www.imdb.com/title/tt3759298
+1250	Ask Me Anything	Ask Me Anything	2014	ING/ESP	Español	6.0	USA	Comedia, Drama, Misterio, Romance	https://www.imdb.com/title/tt2505294
+1249	Assassination Nation	Assassination Nation	2018	ING/ESP	Español	6.0	USA, Canadá	Acción, Comedia, Crimen, Drama, Terror, Misterio, Thriller	https://www.imdb.com/title/tt6205872
+1248	Assassins Creed	Assassin's Creed	2016	ING/ESP	Español	5.6	USA, Francia, UK, Hong Kong, Taiwan, Malta, España, Canadá	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt2094766
+1247	Ataque Submarino	Hunter Killer	2018	ING/ESP	Español	6.6	UK, China, Francia, USA	Acción, Thriller	https://www.imdb.com/title/tt1846589
+1246	Atentado En El Estadio	Final Score	2018	ING/ESP	Español	5.8	UK, USA	Acción, Aventura, Drama, Thriller	https://www.imdb.com/title/tt5254610
+1245	Atómica	Atomic Blonde	2017	ING/ESP	Español	6.7	USA, Suecia, Hungría	Acción, Thriller	https://www.imdb.com/title/tt2406566
+1244	Avatar	Avatar	2009	ING/ESP	Español	7.9	USA, UK	Acción, Aventura, Fantasía, Sci-Fi	https://www.imdb.com/title/tt0499549
+1243	Avengers Endgame	Avengers: Endgame	2019	ING/ESP	Español	8.4	USA	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt4154796
+1242	Avengers Infinity Guerra	Avengers: Infinity Guerra	2018	ING/ESP	Español	8.4	USA, Noruega	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt4154756
+1241	Avengers: Era De Ultrón	Avengers: Age of Ultron	2015	ING/ESP	Español	7.3	USA	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt2395427
+1240	Avenida Cloverfield 10	10 Cloverfield Lane	2016	ING/ESP	Español	7.2	USA	Drama, Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt1179933
+1239	Aves De Presa	Birds of Prey and the Fantabulous Emancipation of One Harley Quinn	2020	ING/ESP	Español	6.1	USA, UK	Acción, Comedia, Crimen	https://www.imdb.com/title/tt7713068
+1238	A-X-L	A-X-L	2018	ING/ESP	Español	5.3	USA	Acción, Aventura, Drama, Familia, Sci-Fi, Thriller	https://www.imdb.com/title/tt5709188
+1237	Baby, El Aprendiz Del Crimenn	Baby Driver	2017	ING/ESP	Español	7.5	UK, USA	Acción, Crimen, Drama, Música	https://www.imdb.com/title/tt3890160
+1236	Back Roads	Back Roads	2018	Inglés	Español	6.3	USA	Crimen, Drama, Thriller	https://www.imdb.com/title/tt0972544
+1235	Back To School	Back to School	1986	Inglés	Español	6.7	USA	Comedia, Romance, Deporte	https://www.imdb.com/title/tt0090685
+1234	Backcountry	Backcountry	2014	Inglés	Español	6.0	Canadá	Aventura, Drama, Terror, Thriller	https://www.imdb.com/title/tt2944198
+1233	Backstabbing For Beginners	Backstabbing for Beginners	2018	ING/ESP	Español	6.3	Dinamarca, Canadá, USA	Drama, Historia, Misterio, Romance, Thriller	https://www.imdb.com/title/tt5153288
+1232	Backtrace	Backtrace	2018	Inglés	Español	3.8	USA, UK, Japón, Canadá	Crimen, Drama, Thriller	https://www.imdb.com/title/tt3588588
+1231	Bad Samaritan	Bad Samaritan	2018	ING/ESP	Español	6.4	USA	Crimen, Drama, Terror, Thriller	https://www.imdb.com/title/tt3203528
+1230	Bad Times At The El Royale	Bad Times at the El Royale	2018	ING/ESP	Español	7.1	USA	Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt6628394
+1229	Bailarina	Ballerina	2016	ING/ESP	Español	6.8	Francia, Canadá	Infantil	https://www.imdb.com/title/tt2261287
+1228	Bajo La Misma Estrella	The Fault in Our Stars	2014	ING/ESP	Español	7.6	USA	Drama, Romance	https://www.imdb.com/title/tt2582846
+1227	Band Aid	Band Aid	2017	Inglés	Español	6.6	USA	Comedia, Drama, Música, Romance	https://www.imdb.com/title/tt5816374
+1226	Barbershop The Next Cut	Barbershop: The Next Cut	2016	ING/ESP	Español	5.9	USA	Comedia, Drama	https://www.imdb.com/title/tt3628584
+1225	Barbie	Barbie	2023	ING/ESP	Español	6.8	USA, UK	Aventura, Comedia, Fantasía	https://www.imdb.com/title/tt1517268
+1224	Barbie Y Los Delfines Mágicos	Barbie: Dolphin Magic	2017	ING/ESP	Español	5.7	USA, Canadá	Infantil	https://www.imdb.com/title/tt7130740
+1223	Barry Seal: Sólo En América	American Made	2017	ING/ESP	Español	7.1	USA, Japón, Colombia, Canadá	Acción, Comedia, Crimen, Drama, Thriller	https://www.imdb.com/title/tt3532216
+1222	Batman	The Batman	2022	ING/ESP	Español	7.8	USA	Acción, Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt1877830
+1221	Batman Vs. Superman. El Origen De La Justicia	Batman v Superman: Dawn of Justice	2016	ING/ESP	Español	6.5	USA, Marruecos	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt2975590
+1220	Battle	Battle	2018	ING/ESP	Español	5.9	Noruega, Dinamarca, Países Bajos, Suecia	Drama, Romance	https://www.imdb.com/title/tt6854672
+1219	Battle Angel: La Última Guerrera	Alita: Battle Angel	2019	ING/ESP	Español	7.3	Japón, Canadá, USA	Acción, Aventura, Sci-Fi, Thriller	https://www.imdb.com/title/tt0437086
+1218	Baywatch: Guardianes De La Bahía	Baywatch	2017	ING/ESP	Español	5.5	UK, China, USA	Acción, Comedia, Crimen	https://www.imdb.com/title/tt1469304
+1217	Beast Of Burden	Beast of Burden	2018	Inglés	Español	3.6	USA	Acción, Crimen, Drama, Thriller	https://www.imdb.com/title/tt6170506
+1216	Beatriz At Dinner	Beatriz at Dinner	2017	ING/ESP	Español	6.0	USA	Comedia, Drama	https://www.imdb.com/title/tt5929750
+1215	Beau Tiene Miedo	Beau Is Afraid	2023	ING/ESP	Español	6.7	USA, UK, Finlandia, Canadá	Comedia, Drama	https://www.imdb.com/title/tt13521006
+1214	Beautiful Boy: Siempre Serás Mi Hijo	Beautiful Boy	2018	Inglés	Español	7.4	USA	Biografía, Drama	https://www.imdb.com/title/tt1226837
+1213	Becoming Astrid	Unga Astrid	2018	Inglés	Español	7.1	Suecia, Dinamarca	Biografía, Drama, Historia	https://www.imdb.com/title/tt6433456
+1212	Before We Go	Before We Go	2014	Inglés	Español	6.8	USA	Comedia, Drama, Romance	https://www.imdb.com/title/tt0443465
+1211	Bel Canto	Bel Canto	2018	Inglés	Español	5.5	USA, México	Drama, Música, Romance, Thriller	https://www.imdb.com/title/tt6046314
+1210	Belfast	Belfast	2021	Inglés	Español	7.2	UK	Biografía, Drama, Romance	https://www.imdb.com/title/tt12789558
+1209	Belleza Inesperada	Collateral Beauty	2016	ING/ESP	Español	6.8	USA	Drama, Romance	https://www.imdb.com/title/tt4682786
+1208	Belzebuth	Belzebuth	2017	ING/ESP	Español	6.0	México	Terror	https://www.imdb.com/title/tt3662308
+1207	Ben Hur	Ben-Hur	2016	ING/ESP	Español	5.7	USA	Acción, Aventura, Drama, Romance	https://www.imdb.com/title/tt2638144
+1206	Bent	Bent	2018	Inglés	Español	5.2	España, USA	Acción, Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt2237324
+1205	Berlin Falling	Berlin Falling	2017	ING/ESP	Español	5.8	Alemania	Thriller	https://www.imdb.com/title/tt5286432
+1204	Berlin Syndrome	Berlin Syndrome	2017	ING/ESP	Español	6.3	Australia, Francia	Drama, Terror, Misterio, Thriller	https://www.imdb.com/title/tt3335606
+1203	Bessie	Bessie	2015	Inglés	Español	6.7	USA	Biografía, Drama, Música	https://www.imdb.com/title/tt3704352
+1202	Beyond Skyline	Beyond Skyline	2017	ING/ESP	Español	5.3	USA, Canadá, Indonesia, UK, China, Singapur	Acción, Aventura, Terror, Sci-Fi	https://www.imdb.com/title/tt1724970
+1201	Beyond The Edge	Za granyu realnosti	2018	ING/ESP	Español	4.5	Rusia	Acción, Aventura, Fantasía, Sci-Fi	https://www.imdb.com/title/tt5629524
+1200	Bienvenidos Al Ayer	Project Almanac	2015	ING/ESP	Español	6.4	USA	Drama, Misterio, Sci-Fi, Thriller	https://www.imdb.com/title/tt2436386
+1199	Big Eyes: Retrato De Una Mentira	Big Eyes	2014	Inglés	Español	7.0	USA, Canadá	Biografía, Crimen, Drama, Romance	https://www.imdb.com/title/tt1126590
+1198	Big Fish Y Begonia	Da yu hai tang	2016	ING/ESP	Español	7.0	China	Infantil	https://www.imdb.com/title/tt1920885
+1197	Billionaire Boys Club	Billionaire Boys Club	2018	ING/ESP	Español	5.6	USA	Biografía, Drama, Thriller	https://www.imdb.com/title/tt5179598
+1196	Billionaire Ransom	Take Down	2016	ING/ESP	Español	5.5	UK	Acción, Aventura, Crimen, Drama, Thriller	https://www.imdb.com/title/tt2782844
+1195	Bird Box	Bird Box	2018	ING/ESP	Español	6.6	USA	Terror, Misterio, Sci-Fi	https://www.imdb.com/title/tt2737304
+1194	Black 47	Black '47	2018	ING/ESP	Español	6.8	Irlanda, Luxemburgo, Bélgica, USA, Francia	Acción, Drama, Historia	https://www.imdb.com/title/tt3208026
+1193	Black Adam	Black Adam	2022	ING/ESP	Español	6.2	USA, Canadá, Nueva Zelanda, Hungría	Acción, Aventura, Fantasía, Sci-Fi	https://www.imdb.com/title/tt6443346
+1192	Black Butterfly	Black Butterfly	2017	ING/ESP	Español	6.1	España, USA, Italia	Drama, Misterio, Thriller	https://www.imdb.com/title/tt2090465
+1191	Black Water	Black Water	2018	Inglés	Español	4.7	Canadá, USA	Acción, Drama, Thriller	https://www.imdb.com/title/tt5622412
+1190	Blade Runner	Blade Runner	1982	ING/ESP	Español	8.1	USA, UK	Acción, Drama, Sci-Fi, Thriller	https://www.imdb.com/title/tt0083658
+1189	Blade Runner 2049	Blade Runner 2049	2017	ING/ESP	Español	8.0	USA, Canadá, España	Acción, Drama, Misterio, Sci-Fi, Thriller	https://www.imdb.com/title/tt1856101
+1188	Blanca Nieves Y Los Siete Enanos	Snow White and the Seven DGuerrafs	1937	ING/ESP	Español	7.6	USA	Infantil	https://www.imdb.com/title/tt0029583
+1187	Bleeding Heart	Bleeding Heart	2015	Inglés	Español	5.1	USA	Acción, Drama, Misterio, Thriller	https://www.imdb.com/title/tt3244446
+1186	Bleeding Steel	Ji qi zhi xue	2017	Inglés	Español	5.2	China, Hong Kong, USA	Acción, Sci-Fi, Thriller	https://www.imdb.com/title/tt5813366
+1185	Blindspotting	Blindspotting	2018	ING/ESP	Español	7.4	USA	Comedia, Crimen, Drama	https://www.imdb.com/title/tt7242142
+1184	Blue Beetle	Blue Beetle	2023	ING/ESP	Español	5.9	USA, México, Canadá, Alemania	Acción, Aventura, Sci-Fi, Thriller	https://www.imdb.com/title/tt9362930
+1183	Boarding School	Boarding School	2018	Inglés	Español	5.8	USA	Terror, Misterio, Thriller	https://www.imdb.com/title/tt6224502
+1182	Bob Lazar Area 51 & Flying Saucers	Bob Lazar: Area 51 & Flying Saucers	2018	Inglés	Español	5.6	USA	Documental	https://www.imdb.com/title/tt9107368
+1181	Bohemian Rhapsody, La Historia De Freddie Mercury	Bohemian Rhapsody	2018	ING/ESP	Español	7.9	UK, USA	Biografía, Drama, Música	https://www.imdb.com/title/tt1727824
+1180	Boo 2 A Madea Halloween	Tyler Perry's Boo 2! A Madea Halloween	2017	ING/ESP	Español	4.0	USA	Comedia, Drama, Terror, Misterio	https://www.imdb.com/title/tt6217804
+1179	Borg/Mcenroe, La Película	Borg McEnroe	2017	ING/ESP	Español	6.9	Suecia, Dinamarca, Finlandia, Chequia	Biografía, Drama, Deporte	https://www.imdb.com/title/tt5727282
+1178	Boy Erased	Boy Erased	2018	ING/ESP	Español	6.9	Australia, USA, China	Biografía, Drama	https://www.imdb.com/title/tt7008872
+1177	Boyka Undisputed	Boyka: Undisputed IV	2016	ING/ESP	Español	6.9	Bulgaria, USA	Acción, Drama, Deporte	https://www.imdb.com/title/tt3344680
+1176	Braven	Braven	2018	ING/ESP	Español	5.9	Canadá, USA	Acción, Thriller	https://www.imdb.com/title/tt5001754
+1175	Brawl In Cell Block 99	Brawl in Cell Block 99	2017	Inglés	Español	7.1	USA	Crimen, Drama, Thriller	https://www.imdb.com/title/tt5657856
+1174	Breaking In	Breaking In	2018	ING/ESP	Español	5.5	USA, Japón	Acción, Thriller	https://www.imdb.com/title/tt7137846
+1173	Breakthrough	Breakthrough	2019	ING/ESP	Español	6.3	USA, Canadá	Biografía, Drama	https://www.imdb.com/title/tt7083526
+1172	Brexit	Brexit: The Uncivil Guerra	2019	ING/ESP	Español	7.0	UK	Biografía, Drama, Historia	https://www.imdb.com/title/tt8425058
+1171	Bright	Bright	2017	ING/ESP	Español	6.3	USA, México, Australia, Canadá, India	Acción, Fantasía, Thriller	https://www.imdb.com/title/tt5519340
+1170	Brigsby Bear	Brigsby Bear	2017	ING/ESP	Español	7.3	USA, China	Comedia, Drama	https://www.imdb.com/title/tt5805752
+1169	Broken Star	Broken Star	2018	Inglés	Español	4.4	USA	Thriller	https://www.imdb.com/title/tt4287234
+1168	Brooklyn: Un Amor Sin Fronteras	Brooklyn	2015	ING/ESP	Español	7.5	Irlanda, UK, Canadá, USA	Drama, Romance	https://www.imdb.com/title/tt2381111
+1167	Bumblebee	Bumblebee	2018	ING/ESP	Español	6.7	USA, China	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt4701182
+1166	Burn Out	Burn Out	2017	ING/ESP	Español	6.2	Francia, Bélgica	Acción, Thriller	https://www.imdb.com/title/tt6340604
+1165	Burning Shadow	Burning Shadow	2018	ING/ESP	Español	4.6	USA, Francia	Drama	https://www.imdb.com/title/tt6923858
+1164	Buscando A Dory	Finding Dory	2016	ING/ESP	Español	7.2	USA	Infantil	https://www.imdb.com/title/tt2277860
+1163	Buscando...	Searching	2018	ING/ESP	Español	7.6	USA, Rusia	Drama, Misterio, Thriller	https://www.imdb.com/title/tt7668870
+1162	Bushwick	Bushwick	2017	ING/ESP	Español	5.2	USA	Acción, Thriller	https://www.imdb.com/title/tt4720702
+1161	Búsqueda Implacable 3	Taken 3	2014	ING/ESP	Español	6.0	Francia, España, USA	Acción, Thriller	https://www.imdb.com/title/tt2446042
+1160	Cada Día	Every Day	2018	ING/ESP	Español	6.4	UK, USA	Drama, Fantasía, Romance	https://www.imdb.com/title/tt7026672
+1159	Cadáver	The Possession of Hannah Grace	2018	ING/ESP	Español	5.2	USA	Terror, Misterio, Thriller	https://www.imdb.com/title/tt5734576
+1158	Camera Obscura	Camera Obscura	2017	ING/ESP	Español	4.6	USA	Terror, Thriller	https://www.imdb.com/title/tt5651458
+1157	Candy Jar	Candy Jar	2018	ING/ESP	Español	5.8	USA	Comedia, Drama, Romance	https://www.imdb.com/title/tt6744044
+1156	Caníbales	The Green Inferno	2013	Inglés	Español	5.4	USA, Chile, UK	Aventura, Terror	https://www.imdb.com/title/tt2403021
+1155	Capitán América 1: El Primer Vengador	Captain America: The First Avenger	2011	ING/ESP	Español	6.9	USA	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt0458339
+1154	Capitán América 3: Civil Guerra	Captain America: Civil Guerra	2016	ING/ESP	Español	7.8	USA, Alemania, Puerto Rico	Acción, Sci-Fi	https://www.imdb.com/title/tt3498820
+1153	Capitana Marvel	Captain Marvel	2019	ING/ESP	Español	6.8	USA, Australia	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt4154664
+1152	Captive	Captive	2015	ING/ESP	Español	5.4	USA, México	Acción, Biografía, Crimen, Drama, Historia, Thriller	https://www.imdb.com/title/tt3268668
+1151	Careful What You Wish For	Careful What You Wish For	2015	Inglés	Español	5.6	USA	Drama, Thriller	https://www.imdb.com/title/tt1629242
+1150	Cargo	Cargo	2017	ING/ESP	Español	6.3	Australia, USA, Emiratos Árabes, UK	Drama, Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt3860916
+1149	Carol	Carol	2015	ING/ESP	Español	7.3	UK, Francia, Australia, USA	Drama, Romance	https://www.imdb.com/title/tt2402927
+1148	Cars	Cars	2006	Español	Español	7.3	USA	Infantil	https://www.imdb.com/title/tt0317219
+1147	Cars 2	Cars 2	2011	ING/ESP	Español	6.2	USA, Japón	Infantil	https://www.imdb.com/title/tt1216475
+1146	Cars 3	Cars 3	2017	ING/ESP	Español	6.7	USA, Japón	Infantil	https://www.imdb.com/title/tt3606752
+1145	Cartel Land	Cartel Land	2015	Inglés	Español	7.3	USA	Documental	https://www.imdb.com/title/tt4126304
+1144	Cazafantasmas	Ghostbusters	2016	ING/ESP	Español	6.8	USA, Australia	Acción, Comedia, Fantasía, Sci-Fi	https://www.imdb.com/title/tt1289401
+1143	Cercana Obsesión	The Boy Next Door	2015	Inglés	Español	4.7	USA	Thriller	https://www.imdb.com/title/tt3181822
+1142	Chicos Buenos	Good Boys	2019	Inglés	Español	6.7	USA, Canadá	Aventura, Comedia	https://www.imdb.com/title/tt6977338
+1141	Christine	Christine	2016	Inglés	Español	6.9	UK, USA	Biografía, Drama	https://www.imdb.com/title/tt4666726
+1140	Christopher Robin: Un Reencuentro Inolvidable	Christopher Robin	2018	ING/ESP	Español	7.2	UK, USA, Australia, Canadá, Dinamarca	Aventura, Comedia, Drama, Familia, Fantasía, Musical	https://www.imdb.com/title/tt4575576
+1139	Cigüeñas: La Historia Que No Te Contaron	Storks	2016	ING/ESP	Español	6.8	Canadá, USA	Infantil	https://www.imdb.com/title/tt4624424
+1138	Cincuenta Sombras Liberadas	Fifty Shades Freed	2018	ING/ESP	Español	4.5	USA, China	Drama, Misterio, Romance, Thriller	https://www.imdb.com/title/tt4477536
+1137	Cincuenta Sombras Más Oscuras	Fifty Shades Darker	2017	ING/ESP	Español	4.6	USA, China, Japón	Drama, Misterio, Romance, Thriller	https://www.imdb.com/title/tt4465564
+1136	Ciudades De Papel	Paper Towns	2015	ING/ESP	Español	6.2	USA	Aventura, Comedia, Drama, Misterio, Romance	https://www.imdb.com/title/tt3622592
+1135	Climax	Climax	2018	Inglés	Español	6.9	Francia, Bélgica	Drama, Terror, Música, Thriller	https://www.imdb.com/title/tt8359848
+1134	Close	Close	2019	ING/ESP	Español	5.7	UK, USA	Acción, Drama, Thriller	https://www.imdb.com/title/tt5316540
+1133	Coco	Coco	2017	ING/ESP	Español	8.4	USA, México	Infantil	https://www.imdb.com/title/tt2380307
+1132	Colette: Liberación Y Deseo	Colette	2018	Inglés	Español	6.7	UK, USA, Hungría, Bélgica	Biografía, Drama, Historia, Romance	https://www.imdb.com/title/tt5437928
+1131	Colmillo Blanco	Croc-Blanc	2018	ING/ESP	Español	6.9	Francia, Luxemburgo, USA	Infantil	https://www.imdb.com/title/tt5222768
+1130	Colonia Dignidad	Colonia	2015	Inglés	Español	7.0	Alemania, Luxemburgo, UK, USA, Argentina, Francia	Biografía, Drama, Historia, Romance, Thriller	https://www.imdb.com/title/tt4005402
+1129	Come And Find Me	Come and Find Me	2016	ING/ESP	Español	5.7	Canadá, USA, UK	Acción, Drama, Misterio, Thriller	https://www.imdb.com/title/tt2597768
+1128	Come Sunday	Come Sunday	2018	ING/ESP	Español	6.0	USA	Biografía, Drama	https://www.imdb.com/title/tt1690967
+1127	Cómo Entrenar A Tu Dragón	How to Train Your Dragon	2010	ING/ESP	Español	8.1	USA, Francia, UK	Infantil	https://www.imdb.com/title/tt0892769
+1126	Cómo Entrenar A Tu Dragón 3	How to Train Your Dragon: The Hidden World	2019	ING/ESP	Español	7.4	USA, Japón	Infantil	https://www.imdb.com/title/tt2386490
+1125	Cómo Ser Soltera	How to Be Single	2016	ING/ESP	Español	6.1	USA	Comedia, Drama, Romance	https://www.imdb.com/title/tt1292566
+1124	Cómo Ser Un Latin Lover	How to Be a Latin Lover	2017	ING/ESP	Español	6.0	México, USA	Comedia, Drama	https://www.imdb.com/title/tt4795124
+1123	Condorito: La Película	Condorito: La película	2017	Español	Ninguno	5.3	Peru, Chile, México, Argentina, USA	Infantil	https://www.imdb.com/title/tt4494382
+1122	Confirmation	Confirmation	2016	ING/ESP	Español	6.8	USA	Biografía, Drama, Historia	https://www.imdb.com/title/tt4608402
+1121	Conjuros Del Más Allá	The Void	2016	Inglés	Español	5.9	Canadá	Terror, Misterio, Sci-Fi, Thriller	https://www.imdb.com/title/tt4255304
+1120	Contra Lo Imposible	Ford v Ferrari	2019	ING/ESP	Español	8.1	USA	Acción, Biografía, Drama, Deporte	https://www.imdb.com/title/tt1950186
+1119	Contrarreloj	Retribution	2023	Inglés	Español	5.3	Francia, Alemania, España, USA, Canadá	Acción, Thriller	https://www.imdb.com/title/tt6906292
+1118	Corbin Nash	Corbin Nash	2018	Inglés	Español	4.3	UK, USA	Acción, Terror, Thriller	https://www.imdb.com/title/tt2948160
+1117	Countdown	Countdown	2016	Inglés	Español	4.7	USA	Acción, Crimen, Misterio, Thriller	https://www.imdb.com/title/tt4872162
+1116	Cover Versions	Cover Versions	2018	ING/ESP	Español	5.5	USA	Crimen, Música, Misterio, Thriller	https://www.imdb.com/title/tt6109874
+1115	Creed 1: Corazón De Campeón	Creed	2015	ING/ESP	Español	7.6	USA	Acción, Drama, Deporte	https://www.imdb.com/title/tt3076658
+1114	Creed 2: Defendiendo El Legado	Creed II	2018	ING/ESP	Español	7.1	USA	Acción, Drama, Deporte	https://www.imdb.com/title/tt6343314
+1113	Creed 3:	Creed III	2023	ING/ESP	Español	6.7	USA	Acción, Drama, Deporte	https://www.imdb.com/title/tt11145118
+1112	Criaturas Nocturnas	Wildling	2018	Inglés	Español	5.5	USA	Drama, Fantasía, Terror, Thriller	https://www.imdb.com/title/tt5085924
+1111	Criminal	Criminal	2016	ING/ESP	Español	6.3	USA, UK, Bulgaria	Acción, Sci-Fi, Thriller	https://www.imdb.com/title/tt3014866
+1110	Crown Heights	Crown Heights	2017	ING/ESP	Español	6.7	USA	Biografía, Crimen, Drama, Romance	https://www.imdb.com/title/tt3268340
+1109	Cruella	Cruella	2021	ING/ESP	Español	7.3	USA, UK, Canadá, Irlanda	Aventura, Comedia, Crimen, Drama	https://www.imdb.com/title/tt3228774
+1108	Cry Macho	Cry Macho	2021	Inglés	Español	5.7	USA	Drama	https://www.imdb.com/title/tt1924245
+1107	Crypto	Crypto	2019	Inglés	Español	5.2	USA	Crimen, Drama, Thriller	https://www.imdb.com/title/tt8563452
+1106	Cuando Cae La Nieve	Despite the Falling Snow	2016	ING/ESP	Español	5.8	UK, Canadá	Drama, Misterio, Romance, Thriller	https://www.imdb.com/title/tt2474932
+1105	Cuando Ellas Quieren	Book Club	2018	ING/ESP	Español	6.1	USA	Comedia, Drama, Romance	https://www.imdb.com/title/tt6857166
+1104	Cuando Las Luces Se Apagan	Lights Out	2016	Inglés	Español	6.3	USA	Terror, Misterio	https://www.imdb.com/title/tt4786282
+1103	Cult Of Chucky	Cult of Chucky	2017	ING/ESP	Español	5.3	Canadá, USA	Terror, Thriller	https://www.imdb.com/title/tt3280262
+1102	Curve	Curve	2015	Inglés	Español	5.4	USA	Terror, Thriller	https://www.imdb.com/title/tt3212904
+1101	Cyborg X	Cyborg X	2016	ING/ESP	Español	3.5	USA	Acción, Terror, Sci-Fi	https://www.imdb.com/title/tt3899262
+1100	Dame Tus Ojos	All I See Is You	2016	ING/ESP	Español	5.4	USA, Tailandia	Drama, Misterio	https://www.imdb.com/title/tt4486986
+1099	Daphne & Velma	Daphne & Velma	2018	ING/ESP	Español	4.2	USA	Acción, Comedia, Crimen, Familia, Misterio	https://www.imdb.com/title/tt7689052
+1098	Darc	Darc	2018	ING/ESP	Español	5.8	USA	Acción, Thriller	https://www.imdb.com/title/tt4594836
+1097	Dark Crimens	Dark Crimens	2016	Inglés	Español	4.6	USA, Polonia, UK	Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt1901024
+1096	Day Of The Dead Bloodline	Day of the Dead: Bloodline	2017	ING/ESP	Español	3.5	Bulgaria, USA	Acción, Drama, Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt3053228
+1095	Dead Rising Watchtower	Dead Rising: Watchtower	2015	Inglés	Español	5.2	USA	Acción, Terror	https://www.imdb.com/title/tt3816458
+1094	Deadpool 1	Deadpool	2016	ING/ESP	Español	8.0	USA	Acción, Comedia, Sci-Fi	https://www.imdb.com/title/tt1431045
+1093	Deadpool 2	Deadpool 2	2018	ING/ESP	Español	7.6	USA, Canadá	Acción, Aventura, Comedia, Sci-Fi	https://www.imdb.com/title/tt5463162
+1092	Deadwood The Movie	Deadwood	2019	ING/ESP	Español	7.3	USA	Drama, Western	https://www.imdb.com/title/tt4943998
+1091	Death Race Beyond Anarchy	Death Race: Beyond Anarchy	2018	ING/ESP	Español	5.2	USA	Acción, Aventura	https://www.imdb.com/title/tt3807900
+1090	Deathgasm	Deathgasm	2015	Inglés	Español	6.3	Nueva Zelanda	Acción, Comedia, Terror, Música	https://www.imdb.com/title/tt3705412
+1089	Deep Blue Sea 2	Deep Blue Sea 2	2018	ING/ESP	Español	3.5	USA, Sudáfrica	Acción, Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt7086706
+1088	Deep, El Pulpo	Deep	2017	ING/ESP	Español	4.2	España, Bélgica, Suiza, USA, China, UK	Infantil	https://www.imdb.com/title/tt4105584
+1087	Delirium	Delirium	2018	ING/ESP	Español	5.7	USA	Terror, Thriller	https://www.imdb.com/title/tt2069797
+1086	Demolition	Demolition	2015	ING/ESP	Español	7.0	USA	Comedia, Drama	https://www.imdb.com/title/tt1172049
+1085	Demon House	House of Demons	2018	Inglés	Español	3.1	USA	Drama, Fantasía, Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt5886388
+1084	Desaparecido	Kidnap	2017	ING/ESP	Español	5.9	USA	Acción, Crimen, Thriller	https://www.imdb.com/title/tt1458169
+1083	Deseo De Matar	Death Wish	2018	ING/ESP	Español	6.3	USA, Canadá	Acción, Crimen, Drama, Thriller	https://www.imdb.com/title/tt1137450
+1082	Después De La Tormenta	Umi yori mo mada fukaku	2016	Inglés	Español	7.4	Japón	Comedia, Drama	https://www.imdb.com/title/tt5294966
+1081	Destination Wedding	Destination Wedding	2018	Inglés	Español	6.0	USA, UK, Canadá	Comedia, Drama, Romance	https://www.imdb.com/title/tt6987770
+1080	Destrucción	Destroyer	2018	ING/ESP	Español	6.2	USA	Acción, Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt7137380
+1079	Día De La Independencia: Contraataque	Independence Day: Resurgence	2016	ING/ESP	Español	5.2	USA, India	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt1628841
+1078	Día Del Atentado	Patriots Day	2016	ING/ESP	Español	7.3	Hong Kong, USA	Acción, Crimen, Drama, Historia, Thriller	https://www.imdb.com/title/tt4572514
+1077	Diary Of A Wimpy Kid The Long Haul	Diary of a Wimpy Kid: The Long Haul	2017	ING/ESP	Español	4.3	USA	Aventura, Comedia, Familia	https://www.imdb.com/title/tt6003368
+1076	Digging For Fire	Digging for Fire	2015	Inglés	Español	5.8	USA	Comedia, Drama	https://www.imdb.com/title/tt3704416
+1075	Dios No Está Muerto 3	God's Not Dead: A Light in Darkness	2018	ING/ESP	Español	4.5	USA	Drama	https://www.imdb.com/title/tt6652708
+1074	Dioses De Egipto	Gods of Egipto	2016	ING/ESP	Español	5.4	USA, Australia, China, Hong Kong	Acción, Aventura, Drama, Fantasía	https://www.imdb.com/title/tt2404233
+1073	Directo Al Corazón	Danny Collins	2015	Inglés	Español	7.0	USA	Comedia, Drama, Música	https://www.imdb.com/title/tt1772288
+1072	Dirt	Dirt	2018	ING/ESP	Español	6.1	USA	Acción, Drama, Deporte	https://www.imdb.com/title/tt5691084
+1071	Distorted	Distorted	2018	ING/ESP	Español	4.5	Canadá	Crimen, Misterio, Thriller	https://www.imdb.com/title/tt6143850
+1070	Divergente 1	Divergent	2014	ING/ESP	Español	6.6	USA	Acción, Aventura, Drama, Misterio, Sci-Fi	https://www.imdb.com/title/tt1840309
+1069	Divergente 2: Insurgente	Insurgent	2015	ING/ESP	Español	6.2	USA, Canadá	Acción, Aventura, Sci-Fi, Thriller	https://www.imdb.com/title/tt2908446
+1068	Divergente 3: Leal	Allegiant	2016	Inglés	Español	5.7	USA	Acción, Aventura, Fantasía, Terror, Misterio, Sci-Fi, Thriller	https://www.imdb.com/title/tt3410834
+1067	Doctor Strange. Hechicero Supremo	Doctor Strange	2016	ING/ESP	Español	7.5	USA, Hong Kong, Nepal	Acción, Aventura, Fantasía, Sci-Fi	https://www.imdb.com/title/tt1211837
+1066	Dog Eat Dog	Dog Eat Dog	2016	Inglés	Español	4.8	UK, China, USA	Acción, Crimen, Thriller	https://www.imdb.com/title/tt4054654
+1065	Dominios Oscuros	Realms	2017	ING/ESP	Español	3.6	USA, Tailandia	Terror, Misterio	https://www.imdb.com/title/tt1934452
+1064	Don Jon	Don Jon	2013	Inglés	Español	6.5	USA	Comedia, Drama, Romance	https://www.imdb.com/title/tt2229499
+1063	Don't Hang Up	Don't Hang Up	2016	ING/ESP	Español	5.6	UK	Terror, Thriller	https://www.imdb.com/title/tt3610746
+1062	Dont Worry He Wont Get Far On Foot	Don't Worry, He Won't Get Far on Foot	2018	Inglés	Español	6.8	USA, Francia	Biografía, Comedia, Drama	https://www.imdb.com/title/tt6288124
+1061	Dos Locas En Fuga	Hot Pursuit	2015	ING/ESP	Español	5.1	USA	Acción, Comedia, Crimen	https://www.imdb.com/title/tt2967224
+1060	Dos Tipos Peligrosos	The Nice Guys	2016	ING/ESP	Español	7.4	USA	Acción, Comedia, Crimen, Thriller	https://www.imdb.com/title/tt3799694
+1059	Down A Dark Hall	Down a Dark Hall	2018	ING/ESP	Español	5.0	USA, España	Drama, Fantasía, Terror, Misterio, Thriller	https://www.imdb.com/title/tt2372251
+1058	Dragged Across Concrete	Dragged Across Concrete	2018	ING/ESP	Español	6.9	Canadá, UK, USA	Acción, Crimen, Drama, Thriller	https://www.imdb.com/title/tt6491178
+1057	Dragon Ball Z: La Resurrección De Freezer	Doragon Bôru Zetto Fukkatsu no 'Efu'	2015	JAP/ESP	Español	7.1	Japón	Infantil	https://www.imdb.com/title/tt3819668
+1056	Dude	Dude	2018	ING/ESP	Español	5.2	USA	Comedia, Drama	https://www.imdb.com/title/tt3458510
+1055	Dulzura Americana	American Honey	2016	Inglés	Español	7.0	UK, USA	Aventura, Drama, Romance	https://www.imdb.com/title/tt3721936
+1054	Dumbo	Dumbo	1941	ING/ESP	Español	7.2	USA	Infantil	https://www.imdb.com/title/tt0033563
+1053	Dumbo (2019)	Dumbo	2019	ING/ESP	Español	6.3	UK, Canadá, Australia, USA	Infantil	https://www.imdb.com/title/tt3861390
+1052	Dunkerque	Dunkirk	2017	ING/ESP	Español	7.8	UK, Países Bajos, Francia, USA	Acción, Drama, Historia, Thriller, Guerra	https://www.imdb.com/title/tt5013056
+1051	Duro De Cuidar	The Hitman's Bodyguard	2017	ING/ESP	Español	6.9	USA, Hong Kong, Bulgaria, Países Bajos, Canadá, UK, Francia	Acción, Comedia, Crimen, Thriller	https://www.imdb.com/title/tt1959563
+1050	Eddie The Eagle	Let the Games Begin: Soaring with Eddie the Eagle	2016	ING/ESP	Español	8.1	UK, Alemania, USA	Documental, Deporte	https://www.imdb.com/title/tt8112064
+1049	Edge Of Fear	Edge of Fear	2018	ING/ESP	Español	4.5	USA	Thriller	https://www.imdb.com/title/tt7149916
+1048	Eighth Grade	Eighth Grade	2018	Inglés	Español	7.3	USA	Comedia, Drama	https://www.imdb.com/title/tt7014006
+1047	El Alma De La Fiesta	Life of the Party	2018	ING/ESP	Español	5.6	USA	Comedia	https://www.imdb.com/title/tt5619332
+1046	El Amor Menos Pensado	El amor menos pensado	2018	Español	Ninguno	6.7	Argentina	Comedia, Romance	https://www.imdb.com/title/tt8405810
+1045	El Aro 3	Rings	2017	ING/ESP	Español	4.5	USA	Drama, Terror, Misterio, Romance	https://www.imdb.com/title/tt0498381
+1044	El Asesinato De La Familia Borden	Lizzie	2018	ING/ESP	Español	5.9	UK, USA	Biografía, Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt5160938
+1043	El Asesino Del Juego De Citas	Woman of the Hour	2023	Inglés	Español	6.6	USA	Crimen, Drama, Misterio	https://www.imdb.com/title/tt7737800
+1042	El Bebé De Bridget Jones	Bridget Jones's Baby	2016	ING/ESP	Español	6.4	USA, Francia, China, UK	Comedia, Drama, Romance	https://www.imdb.com/title/tt1473832
+1041	El Bombardeo	Da hong zha	2018	Inglés	Español	3.2	China	Acción, Aventura, Drama, Guerra	https://www.imdb.com/title/tt4743226
+1040	El Bosque Siniestro	The Forest	2016	ING/ESP	Español	4.8	USA, UK	Terror, Misterio, Thriller	https://www.imdb.com/title/tt3387542
+1039	El Buen Amigo Gigante	The BFG	2016	ING/ESP	Español	6.3	UK, India, USA	Infantil	https://www.imdb.com/title/tt3691740
+1038	El Cascanueces Y Los Cuatro Reinos	The Nutcracker and the Four Realms	2018	ING/ESP	Español	5.6	Canadá, USA, UK	Infantil	https://www.imdb.com/title/tt5523010
+1037	El Castillo De Cristal	The Glass Castle	2017	Inglés	Español	7.1	USA, Canadá, Hong Kong	Biografía, Drama	https://www.imdb.com/title/tt2378507
+1036	El Cazador Y La Reina Del Hielo	The Huntsman: Winter's Guerra	2016	ING/ESP	Español	6.1	USA, China	Acción, Aventura, Drama, Fantasía, Romance, Sci-Fi, Guerra	https://www.imdb.com/title/tt2381991
+1035	El Cielo Sí Existe	Heaven Is for Real	2014	ING/ESP	Español	5.9	USA, Canadá	Biografía, Drama, Familia	https://www.imdb.com/title/tt1929263
+1034	El Ciempiés Humano	The Human Centipede (First Sequence)	2009	Inglés	Español	4.4	Países Bajos	Terror	https://www.imdb.com/title/tt1467304
+1033	El Ciempiés Humano 2	The Human Centipede II (Full Sequence)	2011	Inglés	Español	3.8	USA, Países Bajos	Terror	https://www.imdb.com/title/tt1530509
+1032	El Ciempiés Humano 3	The Human Centipede III (Final Sequence)	2015	Inglés	Español	2.7	USA, Países Bajos	Comedia, Terror	https://www.imdb.com/title/tt1883367
+1031	El Círculo	The Circle	2017	Inglés	Español	5.4	Emiratos Árabes, USA, Francia	Drama, Misterio, Sci-Fi, Thriller	https://www.imdb.com/title/tt4287320
+1030	El Clan	El Clan	2015	ING/ESP	Español	6.9	Argentina, España	Biografía, Crimen, Drama, Thriller	https://www.imdb.com/title/tt4411504
+1029	El Club De Las Madres Rebeldes	Bad Moms	2016	Inglés	Español	6.2	USA, China	Comedia	https://www.imdb.com/title/tt4651520
+1028	El Código Enigma	The Imitation Game	2014	Inglés	Español	8.0	USA	Biografía, Drama, Thriller, Guerra	https://www.imdb.com/title/tt2084970
+1027	El Conjuro	The Conjuring	2013	ING/ESP	Español	7.5	USA	Terror, Misterio, Thriller	https://www.imdb.com/title/tt1457767
+1026	El Conjuro 2	The Conjuring 2	2016	ING/ESP	Español	7.3	Canadá, USA, UK	Terror, Misterio, Thriller	https://www.imdb.com/title/tt3065204
+1025	El Contador	The Accountant	2016	ING/ESP	Español	7.3	USA	Acción, Crimen, Drama, Thriller	https://www.imdb.com/title/tt2140479
+1024	El Cuaderno De Sara	El cuaderno de Sara	2018	Inglés	Español	5.9	España	Aventura, Drama, Misterio, Thriller	https://www.imdb.com/title/tt6599742
+1023	El Dador De Recuerdos	The Giver	2014	ING/ESP	Español	6.4	Canadá, Sudáfrica, USA	Drama, Romance, Sci-Fi, Thriller	https://www.imdb.com/title/tt0435651
+1022	El Demonio De Neón	The Neon Demon	2016	ING/ESP	Español	6.1	USA, Bélgica, Dinamarca, Francia	Terror, Thriller	https://www.imdb.com/title/tt1974419
+1021	El Depredador	The Predator	2018	ING/ESP	Español	5.3	Canadá, USA, UK, India, Australia, Brasil, China	Acción, Aventura, Sci-Fi, Thriller	https://www.imdb.com/title/tt3829266
+1020	El Desterrado	Outcast	2014	Inglés	Español	4.6	China, USA, Francia, Canadá, Australia, Luxemburgo	Acción, Aventura, Thriller	https://www.imdb.com/title/tt1552224
+1019	El Escándalo	Bombshell	2019	ING/ESP	Español	6.8	Canadá, USA	Biografía, Drama	https://www.imdb.com/title/tt6394270
+1018	El Espacio Entre Nosotros	The Space Between Us	2017	Inglés	Español	6.4	USA, China	Drama, Romance, Sci-Fi	https://www.imdb.com/title/tt3922818
+1017	El Especialista: Resurrección	Mechanic: Resurrection	2016	Inglés	Español	5.7	USA, Francia, Bulgaria, Alemania	Acción, Aventura, Thriller	https://www.imdb.com/title/tt3522806
+1016	El Exorcista Del Papa	The Pope's Exorcist	2023	ING/ESP	Español	6.1	USA, España, UK	Terror, Thriller	https://www.imdb.com/title/tt13375076
+1015	El Exorcista: Creyentes	The Exorcist: Believer	2023	ING/ESP	Español	4.8	USA	Terror	https://www.imdb.com/title/tt12921446
+1014	El Gran Showman	The Greatest Showman	2017	ING/ESP	Español	7.5	USA, China	Biografía, Drama, Musical	https://www.imdb.com/title/tt1485796
+1013	El Grinch	The Grinch	2018	ING/ESP	Español	6.4	USA	Animación, Comedia, Familia, Fantasía	https://www.imdb.com/title/tt2709692
+1012	El Hijo De Pie Grande	The Son of Bigfoot	2017	ING/ESP	Español	6.1	Bélgica, Francia, USA	Infantil	https://www.imdb.com/title/tt5715410
+1011	El Hilo Fantasma	Phantom Thread	2017	ING/ESP	Español	7.4	USA, China	Drama, Romance	https://www.imdb.com/title/tt5776858
+1010	El Imperio Contraataca	Star Guerras: Episode V - The Empire Strikes Back	1980	ING/ESP	Español	8.7	USA	Acción, Aventura, Fantasía, Sci-Fi	https://www.imdb.com/title/tt0080684
+1009	El Implacable	The Foreigner	2017	Inglés	Español	7.0	UK, China, USA, India, Suiza	Acción, Crimen, Thriller	https://www.imdb.com/title/tt1615160
+1008	El Infiltrado	The Infiltrator	2016	ING/ESP	Español	7.0	UK, USA	Biografía, Crimen, Drama, Thriller	https://www.imdb.com/title/tt1355631
+1007	El Infiltrado Del Kkklan	BlacKkKlansman	2018	ING/ESP	Español	7.5	USA, China	Biografía, Comedia, Crimen, Drama	https://www.imdb.com/title/tt7349662
+1006	El Inmortal	L'immortel	2010	ING/ESP	Español	6.6	Francia	Acción, Crimen, Drama, Thriller	https://www.imdb.com/title/tt1167638
+1005	El Jugador De Ajedrez	El jugador de ajedrez	2017	Inglés	Español	6.3	España	Drama, Historia, Guerra	https://www.imdb.com/title/tt5732530
+1004	El Justiciero	The Equalizer	2014	Inglés	Español	7.3	USA	Acción, Crimen, Thriller	https://www.imdb.com/title/tt0455944
+1003	El Justiciero 2	The Equalizer 2	2018	Inglés	Español	6.7	USA	Acción, Crimen, Thriller	https://www.imdb.com/title/tt3766354
+1002	El Justiciero 3	The Equalizer 3	2023	ING/ESP	Español	6.8	USA, Italia, Australia	Acción, Crimen, Thriller	https://www.imdb.com/title/tt17024450
+1001	El Legado Del Diablo	Hereditary	2018	ING/ESP	Español	7.3	USA	Drama, Terror, Misterio, Thriller	https://www.imdb.com/title/tt7784604
+1000	El Libro De La Selva	The Jungle Book	2016	ING/ESP	Español	7.3	UK, USA, Nueva Zelanda, Francia, Canadá, India	Infantil	https://www.imdb.com/title/tt3040964
+999	El Maestro Del Dinero	Money Monster	2016	ING/ESP	Español	6.5	USA	Acción, Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt2241351
+998	El Manicomio: La Cuna Del Terror	Heilstätten	2018	ING/ESP	Español	4.2	Alemania	Terror, Misterio, Thriller	https://www.imdb.com/title/tt7214470
+997	El Monstruo De Las Nieves	Mission Kathmandu: The Aventuras of Nelly & Simon	2017	FRA/ESP	Ninguno	5.1	Canadá	Infantil	https://www.imdb.com/title/tt5433884
+996	El Muñeco De Nieve	The Snowman	2017	ING/ESP	Español	5.2	USA, UK, Suecia, China	Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt1758810
+995	El Muñeco Diabólico	Child's Play	2019	ING/ESP	Español	5.7	Canadá, USA	Drama, Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt8663516
+994	El Niño	The Boy	2016	Inglés	Español	6.0	USA, Canadá, China	Terror, Misterio, Thriller	https://www.imdb.com/title/tt3882082
+993	El Pacto	El pacto	2018	ING/ESP	Español	5.2	España	Terror, Misterio, Thriller	https://www.imdb.com/title/tt7690762
+992	El Pájaro Loco	Woody Woodpecker	2017	ING/ESP	Español	4.2	USA, Canadá, Bulgaria	Infantil	https://www.imdb.com/title/tt2114504
+991	El Pasajero	The Commuter	2018	ING/ESP	Español	6.3	USA, UK, Francia, China, Canadá, España	Acción, Misterio, Thriller	https://www.imdb.com/title/tt1590193
+990	El Planeta De Los Simios: La Guerra	Guerra for the Planet of the Apes	2017	ING/ESP	Español	7.4	USA, Canadá	Acción, Aventura, Drama, Sci-Fi, Thriller	https://www.imdb.com/title/tt3450958
+989	El Poder De La Cruz	Do You Believe?	2015	Inglés	Español	6.1	USA	Drama	https://www.imdb.com/title/tt4056738
+988	El Primer Hombre En La Luna	First Man	2018	Inglés	Español	7.3	USA, Japón, China	Biografía, Drama, Historia	https://www.imdb.com/title/tt1213641
+987	El Príncipe Encantador	Charming	2018	ING/ESP	Ninguno	5.6	Canadá, USA	Infantil	https://www.imdb.com/title/tt4086018
+986	El Profesor Marston Y La Mujer Maravilla	Professor Marston and the Wonder Women	2017	ING/ESP	Español	7.0	USA	Biografía, Drama, Historia	https://www.imdb.com/title/tt6133130
+985	El Proyecto Florida	The Florida Project	2017	Inglés	Español	7.6	USA	Drama	https://www.imdb.com/title/tt5649144
+984	El Regreso De Mary Poppins	Mary Poppins Returns	2018	ING/ESP	Español	6.7	USA, UK, Dinamarca, Australia, Canadá, India	Aventura, Comedia, Familia, Fantasía, Música, Musical	https://www.imdb.com/title/tt5028340
+983	El Regreso Del Jedi	Star Guerras: Episode VI - Return of the Jedi	1983	ING/ESP	Español	8.3	USA	Acción, Aventura, Fantasía, Sci-Fi	https://www.imdb.com/title/tt0086190
+982	El Resplandor	The Shining	1980	Inglés	Español	8.4	UK, USA	Drama, Terror	https://www.imdb.com/title/tt0081505
+981	El Rey Arturo: La Leyenda De La Espada	King Arthur: Legend of the Sword	2017	ING/ESP	Español	6.7	UK, USA, India, Canadá	Acción, Aventura, Drama, Fantasía	https://www.imdb.com/title/tt1972591
+980	El Rey León	The Lion King	2019	ING/ESP	Español	6.8	USA, UK, Kenia	Infantil	https://www.imdb.com/title/tt6105098
+979	El Robo Perfecto	Den of Thieves	2018	Inglés	Español	7.0	USA	Acción, Crimen, Drama, Thriller	https://www.imdb.com/title/tt1259528
+978	El Sacrificio Del Ciervo Sagrado	The Killing of a Sacred Deer	2017	ING/ESP	Español	7.0	Irlanda, UK, USA	Drama, Terror, Misterio, Thriller	https://www.imdb.com/title/tt5715874
+977	El Secreto De Adaline	The Age of Adaline	2015	Inglés	Español	7.2	USA, Canadá	Drama, Fantasía, Romance	https://www.imdb.com/title/tt1655441
+976	El Último Cazador De Brujas	The Last Witch Hunter	2015	Inglés	Español	5.9	USA, China, Canadá	Acción, Aventura, Fantasía	https://www.imdb.com/title/tt1618442
+975	El Último Duelo	The Last Duel	2021	Inglés	Español	7.3	USA, UK	Drama, Historia, Thriller	https://www.imdb.com/title/tt4244994
+974	El Valiente	Free State of Jones	2016	Inglés	Español	6.9	USA	Acción, Biografía, Drama, Historia, Guerra, Western	https://www.imdb.com/title/tt1124037
+973	El Valle De La Venganza	In a Valley of Violence	2016	ING/ESP	Español	6.1	USA	Acción, Western	https://www.imdb.com/title/tt3608930
+972	El Viajante	Forooshande	2016	ING/ESP	Español	7.7	Iran, Francia, Katar, USA	Drama, Thriller	https://www.imdb.com/title/tt5186714
+971	El Vicepresidente	Vice	2018	Inglés	Español	7.2	USA	Biografía, Comedia, Drama, Historia	https://www.imdb.com/title/tt6266538
+970	Eliminar Amigo	Unfriended	2014	Inglés	Español	5.6	USA, Rusia	Terror, Misterio, Thriller	https://www.imdb.com/title/tt3713166
+969	Eliminators	Eliminators	2016	Inglés	Español	5.6	UK, USA	Acción, Thriller	https://www.imdb.com/title/tt4587366
+968	Ellos Vienen Por Ti	Backtrack	2015	Inglés	Español	5.9	Australia, UK, Emiratos Árabes	Drama, Fantasía, Terror, Misterio, Thriller	https://www.imdb.com/title/tt2784936
+967	Embers	Embers	2015	Inglés	Español	5.4	Polonia, USA	Drama, Misterio, Sci-Fi	https://www.imdb.com/title/tt3503460
+966	Emmanuelle	Emmanuelle	1974	Inglés	Español	5.2	Francia	Drama, Romance	https://www.imdb.com/title/tt0071464
+965	Emoji: La Película	The Emoji Movie	2017	ING/ESP	Español	3.4	USA	Infantil	https://www.imdb.com/title/tt4877122
+964	En El Corazón Del Mar	In the Heart of the Sea	2015	ING/ESP	Español	6.9	USA, Australia, España	Acción, Aventura, Biografía, Drama, Historia	https://www.imdb.com/title/tt1390411
+963	En La Cuerda Floja	The Walk	2015	ING/ESP	Español	7.3	USA	Aventura, Biografía, Drama	https://www.imdb.com/title/tt3488710
+962	En La Mente Del Asesino	Solace	2015	Inglés	Español	6.4	USA	Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt1291570
+961	En Nombre Del Amor	The Choice	2016	Inglés	Español	6.5	USA	Drama, Romance	https://www.imdb.com/title/tt3797868
+960	En Primera Plana	Spotlight	2015	Inglés	Español	8.1	USA	Biografía, Crimen, Drama	https://www.imdb.com/title/tt1895587
+959	End Of A Gun	End of a Gun	2016	Inglés	Español	3.6	USA	Acción, Crimen, Thriller	https://www.imdb.com/title/tt2268433
+958	Enemigo Invisible	Eye in the Sky	2015	Inglés	Español	7.3	UK, Canadá, USA	Acción, Drama, Thriller, Guerra	https://www.imdb.com/title/tt2057392
+957	England Is Mine	England Is Mine	2017	ING/ESP	Español	5.8	UK	Biografía, Drama, Música	https://www.imdb.com/title/tt3717804
+956	Enredos En Broadway	She's Funny That Way	2014	Inglés	Español	6.1	Alemania, USA	Comedia, Drama	https://www.imdb.com/title/tt1767372
+955	Enron The Smartest Guys In The Room	Enron: The Smartest Guys in the Room	2005	Inglés	Español	7.6	USA	Documental, Biografía, Historia	https://www.imdb.com/title/tt1016268
+954	Equals	Equals	2015	Inglés	Español	6.0	USA, Indonesia	Drama, Romance, Sci-Fi	https://www.imdb.com/title/tt3289728
+953	Equity	Equity	2016	Inglés	Español	5.6	USA	Drama	https://www.imdb.com/title/tt3958780
+952	Escalofríos	Goosebumps	2015	ING/ESP	Español	6.3	USA, Australia	Aventura, Comedia, Fantasía, Terror	https://www.imdb.com/title/tt1051904
+951	Escalofríos 2: Una Noche Embrujada	Goosebumps 2: Haunted Halloween	2018	Inglés	Español	5.6	USA	Aventura, Comedia, Fantasía, Terror	https://www.imdb.com/title/tt5664636
+950	Escape Bajo Fuego	Kandahar	2023	ING/ESP	Español	6.1	USA, Arabia Saudita	Acción, Drama, Thriller	https://www.imdb.com/title/tt5761544
+949	Escape Plan 2: Hades	Escape Plan 2: Hades	2018	Inglés	Español	3.9	China, USA, UK	Acción, Crimen, Misterio, Sci-Fi, Thriller	https://www.imdb.com/title/tt6513656
+948	Escape Room: Sin Salida	Escape Room	2019	ING/ESP	Español	6.4	USA, Sudáfrica	Acción, Aventura, Terror, Misterio, Sci-Fi, Thriller	https://www.imdb.com/title/tt5886046
+947	Escuadrón Suicida	Suicide Squad	2016	Inglés	Español	5.9	USA	Acción, Aventura, Fantasía, Sci-Fi	https://www.imdb.com/title/tt1386697
+946	Esta Chica Es Un Desastre	Trainwreck	2015	ING/ESP	Español	6.2	USA	Comedia, Drama, Romance	https://www.imdb.com/title/tt3152624
+945	Estación Zombi	Busanhaeng	2016	Inglés	Español	7.6	Corea del Sur	Acción, Terror, Thriller	https://www.imdb.com/title/tt5700672
+944	Ex Machina	Deus ex Machina	2015	ING/ESP	Español	6.4	Polonia	Comedia, Drama	https://www.imdb.com/title/tt4729856
+943	Éxodo: Dioses Y Reyes	Exodus: Gods and Kings	2014	ING/ESP	Español	6.0	UK, España, USA	Acción, Aventura, Drama, Fantasía	https://www.imdb.com/title/tt1528100
+942	Experimenter	Experimenter	2015	Inglés	Español	6.6	USA	Biografía, Drama, Historia	https://www.imdb.com/title/tt3726704
+941	Experta En Crisis	Our Brand Is Crisis	2015	Inglés	Español	6.1	USA	Comedia, Drama	https://www.imdb.com/title/tt1018765
+940	Extinction	Extinction	2018	ING/ESP	Español	5.8	USA	Acción, Drama, Sci-Fi, Thriller	https://www.imdb.com/title/tt3201640
+939	Extinction	Extinction	2015	Inglés	Español	5.8	España, USA, Hungría, Francia	Acción, Aventura, Drama, Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt3467412
+938	Extortion	Extortion	2017	Inglés	Español	6.2	USA	Acción, Aventura, Crimen, Drama, Thriller	https://www.imdb.com/title/tt2957760
+937	Extracción	ExtrAcción	2015	Inglés	Español	4.1	USA, UK, Canadá	Acción, Thriller	https://www.imdb.com/title/tt4382872
+936	Extraordinario	Wonder	2017	ING/ESP	Español	7.9	USA, Hong Kong, Canadá	Drama, Familia	https://www.imdb.com/title/tt2543472
+935	Extraterrestrial	Extraterrestrial	2014	Inglés	Español	5.0	Canadá	Acción, Terror, Misterio, Sci-Fi, Thriller	https://www.imdb.com/title/tt2960930
+934	Fahrenheit 11 9	Fahrenheit 11/9	2018	Inglés	Español	7.2	USA	Documental	https://www.imdb.com/title/tt8632862
+933	Fahrenheit 451	Fahrenheit 451	2018	Inglés	Español	5.0	USA	Drama, Sci-Fi, Thriller	https://www.imdb.com/title/tt0360556
+932	Familia Al Instante	Instant Familia	2018	ING/ESP	Español	7.3	USA	Comedia, Drama	https://www.imdb.com/title/tt7401588
+931	Familia Blood	Familia Blood	2018	ING/ESP	Español	4.2	USA	Drama, Terror, Thriller	https://www.imdb.com/title/tt7895904
+930	Father Of The Year	Father of the Year	2018	ING/ESP	Español	5.2	USA	Comedia	https://www.imdb.com/title/tt7256866
+929	Feed	Feed	2017	ING/ESP	Español	6.0	USA	Drama	https://www.imdb.com/title/tt5226512
+928	Feliz Día De Tu Muerte	Happy Death Day	2017	ING/ESP	Español	6.6	USA	Comedia, Terror, Misterio, Thriller	https://www.imdb.com/title/tt5308322
+927	Feliz Día De Tu Muerte 2	Happy Death Day 2 U	2019	ING/ESP	Español	6.2	USA, Japón	Comedia, Terror, Misterio, Sci-Fi, Thriller	https://www.imdb.com/title/tt8155288
+926	Fences	Fences	2016	ING/ESP	Español	7.2	USA, Canadá	Drama	https://www.imdb.com/title/tt2671706
+925	Fifty Shades Of Black	Fifty Shades of Black	2016	Inglés	Español	3.5	USA, UK	Comedia	https://www.imdb.com/title/tt4667094
+924	Film Stars Don't Die In Liverpool	Film Stars Don't Die in Liverpool	2017	ING/ESP	Español	6.7	UK, USA	Biografía, Drama, Romance	https://www.imdb.com/title/tt5711148
+923	Finch	Finch	2021	Inglés	Español	6.9	USA, India	Aventura, Drama, Sci-Fi	https://www.imdb.com/title/tt3420504
+922	Finding Your Feet	Finding Your Feet	2017	ING/ESP	Español	6.8	UK	Comedia, Drama, Familia, Música, Romance	https://www.imdb.com/title/tt4538916
+921	Fireworks	Uchiage hanabi, shita kara miru ka? Yoko kara miru ka?	2017	ING/ESP	Español	5.6	Japón	Animación, Drama, Fantasía, Romance, Sci-Fi	https://www.imdb.com/title/tt6317962
+920	First Kill	First Kill	2017	Inglés	Español	5.0	UK, Canadá, USA	Acción, Thriller	https://www.imdb.com/title/tt5884234
+919	First Match	First Match	2018	ING/ESP	Español	6.4	USA	Drama, Deporte	https://www.imdb.com/title/tt6061074
+918	First Reformed	First Reformed	2017	Inglés	Español	7.1	USA, UK, Australia	Drama, Misterio, Thriller	https://www.imdb.com/title/tt6053438
+917	First We Take Brooklyn	First We Take Brooklyn	2018	ING/ESP	Español	4.1	USA	Crimen, Drama, Thriller	https://www.imdb.com/title/tt5673714
+916	Fist Fight	Fist Fight	2017	ING/ESP	Español	5.6	USA	Comedia	https://www.imdb.com/title/tt3401882
+915	Flash	The Flash	2023	ING/ESP	Español	6.6	USA, Canadá, Australia, Nueva Zelanda	Acción, Aventura, Fantasía, Sci-Fi	https://www.imdb.com/title/tt0439572
+914	Flower	Flower	2017	Inglés	Español	6.0	USA, UK	Comedia, Drama	https://www.imdb.com/title/tt2582784
+913	Focus: Maestros De La Estafa	Focus	2015	ING/ESP	Español	6.6	USA, Argentina	Comedia, Crimen, Drama, Romance	https://www.imdb.com/title/tt2381941
+912	Forever My Girl	Forever My Girl	2018	ING/ESP	Español	6.6	USA	Comedia, Drama, Música, Romance	https://www.imdb.com/title/tt4103724
+911	Forsaken	Forsaken	2015	Inglés	Español	6.4	Canadá, Francia, USA	Acción, Drama, Western	https://www.imdb.com/title/tt2271563
+910	Fragmentado	Split	2016	ING/ESP	Español	7.3	USA, Japón	Terror, Thriller	https://www.imdb.com/title/tt4972582
+909	Francotirador	American Sniper	2014	ING/ESP	Español	7.3	USA	Acción, Biografía, Drama, Guerra	https://www.imdb.com/title/tt2179136
+908	Frankenstein	Frankenstein	2015	Inglés	Español	5.1	USA, Alemania	Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt4086032
+907	Frantz	Frantz	2016	ING/ESP	Español	7.5	Francia, Alemania	Drama, Historia, Romance, Guerra	https://www.imdb.com/title/tt5029608
+906	Free Fire	Free Fire	2016	Inglés	Español	6.3	UK	Acción, Comedia, Crimen, Thriller	https://www.imdb.com/title/tt4158096
+905	Free Guy. Tomando El Control	Free Guy	2021	Inglés	Español	7.1	USA, Canadá	Acción, Aventura, Comedia, Fantasía, Romance, Sci-Fi	https://www.imdb.com/title/tt6264654
+904	Free Rein The Twelve Neighs Of Christmas	Free Rein: The Twelve Neighs of Christmas	2018	Inglés	Español	5.7		Aventura, Comedia, Drama, Familia	https://www.imdb.com/title/tt9315418
+903	Free Solo	Free Solo	2018	Inglés	Español	8.1	USA	Documental, Aventura, Deporte	https://www.imdb.com/title/tt7775622
+902	Frente Al Mar	By the Sea	2015	ING/ESP	Español	5.3	Francia, Malta, USA	Drama, Romance	https://www.imdb.com/title/tt3707106
+901	Frozen 2	Frozen II	2019	ING/ESP	Español	6.8	Japón, USA	Infantil	https://www.imdb.com/title/tt4520988
+900	Furlough	Furlough	2018	Inglés	Español	5.5	USA	Comedia, Drama	https://www.imdb.com/title/tt5291792
+899	Fútbol Cavernícola	Early Man	2018	ING/ESP	Español	6.1	UK, Francia, USA	Infantil	https://www.imdb.com/title/tt4701724
+898	Future World	Future World	2018	ING/ESP	Español	3.3	USA	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt5737536
+897	Galveston	Galveston	2018	Inglés	Español	6.2	USA	Acción, Crimen, Drama, Thriller	https://www.imdb.com/title/tt2315596
+896	Game Over Man	Game Over, Man!	2018	ING/ESP	Español	5.5	USA	Acción, Comedia	https://www.imdb.com/title/tt3317234
+895	Gangster Land	In the Absence of Good Men	2017	ING/ESP	Español	4.3	USA	Acción, Crimen, Drama	https://www.imdb.com/title/tt7241654
+894	Geo-Tormenta	Geostorm	2017	ING/ESP	Español	5.3	USA, Hong Kong, Japón, Emiratos Árabes	Acción, Sci-Fi, Thriller	https://www.imdb.com/title/tt1981128
+893	Get A Job	Get a Job	2016	Inglés	Español	5.3	USA	Comedia	https://www.imdb.com/title/tt1468846
+892	Ghost In The Shell	Ghost in the Shell: Production Report	1995	ING/ESP	Español	8.0	Japón, USA	Documental, Animación, Corto	https://www.imdb.com/title/tt4524812
+891	Ghost In The Shell: Vigilante Del Futuro	Ghost in the Shell	2017	ING/ESP	Español	6.3	USA, India, Hong Kong, China, Canadá	Acción, Crimen, Drama, Misterio, Sci-Fi, Thriller	https://www.imdb.com/title/tt1219827
+890	Girls Trip	Girls Trip	2017	ING/ESP	Español	6.2	USA, Canadá, China	Aventura, Comedia, Drama	https://www.imdb.com/title/tt3564472
+889	Girls With Balls	Bats, Balls and Bradford Girls	2019	ING/ESP	Español	8.4	UK	Documental, Deporte	https://www.imdb.com/title/tt9813014
+888	Glass	Glass	2019	ING/ESP	Español	6.6	USA, China	Drama, Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt6823368
+887	Gnomos Al Ataque	Gnome Alone	2017	ING/ESP	Español	5.6	UK, Canadá, USA	Infantil	https://www.imdb.com/title/tt5851786
+886	God Of Guerra	Dang kou feng yun	2017	ING/ESP	Español	6.4	China, Hong Kong	Acción, Aventura, Drama, Historia, Guerra	https://www.imdb.com/title/tt6083388
+885	Godzilla II: El Rey De Los Monstruos	Godzilla: King of the Monsters	2019	ING/ESP	Español	6.0	USA, Japón, China	Acción, Aventura, Fantasía, Sci-Fi	https://www.imdb.com/title/tt3741700
+884	Godzilla: Ciudad Al Filo De La Batalla	Gojira: kessen kidô zôshoku toshi	2018	JAP/ESP	Español	5.8	Japón	Infantil	https://www.imdb.com/title/tt8015080
+883	Gold	Gold	2016	Inglés	Español	6.7	USA	Biografía, Crimen, Drama, Misterio	https://www.imdb.com/title/tt1800302
+882	Gonjiam: Hospital Maldito	Gon-ji-am	2018	ING/ESP	Español	6.5	Corea del Sur	Terror, Misterio	https://www.imdb.com/title/tt8119752
+881	Good Kids	Good Kids	2016	ING/ESP	Español	6.1	USA	Comedia, Drama	https://www.imdb.com/title/tt2170427
+880	Good Sam	Good Sam	2019	ING/ESP	Español	5.8	USA	Comedia, Drama, Romance	https://www.imdb.com/title/tt9032888
+879	Goodbye Christopher Robin	Goodbye Christopher Robin	2017	ING/ESP	Español	7.1	UK, USA	Biografía, Drama, Familia	https://www.imdb.com/title/tt1653665
+878	Goon Last Of The Enforcers	Goon: Last of the Enforcers	2017	ING/ESP	Español	5.8	Canadá	Comedia, Deporte	https://www.imdb.com/title/tt2417712
+877	Gotti	Gotti	2018	ING/ESP	Español	4.8	Canadá, USA, UK	Biografía, Crimen, Drama	https://www.imdb.com/title/tt1801552
+876	Gran Turismo	Gran Turismo	2023	ING/ESP	Español	7.1	Japón, USA	Acción, Aventura, Drama, Deporte	https://www.imdb.com/title/tt4495098
+875	Grandes Amigos	A Walk in the Woods	2015	ING/ESP	Español	6.4	USA	Aventura, Biografía, Comedia, Drama	https://www.imdb.com/title/tt1178665
+874	Green Book. Una Amistad Sin Fronteras	Green Book	2018	Inglés	Español	8.2	USA, China	Biografía, Comedia, Drama, Música	https://www.imdb.com/title/tt6966692
+873	Green Room	Green Room	2015	Inglés	Español	7.0	USA	Crimen, Terror, Música, Thriller	https://www.imdb.com/title/tt4062536
+872	Gridlocked	Gridlocked	2015	Inglés	Español	5.8	Canadá	Acción	https://www.imdb.com/title/tt2724532
+871	Gringo	Gringo	2018	ING/ESP	Español	6.1	México, Australia, USA	Acción, Comedia, Crimen, Drama	https://www.imdb.com/title/tt3721964
+870	Grosse Pointe Blank	Grosse Pointe Blank	1997	ING/ESP	Español	7.3	USA	Acción, Comedia, Crimen, Romance, Thriller	https://www.imdb.com/title/tt0119229
+869	Guardianes	Zashchitniki	2017	Ruso	Español	4.1	Rusia, USA	Acción, Aventura, Comedia, Fantasía, Sci-Fi, Thriller	https://www.imdb.com/title/tt4600952
+868	Guardianes De La Galaxia (Vol. 2)	Guardians of the Galaxy Vol. 2	2017	ING/ESP	Español	7.6	USA	Acción, Aventura, Comedia, Sci-Fi	https://www.imdb.com/title/tt3896198
+867	Guardianes De La Galaxia (Vol. 3)	Guardians of the Galaxy Vol. 3	2023	ING/ESP	Español	7.9	USA, Nueva Zelanda, Francia, Canadá	Acción, Aventura, Comedia, Sci-Fi	https://www.imdb.com/title/tt6791350
+866	Guardians Of The Tomb	Mi chao	2018	Inglés	Español	4.4	China, Australia, Rusia, Tailandia	Acción, Aventura, Fantasía, Terror, Thriller	https://www.imdb.com/title/tt4915672
+865	Guasón	Joker	2019	Inglés	Español	8.3	USA, Canadá, Australia	Crimen, Drama, Thriller	https://www.imdb.com/title/tt7286456
+864	Guerra De Papás	Daddy's Home	2015	ING/ESP	Español	6.2	USA	Comedia, Familia	https://www.imdb.com/title/tt1528854
+863	Guerra De Papás 2	Daddy's Home 2	2017	ING/ESP	Español	6.0	USA	Comedia	https://www.imdb.com/title/tt5657846
+862	Gun City	La sombra de la ley	2018	Inglés	Español	6.3	España, Francia	Acción, Aventura, Crimen, Historia, Thriller	https://www.imdb.com/title/tt7104984
+861	Había Una Vez En Hollywood	Once Upon a Time in... Hollywood	2019	ING/ESP	Español	7.6	USA, UK, China	Comedia, Drama	https://www.imdb.com/title/tt7131622
+860	Halloween	Halloween	2018	ING/ESP	Español	6.5	USA	Crimen, Drama, Terror, Thriller	https://www.imdb.com/title/tt1502407
+859	Hampstead	Hampstead	2017	ING/ESP	Español	6.1	UK, Bélgica	Comedia, Drama, Romance	https://www.imdb.com/title/tt5153236
+858	Han Solo. Una Historia De Star Guerras	Solo: A Star Guerras Story	2018	ING/ESP	Español	6.9	USA	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt3778644
+857	Hangman	Hangman	2017	ING/ESP	Español	5.2	USA	Crimen, Drama, Terror, Misterio, Thriller	https://www.imdb.com/title/tt3011960
+856	Happy Anniversary	Happy Anniversary	2018	ING/ESP	Español	5.7	USA	Comedia	https://www.imdb.com/title/tt6423886
+855	Happy End	Happy End	2017	Inglés	Español	6.6	Francia, Austria, Alemania	Drama	https://www.imdb.com/title/tt5304464
+854	Hard Target 2	Hard Target 2	2016	ING/ESP	Español	5.2	USA, Tailandia	Acción, Thriller	https://www.imdb.com/title/tt5241578
+853	Hardcore: Misión Extrema	Hardcore Henry	2015	Inglés	Español	6.7	Rusia, USA, China	Acción, Aventura, Sci-Fi, Thriller	https://www.imdb.com/title/tt3072482
+852	Harry Potter Y El Cáliz De Fuego	Harry Potter and the Goblet of Fire	2005	ING/ESP	Español	7.7	UK, USA	Infantil	https://www.imdb.com/title/tt0330373
+851	Harry Potter Y El Misterio Del Príncipe	Harry Potter and the Half-Blood Prince	2009	ING/ESP	Español	7.6	UK, USA	Infantil	https://www.imdb.com/title/tt0417741
+850	Harry Potter Y El Prisionero De Azkaban	Harry Potter and the Prisoner of Azkaban	2004	ING/ESP	Español	7.9	UK, USA	Infantil	https://www.imdb.com/title/tt0304141
+849	Harry Potter Y La Cámara Secreta	Harry Potter and the Chamber of Secrets	2002	ING/ESP	Español	7.4	UK, USA	Infantil	https://www.imdb.com/title/tt0295297
+848	Harry Potter Y La Orden Del Fénix	Harry Potter and the Order of the Phoenix	2007	ING/ESP	Español	7.5	UK, USA	Infantil	https://www.imdb.com/title/tt0373889
+847	Harry Potter Y La Piedra Filosofal	Harry Potter and the Sorcerer's Stone	2001	ING/ESP	Español	7.7	UK, USA	Infantil	https://www.imdb.com/title/tt0241527
+846	Harry Potter Y Las Reliquias De La Muerte (Parte 1)	Harry Potter and the Deathly Hallows - Part 1	2010	ING/ESP	Español	7.7	UK, USA	Infantil	https://www.imdb.com/title/tt0926084
+845	Harry Potter Y Las Reliquias De La Muerte (Parte 2)	Harry Potter and the Deathly Hallows - Part 2	2011	ING/ESP	Español	8.1	UK, USA	Infantil	https://www.imdb.com/title/tt1201607
+844	Hasta El Último Hombre	Hacksaw Ridge	2016	ING/ESP	Español	8.1	USA	Biografía, Drama, Historia, Guerra	https://www.imdb.com/title/tt2119532
+843	Hearts Beat Loud	Hearts Beat Loud	2018	ING/ESP	Español	6.9	USA	Comedia, Drama, Música	https://www.imdb.com/title/tt7158430
+842	Héctor En Busca De La Felicidad	Hector and the Search for Happiness	2014	Inglés	Español	6.9	Alemania, Canadá, UK, Sudáfrica, USA	Aventura, Comedia, Drama	https://www.imdb.com/title/tt1626146
+841	Hell And Back	Hell and Back	2015	ING/ESP	Español	5.4	USA	Animación, Aventura, Comedia, Fantasía	https://www.imdb.com/title/tt2141773
+840	Hellboy	Hellboy	2019	ING/ESP	Español	5.3	USA, UK, Bulgaria, Canadá, Portugal, Francia	Acción, Aventura, Fantasía, Terror, Sci-Fi	https://www.imdb.com/title/tt2274648
+839	Hello My Name Is Doris	Hello, My Name Is Doris	2015	ING/ESP	Español	6.6	USA	Comedia, Drama, Romance	https://www.imdb.com/title/tt3766394
+838	Here Alone	Here Alone	2016	Inglés	Español	5.6	USA	Drama, Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt4814760
+837	Here And Now	Here and Now	2018	ING/ESP	Español	6.8	USA	Comedia, Drama, Fantasía	https://www.imdb.com/title/tt5923012
+836	Hide In The Light	Hide in the Light	2018	Inglés	Español	3.7	USA	Terror, Thriller	https://www.imdb.com/title/tt4369136
+835	High Society	High Society	1956	Inglés	Español	6.9	USA	Comedia, Musical, Romance	https://www.imdb.com/title/tt0049314
+834	Hitman: Agente 47	Hitman: Agent 47	2015	ING/ESP	Español	5.7	USA, UK, Alemania, Canadá, Singapur	Acción, Aventura, Crimen, Misterio, Thriller	https://www.imdb.com/title/tt2679042
+833	Hold The Dark	Hold the Dark	2018	ING/ESP	Español	5.7	USA	Acción, Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt5057140
+832	Holmes & Watson	Holmes & Watson	2018	ING/ESP	Español	3.9	USA, Canadá	Comedia, Crimen, Misterio	https://www.imdb.com/title/tt1255919
+831	Hombre Irracional	Irrational Man	2015	ING/ESP	Español	6.6	USA	Comedia, Crimen, Drama, Romance	https://www.imdb.com/title/tt3715320
+830	Hombres De Negro: Internacional	Men in Black: International	2019	ING/ESP	Español	5.6	China, USA	Acción, Aventura, Comedia, Sci-Fi	https://www.imdb.com/title/tt2283336
+829	Home Again	Home Again	2017	ING/ESP	Español	5.8	USA	Comedia, Drama, Romance	https://www.imdb.com/title/tt5719700
+828	Home: No Hay Lugar Como El Hogar	Home	2015	ING/ESP	Español	6.5	USA, India	Infantil	https://www.imdb.com/title/tt2224026
+827	Hope Springs Eternal	Hope Springs Eternal	2018	ING/ESP	Español	4.9	USA	Comedia, Drama	https://www.imdb.com/title/tt5516404
+826	Horas Contadas	The Finest Hours	2016	ING/ESP	Español	6.7	USA	Acción, Drama, Historia, Thriller	https://www.imdb.com/title/tt2025690
+825	Horizonte Profundo: Desastre En El Golfo	Deepwater Horizon	2016	Inglés	Español	7.1	USA, Hong Kong	Acción, Drama, Historia, Thriller	https://www.imdb.com/title/tt1860357
+824	Hot Summer Nights	Hot Summer Nights	2017	Inglés	Español	6.4	USA	Crimen, Drama, Romance	https://www.imdb.com/title/tt3416536
+823	Hot Tub Time Machine 2	Hot Tub Time Machine 2	2015	Inglés	Español	5.0	USA	Comedia, Misterio, Sci-Fi	https://www.imdb.com/title/tt2637294
+822	Hotel De Criminales	Hotel Artemis	2018	ING/ESP	Español	6.1	UK, USA	Acción, Crimen, Drama, Sci-Fi, Thriller	https://www.imdb.com/title/tt5834262
+821	Hotel Mumbai	Hotel Mumbai	2018	ING/ESP	Español	7.6	Australia, USA, UK, Singapur, India	Acción, Drama, Historia, Thriller	https://www.imdb.com/title/tt5461944
+820	Hotel Transylvania 2	Hotel Transylvania 2	2015	ING/ESP	Español	6.6	USA, Canadá	Infantil	https://www.imdb.com/title/tt2510894
+819	Hotel Transylvania 3	Hotel Transylvania 3: Summer Vacation	2018	ING/ESP	Español	6.3	USA, Corea del Sur	Infantil	https://www.imdb.com/title/tt5220122
+818	How It Ends	How It Ends	2018	ING/ESP	Español	5.1	USA	Acción, Drama, Terror, Misterio, Thriller	https://www.imdb.com/title/tt5246700
+817	How To Get Over A Breakup	Soltera codiciada	2018	ING/ESP	Español	6.1	Peru	Comedia	https://www.imdb.com/title/tt8435268
+816	Howl	Howl	2015	Inglés	Español	5.5	UK	Acción, Fantasía, Terror, Misterio, Thriller	https://www.imdb.com/title/tt2393827
+815	Hush	Hush	2016	ING/ESP	Español	6.6	USA	Terror, Thriller	https://www.imdb.com/title/tt5022702
+814	Hyena Road	Hyena Road	2015	Inglés	Español	6.5	Canadá	Drama, Guerra	https://www.imdb.com/title/tt4034452
+813	I Am Bolt	I Am Bolt	2016	Inglés	Español	7.1	UK	Documental, Biografía, Deporte	https://www.imdb.com/title/tt4647900
+812	I Am Mother	I Am Mother	2019	ING/ESP	Español	6.7	Australia	Drama, Misterio, Sci-Fi, Thriller	https://www.imdb.com/title/tt6292852
+811	I Am Wrath	I Am Wrath	2016	Inglés	Español	5.4	USA	Acción, Thriller	https://www.imdb.com/title/tt3212232
+810	I Can Only Imagine	I Can Only Imagine	2018	ING/ESP	Español	7.3	USA	Biografía, Drama, Familia, Música	https://www.imdb.com/title/tt6450186
+809	I Do Until I Don't	I Do... Until I Don't	2017	ING/ESP	Español	4.4	USA	Comedia	https://www.imdb.com/title/tt3234084
+808	I Origins	I Origins	2014	ING/ESP	Español	7.3	USA	Drama, Misterio, Romance, Sci-Fi	https://www.imdb.com/title/tt2884206
+807	I Saw The Light	I Saw the Light	2015	Inglés	Español	5.8	USA, Japón, Canadá	Biografía, Drama, Música, Romance	https://www.imdb.com/title/tt1490785
+806	Ibiza	Ibiza	2018	ING/ESP	Español	5.2	USA	Comedia, Romance	https://www.imdb.com/title/tt3685236
+805	Icebox	Icebox	2018	Inglés	Español	6.2	USA	Drama	https://www.imdb.com/title/tt6341668
+804	Ideal Home	Ideal Home	2018	Inglés	Español	6.4	USA	Comedia, Drama	https://www.imdb.com/title/tt5460880
+803	If Beale Street Could Talk	If Beale Street Could Talk	2018	Inglés	Español	7.1	USA	Drama, Romance	https://www.imdb.com/title/tt7125860
+802	Illang The Wolf Brigade	Inrang	2018	ING/ESP	Español	5.9	Corea del Sur, Japón, Hong Kong	Acción, Drama, Sci-Fi, Thriller	https://www.imdb.com/title/tt3967878
+801	Imperium	Imperium	2016	Inglés	Español	6.5	USA	Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt4781612
+800	In Darkness	In Darkness	2018	ING/ESP	Español	5.8	UK, USA	Misterio, Thriller	https://www.imdb.com/title/tt5164184
+799	In The Cloud	In the Cloud	2018	Inglés	Español	3.6	USA	Thriller	https://www.imdb.com/title/tt7381444
+798	In The Fade	Aus dem Nichts	2017	ING/ESP	Español	7.1	Alemania, Francia	Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt5723272
+797	Incoming	Incoming	2018	ING/ESP	Español	3.3	Serbia, USA	Acción, Sci-Fi, Thriller	https://www.imdb.com/title/tt6678874
+796	Indiana Jones Y El Dial Del Destino	Indiana Jones and the Dial of Destiny	2023	ING/ESP	Español	6.5	USA	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt1462764
+795	Indivisible	Indivisible	2018	ING/ESP	Español	5.9	USA	Drama, Guerra	https://www.imdb.com/title/tt6512428
+794	Inferno	Inferno	2016	ING/ESP	Español	6.2	Hungría, USA	Acción, Aventura, Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt3062096
+793	Infiel	Acrimony	2018	ING/ESP	Español	5.9	USA	Drama, Terror, Romance, Thriller	https://www.imdb.com/title/tt6063050
+792	Infierno En La Tormenta	Crawl	2019	Inglés	Español	6.1	USA	Acción, Terror, Thriller	https://www.imdb.com/title/tt8364368
+791	Infini	Infini	2015	Inglés	Español	5.3	Australia	Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt3327624
+790	Infinite	Infinite	2021	ING/ESP	Español	5.5	USA	Acción, Sci-Fi, Thriller	https://www.imdb.com/title/tt6654210
+789	Inframundo: Guerras De Sangre	Underworld: Blood Guerras	2016	ING/ESP	Español	5.8	USA	Acción, Crimen, Drama, Fantasía, Thriller	https://www.imdb.com/title/tt3717252
+788	Ingrid Goes West	Ingrid Goes West	2017	ING/ESP	Español	6.6	USA	Comedia, Drama	https://www.imdb.com/title/tt5962210
+787	Inmersión	Submergence	2017	ING/ESP	Español	5.4	Alemania, Francia, España, USA	Drama, Romance, Thriller	https://www.imdb.com/title/tt3563262
+786	Intensa Mente	Inside Out	2015	ING/ESP	Español	8.1	USA	Infantil	https://www.imdb.com/title/tt2096673
+785	Intercambiadas	Intercambiadas	2019	ING/ESP	Español	4.9	Peru	Comedia	https://www.imdb.com/title/tt9833886
+784	Interestelar	Interstellar	2014	ING/ESP	Español	8.7	USA, UK, Canadá	Aventura, Drama, Sci-Fi	https://www.imdb.com/title/tt0816692
+783	Into The Forest	Into the Forest	2015	Inglés	Español	5.8	Canadá	Drama, Sci-Fi, Thriller	https://www.imdb.com/title/tt2625810
+782	Into The Grizzly Maze	Into the Grizzly Maze	2015	Inglés	Español	5.3	USA, Canadá	Acción, Aventura, Terror, Thriller	https://www.imdb.com/title/tt1694021
+781	Io	IO	2019	ING/ESP	Español	4.8	USA	Aventura, Drama, Sci-Fi	https://www.imdb.com/title/tt3256226
+780	Isla De Perros	Isle of Dogs	2018	ING/ESP	Español	7.8	UK, Alemania, Japón, USA	Infantil	https://www.imdb.com/title/tt5104604
+779	Isle Of The Dead	Isle of the Dead	2016	ING/ESP	Español	3.9	USA	Acción, Terror	https://www.imdb.com/title/tt5108168
+778	Isn't It Romantic	Isn't It Romantic	2019	ING/ESP	Español	5.9	USA	Comedia, Fantasía, Musical, Romance	https://www.imdb.com/title/tt2452244
+777	It (Eso)	It	2017	ING/ESP	Español	7.3	USA, Canadá	Terror	https://www.imdb.com/title/tt1396484
+776	It Capítulo 2	It Chapter Two	2019	ING/ESP	Español	6.5	USA, Canadá	Drama, Fantasía, Terror	https://www.imdb.com/title/tt7349950
+775	Jack Goes Home	Jack Goes Home	2016	ING/ESP	Español	5.1	USA	Drama, Terror, Misterio, Thriller	https://www.imdb.com/title/tt4797436
+774	Jack Reacher: Sin Regreso	Jack Reacher: Never Go Back	2016	ING/ESP	Español	6.2	USA, China	Acción, Thriller	https://www.imdb.com/title/tt3393786
+773	Jackie	Jackie	2016	ING/ESP	Español	6.6	USA, Francia, Chile, China	Biografía, Drama	https://www.imdb.com/title/tt1619029
+772	Jake	A Kid Like Jake	2018	ING/ESP	Español	5.6	USA	Drama	https://www.imdb.com/title/tt6884200
+771	Jane Got A Gun	Jane Got a Gun	2015	Inglés	Español	5.9	USA	Acción, Drama, Western	https://www.imdb.com/title/tt2140037
+770	Jason Bourne	Jason Bourne	2016	ING/ESP	Español	6.6	USA, China, España, Japón, Islandia, Alemania, Italia	Acción, Thriller	https://www.imdb.com/title/tt4196776
+769	Jefa Por Accidente	Second Act	2018	ING/ESP	Español	5.8	USA	Comedia, Drama, Romance	https://www.imdb.com/title/tt2126357
+768	Jem And The Holograms	Jem and the Holograms	2015	ING/ESP	Español	4.2	USA	Aventura, Drama, Familia, Fantasía, Música, Romance, Sci-Fi	https://www.imdb.com/title/tt3614530
+767	Jigsaw. El Juego Continúa	Jigsaw	2017	ING/ESP	Español	5.7	USA, Canadá	Terror, Misterio, Thriller	https://www.imdb.com/title/tt3348730
+766	John Wick 2: Un Nuevo Día Para Matar	John Wick: Chapter 2	2017	ING/ESP	Español	7.4	USA, Italia, Hong Kong, Canadá	Acción, Crimen, Thriller	https://www.imdb.com/title/tt4425200
+765	John Wick 3: Parabellum	John Wick: Chapter 3 - Parabellum	2019	ING/ESP	Español	7.4	USA, Marruecos, Ucrania, Italia	Acción, Crimen, Thriller	https://www.imdb.com/title/tt6146586
+764	Johnny English 3.0	Johnny English Strikes Again	2018	Inglés	Español	6.2	UK, Francia, USA, China	Acción, Aventura, Comedia	https://www.imdb.com/title/tt6921996
+763	Jojo Rabbit	Jojo Rabbit	2019	ING/ESP	Español	7.9	Chequia, Nueva Zelanda, USA, Alemania	Comedia, Drama, Guerra	https://www.imdb.com/title/tt2584384
+762	Jóvenes Titanes En Acción! La Película	Teen Titans Go! To the Movies	2018	ING/ESP	Español	6.7	USA	Infantil	https://www.imdb.com/title/tt7424200
+761	Joy: El Nombre Del Éxito	Joy	2015	ING/ESP	Español	6.6	USA	Biografía, Drama	https://www.imdb.com/title/tt2446980
+760	Jumanji En La Selva	Jumanji: Welcome to the Jungle	2017	ING/ESP	Español	7.0	USA, Australia, Canadá, México, India, UK	Acción, Aventura, Comedia, Fantasía	https://www.imdb.com/title/tt2283362
+759	Junto A Los Dioses: Los Dos Mundos	Singwa hamkke: Jwiwa beol	2017	ING/ESP	Español	7.2	Corea del Sur	Acción, Aventura, Drama, Fantasía, Thriller	https://www.imdb.com/title/tt7160070
+758	Junto A Los Dioses: Los Últimos 49 Días	Sin-gwa ham-kke: In-gwa yeon	2018	ING/ESP	Español	7.1	Corea del Sur, Hong Kong	Acción, Aventura, Drama, Fantasía, Thriller	https://www.imdb.com/title/tt8116428
+757	Jurassic World: El Reino Caído	Jurassic World: Fallen Kingdom	2018	ING/ESP	Español	6.1	USA, China	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt4881806
+756	Just Getting Started	Just Getting Started	2017	ING/ESP	Español	4.6	USA	Comedia, Crimen	https://www.imdb.com/title/tt5721088
+755	Keanu	Keanu	2016	ING/ESP	Español	6.2	USA	Acción, Comedia, Crimen	https://www.imdb.com/title/tt4139124
+754	Keep Watching	Keep Watching	2017	ING/ESP	Español	4.3	USA	Terror, Misterio, Thriller	https://www.imdb.com/title/tt2531334
+753	Keeping Up With The Joneses	Keeping Up with the Joneses	2016	ING/ESP	Español	5.9	USA	Acción, Comedia	https://www.imdb.com/title/tt2387499
+752	Kelce	Kelce	2023	Inglés	Español	8.1	USA	Documental, Deporte	https://www.imdb.com/title/tt28656365
+751	Kickboxer Retaliation	Kickboxer: Retaliation	2018	ING/ESP	Español	5.0	USA	Acción, Drama	https://www.imdb.com/title/tt5208950
+750	Kicks	Kicks	2016	Inglés	Español	6.4	USA	Aventura, Drama	https://www.imdb.com/title/tt4254584
+749	Kidnapping Stella	Kidnapping Stella	2019	ING/ESP	Español	4.9	Alemania	Crimen, Drama, Thriller	https://www.imdb.com/title/tt8613876
+748	Kids In Love	Kids in Love	2016	ING/ESP	Español	5.2	UK	Drama, Romance	https://www.imdb.com/title/tt3215826
+747	Kill Command	Kill Command	2016	Inglés	Español	5.7	UK	Acción, Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt2667380
+746	Kin	Kin	2018	ING/ESP	Español	5.8	USA, Canadá	Acción, Drama, Sci-Fi, Thriller	https://www.imdb.com/title/tt6017942
+745	Kingsman: El Servicio Secreto	Kingsman: The Secret Service	2014	ING/ESP	Español	7.7	UK, USA	Acción, Aventura, Comedia, Thriller	https://www.imdb.com/title/tt2802144
+744	Kiss And Cry	Kiss and Cry	2017	ING/ESP	Español	6.7	Canadá	Biografía, Drama, Música, Romance, Deporte	https://www.imdb.com/title/tt5224012
+743	Knight Of Cups	Knight of Cups	2015	ING/ESP	Español	5.6	USA	Drama, Fantasía, Romance	https://www.imdb.com/title/tt2101383
+742	Knock Knock: Seducción Fatal	Knock Knock	2015	Inglés	Español	4.9	Chile, Israel, USA	Crimen, Thriller	https://www.imdb.com/title/tt3605418
+741	Kong. La Isla Calavera	Kong: Skull Island	2017	ING/ESP	Español	6.7	USA, China, Vietnam, Canadá, Alemania, UK, Singapur, India, Australia	Acción, Aventura, Fantasía, Sci-Fi	https://www.imdb.com/title/tt3731562
+740	Krampus: El Terror De La Navidad	Krampus	2015	ING/ESP	Español	6.2	USA, Canadá	Comedia, Fantasía, Terror	https://www.imdb.com/title/tt3850590
+739	Kubo Y La Búsqueda Del Samurai	Kubo and the Two Strings	2016	ING/ESP	Español	7.7	UK, USA	Infantil	https://www.imdb.com/title/tt4302938
+738	Kung Fu Panda 3	Kung Fu Panda 3	2016	ING/ESP	Español	7.1	USA, China	Infantil	https://www.imdb.com/title/tt2267968
+737	Kung Fu Yoga	Gong fu yu jia	2017	ING/ESP	Español	5.2	China, India, Hong Kong, Corea del Sur, Islandia, Emiratos Árabes	Acción, Aventura, Comedia, Familia, Fantasía, Misterio	https://www.imdb.com/title/tt4217392
+736	La Ballena	The Whale	2022	ING/ESP	Español	7.6	USA	Drama	https://www.imdb.com/title/tt13833688
+735	La Batalla De Los Sexos	Battle of the Sexes	2017	ING/ESP	Español	6.7	UK, USA	Biografía, Comedia, Drama, Historia, Deporte	https://www.imdb.com/title/tt4622512
+734	La Bella Y La Bestia	Beauty and the Beast	2017	ING/ESP	Español	7.1	USA	Aventura, Familia, Fantasía, Musical, Romance	https://www.imdb.com/title/tt2771200
+733	La Bruja	The VVitch: A New-England Folktale	2015	Inglés	Español	7.0	USA, Canadá, UK	Drama, Fantasía, Terror, Misterio, Thriller	https://www.imdb.com/title/tt4263482
+732	La Cabaña	The Shack	2017	ING/ESP	Español	6.3	USA, Canadá, Hong Kong	Drama, Fantasía	https://www.imdb.com/title/tt2872518
+731	La Casa Con Un Reloj En Sus Paredes	The House with a Clock in Its Walls	2018	ING/ESP	Español	6.1	USA, Canadá, India	Comedia, Familia, Fantasía, Terror, Misterio, Sci-Fi	https://www.imdb.com/title/tt2119543
+730	La Casa Que Jack Construyó	The House That Jack Built	2018	Inglés	Español	6.8	Dinamarca, Francia, Suecia, Alemania, Bélgica	Crimen, Drama, Terror	https://www.imdb.com/title/tt4003440
+729	La Chica Danesa	The Danish Girl	2015	Inglés	Español	7.1	UK, USA, Alemania, Dinamarca, Bélgica, Japón	Biografía, Drama	https://www.imdb.com/title/tt0810819
+728	La Chica Del Tren	The Girl on the Train	2016	ING/ESP	Español	6.5	USA, India	Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt3631112
+727	La Chica En La Telaraña	The Girl in the Spider's Web	2018	Inglés	Español	6.1	Alemania, UK, Canadá, Suecia, USA	Acción, Aventura, Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt5177088
+726	La Crucifixión	The Crucifixion	2017	ING/ESP	Español	5.1	UK, Romania, USA	Terror, Misterio, Thriller	https://www.imdb.com/title/tt4181782
+725	La Cumbre Escarlata	Crimson Peak	2015	ING/ESP	Español	6.5	USA, México, Canadá	Drama, Terror, Misterio, Romance, Thriller	https://www.imdb.com/title/tt2554274
+724	La Desaparición	The Vanishing	2018	Inglés	Español	5.9	UK	Drama, Misterio, Thriller	https://www.imdb.com/title/tt4131496
+723	La Era Del Hielo 5: Choque De Mundos	Ice Age: Collision Course	2016	ING/ESP	Español	5.7	USA, UK	Infantil	https://www.imdb.com/title/tt3416828
+722	La Estafa De Los Logan	Logan Lucky	2017	ING/ESP	Español	7.0	USA, China	Acción, Comedia, Crimen, Drama	https://www.imdb.com/title/tt5439796
+721	La Familia Monster	Happy Familia	2017	ING/ESP	Español	4.8	Alemania, UK	Infantil	https://www.imdb.com/title/tt6572702
+720	La Favorita	The Favourite	2018	ING/ESP	Español	7.5	Irlanda, UK, USA	Biografía, Comedia, Drama, Historia	https://www.imdb.com/title/tt5083738
+719	La Fiesta De Las Salchichas	Sausage Party	2016	ING/ESP	Español	6.1	Canadá, USA	Infantil	https://www.imdb.com/title/tt1700841
+718	La Forma Del Agua	The Shape of Water	2017	ING/ESP	Español	7.3	USA, México	Drama, Fantasía, Romance, Sci-Fi	https://www.imdb.com/title/tt5580390
+717	La Gran Apuesta	The Big Corto	2015	ING/ESP	Español	7.8	USA	Biografía, Comedia, Drama, Historia	https://www.imdb.com/title/tt1596363
+716	La Gran Aventura Lego	The Lego Movie	2014	ING/ESP	Español	7.7	USA, Dinamarca, Australia, Noruega	Infantil	https://www.imdb.com/title/tt1490017
+715	La Gran Aventura Lego 2	The Lego Movie 2: The Second Part	2019	ING/ESP	Español	6.5	Dinamarca, Noruega, Australia, USA	Animación, Aventura, Comedia, Familia, Fantasía, Musical, Sci-Fi	https://www.imdb.com/title/tt3513498
+714	La Gran Muralla	The Great Wall	2016	ING/ESP	Español	5.9	USA, China, Hong Kong, Australia, Canadá, Japón	Acción, Aventura, Fantasía, Thriller	https://www.imdb.com/title/tt2034800
+713	La Guerra De Las Galaxias	Star Guerras	1977	ING/ESP	Español	8.6	USA	Acción, Aventura, Fantasía, Sci-Fi	https://www.imdb.com/title/tt0076759
+712	La Increíble Historia De La Pera Gigante	Den utrolige historie om den kæmpestore pære	2017	DAN/ESP	Ninguno	6.2	Dinamarca	Infantil	https://www.imdb.com/title/tt7006206
+711	La Jefa	The Boss	2016	ING/ESP	Español	5.4	USA	Comedia	https://www.imdb.com/title/tt2702724
+710	La Jugada Maestra	Pawn Sacrifice	2014	Inglés	Español	7.0	USA	Biografía, Drama, Historia, Deporte, Thriller	https://www.imdb.com/title/tt1596345
+709	La La Land. Ciudad De Sueños	La La Land	2016	Inglés	Español	8.0	USA, Hong Kong	Comedia, Drama, Música, Musical, Romance	https://www.imdb.com/title/tt3783958
+708	La Leyenda De Tarzán	The Legend of Tarzan	2016	ING/ESP	Español	6.2	UK, Canadá, USA, Australia	Acción, Aventura, Drama, Fantasía, Romance	https://www.imdb.com/title/tt0918940
+707	La Leyenda Del Charro Negro	La Leyenda del Charro Negro	2018	Español	Ninguno	6.9	México, Filipinas	Infantil	https://www.imdb.com/title/tt6772418
+706	La Leyenda Del Gigante De La Montaña	Askeladden: I Dovregubbens hall	2017	NOR/ESP	Español	6.2	Noruega, Chequia, Irlanda	Infantil	https://www.imdb.com/title/tt5628418
+705	La Liga De La Justicia Vs Los Cinco Fatales	Justice League vs. the Fatal Five	2019	ING/ESP	Español	6.5	USA	Infantil	https://www.imdb.com/title/tt8752474
+704	La Llegada	Arrival	2016	ING/ESP	Español	7.9	USA, Canadá	Drama, Misterio, Sci-Fi	https://www.imdb.com/title/tt2543164
+703	La Luz Entre Los Océanos	The Light Between Oceans	2016	ING/ESP	Español	7.2	UK, India, Australia, Nueva Zelanda, USA, Canadá	Drama, Romance	https://www.imdb.com/title/tt2547584
+702	La Madame	Madame	2017	ING/ESP	Español	6.1	Francia	Comedia, Drama, Romance	https://www.imdb.com/title/tt6045466
+701	La Maldición	I Still See You	2018	Inglés	Español	5.8	USA	Fantasía, Terror, Misterio, Sci-Fi, Thriller	https://www.imdb.com/title/tt2160105
+700	La Maldición De La Casa Winchester	Winchester	2018	ING/ESP	Español	5.5	Australia, USA	Biografía, Fantasía, Terror, Misterio, Thriller	https://www.imdb.com/title/tt1072748
+699	La Maldición De La Llorona	The Curse of La Llorona	2019	ING/ESP	Español	5.3	USA	Terror, Misterio, Thriller	https://www.imdb.com/title/tt4913966
+698	La Momia	The Mummy	2017	Inglés	Español	5.4	USA, China, Japón	Acción, Aventura, Fantasía, Terror, Thriller	https://www.imdb.com/title/tt2345759
+697	La Monja	The Nun	2018	ING/ESP	Español	5.4	USA	Terror, Misterio, Thriller	https://www.imdb.com/title/tt5814060
+696	La Monja II	The Nun II	2023	ING/ESP	Español	5.6	USA	Terror, Misterio, Thriller	https://www.imdb.com/title/tt10160976
+695	La Morgue	The Autopsy of Jane Doe	2016	Inglés	Español	6.8	UK	Terror, Misterio, Thriller	https://www.imdb.com/title/tt3289956
+694	La Muerte De Superman	The Death of Superman	2018	ING/ESP	Español	7.3	USA	Infantil	https://www.imdb.com/title/tt7167658
+693	La Mula	The Mule	2018	ING/ESP	Español	7.0	USA, Canadá	Crimen, Drama, Thriller	https://www.imdb.com/title/tt7959026
+692	La Navidad De Las Madres Rebeldes	A Bad Moms Christmas	2017	ING/ESP	Español	5.6	USA, China	Comedia	https://www.imdb.com/title/tt6359956
+691	La Noche Anterior	The Night Before	2015	ING/ESP	Español	6.4	USA	Comedia, Fantasía	https://www.imdb.com/title/tt3530002
+690	La Noche Del Demonio: La Última Llave	Insidious: The Last Key	2018	ING/ESP	Español	5.7	USA, Canadá	Terror, Misterio, Thriller	https://www.imdb.com/title/tt5726086
+689	La Película Pokémon: ¡Yo Te Elijo!	Pokémon the Movie: I Choose You	2017	JAP/ESP	Ninguno	6.3	Japón, USA	Infantil	https://www.imdb.com/title/tt6595896
+688	La Peor Noche De Mi Vida	Walk of Shame	2014	Inglés	Español	6.0	USA	Comedia	https://www.imdb.com/title/tt2463288
+687	La Posesión De Verónica	Verónica	2017	Inglés	Español	6.2	España	Terror, Misterio	https://www.imdb.com/title/tt5862312
+686	La Princesa Encantada: Un Misterio Real	The Swan Princess: A Royal Myztery	2018	ING/ESP	Español	4.1	USA, India	Infantil	https://www.imdb.com/title/tt7966994
+685	La Quinta Ola	The 5th Wave	2016	ING/ESP	Español	5.2	UK, USA	Acción, Aventura, Sci-Fi, Thriller	https://www.imdb.com/title/tt2304933
+684	La Razón De Estar Contigo	A Dog's Purpose	2017	ING/ESP	Español	7.3	USA, India	Aventura, Comedia, Drama, Familia, Fantasía	https://www.imdb.com/title/tt1753383
+683	La Razón De Estar Contigo: Un Nuevo Viaje	A Dog's Journey	2019	ING/ESP	Español	7.4	China, India, Hong Kong, USA	Aventura, Comedia, Drama, Familia, Fantasía	https://www.imdb.com/title/tt8385474
+682	La Rebelión	Captive State	2019	ING/ESP	Español	6.0	USA	Acción, Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt5968394
+681	La Resurrección De Cristo	Risen	2016	Inglés	Español	6.3	USA	Acción, Drama, Historia, Misterio	https://www.imdb.com/title/tt3231054
+680	La Sirenita	The Little Mermaid	2023	ING/ESP	Español	7.2	USA	Aventura, Familia, Fantasía, Musical, Romance	https://www.imdb.com/title/tt5971474
+679	La Sirenita	The Little Mermaid	2018	ING/ESP	Español	4.3	USA	Infantil	https://www.imdb.com/title/tt5493944
+678	La Teoría Del Todo	The Theory of Everything	2014	ING/ESP	Español	7.7	UK, Japón, USA	Biografía, Drama, Romance	https://www.imdb.com/title/tt2980516
+677	La Terminal	Terminal	2018	Inglés	Español	5.4	Irlanda, UK, Hong Kong, Hungría, USA	Acción, Comedia, Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt4463816
+676	La Torre Oscura	The Dark Tower	2017	ING/ESP	Español	5.6	USA	Acción, Aventura, Fantasía, Sci-Fi, Western	https://www.imdb.com/title/tt1648190
+675	La Última Ola	Bølgen	2015	Inglés	Español	6.6	Noruega, Suecia	Acción, Drama, Thriller	https://www.imdb.com/title/tt3616916
+674	La Verdad Oculta	Concussion	2015	ING/ESP	Español	7.1	UK, Australia, USA	Biografía, Drama, Deporte	https://www.imdb.com/title/tt3322364
+673	La Vida Secreta De Tus Mascotas	The Secret Life of Pets	2016	ING/ESP	Español	6.5	USA, Francia, Japón	Infantil	https://www.imdb.com/title/tt2709768
+672	La Villana	Aknyeo	2017	ING/ESP	Español	6.6	Corea del Sur	Acción, Thriller	https://www.imdb.com/title/tt6777338
+671	La Voz De La Igualdad	On the Basis of Sex	2018	ING/ESP	Español	7.1	USA, China, Canadá	Biografía, Drama, Historia	https://www.imdb.com/title/tt4669788
+670	Lady Bird	Lady Bird	2017	Inglés	Español	7.4	USA	Comedia, Drama	https://www.imdb.com/title/tt4925292
+669	Lady J	Mademoiselle de Joncquières	2018	ING/ESP	Español	6.8	Francia	Drama, Romance	https://www.imdb.com/title/tt7530986
+668	Laggies	Laggies	2014	Inglés	Español	6.4	USA	Comedia, Drama, Romance	https://www.imdb.com/title/tt2034031
+667	Laid In America	Laid in America	2016	ING/ESP	Español	4.3	USA	Comedia	https://www.imdb.com/title/tt4706888
+666	Lake Placid Legacy	Lake Placid: Legacy	2018	ING/ESP	Español	3.4	Sudáfrica, USA	Acción, Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt7875948
+665	Las Aventuras Del Baron Munchausen	The Aventuras of Baron Munchausen	1988	ING/ESP	Español	7.1	UK, West Alemania, USA	Aventura, Comedia, Fantasía	https://www.imdb.com/title/tt0096764
+664	Las Aventuras Del Capitán Calzoncillos: La Película	Captain Underpants: The First Epic Movie	2017	ING/ESP	Español	6.2	USA, Canadá, Francia	Infantil	https://www.imdb.com/title/tt2091256
+663	Las Crónicas De Narnia 1: El León, La Bruja Y El Ropero	The Chronicles of Narnia: The Lion, the Witch and the Guerradrobe	2005	ING/ESP	Español	6.9	UK, USA	Infantil	https://www.imdb.com/title/tt0363771
+662	Las Crónicas De Narnia 2: El Príncipe Caspian	The Chronicles of Narnia: Prince Caspian	2008	ING/ESP	Español	6.5	USA, Polonia, Slovenia, Chequia, UK, Australia, Alemania, Nueva Zelanda	Infantil	https://www.imdb.com/title/tt0499448
+661	Las Crónicas De Narnia 3: La Travesía Del Viajero Del Alba	The Chronicles of Narnia: The Voyage of the Dawn Treader	2010	ING/ESP	Español	6.3	USA, UK, Canadá, Australia, Alemania	Infantil	https://www.imdb.com/title/tt0980970
+660	Las Dos Reinas	Mary Queen of Scots	2018	ING/ESP	Español	6.3	UK, USA, China	Biografía, Drama, Historia	https://www.imdb.com/title/tt2328900
+659	Las Horas Más Oscuras	Darkest Hour	2017	ING/ESP	Español	7.4	UK, USA, China	Biografía, Drama, Historia, Guerra	https://www.imdb.com/title/tt4555426
+658	Las Locuras De Robinson Crusoe	Robinson Crusoe	2016	ING/ESP	Español	5.4	Bélgica, Francia, USA	Animación, Aventura, Comedia, Familia	https://www.imdb.com/title/tt4731008
+657	Las Sufragistas	Suffragette	2015	ING/ESP	Español	6.9	UK, Francia	Drama, Historia	https://www.imdb.com/title/tt3077214
+656	Las Travesuras De Peter Rabbit	Peter Rabbit	2018	ING/ESP	Español	6.6	UK, Australia, USA	Infantil	https://www.imdb.com/title/tt5117670
+655	Last Days In The Desert	Last Days in the Desert	2015	Inglés	Español	5.6	USA	Drama, Fantasía, Historia	https://www.imdb.com/title/tt3513054
+654	Lavender	Lavender	2016	ING/ESP	Español	5.4	Canadá, USA	Aventura, Drama, Terror, Misterio, Thriller	https://www.imdb.com/title/tt4680980
+653	Lawless	Lawless	2012	Inglés	Español	7.2	USA	Biografía, Crimen, Drama, Thriller	https://www.imdb.com/title/tt1212450
+652	Le Manoir	Le manoir	2017	ING/ESP	Español	4.6	Francia, Bélgica	Comedia, Terror	https://www.imdb.com/title/tt7029854
+651	League Of Gods	Feng shen chuan qi	2016	ING/ESP	Español	4.5	Hong Kong	Acción, Fantasía	https://www.imdb.com/title/tt5481184
+650	Leatherfacer	Leatherface	2017	ING/ESP	Español	5.0	USA	Crimen, Terror, Thriller	https://www.imdb.com/title/tt2620590
+649	Leave No Trace	Leave No Trace	2018	Inglés	Español	7.1	USA, Canadá	Aventura, Drama	https://www.imdb.com/title/tt3892172
+648	Lego Aquaman: Al Rescate De Atlantis	Lego DC Comics Super Heroes: Aquaman - Rage of Atlantis	2018	ING/ESP	Español	5.7	USA	Infantil	https://www.imdb.com/title/tt8457394
+647	Lego Batman: La Película	The Lego Batman Movie	2017	ING/ESP	Español	7.3	USA, Dinamarca, Australia	Infantil	https://www.imdb.com/title/tt4116284
+646	Lego Dc Comics Super Heroes: Flash	Lego DC Comics Super Heroes: The Flash	2018	ING/ESP	Español	6.3	USA	Infantil	https://www.imdb.com/title/tt7877382
+645	Lego Dc Super Hero Girls: Escuela De Super Villanas	LEGO DC Super Hero Girls: Super-villain High	2018	ING/ESP	Español	5.1	USA	Infantil	https://www.imdb.com/title/tt8050266
+644	Lego Liga De La Justicia: Batalla Cósmica	Lego DC Comics Super Heroes: Justice League - Cosmic Clash	2016	ING/ESP	Español	6.3	USA	Infantil	https://www.imdb.com/title/tt5251438
+643	Leo Da Vinci: Misión Mona Lisa	Leo Da Vinci: Mission Mona Lisa	2018	ING/ESP	Ninguno	5.1	Italia, Polonia	Infantil	https://www.imdb.com/title/tt7139246
+642	Les Goûts Et Les Couleurs	Les goûts et les couleurs	2018	ING/ESP	Español	5.4	Francia	Comedia, Drama	https://www.imdb.com/title/tt6290418
+641	Let There Be Light	Let There Be Light	2017	ING/ESP	Español	4.6	USA	Drama	https://www.imdb.com/title/tt5804314
+640	Lets Be Evil	Let's Be Evil	2016	Inglés	Español	3.8	UK	Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt3655682
+639	Life. Vida Inteligente	Life	2017	ING/ESP	Español	6.6	USA	Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt5442430
+638	Liga De La Justicia	Justice League	2017	ING/ESP	Español	6.0	USA, Canadá, UK	Acción, Aventura, Fantasía, Sci-Fi	https://www.imdb.com/title/tt0974015
+637	Like Father	Like Father	2018	ING/ESP	Español	6.1	USA	Drama	https://www.imdb.com/title/tt7170950
+636	Línea Mortal: Al Límite	Flatliners	2017	ING/ESP	Español	5.2	Canadá, USA	Drama, Terror, Misterio, Sci-Fi, Thriller	https://www.imdb.com/title/tt2039338
+635	Little Bitches	Little Bitches	2018	ING/ESP	Español	4.1	México, USA	Comedia	https://www.imdb.com/title/tt5292624
+634	Little Women	Little Women	2018	Inglés	Español	5.3	USA	Drama, Familia	https://www.imdb.com/title/tt6495094
+633	Llámame Por Tu Nombre	Call Me by Your Name	2017	ING/ESP	Español	7.8	Brasil, Francia, Italia, USA	Drama, Romance	https://www.imdb.com/title/tt5726616
+632	Llaman A La Puerta	Knock at the Cabin	2023	ING/ESP	Español	6.1	USA, Japón, China	Terror, Misterio, Thriller	https://www.imdb.com/title/tt15679400
+631	Lo Que Fuimos	What They Had	2018	Inglés	Español	6.7	USA	Drama	https://www.imdb.com/title/tt6662736
+630	Locamente Millonarios	Crazy Rich Asians	2018	ING/ESP	Español	6.9	USA, China	Comedia, Drama, Romance	https://www.imdb.com/title/tt3104988
+629	Logan	Logan	2017	ING/ESP	Español	8.1	USA	Acción, Drama, Sci-Fi, Thriller	https://www.imdb.com/title/tt3315342
+628	London Fields	London Fields	2018	Inglés	Español	3.9	UK, USA, Emiratos Árabes	Crimen, Misterio, Thriller	https://www.imdb.com/title/tt1273221
+627	Londres Bajo Fuego	London Has Fallen	2016	ING/ESP	Español	5.9	USA, UK, Bulgaria	Acción, Thriller	https://www.imdb.com/title/tt3300542
+626	Look Away	Look Away	2018	ING/ESP	Español	5.8	USA, Canadá	Drama, Fantasía, Terror, Thriller	https://www.imdb.com/title/tt5834760
+625	Looking Glass	Looking Glass	2018	Inglés	Español	4.7	Canadá, USA	Misterio, Thriller	https://www.imdb.com/title/tt6083648
+624	Los 4 Fantásticos	Fantastic Four	2015	ING/ESP	Español	4.3	USA, Alemania, UK, Canadá	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt1502712
+623	Los 8 Más Odiados	The Hateful Eight	2015	ING/ESP	Español	7.8	USA	Crimen, Drama, Misterio, Thriller, Western	https://www.imdb.com/title/tt3460252
+622	Los Asesinos De La Luna	Killers of the Flower Moon	2023	ING/ESP	Español	7.6	USA	Crimen, Drama, Historia, Misterio, Romance, Western	https://www.imdb.com/title/tt5537002
+621	Los Extraños: Cacería Nocturna	The Strangers: Prey at Night	2018	ING/ESP	Español	5.3	UK, USA	Terror	https://www.imdb.com/title/tt1285009
+620	Los Fabelman	The Fabelmans	2022	ING/ESP	Español	7.5	USA, India	Drama	https://www.imdb.com/title/tt14208870
+619	Los Hijos Del Diablo	The Hallow	2015	ING/ESP	Español	5.7	Irlanda, UK	Fantasía, Terror, Thriller	https://www.imdb.com/title/tt2474976
+618	Los Huéspedes	The Visit	2015	ING/ESP	Español	6.3	USA, Japón	Terror, Misterio, Thriller	https://www.imdb.com/title/tt3567288
+617	Los Ilusionistas 2	Now You See Me 2	2016	ING/ESP	Español	6.4	USA, Hong Kong	Acción, Aventura, Comedia, Crimen, Misterio, Thriller	https://www.imdb.com/title/tt3110958
+616	Los Increíbles 2	Incredibles 2	2018	ING/ESP	Español	7.5	USA, Japón	Infantil	https://www.imdb.com/title/tt3606756
+615	Los Indestructibles 4	Expend4bles	2023	ING/ESP	Español	4.8	USA	Acción, Aventura, Thriller, Guerra	https://www.imdb.com/title/tt3291150
+614	Los Inquilinos	The Lodgers	2017	ING/ESP	Español	5.1	Irlanda	Drama, Terror, Misterio, Romance, Thriller	https://www.imdb.com/title/tt4399952
+613	Los Juegos Del Hambre 1	The Hunger Games	2012	ING/ESP	Español	7.2	USA	Acción, Aventura, Sci-Fi, Thriller	https://www.imdb.com/title/tt1392170
+612	Los Juegos Del Hambre 2: En Llamas	The Hunger Games: Catching Fire	2013	ING/ESP	Español	7.5	USA	Acción, Aventura, Sci-Fi, Thriller	https://www.imdb.com/title/tt1951264
+611	Los Juegos Del Hambre 3: Sinsajo (El Final)	The Hunger Games: Mockingjay - Part 2	2015	ING/ESP	Español	6.6	USA, Alemania, Canadá, Francia	Acción, Aventura, Sci-Fi, Thriller	https://www.imdb.com/title/tt1951266
+610	Los Juegos Del Hambre 3: Sinsajo (Parte 1)	The Hunger Games: Mockingjay - Part 1	2014	ING/ESP	Español	6.6	USA, Canadá, Francia	Acción, Aventura, Sci-Fi, Thriller	https://www.imdb.com/title/tt1951265
+609	Los Piratas Del Caribe: La Venganza De Salazar	Pirates of the Caribbean: Dead Men Tell No Tales	2017	ING/ESP	Español	6.5	USA, Australia, UK, Canadá	Acción, Aventura, Fantasía	https://www.imdb.com/title/tt1790809
+608	Los Pitufos En La Aldea Perdida	Smurfs: The Lost Village	2017	ING/ESP	Español	6.0	USA, Hong Kong, China, Chequia, UK, Canadá, Bélgica	Infantil	https://www.imdb.com/title/tt2398241
+607	Los Siete Magníficos	The Magnificent Seven	2016	ING/ESP	Español	6.9	USA, Australia	Acción, Aventura, Drama, Western	https://www.imdb.com/title/tt2404435
+606	Love	Love	2015	Inglés	Español	6.1	Francia, Bélgica	Drama, Romance	https://www.imdb.com/title/tt3774694
+605	Love Per Square Foot	Love Per Square Foot	2018	Inglés	Español	7.1	India	Comedia, Romance	https://www.imdb.com/title/tt7853242
+604	Lovesick	Lovesick	2014	Inglés	Español	8.0	UK	Comedia	https://www.imdb.com/title/tt4051832
+603	Loving	Loving	2016	ING/ESP	Español	7.0	UK, USA	Biografía, Drama, Romance	https://www.imdb.com/title/tt4669986
+602	Loving Pablo	Loving Pablo	2017	Inglés	Español	6.4	España, Bulgaria	Biografía, Crimen, Drama	https://www.imdb.com/title/tt4682788
+601	Loving Vincent	Loving Vincent	2017	Inglés	Español	7.8	Polonia, UK, USA, Suiza, Países Bajos	Animación, Drama, Misterio	https://www.imdb.com/title/tt3262342
+600	Luchando Con Mi Familia	Fighting with My Familia	2019	ING/ESP	Español	7.0	UK, USA	Biografía, Comedia, Drama, Deporte	https://www.imdb.com/title/tt6513120
+599	Lugares Oscuros	Dark Places	2015	Inglés	Español	6.2	USA, UK, Francia	Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt2402101
+598	Luis Y Sus Amigos Del Espacio	Luis & the Aliens	2018	ING/ESP	Español	6.0	Alemania, Luxemburgo, Dinamarca, Bélgica, China	Infantil	https://www.imdb.com/title/tt4410000
+597	Lukas	Lukas	2018	ING/ESP	Español	5.9	Francia, Bélgica	Acción, Drama, Thriller	https://www.imdb.com/title/tt7816392
+596	Luz De Luna	Moonlight	2016	Inglés	Español	7.4	USA	Drama	https://www.imdb.com/title/tt4975722
+595	Luz Negra	Blacklight	2022	ING/ESP	Español	4.8	USA, Australia, China	Acción, Drama, Thriller	https://www.imdb.com/title/tt14060094
+594	Macbeth	Macbeth	2015	ING/ESP	Español	6.6	UK, Francia	Drama, Historia, Guerra	https://www.imdb.com/title/tt2884018
+593	Madame Bovary	Madame Bovary	2014	Inglés	Español	5.7	Alemania, Bélgica, USA	Drama, Romance	https://www.imdb.com/title/tt2334733
+592	Mala Conducta	Misconduct	2016	Inglés	Español	5.3	USA	Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt3658772
+591	Malicious	Malicious	2018	ING/ESP	Español	5.0	USA	Terror, Thriller	https://www.imdb.com/title/tt6197494
+590	Maligno	The Prodigy	2019	ING/ESP	Español	5.9	USA, Canadá, Hong Kong	Fantasía, Terror, Misterio, Thriller	https://www.imdb.com/title/tt4504044
+589	Mamma Mía, Vamos Otra Vez	Mamma Mia! Here We Go Again	2018	ING/ESP	Español	6.6	UK, USA, Japón, China, Croacia	Comedia, Musical, Romance	https://www.imdb.com/title/tt6911608
+588	Man Up	Man Up	2015	Inglés	Español	6.8	UK, Francia	Comedia, Drama, Romance	https://www.imdb.com/title/tt3064298
+587	Manchester Junto Al Mar	Manchester by the Sea	2016	Inglés	Español	7.8	USA	Drama	https://www.imdb.com/title/tt4034228
+586	Mandy	Mandy	2018	ING/ESP	Español	6.5	UK, Bélgica, USA	Acción, Fantasía, Terror	https://www.imdb.com/title/tt6998518
+585	Manhattan Night	Manhattan Nocturne	2016	Inglés	Español	6.2	USA	Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt3100274
+584	Manos De Piedra	Hands of Stone	2016	Inglés	Español	6.6	Panama, USA	Biografía, Drama, Deporte	https://www.imdb.com/title/tt1781827
+583	Máquinas Mortales	Mortal Engines	2018	ING/ESP	Español	6.1	USA, Nueva Zelanda, Japón, China	Acción, Aventura, Fantasía, Sci-Fi, Thriller	https://www.imdb.com/title/tt1571234
+582	Mara	Mara	2018	Inglés	Español	5.1	USA	Crimen, Terror, Misterio, Thriller	https://www.imdb.com/title/tt1773753
+581	Marauders	Marauders	2016	Inglés	Español	5.5	Canadá, USA	Acción, Crimen, Thriller	https://www.imdb.com/title/tt3963816
+580	María Magdalena	Mary Magdalene	2018	Inglés	Español	5.9	UK, Australia, USA, Italia	Biografía, Drama, Historia	https://www.imdb.com/title/tt5360996
+579	Marjorie Prime	Marjorie Prime	2017	ING/ESP	Español	6.3	USA	Drama, Misterio, Romance, Sci-Fi	https://www.imdb.com/title/tt4978710
+578	Mars Inside Spacex	MARS: Inside SpaceX	2018	Inglés	Español	7.3	USA	Documental	https://www.imdb.com/title/tt9269852
+577	Mary Shelley	Mary Shelley	2017	ING/ESP	Español	6.4	UK, Luxemburgo, USA, Irlanda, Australia	Biografía, Drama, Historia, Romance	https://www.imdb.com/title/tt3906082
+576	Mary Y La Flor De La Hechicera	Meari to majo no hana	2017	JAP/ESP	Español	6.8	Japón	Infantil	https://www.imdb.com/title/tt6336356
+575	Más Allá De La Montaña	The Mountain Between Us	2017	Inglés	Español	6.4	USA	Drama, Thriller	https://www.imdb.com/title/tt2226597
+574	Más Fuerte Que El Destino	Stronger	2017	ING/ESP	Español	6.9	USA	Biografía, Drama	https://www.imdb.com/title/tt3881784
+573	Matar O Morir	Peppermint	2018	ING/ESP	Español	6.5	USA, China	Acción, Thriller	https://www.imdb.com/title/tt6850820
+572	Max 2 White House Hero	Max 2: White House Hero	2017	ING/ESP	Español	5.2	USA	Acción, Familia	https://www.imdb.com/title/tt5843838
+571	Max Steel	Max Steel	2016	ING/ESP	Español	4.6	UK, USA	Acción, Aventura, Fantasía, Sci-Fi	https://www.imdb.com/title/tt1472584
+570	May The Devil Take You	Sebelum Iblis Menjemput	2018	Inglés	Español	5.9	Indonesia	Terror, Misterio, Thriller	https://www.imdb.com/title/tt8765496
+569	Maze Runner: La Cura Mortal	Maze Runner: The Death Cure	2018	ING/ESP	Español	6.3	USA	Acción, Aventura, Sci-Fi, Thriller	https://www.imdb.com/title/tt4500922
+568	Maze Runner: Prueba De Fuego	Maze Runner: The Scorch Trials	2015	ING/ESP	Español	6.3	USA	Acción, Aventura, Sci-Fi, Thriller	https://www.imdb.com/title/tt4046784
+567	Meet The Blacks	Meet the Blacks	2016	Inglés	Español	4.8	USA	Comedia, Terror	https://www.imdb.com/title/tt4191580
+566	Megalodón	The Meg	2018	ING/ESP	Español	5.7	USA, China	Acción, Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt4779682
+565	Megan Leavey	Megan Leavey	2017	ING/ESP	Español	7.1	USA	Acción, Biografía, Drama, Historia, Guerra	https://www.imdb.com/title/tt4899370
+564	Mentes Poderosas	The Darkest Minds	2018	ING/ESP	Español	5.7	USA	Acción, Aventura, Drama, Romance, Sci-Fi, Thriller	https://www.imdb.com/title/tt4073790
+563	Message From The King	Message from the King	2016	Inglés	Español	6.4	UK, Francia, Bélgica, USA	Acción, Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt1712192
+562	Mi Abuelo Es Un Peligro	Dirty Grandpa	2016	Inglés	Español	5.9	USA, UK	Comedia	https://www.imdb.com/title/tt1860213
+561	Mi Amigo Alexis	Mi Amigo Alexis	2019	ING/ESP	Español	5.1	Chile	Aventura, Comedia, Drama, Familia, Deporte	https://www.imdb.com/title/tt9747396
+560	Mi Amigo El Dragón	Pete's Dragon	2016	ING/ESP	Español	6.7	USA, UK, Nueva Zelanda, India	Infantil	https://www.imdb.com/title/tt2788732
+559	Mi Ex Es Un Espía	The Spy Who Dumped Me	2018	ING/ESP	Español	6.0	USA, Canadá, Alemania, Hungría, Países Bajos	Acción, Aventura, Comedia	https://www.imdb.com/title/tt6663582
+558	Mi Gran Boda Griega 2	My Big Fat Greek Wedding 2	2016	ING/ESP	Español	6.0	USA, Canadá	Comedia, Romance	https://www.imdb.com/title/tt3760922
+557	Mi Villano Favorito	Despicable Me	2010	Español	Ninguno	7.6	USA, Francia	Infantil	https://www.imdb.com/title/tt1323594
+556	Mi Villano Favorito 2	Despicable Me 2	2013	ING/ESP	Español	7.3	USA, Francia	Infantil	https://www.imdb.com/title/tt1690953
+555	Mi Villano Favorito 3	Despicable Me 3	2017	ING/ESP	Español	6.3	USA, Francia	Infantil	https://www.imdb.com/title/tt3469046
+554	Midnight Special	Midnight Special	2016	ING/ESP	Español	6.6	USA	Drama, Misterio, Sci-Fi, Thriller	https://www.imdb.com/title/tt2649554
+553	Midway: Batalla En El Pacífico	Midway	2019	ING/ESP	Español	6.7	USA, Canadá, China, Hong Kong	Acción, Drama, Historia, Guerra	https://www.imdb.com/title/tt6924650
+552	Miedo Profundo	The Shallows	2016	Inglés	Español	6.3	USA	Drama, Terror, Thriller	https://www.imdb.com/title/tt4052882
+551	Mientras Somos Jóvenes	While We're Young	2014	Inglés	Español	6.3	USA	Comedia, Drama, Misterio	https://www.imdb.com/title/tt1791682
+550	Milagros Del Cielo	Miracles from Heaven	2016	ING/ESP	Español	7.1	USA	Biografía, Drama, Familia	https://www.imdb.com/title/tt4257926
+549	Milla 22: El Escape	Mile 22	2018	Inglés	Español	6.1	USA, China	Acción, Thriller	https://www.imdb.com/title/tt4560436
+548	Mindhorn	Mindhorn	2016	ING/ESP	Español	6.3	UK, Francia, USA	Acción, Aventura, Comedia, Misterio, Thriller	https://www.imdb.com/title/tt4799064
+547	Mine	Mine	2016	ING/ESP	Español	5.8	USA, España, Italia	Drama, Thriller, Guerra	https://www.imdb.com/title/tt3707104
+546	Miniforce: Los Nuevos Superhéroes	Mini Force: The Beginning	2016	ING/ESP	Español	6.1		Infantil	https://www.imdb.com/title/tt6446792
+545	Mío O De Nadie	Unforgettable	2017	ING/ESP	Español	5.1	USA	Drama, Thriller	https://www.imdb.com/title/tt3462710
+544	Mis Huellas A Casa	A Dog's Way Home	2019	ING/ESP	Español	6.7	China, USA	Aventura, Drama, Familia	https://www.imdb.com/title/tt7616798
+543	Misión Imposible 5: Nación Secreta	Mission: Impossible - Rogue Nation	2015	ING/ESP	Español	7.4	USA, China, UK, Austria, Marruecos, Hong Kong	Acción, Aventura, Thriller	https://www.imdb.com/title/tt2381249
+542	Misión Imposible: Sentencia Mortal Parte 1	Mission: Impossible - Dead Reckoning Part One	2023	ING/ESP	Español	7.6	USA	Acción, Aventura, Thriller	https://www.imdb.com/title/tt9603212
+541	Misión Rescate	The Martian	2015	ING/ESP	Español	8.0	USA, UK, Hungría, Jordan	Aventura, Drama, Sci-Fi	https://www.imdb.com/title/tt3659388
+540	Misión: Imposible - Repercusión	Mission: Impossible - Fallout	2018	ING/ESP	Español	7.7	USA, China, Francia, Noruega	Acción, Aventura, Thriller	https://www.imdb.com/title/tt4912910
+539	Miss Bala	Miss Bala	2019	ING/ESP	Español	5.8	México, USA	Acción, Crimen, Drama, Thriller	https://www.imdb.com/title/tt5941692
+538	Modern Life Is Rubbish	Modern Life Is Rubbish	2017	ING/ESP	Español	5.8	UK	Comedia, Música, Romance	https://www.imdb.com/title/tt2385752
+537	Mom And Dad	Mom and Dad	2017	ING/ESP	Español	5.6	USA, UK	Comedia, Terror, Thriller	https://www.imdb.com/title/tt5462326
+536	Mommy	Mommy	2014	Inglés	Español	8.0	Canadá	Drama	https://www.imdb.com/title/tt3612616
+535	Monster Party	Monster Party	2018	Inglés	Español	5.5	USA	Terror, Thriller	https://www.imdb.com/title/tt6556576
+534	Monster Trucks	Monster Trucks	2016	ING/ESP	Español	5.7	USA, Canadá	Infantil	https://www.imdb.com/title/tt3095734
+533	Monsters Dark Continent	Monsters: Dark Continent	2014	Inglés	Español	4.3	UK, Jordan	Acción, Drama, Sci-Fi, Thriller, Guerra	https://www.imdb.com/title/tt1935302
+532	Moonfall	Moonfall	2022	ING/ESP	Español	5.2	USA, China, UK, Canadá, Hong Kong	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt5834426
+531	Morgan	Morgan	2016	ING/ESP	Español	5.9	USA	Acción, Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt4520364
+530	Mortdecai: El Artista Del Engaño	Mortdecai	2015	Inglés	Español	5.5	USA, UK	Acción, Aventura, Comedia, Crimen, Misterio	https://www.imdb.com/title/tt3045616
+529	Most Likely To Murder	Most Likely to Murder	2018	ING/ESP	Español	5.1	USA	Comedia, Misterio, Romance	https://www.imdb.com/title/tt6566830
+528	Mothers Day	Mothers and Daughters	2016	Inglés	Español	4.9	USA	Drama	https://www.imdb.com/title/tt2395339
+527	Mowgli: Relatos Del Libro De La Selva	Mowgli	2018	ING/ESP	Español	6.5	UK, USA	Aventura, Drama, Fantasía	https://www.imdb.com/title/tt2388771
+526	Mr Nobody	Mr. Nobody	2009	Inglés	Español	7.7	Bélgica, Alemania, Canadá, Francia, UK, Luxemburgo, USA	Drama, Fantasía, Romance, Sci-Fi	https://www.imdb.com/title/tt0485947
+525	Mr Right	Mr. Right	2015	Inglés	Español	6.3	USA	Acción, Comedia, Crimen, Romance	https://www.imdb.com/title/tt2091935
+524	Mudbound	Mudbound	2017	ING/ESP	Español	7.4	USA	Drama, Guerra	https://www.imdb.com/title/tt2396589
+523	Mugen No Jûnin	Mugen no jûnin	2017	ING/ESP	Español	6.7	Japón, UK, Corea del Sur	Acción, Drama	https://www.imdb.com/title/tt5084170
+522	Mujer Maravilla	Wonder Woman	2017	ING/ESP	Español	7.3	USA, China, Hong Kong	Acción, Aventura, Fantasía, Sci-Fi, Guerra	https://www.imdb.com/title/tt0451279
+521	Mujer Maravilla 1984	Wonder Woman 1984	2020	Inglés	Español	5.4	USA	Acción, Aventura, Fantasía	https://www.imdb.com/title/tt7126948
+520	Mujercitas	Little Women	2019	ING/ESP	Español	7.8	USA	Drama, Romance	https://www.imdb.com/title/tt3281548
+519	Murder Misterio	Murder Misterio	2019	ING/ESP	Español	6.1	USA, Italia, Canadá	Crimen, Misterio, Romance	https://www.imdb.com/title/tt1618434
+518	Museo	Museo	2018	ING/ESP	Español	6.8	México	Crimen, Drama	https://www.imdb.com/title/tt4958448
+517	My Cousin Rachel	My Cousin Rachel	2017	ING/ESP	Español	6.0	UK, USA	Drama, Misterio, Romance, Thriller	https://www.imdb.com/title/tt4411596
+516	My Friend Dahmer	My Friend Dahmer	2017	ING/ESP	Español	6.2	USA	Biografía, Drama, Terror	https://www.imdb.com/title/tt2291540
+515	My Hero Academia: Two Heroes	Boku no Hîrô Akademia za Mûbî Futari no Hîrô	2018	JAP/ESP	Español	7.3	Japón	Animación, Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt7745068
+514	My Little Pony: La Película	My Little Pony: The Movie	2017	ING/ESP	Español	6.1	USA, Canadá, Bulgaria, Irlanda, Filipinas, China, Austria, Brasil, Bélgica	Infantil	https://www.imdb.com/title/tt4131800
+513	My Perfect Romance	My Perfect Romance	2018	ING/ESP	Español	4.7	Canadá	Romance	https://www.imdb.com/title/tt7358936
+512	My Teacher My Obsession	My Teacher, My Obsession	2018	ING/ESP	Español	4.4	USA	Drama, Thriller	https://www.imdb.com/title/tt6997574
+511	Nace Una Estrella	A Star Is Born	2018	ING/ESP	Español	7.6	USA	Drama, Música, Romance	https://www.imdb.com/title/tt1517451
+510	Nacido Para Ser Rey	The Kid Who Would Be King	2019	ING/ESP	Español	6.1	UK, USA	Acción, Aventura, Familia, Fantasía	https://www.imdb.com/title/tt6811018
+509	Nada Que Perder	Hell or High Water	2016	ING/ESP	Español	7.6	USA	Crimen, Drama, Thriller, Western	https://www.imdb.com/title/tt2582782
+508	Napoleón	Napoleon	2023	ING/ESP	Español	6.3	USA, UK	Acción, Aventura, Biografía, Drama, Historia, Guerra	https://www.imdb.com/title/tt13287846
+507	Nappily Ever After	Nappily Ever After	2018	ING/ESP	Español	6.4	USA	Comedia, Drama, Romance	https://www.imdb.com/title/tt0365545
+506	Native Son	Native Son	2019	ING/ESP	Español	5.7	USA	Drama	https://www.imdb.com/title/tt6566768
+505	Nerve: Un Juego Sin Reglas	Nerve	2016	ING/ESP	Español	6.5	USA, Hong Kong	Aventura, Crimen, Drama, Thriller	https://www.imdb.com/title/tt3531824
+504	Ni En Tus Sueños	Long Shot	2019	ING/ESP	Español	6.8	USA, Canadá, Colombia	Comedia, Romance	https://www.imdb.com/title/tt2139881
+503	Night School	Night School	2018	ING/ESP	Español	5.6	USA, China	Comedia	https://www.imdb.com/title/tt6781982
+502	Nightlight	Nightlight	2015	Inglés	Español	4.4	USA	Terror, Thriller	https://www.imdb.com/title/tt2236160
+501	No Confies En Nadie	Before I Go to Sleep	2014	Inglés	Español	6.3	UK, USA, Francia, Suecia	Drama, Misterio, Thriller	https://www.imdb.com/title/tt1726592
+500	No Estoy Loca	No estoy loca	2018	ING/ESP	Español	5.7	Chile	Comedia, Drama	https://www.imdb.com/title/tt4060006
+499	No Me Las Toquen	Blockers	2018	ING/ESP	Español	6.2	USA	Comedia, Drama	https://www.imdb.com/title/tt2531344
+498	No Sin Ella	Freeheld	2015	Inglés	Español	6.6	USA, UK, Francia	Biografía, Drama, Romance	https://www.imdb.com/title/tt1658801
+497	Nobody's Fool	Nobody's Fool	2018	Inglés	Español	5.0	USA	Comedia, Drama, Romance	https://www.imdb.com/title/tt8097306
+496	Noche De Juegos	Game Night	2018	ING/ESP	Español	6.9	USA	Acción, Aventura, Comedia, Crimen, Thriller	https://www.imdb.com/title/tt2704998
+495	Northmen A Viking Saga	Northmen: A Viking Saga	2014	Inglés	Español	5.4	Suiza, Alemania, Sudáfrica	Acción, Drama, Historia	https://www.imdb.com/title/tt2290553
+494	Nosotros	Us	2019	ING/ESP	Español	6.8	USA, China, Japón	Terror, Misterio, Thriller	https://www.imdb.com/title/tt6857112
+493	Nostalgia	Nostalgia	2018	Inglés	Español	5.6	USA	Drama	https://www.imdb.com/title/tt6456222
+492	Nota Perfectas 3	Pitch Perfect 3	2017	ING/ESP	Español	5.8	USA, China	Comedia, Música	https://www.imdb.com/title/tt4765284
+491	Novitiate	Novitiate	2017	ING/ESP	Español	6.7	USA	Drama	https://www.imdb.com/title/tt4513316
+490	Nowhere	Nowhere	2023	Inglés	Español	6.3	España	Drama, Thriller	https://www.imdb.com/title/tt15789472
+489	Obsesión	Serenity	2019	ING/ESP	Español	5.4	UK, USA	Drama, Misterio, Thriller	https://www.imdb.com/title/tt6476140
+488	Occupation	Occupation	2018	Inglés	Español	4.5	Australia	Acción, Drama, Sci-Fi	https://www.imdb.com/title/tt6774786
+487	Ocean's 8: Las Estafadoras	Ocean's Eight	2018	ING/ESP	Español	6.3	USA	Acción, Comedia, Crimen	https://www.imdb.com/title/tt5164214
+486	Office Christmas Party	Office Christmas Party	2016	ING/ESP	Español	5.9	USA, India	Comedia	https://www.imdb.com/title/tt1711525
+485	Office Uprising	Office Uprising	2018	Inglés	Español	5.7	USA	Acción, Comedia, Terror	https://www.imdb.com/title/tt6251024
+484	Oh Ramona!	Oh, Ramona!	2019	ING/ESP	Español	4.8	Romania	Comedia, Romance	https://www.imdb.com/title/tt7200946
+483	Olaf: Otra Aventura Congelada De Frozen	Olaf's Frozen Aventura	2017	ING/ESP	Español	5.7	Japón, USA	Infantil	https://www.imdb.com/title/tt5452780
+482	Olé, El Viaje De Ferdinand	Ferdinand	2017	ING/ESP	Español	6.7	USA, UK, Canadá	Infantil	https://www.imdb.com/title/tt3411444
+481	On The Ropes	On the Ropes	2018	ING/ESP	Español	6.9	Australia	Drama	https://www.imdb.com/title/tt9261290
+480	On Your Wedding Day	Neoeui kyeolhoonsik	2018	Inglés	Español	7.0	Corea del Sur	Comedia, Drama, Romance	https://www.imdb.com/title/tt7938092
+479	Once Upon A Deadpool	Once Upon a Deadpool	2018	ING/ESP	Español	7.2	USA	Acción, Aventura, Comedia	https://www.imdb.com/title/tt31050020
+478	One Percent More Humid	One Percent More Humid	2017	ING/ESP	Español	5.6	USA	Drama	https://www.imdb.com/title/tt5817022
+477	Only The Brave	Only the Brave	2017	ING/ESP	Español	7.6	USA	Acción, Biografía, Drama	https://www.imdb.com/title/tt3829920
+476	Ooops! El Arca Nos Dejó	Ooops! Noah Is Gone...	2015	ING/ESP	Español	5.8	Alemania, Bélgica, Luxemburgo, Irlanda, USA	Infantil	https://www.imdb.com/title/tt3411432
+475	Opening Night	Opening Night	2016	ING/ESP	Español	5.9	USA	Comedia, Musical	https://www.imdb.com/title/tt4156972
+474	Operación Anthropoid	Anthropoid	2016	Inglés	Español	7.2	UK, Francia, USA, Chequia	Acción, Drama, Historia, Romance, Thriller, Guerra	https://www.imdb.com/title/tt4190530
+473	Operación Oculta	Incheon sangryuk jakjeon	2016	ING/ESP	Español	6.2	Corea del Sur	Acción, Drama, Historia, Guerra	https://www.imdb.com/title/tt4939066
+472	Operación Overlord	Overlord	2018	Inglés	Español	6.6	USA, Canadá	Acción, Terror, Sci-Fi, Guerra	https://www.imdb.com/title/tt4530422
+471	Operación Red Sparrow	Red Sparrow	2018	ING/ESP	Español	6.6	USA, Hungría	Acción, Drama, Thriller	https://www.imdb.com/title/tt2873282
+470	Operación Ultra	American Ultra	2015	ING/ESP	Español	6.1	USA, Suiza	Acción, Comedia	https://www.imdb.com/title/tt3316948
+469	Operation Finale	Operation Finale	2018	ING/ESP	Español	6.6	USA, Argentina	Biografía, Drama, Historia, Thriller, Guerra	https://www.imdb.com/title/tt5208252
+468	Oppenheimer	Oppenheimer	2023	ING/ESP	Español	8.3	USA, UK	Biografía, Drama, Historia	https://www.imdb.com/title/tt15398776
+467	Ouija: El Origen Del Mal	Ouija: Origin of Evil	2016	ING/ESP	Español	6.2	USA	Drama, Terror, Misterio, Thriller	https://www.imdb.com/title/tt4361050
+466	Out Of Many One	Out of Many, One	2018	Inglés	Español	5.8	USA	Documental, Corto	https://www.imdb.com/title/tt9283302
+465	Outlaw King	Outlaw King	2018	ING/ESP	Español	6.9	UK, USA	Acción, Biografía, Drama, Historia, Guerra	https://www.imdb.com/title/tt6679794
+464	Overboard	Overboard	2018	ING/ESP	Español	6.0	USA	Comedia, Romance	https://www.imdb.com/title/tt1563742
+463	Ozzy: Rápido Y Peludo	Ozzy	2016	ING/ESP	Español	5.2	España, Canadá	Infantil	https://www.imdb.com/title/tt5770430
+462	Pablo, El Apóstol De Cristo	Paul, Apostle of Christ	2018	ING/ESP	Español	6.6	USA	Aventura, Biografía, Drama, Historia	https://www.imdb.com/title/tt7388562
+461	Pacto Criminal	Black Mass	2015	ING/ESP	Español	6.8	USA, UK	Biografía, Crimen, Drama	https://www.imdb.com/title/tt1355683
+460	Paddington 2	Paddington 2	2017	ING/ESP	Español	7.8	Francia, UK	Infantil	https://www.imdb.com/title/tt4468740
+459	Padmaavat	Padmaavat	2018	Inglés	Español	7.1	India	Drama, Historia, Guerra	https://www.imdb.com/title/tt5935704
+458	Pain Hustlers	Pain Hustlers	2023	ING/ESP	Español	6.6	UK, USA	Crimen, Drama	https://www.imdb.com/title/tt15257160
+457	Pajaritos A Volar	Manou the Swift	2019	ING/ESP	Español	5.4	Alemania	Animación, Aventura, Comedia, Familia	https://www.imdb.com/title/tt4153828
+456	Pandemic	Pandemic	2016	ING/ESP	Español	4.4	USA	Acción, Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt3774802
+455	Pantera Negra	Black Panther	2018	ING/ESP	Español	7.3	USA	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt1825683
+454	Papa Francisco: Un Hombre De Palabra	Pope Francis: A Man of His Word	2018	ING/ESP	Español	6.6	Suiza, Vaticano, Italia, Alemania, Francia	Documental, Biografía	https://www.imdb.com/title/tt6915100
+453	Papillon - La Gran Fuga	Papillon	2017	Inglés	Español	7.2	USA, Chequia, España	Aventura, Biografía, Crimen, Drama	https://www.imdb.com/title/tt5093026
+452	Paradox	Saat po long: Taam long	2017	ING/ESP	Español	6.5	China, Hong Kong	Acción, Aventura, Crimen, Thriller	https://www.imdb.com/title/tt7245176
+451	Paradox	Paradox	2016	Inglés	Español	4.6	USA	Acción, Drama, Sci-Fi	https://www.imdb.com/title/tt4540434
+450	Paradox	The Cloverfield Paradox	2018	Inglés	Español	5.5	USA	Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt2548396
+449	Parásitos	Gisaengchung	2019	Inglés	Español	8.5	Corea del Sur	Drama, Thriller	https://www.imdb.com/title/tt6751668
+448	Parque Mágico	Wonder Park	2019	ING/ESP	Español	5.9	España, USA, UK, Bélgica	Infantil	https://www.imdb.com/title/tt6428676
+447	Pasajeros	Passengers	2016	Inglés	Español	7.0	Hong Kong, Australia, USA	Drama, Romance, Sci-Fi, Thriller	https://www.imdb.com/title/tt1355644
+446	Pasante De Moda	The Intern	2015	ING/ESP	Español	7.1	USA	Comedia, Drama	https://www.imdb.com/title/tt2361509
+445	Paskal	Paskal: The Movie	2018	Inglés	Español	6.5	Malasia	Acción, Aventura, Drama, Guerra	https://www.imdb.com/title/tt9063106
+444	Paterno	Paterno	2018	Inglés	Español	6.5	USA	Biografía, Crimen, Drama, Deporte	https://www.imdb.com/title/tt2388986
+443	Paterson	Paterson	2016	Inglés	Español	7.3	Francia, Alemania, USA	Comedia, Drama, Romance	https://www.imdb.com/title/tt5247022
+442	Patient Zero	Patient Zero	2018	ING/ESP	Español	4.6	UK	Acción, Drama, Terror, Sci-Fi	https://www.imdb.com/title/tt3458254
+441	Pato, Pato, Ganso	Duck Duck Goose	2018	ING/ESP	Español	5.8	China, USA, UK	Infantil	https://www.imdb.com/title/tt4940416
+440	Pay The Ghost	Pay the Ghost	2015	Inglés	Español	5.2	USA	Terror, Misterio	https://www.imdb.com/title/tt3733778
+439	People You May Know	People You May Know	2017	Inglés	Español	5.6	USA	Comedia, Drama, Romance	https://www.imdb.com/title/tt5318534
+438	Pequeña Gran Vida	Downsizing	2017	ING/ESP	Español	5.8	USA, Noruega	Drama, Fantasía, Sci-Fi	https://www.imdb.com/title/tt1389072
+437	Perdónanos	Rimetti a noi i nostri debiti	2018	Italiano	Español	6.2	Italia, Suiza, Albania, Polonia	Drama	https://www.imdb.com/title/tt6679412
+436	Permission	Permission	2017	ING/ESP	Español	5.4	USA, Canadá	Comedia, Drama, Romance	https://www.imdb.com/title/tt5390066
+435	Personal Shopper	Personal Shopper	2016	Inglés	Español	6.1	Francia, Alemania, Chequia, Bélgica	Drama, Misterio, Thriller	https://www.imdb.com/title/tt4714782
+434	Perversa Adicción	Addicted	2014	Inglés	Español	5.0	USA	Drama, Romance, Thriller	https://www.imdb.com/title/tt2205401
+433	Pesadilla En El Infierno	Ghostland	2018	ING/ESP	Español	6.4	Canadá, Francia	Drama, Terror, Misterio, Thriller	https://www.imdb.com/title/tt6195094
+432	Pet	Pet	2016	Inglés	Español	5.7	España, USA	Crimen, Terror, Thriller	https://www.imdb.com/title/tt1183374
+431	Peter Pan	Pan	2015	ING/ESP	Español	5.7	USA, UK, Australia, India	Aventura, Comedia, Familia, Fantasía	https://www.imdb.com/title/tt3332064
+430	Peter Pan: Las Nuevas Aventuras	Peter Pan: The Quest for the Never Book	2018	ING/ESP	Español	3.1	Irlanda, India	Infantil	https://www.imdb.com/title/tt8774622
+429	Pie Pequeño	Smallfoot	2018	ING/ESP	Español	6.6	USA	Infantil	https://www.imdb.com/title/tt6182908
+428	Piercing	Piercing	2018	Inglés	Español	5.5	USA	Terror, Misterio, Thriller	https://www.imdb.com/title/tt6516314
+427	Pilgrimage	Pilgrimage	2017	ING/ESP	Español	5.9	Irlanda, Bélgica	Acción, Drama, Historia	https://www.imdb.com/title/tt3531202
+426	Pinocho	Pinocchio	1940	ING/ESP	Español	7.5	USA	Infantil	https://www.imdb.com/title/tt0032910
+425	Please Stand By	Please Stand By	2017	Inglés	Español	6.7	USA	Comedia, Drama	https://www.imdb.com/title/tt4652650
+424	Pobres Criaturas	Poor Things	2023	ING/ESP	Español	7.8	Irlanda, UK, USA, Hungría	Comedia, Drama, Romance, Sci-Fi	https://www.imdb.com/title/tt14230458
+423	Poder Que Mata	Fair Game	2010	ING/ESP	Español	6.8	USA, Emiratos Árabes	Biografía, Drama, Thriller	https://www.imdb.com/title/tt0977855
+422	Point Blank	Point Blank	2019	ING/ESP	Español	5.7	Francia, USA	Acción, Crimen, Drama, Thriller	https://www.imdb.com/title/tt2499472
+421	Pokémon: Detective Pikachu	Pokémon: Detective Pikachu	2019	ING/ESP	Ninguno	6.5	USA, Japón, UK, Canadá	Infantil	https://www.imdb.com/title/tt5884052
+420	Pokémon: El Poder De Todos	Gekijouban Poketto monsutâ: Minna no Monogatari	2018	ING/ESP	Español	6.3	Japón	Infantil	https://www.imdb.com/title/tt8108230
+419	Polar	Polar	2019	ING/ESP	Español	6.3	USA, Alemania	Acción, Crimen, Thriller	https://www.imdb.com/title/tt4139588
+418	Poltergeist: Juegos Diabólicos	Poltergeist	2015	ING/ESP	Español	4.9	USA, Canadá	Terror, Thriller	https://www.imdb.com/title/tt1029360
+417	Por Eso Lo Llaman Amor	The Big Sick	2017	ING/ESP	Español	7.5	USA	Comedia, Drama, Romance	https://www.imdb.com/title/tt5462602
+416	Pork Pie	Pork Pie	2017	ING/ESP	Español	6.4	Nueva Zelanda	Acción, Comedia, Crimen, Drama, Romance	https://www.imdb.com/title/tt4834220
+415	Possum	Possum	2018	Inglés	Español	5.8	UK	Drama, Terror, Misterio, Thriller	https://www.imdb.com/title/tt6081670
+414	Pottersville	Pottersville	2017	ING/ESP	Español	5.5	USA	Comedia	https://www.imdb.com/title/tt3672120
+413	Precious Cargo	Precious Cargo	2016	Inglés	Español	4.6	USA, UK	Acción, Comedia, Thriller	https://www.imdb.com/title/tt4651410
+412	Predestinación	Predestination	2014	ING/ESP	Español	7.4	Australia, USA	Acción, Drama, Sci-Fi, Thriller	https://www.imdb.com/title/tt2397535
+411	Premonición	2:22	2017	ING/ESP	Español	5.7	Australia, USA	Drama, Misterio, Romance, Sci-Fi, Thriller	https://www.imdb.com/title/tt1131724
+410	Pride And Prejudice And Zombies	Pride and Prejudice and Zombies	2016	Inglés	Español	5.8	USA, UK	Acción, Comedia, Fantasía, Terror, Romance	https://www.imdb.com/title/tt1374989
+409	Proud Mary	Proud Mary	2018	ING/ESP	Español	5.0	USA	Acción, Crimen, Drama, Thriller	https://www.imdb.com/title/tt6421110
+408	Proyecto Géminis	Gemini Man	2019	Inglés	Español	5.7	USA, China, Colombia	Acción, Sci-Fi, Thriller	https://www.imdb.com/title/tt1025100
+407	Psych The Movie	Psych: The Movie	2017	ING/ESP	Español	7.3	USA, Canadá	Comedia, Crimen, Misterio	https://www.imdb.com/title/tt6868216
+406	Psychokinesis	Yeom-lyeok	2018	ING/ESP	Español	5.9	Corea del Sur	Acción, Comedia, Fantasía	https://www.imdb.com/title/tt6890582
+405	Puente De Espías	Bridge of Spies	2015	Inglés	Español	7.6	USA, India, Alemania	Drama, Historia, Thriller, Guerra	https://www.imdb.com/title/tt3682448
+404	Puerto Ricans In Paris	Puerto Ricans in Paris	2015	ING/ESP	Español	5.4	USA	Comedia, Crimen	https://www.imdb.com/title/tt3730510
+403	Punto De Quiebre	Point Break	2015	ING/ESP	Español	5.3	Alemania, USA, Austria, Italia, Canadá	Acción, Aventura, Crimen, Deporte, Thriller	https://www.imdb.com/title/tt2058673
+402	Puzzle	Puzzle	2018	ING/ESP	Español	6.7	USA	Drama, Misterio, Romance	https://www.imdb.com/title/tt6933454
+401	Queen Of The Desert	Queen of the Desert	2015	Inglés	Español	5.7	USA, Marruecos	Aventura, Biografía, Drama, Historia, Romance	https://www.imdb.com/title/tt1837636
+400	Quizás Para Siempre	Always Be My Maybe	2019	ING/ESP	Español	6.7	USA	Comedia, Romance	https://www.imdb.com/title/tt7374948
+399	Race	Race	2016	Inglés	Español	7.1	Canadá, Alemania, Francia, UK, USA	Biografía, Drama, Deporte	https://www.imdb.com/title/tt3499096
+398	Radius	Radius	2017	ING/ESP	Español	6.2	Canadá, Bélgica	Drama, Terror, Misterio, Sci-Fi, Thriller	https://www.imdb.com/title/tt6097798
+397	Rampage: Devastación	Rampage	2018	ING/ESP	Español	6.1	USA	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt2231461
+396	Rápidos Y Furiosos 8	The Fate of the Furious	2017	Inglés	Español	6.6	USA, China, Japón	Acción, Crimen, Thriller	https://www.imdb.com/title/tt4630562
+395	Rápidos Y Furiosos 9	F9	2021	ING/ESP	Español	5.2	USA, Tailandia, Canadá, Japón	Acción, Crimen, Thriller	https://www.imdb.com/title/tt5433138
+394	Rápidos Y Furiosos X	Fast X	2023	ING/ESP	Español	5.7	USA, China, Japón	Acción, Aventura, Crimen, Misterio, Thriller	https://www.imdb.com/title/tt5433140
+393	Rápidos Y Furiosos, Hobbs & Shaw	Fast & Furious Presents: Hobbs & Shaw	2019	ING/ESP	Español	6.5	USA, Japón	Acción, Aventura, Thriller	https://www.imdb.com/title/tt6806448
+392	Rascacielos: Rescate En Las Alturas	Skyscraper	2018	ING/ESP	Español	5.8	USA	Acción, Aventura, Thriller	https://www.imdb.com/title/tt5758778
+391	Ratter	Ratter	2015	Inglés	Español	4.8	USA	Drama, Terror, Misterio, Thriller	https://www.imdb.com/title/tt3836512
+390	Ready Player One: Comienza El Juego	Ready Player One	2018	ING/ESP	Español	7.4	USA, India, Singapur, Canadá, UK, Japón, Australia	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt1677720
+389	Rebel In The Rye	Rebel in the Rye	2017	ING/ESP	Español	6.7	USA	Biografía, Drama, Romance, Guerra	https://www.imdb.com/title/tt4986134
+388	Recuérdame	Remember Me	2010	Inglés	Español	7.1	USA	Drama, Romance	https://www.imdb.com/title/tt1403981
+387	Regresa A Mí	Ben Is Back	2018	Inglés	Español	6.7	USA	Drama	https://www.imdb.com/title/tt7545524
+386	Regression	Regression	2015	Inglés	Español	5.6	España, Canadá, USA	Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt3319920
+385	Relatos Salvajes	Relatos salvajes	2014	ING/ESP	Español	8.1	Argentina, España, Francia, UK	Comedia, Drama, Thriller	https://www.imdb.com/title/tt3011894
+384	Remember	Remember	2015	Inglés	Español	7.5	Canadá, México, Alemania, Sudáfrica	Drama, Misterio, Thriller	https://www.imdb.com/title/tt3704050
+383	Rendel	Rendel	2017	ING/ESP	Español	4.6	Finlandia	Acción, Crimen, Drama, Fantasía	https://www.imdb.com/title/tt3881026
+382	Renegades	Renegades	2017	Inglés	Español	5.5	Francia, Bélgica, Alemania, USA, Malta, Croacia, Países Bajos	Acción, Aventura, Crimen, Drama, Thriller, Guerra	https://www.imdb.com/title/tt4106376
+381	Réplicas	Replicas	2018	ING/ESP	Español	5.5	USA, UK, China, Puerto Rico	Acción, Drama, Sci-Fi, Thriller	https://www.imdb.com/title/tt4154916
+380	Reprisal	Reprisal	2018	Inglés	Español	4.3	USA, UK	Acción, Drama, Thriller	https://www.imdb.com/title/tt6547170
+379	Rescate En Entebbe	Entebbe	2018	Inglés	Español	5.9	UK, USA, Francia, Malta	Acción, Drama, Historia, Thriller	https://www.imdb.com/title/tt5466186
+378	Resident Evil: Capítulo Final	Resident Evil: The Final Chapter	2016	ING/ESP	Español	5.5	Alemania, Canadá	Acción, Terror, Sci-Fi	https://www.imdb.com/title/tt2592614
+377	Resistencia	The Creator	2023	ING/ESP	Español	6.7	USA	Acción, Aventura, Drama, Sci-Fi, Thriller	https://www.imdb.com/title/tt11858890
+376	Respect	Respect	2021	Inglés	Español	6.6	USA, Canadá	Biografía, Drama, Música	https://www.imdb.com/title/tt2452150
+375	Resucitados	The Lazarus Effect	2015	Inglés	Español	5.2	USA	Terror, Misterio, Sci-Fi, Thriller	https://www.imdb.com/title/tt2918436
+374	Revenant. El Renacido	The Revenant	2015	ING/ESP	Español	8.0	USA, Hong Kong, Taiwan, Argentina	Acción, Aventura, Drama, Western	https://www.imdb.com/title/tt1663202
+373	Revenge	Revenge	2017	Inglés	Español	6.4	Francia, Bélgica	Acción, Drama, Terror, Thriller	https://www.imdb.com/title/tt6738136
+372	Revolt	Revolt	2017	Inglés	Español	5.3	USA	Acción, Sci-Fi	https://www.imdb.com/title/tt3722614
+371	Rim Of The World	Rim of the World	2019	ING/ESP	Español	5.3	USA	Acción, Aventura, Comedia, Terror, Sci-Fi	https://www.imdb.com/title/tt8179388
+370	Río 2	Rio 2	2014	ING/ESP	Español	6.3	USA, Iraq, Canadá	Infantil	https://www.imdb.com/title/tt2357291
+369	Rip Tide	Rip Tide	2017	ING/ESP	Español	5.5	Australia, Emiratos Árabes	Drama, Familia	https://www.imdb.com/title/tt6262764
+368	Road Games	Road Games	2015	Inglés	Español	5.3	UK, Francia	Drama, Terror, Misterio, Thriller	https://www.imdb.com/title/tt2929652
+367	Robin Hood	Robin Hood	2018	ING/ESP	Español	5.3	USA, Hong Kong, UK, Francia	Acción, Aventura, Drama, Thriller	https://www.imdb.com/title/tt4532826
+366	Robin Williams Come Inside My Mind	Robin Williams: Come Inside My Mind	2018	Inglés	Español	7.9	USA	Documental, Biografía, Comedia	https://www.imdb.com/title/tt7689966
+365	Robot 7723	Next Gen	2018	ING/ESP	Español	6.6	China, Canadá, USA	Infantil	https://www.imdb.com/title/tt7133686
+364	Rock Dog: El Perro Rockero	Rock Dog	2016	ING/ESP	Español	6.0	China, USA, UK	Infantil	https://www.imdb.com/title/tt2822672
+363	Rock My Heart	Rock My Heart	2017	ING/ESP	Español	6.5	Alemania	Drama	https://www.imdb.com/title/tt5870322
+362	Rogue One A Star Guerras Story	Rogue One: A Star Guerras Story	2016	ING/ESP	Español	8.0	USA	Aventura	https://www.imdb.com/title/tt29895189
+361	Roma	Roma	2018	ING/ESP	Español	7.7	México, USA	Drama	https://www.imdb.com/title/tt6155172
+360	Roman J Israel Esq	Roman J. Israel, Esq.	2017	ING/ESP	Español	6.5	Canadá, Emiratos Árabes, USA	Crimen, Drama, Thriller	https://www.imdb.com/title/tt6000478
+359	Rough Night	Rough Night	2017	ING/ESP	Español	5.2	USA	Comedia	https://www.imdb.com/title/tt4799050
+358	Roxanne Roxanne	Roxanne Roxanne	2017	ING/ESP	Español	6.2	USA	Biografía, Drama, Música	https://www.imdb.com/title/tt5796838
+357	Rust Creek	Rust Creek	2018	Inglés	Español	5.9	USA	Acción, Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt6610158
+356	Ruth Y Alex	5 Flights Up	2014	Inglés	Español	6.2	USA	Comedia, Drama	https://www.imdb.com/title/tt2933544
+355	Sahara	Sahara	2017	ING/ESP	Español	5.5	Francia, Canadá	Infantil	https://www.imdb.com/title/tt4466894
+354	Salt And Fire	Salt and Fire	2016	ING/ESP	Español	4.2	Alemania, Francia, México, Bolivia, USA	Acción, Aventura, Drama, Misterio, Sci-Fi, Thriller	https://www.imdb.com/title/tt4441150
+353	Same Kind Of Different As Me	Same Kind of Different as Me	2017	ING/ESP	Español	6.6	USA	Biografía, Drama	https://www.imdb.com/title/tt1230168
+352	Samson	Samson	2018	ING/ESP	Español	4.5	Sudáfrica, USA	Acción, Drama	https://www.imdb.com/title/tt6951892
+351	Sandy Wexler	Sandy Wexler	2017	ING/ESP	Español	5.2	USA	Comedia	https://www.imdb.com/title/tt5893332
+350	Sanju	Sanju	2018	Inglés	Español	7.6	India	Biografía, Comedia, Drama	https://www.imdb.com/title/tt6452574
+349	Sargento Stubby, Un Héroe Muy Especial	Sgt. Stubby: An American Hero	2018	ING/ESP	Español	6.9	Irlanda, Francia, USA, Canadá	Infantil	https://www.imdb.com/title/tt5314190
+348	Satanic: El Juego Del Demonio	Satanic	2016	Inglés	Español	3.7	USA	Terror	https://www.imdb.com/title/tt4796122
+347	Satan's Slaves	Pengabdi Setan	2017	ING/ESP	Español	6.5	Indonesia, Corea del Sur	Drama, Terror, Misterio	https://www.imdb.com/title/tt7076834
+346	Savage Dog	Savage Dog	2017	Inglés	Español	5.0	USA	Acción, Drama	https://www.imdb.com/title/tt5851014
+345	Saw X: El Juego Del Miedo	Saw X	2023	ING/ESP	Español	6.6	USA, México, Canadá	Terror, Misterio, Thriller	https://www.imdb.com/title/tt21807222
+344	Science Fiction Volume One The Osiris Child	Science Fiction Volume One: The Osiris Child	2016	ING/ESP	Español	5.5	Australia	Acción, Aventura, Drama, Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt4536768
+343	Scorched Earth	Scorched Earth	2018	Inglés	Español	4.4	Canadá, USA	Acción, Drama, Thriller, Western	https://www.imdb.com/title/tt2392748
+342	Se Ocultan En La Oscuridad	Be Afraid	2017	ING/ESP	Español	4.7	USA	Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt3311020
+341	Secret Obsession	Secret Obsession	2019	ING/ESP	Español	4.5	USA	Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt9419834
+340	Secretos Ocultos	Marrowbone	2017	ING/ESP	Español	6.7	España, USA	Drama, Terror, Misterio, Thriller	https://www.imdb.com/title/tt5886440
+339	Security	Security	2017	ING/ESP	Español	5.8	USA	Acción, Crimen, Thriller	https://www.imdb.com/title/tt3501112
+338	See You Yesterday	See You Yesterday	2019	ING/ESP	Español	5.3	USA	Acción, Aventura, Crimen, Drama, Sci-Fi, Thriller	https://www.imdb.com/title/tt8743064
+337	Selfie From Hell	Selfie from Hell	2018	Inglés	Español	2.9	Canadá	Terror, Misterio	https://www.imdb.com/title/tt5686622
+336	Sexy Por Accidente	I Feel Pretty	2018	ING/ESP	Español	5.7	China, USA	Comedia, Romance	https://www.imdb.com/title/tt6791096
+335	Shadow In The Cloud	Shadow in the Cloud	2020	Inglés	Español	5.0	Nueva Zelanda, USA	Acción, Terror, Guerra	https://www.imdb.com/title/tt9691136
+334	Shakira The Oral Fixation Tour	Shakira Oral Fixation Tour 2007	2007	Inglés	Español	7.8	USA	Música, Musical	https://www.imdb.com/title/tt1148291
+333	Shepherds And Butchers	Shepherds and Butchers	2016	ING/ESP	Español	6.8	Sudáfrica, USA, Alemania	Crimen, Drama, Misterio	https://www.imdb.com/title/tt4627352
+332	Sherlock Gnomes	Sherlock Gnomes	2018	ING/ESP	Español	5.3	UK, USA	Infantil	https://www.imdb.com/title/tt2296777
+331	Shock And Awe	Shock and Awe	2017	ING/ESP	Español	6.4	USA	Biografía, Drama, Historia, Thriller, Guerra	https://www.imdb.com/title/tt5540992
+330	Shock Wave	Chak dan juen ga	2017	ING/ESP	Español	6.3	Hong Kong, China	Acción, Crimen, Thriller	https://www.imdb.com/title/tt5847286
+329	Siberia	Siberia	2018	ING/ESP	Español	4.3	Canadá, USA, Alemania	Crimen, Drama, Romance, Thriller	https://www.imdb.com/title/tt6494418
+328	Sicario: Día Del Soldado	Sicario: Day of the Soldado	2018	ING/ESP	Español	7.1	USA, México, Italia	Acción, Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt5052474
+327	Sierra Burgess Is A Loser	Sierra Burgess Is a Loser	2018	ING/ESP	Español	5.8	USA	Comedia, Drama, Romance	https://www.imdb.com/title/tt3120280
+326	Silencio	Silence	2016	ING/ESP	Español	7.2	USA, UK, Italia, Taiwan, México, Japón	Drama, Historia	https://www.imdb.com/title/tt0490215
+325	Sin Filtro	Sin filtro	2016	ING/ESP	Español	5.6	Chile	Comedia	https://www.imdb.com/title/tt4843012
+324	Sin Tiempo Para Morir	No Time to Die	2021	ING/ESP	Español	7.3	UK, USA	Acción, Aventura, Thriller	https://www.imdb.com/title/tt2382320
+323	Sing ¡Ven Y Canta!	Sing	2016	ING/ESP	Español	7.1	Japón, USA, Francia	Infantil	https://www.imdb.com/title/tt3470600
+322	Singularity	Singularity	2017	ING/ESP	Español	3.6	Suiza, USA	Acción, Aventura, Drama, Sci-Fi	https://www.imdb.com/title/tt7312940
+321	Siniestro	Sinister	2012	Inglés	Español	6.8	USA, UK, Canadá	Terror, Misterio, Thriller	https://www.imdb.com/title/tt1922777
+320	Siniestro 2	Sinister 2	2015	Inglés	Español	5.3	UK, Canadá, USA	Terror, Misterio, Thriller	https://www.imdb.com/title/tt2752772
+319	Sisu	Sisu	2022	ING/ESP	Español	6.9	Finlandia, UK, USA	Acción, Guerra	https://www.imdb.com/title/tt14846026
+318	Slaughterhouse Rulez	Slaughterhouse Rulez	2018	ING/ESP	Español	5.3	UK	Acción, Comedia, Fantasía, Terror, Thriller	https://www.imdb.com/title/tt6905696
+317	Sleepless	Sleepless	2017	Inglés	Español	5.6	USA	Acción, Thriller	https://www.imdb.com/title/tt2072233
+316	Slender Man	Slender Man	2018	ING/ESP	Español	3.3	USA	Terror, Misterio, Thriller	https://www.imdb.com/title/tt5690360
+315	Slumber	Slumber	2017	ING/ESP	Español	4.7	UK	Terror	https://www.imdb.com/title/tt5181852
+314	Snatched	Snatched	2017	ING/ESP	Español	4.7	USA	Acción, Aventura, Comedia	https://www.imdb.com/title/tt2334871
+313	Snoopy & Charlie Brown: Peanuts La Película	The Peanuts Movie	2015	ING/ESP	Español	7.0	USA	Infantil	https://www.imdb.com/title/tt2452042
+312	Snowden	Snowden	2016	Inglés	Español	7.3	USA, Alemania, Francia	Biografía, Crimen, Drama, Thriller	https://www.imdb.com/title/tt3774114
+311	Solis	Solis	2018	Inglés	Español	4.4	UK	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt6134274
+310	Someone Great	Someone Great	2019	ING/ESP	Español	6.2	USA	Comedia, Romance	https://www.imdb.com/title/tt8075260
+309	Somos Una Familia	Manbiki kazoku	2018	Inglés	Español	7.9	Japón	Crimen, Drama, Thriller	https://www.imdb.com/title/tt8075192
+308	Sonido De Libertad	Sound of Freedom	2023	ING/ESP	Español	7.6	México, USA	Biografía, Crimen, Drama, Historia, Thriller	https://www.imdb.com/title/tt7599146
+307	Spectre	Spectre	2015	ING/ESP	Español	6.8	UK, USA, Marruecos, Italia, Austria, Canadá, México	Acción, Aventura, Thriller	https://www.imdb.com/title/tt2379713
+306	Speed Kills	Speed Kills	2018	Inglés	Español	4.3	Puerto Rico, USA	Acción, Crimen, Drama, Thriller	https://www.imdb.com/title/tt6749318
+305	Spider-Man: A Través Del Spider-Verso	Spider-Man: Across the Spider-Verse	2023	ING/ESP	Español	8.5	USA	Infantil	https://www.imdb.com/title/tt9362722
+304	Spider-Man: De Regreso A Casa	Spider-Man: Homecoming	2017	ING/ESP	Español	7.4	USA	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt2250912
+303	Spider-Man: Lejos De Casa	Spider-Man: Far from Home	2019	ING/ESP	Español	7.4	USA, Chequia, Australia, Canadá, Italia	Acción, Aventura, Comedia, Fantasía, Sci-Fi	https://www.imdb.com/title/tt6320628
+302	Spider-Man: Un Nuevo Universo	Spider-Man: Into the Spider-Verse	2018	ING/ESP	Español	8.4	Canadá, USA	Infantil	https://www.imdb.com/title/tt4633694
+301	Spin Out	Spin Out	2016	ING/ESP	Español	4.7	Australia	Comedia, Drama, Romance	https://www.imdb.com/title/tt4680568
+300	Spinning Man	Spinning Man	2018	Inglés	Español	5.7	Irlanda, Suecia, USA	Drama, Misterio, Thriller	https://www.imdb.com/title/tt5616294
+299	Spring	Spring	2014	Inglés	Español	6.7	USA, Italia	Drama, Terror, Romance, Sci-Fi	https://www.imdb.com/title/tt3395184
+298	Spy: Una Espía Despistada	Spy	2015	Inglés	Español	7.0	USA	Acción, Comedia	https://www.imdb.com/title/tt3079380
+297	St  Agatha	St. Agatha	2018	Inglés	Español	4.8	USA	Terror, Thriller	https://www.imdb.com/title/tt6182078
+296	Stan & Ollie	Stan & Ollie	2018	ING/ESP	Español	7.2	UK, Canadá, USA	Biografía, Comedia, Drama, Familia, Historia	https://www.imdb.com/title/tt3385524
+295	Standoff	Standoff	2016	Inglés	Español	6.1	Canadá, USA	Acción, Crimen, Drama, Thriller	https://www.imdb.com/title/tt3703908
+294	Star Trek Beyond	Star Trek Beyond	2016	ING/ESP	Español	7.0	USA, China	Acción, Aventura, Sci-Fi, Thriller	https://www.imdb.com/title/tt2660888
+293	Star Guerras Episode I The Phantom Menace	Star Guerras: Episode I - The Phantom Menace	1999	ING/ESP	Español	6.5	USA, UK	Acción, Aventura, Fantasía, Sci-Fi	https://www.imdb.com/title/tt0120915
+292	Star Guerras. Episodio VIII: Los Últimos Jedi	Star Guerras: Episode VIII - The Last Jedi	2017	ING/ESP	Español	6.9	USA	Acción, Aventura, Fantasía, Sci-Fi	https://www.imdb.com/title/tt2527336
+291	Star Guerras: El Despertar De La Fuerza	Star Guerras: Episode VII - The Force Awakens	2015	ING/ESP	Español	7.8	USA, UK	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt2488496
+290	Step Sisters	Step Sisters	2018	ING/ESP	Español	5.5	USA	Comedia	https://www.imdb.com/title/tt5267472
+289	Steve Jobs	Steve Jobs	2015	ING/ESP	Español	7.2	UK, USA, Japón	Biografía, Drama	https://www.imdb.com/title/tt2080374
+288	Stratton	Stratton	2017	ING/ESP	Español	4.8	UK, Alemania	Acción, Aventura, Thriller	https://www.imdb.com/title/tt3567666
+287	Suburbicon: Bienvenidos Al Paraíso	Suburbicon	2017	ING/ESP	Español	5.8	UK, USA, China	Comedia, Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt0491175
+286	Sully	Sully	2016	Inglés	Español	7.4	USA	Biografía, Drama	https://www.imdb.com/title/tt3263904
+285	Summer Of 84	Summer of 84	2018	ING/ESP	Español	6.7	Canadá	Terror, Misterio, Thriller	https://www.imdb.com/title/tt5774450
+284	Super Mario Bros.: La Película	The Super Mario Bros. Movie	2023	ING/ESP	Español	7.0	USA, Japón, Francia	Infantil	https://www.imdb.com/title/tt6718170
+283	Super Troopers 2	Super Troopers 2	2018	ING/ESP	Español	6.0	USA	Comedia, Crimen, Misterio	https://www.imdb.com/title/tt0859635
+282	Superagente Canino	Show Dogs	2018	ING/ESP	Español	4.0	UK, USA	Infantil	https://www.imdb.com/title/tt5691024
+281	Superfly	Superfly	2018	Inglés	Español	5.3	USA	Acción, Crimen, Thriller	https://www.imdb.com/title/tt7690670
+280	Survivor	Survivor	2015	Inglés	Español	5.6	USA, UK	Acción, Crimen, Thriller	https://www.imdb.com/title/tt3247714
+279	Suspiria	Suspiria	2018	Inglés	Español	6.7	Italia, USA	Drama, Fantasía, Terror, Misterio, Thriller	https://www.imdb.com/title/tt1034415
+278	Svaha: The Sixth Finger	Sabaha	2019	ING/ESP	Español	6.3	Corea del Sur	Crimen, Terror, Misterio, Thriller	https://www.imdb.com/title/tt7299298
+277	Swat Under Siege	S.W.A.T.: Under Siege	2017	ING/ESP	Español	4.6	USA	Acción, Thriller	https://www.imdb.com/title/tt6014472
+276	Sword Of Vengeance	Sword of Vengeance	2015	Inglés	Español	4.4	UK	Acción, Aventura, Drama, Historia, Guerra	https://www.imdb.com/title/tt3622332
+275	Synchronicity	Synchronicity	2015	Inglés	Español	5.4	USA	Drama, Misterio, Romance, Sci-Fi	https://www.imdb.com/title/tt2049543
+274	Tadeo Jones 2: El Secreto Del Rey Midas	Tadeo Jones 2: El secreto del Rey Midas	2017	ING/ESP	Español	6.2	España, USA	Infantil	https://www.imdb.com/title/tt3896102
+273	Take The Ball, Pass The Ball	Take the Ball Pass the Ball: The Making of the Greatest Team in the World	2018	Inglés	Español	7.9	España	Documental, Deporte	https://www.imdb.com/title/tt9135854
+272	Tale Of Tales	Il racconto dei racconti - Tale of Tales	2015	Inglés	Español	6.4	Italia, Francia, UK	Drama, Fantasía, Terror	https://www.imdb.com/title/tt3278330
+271	Talentos Ocultos	Hidden Figures	2016	ING/ESP	Español	7.8	USA	Biografía, Drama, Historia	https://www.imdb.com/title/tt4846340
+270	Tales Of Halloween	Tales of Halloween	2015	Inglés	Español	5.5	USA	Aventura, Comedia, Fantasía, Terror, Thriller	https://www.imdb.com/title/tt4163020
+269	Tau	Tau	2018	ING/ESP	Español	5.8	USA	Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt4357394
+268	Te Sigue	It Follows	2014	Inglés	Español	6.8	USA	Terror, Misterio, Thriller	https://www.imdb.com/title/tt3235888
+267	Ted 2	Ted 2	2015	ING/ESP	Español	6.3	USA	Comedia	https://www.imdb.com/title/tt2637276
+266	Term Life	Term Life	2016	Inglés	Español	5.6	USA	Acción, Crimen, Drama, Thriller	https://www.imdb.com/title/tt2978102
+265	Terminator Génesis	Terminator Genisys	2015	ING/ESP	Español	6.3	USA, Canadá	Acción, Aventura, Sci-Fi, Thriller	https://www.imdb.com/title/tt1340138
+264	Terminator: Destino Oculto	Terminator: Dark Fate	2019	ING/ESP	Español	6.2	USA, España, Hungría, China	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt6450804
+263	Terminus	Terminus	2015	Inglés	Español	5.3	Australia	Drama, Sci-Fi	https://www.imdb.com/title/tt3399896
+262	Thank You For Your Service	Thank You for Your Service	2017	ING/ESP	Español	6.6	USA, India	Biografía, Drama, Guerra	https://www.imdb.com/title/tt2776878
+261	The After Party	The After Party	2018	ING/ESP	Español	5.8	USA	Comedia, Música	https://www.imdb.com/title/tt3960240
+260	The Angel	The Angel	2018	ING/ESP	Español	6.7	Israel, UK, Egipto	Acción, Biografía, Drama, Thriller	https://www.imdb.com/title/tt5968274
+259	The Appearance	The Appearance	2018	Inglés	Español	4.8	USA	Terror, Thriller	https://www.imdb.com/title/tt6857040
+258	The Ashram	The Ashram	2018	Inglés	Español	5.1	India, USA	Drama, Fantasía, Misterio	https://www.imdb.com/title/tt5596104
+257	The Avengers. Los Vengadores	The Avengers	2012	ING/ESP	Español	8.0	USA	Acción, Sci-Fi	https://www.imdb.com/title/tt0848228
+256	The Babadook	The Babadook	2014	Inglés	Español	6.8	Australia, Canadá	Drama, Terror, Misterio	https://www.imdb.com/title/tt2321549
+255	The Ballad Of Buster Scruggs	The Ballad of Buster Scruggs	2018	ING/ESP	Español	7.2	USA	Comedia, Drama, Musical, Misterio, Romance, Western	https://www.imdb.com/title/tt6412452
+254	The Big Take	The Big Take	2018	Inglés	Español	5.1	USA	Comedia, Thriller	https://www.imdb.com/title/tt2619512
+253	The Birth Of A Nation	The Birth of a Nation	2016	ING/ESP	Español	6.5	USA, Canadá	Biografía, Drama, Historia	https://www.imdb.com/title/tt4196450
+252	The Bleeding Edge	The Bleeding Edge	2018	Inglés	Español	7.6	Australia, USA	Documental	https://www.imdb.com/title/tt8106576
+251	The Blood Lands	White Settlers	2014	Inglés	Español	4.7	UK	Terror, Misterio, Thriller	https://www.imdb.com/title/tt2883352
+250	The Boy Who Harnessed The Wind	The Boy Who Harnessed the Wind	2019	ING/ESP	Español	7.6	UK, Malawi, USA, Kenia	Biografía, Drama, Historia	https://www.imdb.com/title/tt7533152
+249	The Bronze	The Bronze	2015	Inglés	Español	6.1	USA	Comedia, Drama, Deporte	https://www.imdb.com/title/tt3859304
+248	The Brothers Grimsby	Grimsby	2016	Inglés	Español	6.2	UK, USA	Acción, Aventura, Comedia, Crimen	https://www.imdb.com/title/tt3381008
+247	The Butterfly Effect	The Butterfly Effect	2004	ING/ESP	Español	7.6	USA, Canadá	Drama, Sci-Fi, Thriller	https://www.imdb.com/title/tt0289879
+246	The Christmas Chronicles	The Christmas Chronicles	2018	ING/ESP	Español	7.0	USA	Aventura, Comedia, Familia, Fantasía	https://www.imdb.com/title/tt2990140
+245	The Clapper	The Clapper	2017	ING/ESP	Español	5.1	USA	Comedia, Drama	https://www.imdb.com/title/tt5461956
+244	The Clovehitch Killer	The Clovehitch Killer	2018	Inglés	Español	6.5	USA	Crimen, Drama, Terror, Misterio, Thriller	https://www.imdb.com/title/tt6269368
+243	The Colony	Tides	2021	Inglés	Español	5.4	Alemania, Suiza	Acción, Aventura, Sci-Fi, Thriller	https://www.imdb.com/title/tt6506264
+242	The Comedian	Huan Le Xi Ju Ren	2017	Inglés	Español	2.5	China, Hong Kong	Comedia, Familia	https://www.imdb.com/title/tt6421362
+241	The Confirmation	The Confirmation	2016	Inglés	Español	6.4	Canadá	Aventura, Comedia, Drama, Familia	https://www.imdb.com/title/tt4210080
+240	The Convert	The Convert	2023	Inglés	Español	6.4	UK, Australia, Nueva Zelanda	Acción, Drama, Historia, Guerra	https://www.imdb.com/title/tt20113412
+239	The Cured	The Cured	2017	ING/ESP	Español	5.6	Irlanda, Francia	Drama, Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt3463106
+238	The Darkness	The Darkness	2016	ING/ESP	Español	4.5	USA	Terror, Thriller	https://www.imdb.com/title/tt1878841
+237	The Debt Collector	The Debt Collector	2018	ING/ESP	Español	5.9	USA, UK	Acción, Comedia	https://www.imdb.com/title/tt7448180
+236	The Diary Of A Teenage Girl	The Diary of a Teenage Girl	2015	ING/ESP	Español	6.8	USA	Comedia, Drama, Romance	https://www.imdb.com/title/tt3172532
+235	The Dirt	The Dirt	2019	ING/ESP	Español	7.0	USA	Biografía, Comedia, Drama, Música	https://www.imdb.com/title/tt0800325
+234	The Disaster Artist. Obra Maestra	The Disaster Artist	2017	Inglés	Español	7.3	USA	Biografía, Comedia, Drama	https://www.imdb.com/title/tt3521126
+233	The Discovery	The Discovery	2017	Inglés	Español	6.2	USA	Drama, Romance, Sci-Fi, Thriller	https://www.imdb.com/title/tt5155780
+232	The Do-Over	The Do-Over	2016	ING/ESP	Español	5.7	USA	Acción, Aventura, Comedia, Misterio	https://www.imdb.com/title/tt4769836
+231	The Driftless Area	The Driftless Area	2015	Inglés	Español	5.3	Canadá, USA	Crimen, Drama	https://www.imdb.com/title/tt3687304
+230	The Duel	The Duel	2016	Inglés	Español	5.8	USA	Drama, Western	https://www.imdb.com/title/tt2436682
+229	The Extraordinary Journey Of The Fakir	The Extraordinary Journey of the Fakir	2018	ING/ESP	Español	6.8	Francia, India, Bélgica, Singapur, USA, UK	Aventura, Comedia, Drama	https://www.imdb.com/title/tt5371168
+228	The Final Girls	The Final Girls	2015	Inglés	Español	6.5	USA	Comedia, Fantasía, Terror, Misterio, Thriller	https://www.imdb.com/title/tt2118624
+227	The Forger	The Forger	2014	Inglés	Español	5.8	USA	Crimen, Drama, Thriller	https://www.imdb.com/title/tt2376218
+226	The Front Runner	The Front Runner	2018	Inglés	Español	6.1	Canadá, USA	Biografía, Drama, Historia, Misterio	https://www.imdb.com/title/tt7074886
+225	The Gateway	The Gateway	2018	Inglés	Español	5.4	Australia	Sci-Fi	https://www.imdb.com/title/tt6179746
+224	The Golem	The Golem	2018	Inglés	Español	5.5	Israel	Drama, Terror	https://www.imdb.com/title/tt8329290
+223	The Great Battle	Ansisung	2018	Inglés	Español	7.0	Corea del Sur	Acción, Drama, Historia, Guerra	https://www.imdb.com/title/tt6931414
+222	The Guernsey Literary And Potato Peel Pie Society	The Guernsey Literary & Potato Peel Pie Society	2018	ING/ESP	Español	7.3	UK, Francia, USA	Drama, Romance, Guerra	https://www.imdb.com/title/tt1289403
+221	The Hard Way	The Hard Way	2019	ING/ESP	Español	4.8	USA	Acción	https://www.imdb.com/title/tt9815714
+220	The Harvest	The Harvest	2013	Inglés	Español	6.1	USA	Drama, Misterio, Thriller	https://www.imdb.com/title/tt2543336
+219	The Hate U Give	The Hate U Give	2018	ING/ESP	Español	7.5	USA	Crimen, Drama	https://www.imdb.com/title/tt5580266
+218	The Highwaymen	The Highwaymen	2019	ING/ESP	Español	6.9	USA	Biografía, Crimen, Drama, Misterio, Thriller, Western	https://www.imdb.com/title/tt1860242
+217	The Hill	The Hill	2023	Inglés	Español	6.7	USA	Biografía, Drama, Deporte	https://www.imdb.com/title/tt8051894
+216	The Holiday Calendar	The Holiday Calendar	2018	ING/ESP	Español	5.7	USA	Drama, Fantasía, Romance	https://www.imdb.com/title/tt8262802
+215	The Honor List	The Honor List	2018	ING/ESP	Español	5.4	USA	Aventura, Drama	https://www.imdb.com/title/tt7237666
+214	The Humanity Bureau	The Humanity Bureau	2017	ING/ESP	Español	4.5	Canadá, USA, UK	Sci-Fi, Thriller	https://www.imdb.com/title/tt6143568
+213	The Humans	The Humans	2021	Inglés	Español	6.1	USA	Drama	https://www.imdb.com/title/tt10023286
+212	The Hunters Prayer	The Hunter's Prayer	2017	Inglés	Español	5.6	Alemania, España, USA	Acción, Thriller	https://www.imdb.com/title/tt2674358
+211	The Intruder	The Intruder	2019	ING/ESP	Español	5.6	USA, Canadá	Terror, Thriller	https://www.imdb.com/title/tt6722030
+210	The Invitation	The Invitation	2015	Inglés	Español	6.6	USA	Drama, Terror, Misterio, Thriller	https://www.imdb.com/title/tt2400463
+209	The Keeping Hours	The Keeping Hours	2017	ING/ESP	Español	6.3	USA	Drama, Fantasía, Terror, Misterio, Thriller	https://www.imdb.com/title/tt5114154
+208	The Kissing Booth	The Kissing Booth	2018	ING/ESP	Español	5.9	UK, USA	Comedia, Romance	https://www.imdb.com/title/tt3799232
+207	The Land Of Steady Habits	The Land of Steady Habits	2018	ING/ESP	Español	6.2	USA	Comedia, Drama	https://www.imdb.com/title/tt6485928
+206	The Last Laugh	The Last Laugh	2017	ING/ESP	Español	8.9	UK	Corto, Comedia	https://www.imdb.com/title/tt7099016
+205	The Last Man	The Last Man	2019	ING/ESP	Español	3.7	Canadá, Argentina, UK	Acción, Drama, Misterio, Sci-Fi, Thriller	https://www.imdb.com/title/tt3312180
+204	The Last Summer	The Last Summer	2019	ING/ESP	Español	5.6	USA	Comedia, Romance	https://www.imdb.com/title/tt7957694
+203	The Last Survivors	The Last Survivors	2014	Inglés	Español	5.3	USA	Acción, Sci-Fi, Thriller	https://www.imdb.com/title/tt2558318
+202	The Last Witness	The Last Witness	2018	ING/ESP	Español	5.6	UK, Polonia	Crimen, Drama, Historia, Misterio, Thriller	https://www.imdb.com/title/tt3709552
+201	The Laws Of Thermodynamics	Las leyes de la termodinámica	2018	Inglés	Español	6.1	España	Comedia	https://www.imdb.com/title/tt6053938
+200	The Layover	The Layover	2017	ING/ESP	Español	4.8	USA	Comedia, Romance	https://www.imdb.com/title/tt4565520
+199	The Legacy Of A Whitetail Deer Hunter	The Legacy of a Whitetail Deer Hunter	2018	ING/ESP	Español	5.5	USA	Comedia, Drama	https://www.imdb.com/title/tt4762824
+198	The Legend Of Cocaine Island	White Tide: The Legend of Culebra	2018	Inglés	Español	6.4	USA	Documental	https://www.imdb.com/title/tt8106596
+197	The Levelling	The Levelling	2016	Inglés	Español	6.4	UK	Drama	https://www.imdb.com/title/tt5158522
+196	The Limehouse Golem	The Limehouse Golem	2016	ING/ESP	Español	6.3	UK	Crimen, Misterio, Thriller	https://www.imdb.com/title/tt4733640
+195	The Little Hours	The Little Hours	2017	ING/ESP	Español	5.8	USA, Canadá, Italia	Comedia, Romance	https://www.imdb.com/title/tt5666304
+194	The Little Stranger	The Little Stranger	2018	ING/ESP	Español	5.5	Irlanda, UK, Francia	Drama, Terror, Misterio	https://www.imdb.com/title/tt6859762
+193	The Little Witch	Die kleine Hexe	2018	ING/ESP	Español	6.2	Alemania, Suiza, Francia	Comedia, Drama, Familia, Fantasía	https://www.imdb.com/title/tt6153538
+192	The Lobster	The Lobster	2015	Inglés	Español	7.1	Irlanda, UK, Grecia, Francia, Países Bajos, USA, Bélgica	Drama, Romance, Sci-Fi, Thriller	https://www.imdb.com/title/tt3464902
+191	The Loft	The Loft	2014	Inglés	Español	6.3	Bélgica, USA	Misterio, Romance, Thriller	https://www.imdb.com/title/tt1850397
+190	The Long Dumb Road	The Long Dumb Road	2018	Inglés	Español	6.1	USA	Comedia	https://www.imdb.com/title/tt4712076
+189	The Lotus	White Lotus	2017	Inglés	Español	8.0	Australia, Tailandia	Documental	https://www.imdb.com/title/tt5594636
+188	The Love Witch	The Love Witch	2016	Inglés	Español	6.2	USA	Comedia, Terror, Romance, Thriller	https://www.imdb.com/title/tt3908142
+187	The Lovers	The Lovers	2017	ING/ESP	Español	6.1	USA	Comedia, Drama, Romance	https://www.imdb.com/title/tt5770620
+186	The Lullaby	Siembamba	2017	Inglés	Español	3.9	Sudáfrica	Terror	https://www.imdb.com/title/tt6149936
+185	The Man Who Killed Hitler And Then The Bigfoot	The Man Who Killed Hitler and Then the Bigfoot	2018	Inglés	Español	5.7	USA	Aventura, Drama, Sci-Fi, Guerra	https://www.imdb.com/title/tt7042862
+184	The Marine 5 Battleground	The Marine 5: Battleground	2017	Inglés	Español	5.1	USA	Acción, Crimen, Thriller	https://www.imdb.com/title/tt5781798
+183	The Marvels	The Marvels	2023	ING/ESP	Español	5.5	USA	Acción, Aventura, Fantasía	https://www.imdb.com/title/tt10676048
+182	The Matrix	The Matrix	1999	Inglés	Español	8.7	USA, Australia	Acción, Sci-Fi	https://www.imdb.com/title/tt0133093
+181	The Mermaid Lake Of The Dead	Bloodbath and Beyond	2018	ING/ESP	Español	6.3	Canadá	Comedia, Terror, Talk-Show	https://www.imdb.com/title/tt3506984
+180	The Miracle Season	The Miracle Season	2018	ING/ESP	Español	6.5	USA	Drama, Deporte	https://www.imdb.com/title/tt5427194
+179	The Mustang	The Mustang	2019	ING/ESP	Español	6.8	Francia, Bélgica, USA	Drama	https://www.imdb.com/title/tt5952594
+178	The Night Comes For Us	The Night Comes for Us	2018	ING/ESP	Español	6.9	Indonesia, USA	Acción, Crimen, Thriller	https://www.imdb.com/title/tt6116856
+177	The Night Eats The World	La nuit a dévoré le monde	2018	ING/ESP	Español	6.0	Francia	Drama, Terror, Thriller	https://www.imdb.com/title/tt4266076
+176	The Nightmare	The Nightmare	2015	Inglés	Español	5.7	USA	Documental, Terror	https://www.imdb.com/title/tt3317522
+175	The Only Living Boy In New York	The Only Living Boy in New York	2017	ING/ESP	Español	6.4	USA	Drama	https://www.imdb.com/title/tt0460890
+174	The Open House: Puertas Abiertas	The Open House	2018	ING/ESP	Español	3.3	Canadá, USA	Terror, Thriller	https://www.imdb.com/title/tt7608028
+173	The Other Side Of The Door	The Other Side of the Door	2016	ING/ESP	Español	5.3	UK, India, USA	Terror, Thriller	https://www.imdb.com/title/tt3702652
+172	The Outsider	The Outsider	2018	Inglés	Español	6.3	USA	Crimen, Drama, Thriller	https://www.imdb.com/title/tt2011311
+171	The Package	The Package	2018	ING/ESP	Español	5.6	USA, Canadá	Comedia, Thriller	https://www.imdb.com/title/tt7525778
+170	The Padre	The Padre	2018	ING/ESP	Español	5.7	Canadá	Crimen, Drama	https://www.imdb.com/title/tt6782276
+169	The Perfect Date	The Perfect Date	2019	ING/ESP	Español	5.8	USA	Comedia, Romance	https://www.imdb.com/title/tt8201170
+168	The Perfect Guy	The Perfect Guy	2015	ING/ESP	Español	5.6	USA	Drama, Romance, Thriller	https://www.imdb.com/title/tt3862750
+167	The Perfection	Pretty Little Liars: The Perfectionists	2019	ING/ESP	Español	6.8	USA	Crimen, Drama, Misterio, Romance, Thriller	https://www.imdb.com/title/tt7413448
+166	The Pirates Of Somalia	The Pirates of Somalia	2017	Inglés	Español	6.7	Sudáfrica, USA	Biografía, Drama	https://www.imdb.com/title/tt5126922
+165	The Post: Los Oscuros Secretos Del Pantágono	The Post	2017	ING/ESP	Español	7.2	USA, India	Biografía, Drama, Historia, Thriller, Guerra	https://www.imdb.com/title/tt6294822
+164	The Power Of The Dog	The Power of the Dog	2021	Inglés	Español	6.8	Nueva Zelanda, UK, Canadá, Australia, USA	Drama, Western	https://www.imdb.com/title/tt10293406
+163	The Princess Switch	The Princess Switch	2018	ING/ESP	Español	6.1	USA	Comedia, Drama, Familia, Romance	https://www.imdb.com/title/tt8954732
+162	The Promise	The Promise	2016	Inglés	Español	6.1	España, USA	Acción, Aventura, Drama, Guerra	https://www.imdb.com/title/tt4776998
+161	The Purity Of Vengeance	Journal 64	2018	Inglés	Español	7.4	Dinamarca, Alemania	Crimen, Misterio, Thriller	https://www.imdb.com/title/tt6916362
+160	The Resistance Banker	Bankier van het verzet	2018	Inglés	Español	6.9	Países Bajos, Bélgica	Biografía, Drama, Guerra	https://www.imdb.com/title/tt4610378
+159	The Resurrection Of Gavin Stone	The Resurrection of Gavin Stone	2017	Inglés	Español	6.3	USA	Comedia, Drama, Familia, Romance	https://www.imdb.com/title/tt4902904
+158	The Rider	The Rider	2017	ING/ESP	Español	7.4	USA	Drama, Western	https://www.imdb.com/title/tt6217608
+157	The Sandman	The Sandman	2017	ING/ESP	Español	4.3	USA	Terror	https://www.imdb.com/title/tt7369722
+156	The Scorpion King Book Of Souls	The Scorpion King: Book of Souls	2018	ING/ESP	Español	4.6	USA	Acción, Aventura, Fantasía	https://www.imdb.com/title/tt7338690
+155	The Secret Scripture	The Secret Scripture	2016	ING/ESP	Español	6.7	Irlanda	Drama, Romance	https://www.imdb.com/title/tt3344694
+154	The Sense Of An Ending	The Sense of an Ending	2017	ING/ESP	Español	6.4	UK, USA	Drama, Misterio	https://www.imdb.com/title/tt4827986
+153	The Shadow Effect	The Shadow Effect	2017	ING/ESP	Español	4.2	USA	Misterio, Sci-Fi, Thriller	https://www.imdb.com/title/tt5044656
+152	The Silence	The Silence	2019	ING/ESP	Español	5.4	USA, Alemania	Drama, Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt7315484
+151	The Sisters Brothers	The Sisters Brothers	2018	Inglés	Español	6.9	Francia, España, Romania, Bélgica, USA	Drama, Western	https://www.imdb.com/title/tt4971344
+150	The Snare	The Snare	2017	ING/ESP	Español	5.4	UK	Terror, Misterio, Thriller	https://www.imdb.com/title/tt2935390
+149	The Square	The Square	2017	Inglés	Español	7.1	Suecia, Alemania, Francia, Dinamarca, USA	Comedia, Drama	https://www.imdb.com/title/tt4995790
+148	The Stanford Prison Experiment	The Stanford Prison Experiment	2015	Inglés	Español	6.8	USA	Biografía, Drama, Historia, Thriller	https://www.imdb.com/title/tt0420293
+147	The Survivalist	The Survivalist	2015	Inglés	Español	6.4	UK	Drama, Sci-Fi, Thriller	https://www.imdb.com/title/tt2580382
+146	The Taking Of Deborah Logan	The Taking	2014	ING/ESP	Español	6.0	USA	Terror, Misterio, Thriller	https://www.imdb.com/title/tt3387648
+145	The Tale	The Tale	2018	ING/ESP	Español	7.2	USA, Alemania	Biografía, Drama, Misterio, Thriller	https://www.imdb.com/title/tt4015500
+144	The Third Murder	Sandome no satsujin	2017	Inglés	Español	6.7	Japón	Crimen, Drama, Misterio	https://www.imdb.com/title/tt6410564
+143	The Thousand Faces Of Dunjia	Qimen Dunjia	2017	ING/ESP	Español	5.4	China, Hong Kong	Acción, Aventura, Fantasía	https://www.imdb.com/title/tt6814080
+142	The Ticket	The Ticket	2016	Inglés	Español	5.4	USA	Drama	https://www.imdb.com/title/tt3893280
+141	The Titan	The Titan	2018	ING/ESP	Español	4.8	UK, España, USA, Alemania	Drama, Misterio, Romance, Sci-Fi, Thriller	https://www.imdb.com/title/tt4986098
+140	The Trust	The Trust	2016	ING/ESP	Español	5.5	USA	Acción, Crimen, Misterio, Thriller	https://www.imdb.com/title/tt3733774
+139	The Vault	The Vault	2017	ING/ESP	Español	4.9	USA	Crimen, Terror, Misterio, Thriller	https://www.imdb.com/title/tt1785635
+138	The Veil	The Veil	2016	Inglés	Español	4.7	USA	Terror	https://www.imdb.com/title/tt3533916
+137	The Vessel	The Vessel	2016	Inglés	Español	5.4	Puerto Rico, USA	Drama	https://www.imdb.com/title/tt4083052
+136	The Wall	The Wall	2017	ING/ESP	Español	6.2	USA	Acción, Drama, Thriller, Guerra	https://www.imdb.com/title/tt4218696
+135	The Guerraning	El aviso	2018	Inglés	Español	5.9	España	Crimen, Drama, Fantasía, Misterio, Thriller	https://www.imdb.com/title/tt3711510
+134	The Week Of	The Week Of	2018	ING/ESP	Español	5.2	USA	Comedia	https://www.imdb.com/title/tt6821012
+133	The Wolf's Call	Le chant du loup	2019	ING/ESP	Español	6.9	Francia	Acción, Thriller	https://www.imdb.com/title/tt7458762
+132	The Young Messiah	The Young Messiah	2016	ING/ESP	Español	5.7	USA, Corea del Sur	Drama, Fantasía	https://www.imdb.com/title/tt1002563
+131	Thor Ragnarok	Thor: Ragnarok	2017	ING/ESP	Español	7.9	USA	Acción, Aventura, Comedia, Fantasía, Sci-Fi	https://www.imdb.com/title/tt3501632
+130	Thoroughbreds	Thoroughbreds	2017	ING/ESP	Español	6.6	USA	Comedia, Crimen, Drama, Thriller	https://www.imdb.com/title/tt5649108
+129	Tiger House	Tiger House	2015	Inglés	Español	5.2	UK, Sudáfrica	Acción, Crimen, Drama, Thriller	https://www.imdb.com/title/tt2911674
+128	Tik Tok	Jing tian da ni zhuan	2016	ING/ESP	Español	5.5	China	Acción, Crimen, Misterio, Thriller	https://www.imdb.com/title/tt6033150
+127	Time Freak	Time Freak	2018	ING/ESP	Español	5.8	USA	Comedia, Drama, Romance, Sci-Fi	https://www.imdb.com/title/tt6769280
+126	Tini El Gran Cambio De Violetta	Tini: El gran cambio de Violetta	2016	Español	Ninguno	5.3	España, Italia, Argentina	Aventura, Familia, Música	https://www.imdb.com/title/tt5122374
+125	Titanes Del Pacífico	Pacific Rim	2013	ING/ESP	Español	6.9	USA, México	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt1663662
+124	Titanes Del Pacífico: Insurrección	Pacific Rim: Uprising	2018	ING/ESP	Español	5.6	UK, China, Japón, USA, México	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt2557478
+123	To All The Boys I've Loved Before	To All the Boys I've Loved Before	2018	ING/ESP	Español	7.0	USA	Comedia, Drama, Romance	https://www.imdb.com/title/tt3846674
+122	Todo El Dinero Del Mundo	All the Money in the World	2017	ING/ESP	Español	6.8	USA, Italia, UK, China	Crimen, Drama, Historia, Misterio, Thriller	https://www.imdb.com/title/tt5294550
+121	Todo, Todo	Everything, Everything	2017	ING/ESP	Español	6.3	USA	Drama, Romance	https://www.imdb.com/title/tt5001718
+120	Todos Lo Saben	Todos lo saben	2018	Inglés	Español	6.9	España, Francia, Italia, Argentina, Alemania	Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt4964788
+119	Tomb Invader	Tomb Invader	2018	ING/ESP	Español	2.7	USA	Acción, Aventura	https://www.imdb.com/title/tt7781732
+118	Tomb Raider, Las Aventuras De Lara Croft	Tomb Raider	2018	ING/ESP	Español	6.3	UK, USA	Acción, Aventura, Fantasía, Thriller	https://www.imdb.com/title/tt1365519
+117	Tomorrowland: El Mundo Del Mañana	Tomorrowland	2015	ING/ESP	Español	6.4	USA, España, Francia, Canadá, UK, China, Italia, Alemania	Acción, Aventura, Familia, Fantasía, Misterio, Sci-Fi	https://www.imdb.com/title/tt1964418
+116	Top Gun Maverick	Top Gun: Maverick	2022	ING/ESP	Español	8.2	USA	Acción, Drama	https://www.imdb.com/title/tt1745960
+115	Tortugas Ninja 2: Fuera De Las Sombras	Teenage Mutant Ninja Turtles: Out of the Shadows	2016	ING/ESP	Español	5.9	USA, Hong Kong, China	Acción, Aventura, Comedia, Crimen, Fantasía, Sci-Fi	https://www.imdb.com/title/tt3949660
+114	Totem Lobo	Le dernier loup	2015	ING/ESP	Español	6.6	China, Francia	Aventura, Drama	https://www.imdb.com/title/tt2909116
+113	Toy Story 4	Toy Story 4	2019	ING/ESP	Español	7.6	USA	Infantil	https://www.imdb.com/title/tt1979376
+112	Traffik	Traffik	2018	ING/ESP	Español	5.9	USA	Acción, Thriller	https://www.imdb.com/title/tt5670152
+111	Tragedy Girls	Tragedy Girls	2017	ING/ESP	Español	6.0	USA	Comedia, Crimen, Terror	https://www.imdb.com/title/tt3859272
+110	Trainspotting 2: La Vida En El Abismo	T2 Trainspotting	2017	ING/ESP	Español	7.1	UK, USA	Comedia, Crimen, Drama	https://www.imdb.com/title/tt2763304
+109	Tramps	Tramps	2016	ING/ESP	Español	6.5	USA	Aventura, Romance	https://www.imdb.com/title/tt4991512
+108	Transformers: El Despertar De Las Bestias	Transformers: Rise of the Beasts	2023	ING/ESP	Español	6.0	USA, Canadá, UK, Nueva Zelanda, Hungría, Peru, China	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt5090568
+107	Transformers: El Último Caballero	Transformers: The Last Knight	2017	ING/ESP	Español	5.2	USA, China, Canadá	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt3371366
+106	Trico Tri Happy Halloween	Trico Tri Happy Halloween	2018	ING/ESP	Español	3.5	USA	Familia	https://www.imdb.com/title/tt7830428
+105	Triple 9	Triple 9	2016	Inglés	Español	6.3	USA	Acción, Crimen, Drama, Thriller	https://www.imdb.com/title/tt1712261
+104	Triple Frontier	Triple Frontier	2019	ING/ESP	Español	6.5	USA	Acción, Thriller	https://www.imdb.com/title/tt1488606
+103	Trolls	Trolls	2016	ING/ESP	Español	6.4	USA, India, UK, Alemania	Infantil	https://www.imdb.com/title/tt1679335
+102	Tropa De Héroes	12 Strong	2018	Inglés	Español	6.5	USA	Acción, Drama, Historia, Guerra	https://www.imdb.com/title/tt1413492
+101	Tully	Tully	2018	ING/ESP	Español	6.9	USA, Canadá	Comedia, Drama, Misterio	https://www.imdb.com/title/tt5610554
+100	Twisted	Twisted Pair	2018	ING/ESP	Español	4.7	USA	Acción, Drama, Sci-Fi, Thriller	https://www.imdb.com/title/tt8196068
+99	Ufo	UFO	2018	Inglés	Español	6.2	USA	Drama, Misterio, Sci-Fi, Thriller	https://www.imdb.com/title/tt6290798
+98	Un Camino A Casa	Lion	2016	Inglés	Español	8.0	India, UK, Australia, USA	Biografía, Drama	https://www.imdb.com/title/tt3741834
+97	Un Don Excepcional	Gifted	2017	ING/ESP	Español	7.6	USA	Drama	https://www.imdb.com/title/tt4481414
+96	Un Espía Y Medio	Central Intelligence	2016	Inglés	Español	6.3	USA, China	Acción, Comedia, Crimen	https://www.imdb.com/title/tt1489889
+95	Un Golpe Con Estilo	Going in Style	2017	ING/ESP	Español	6.6	USA	Comedia, Crimen	https://www.imdb.com/title/tt2568862
+94	Un Gran Dinosaurio	The Good Dinosaur	2015	ING/ESP	Español	6.7	USA, Japón	Infantil	https://www.imdb.com/title/tt1979388
+93	Un Holograma Para El Rey	A Hologram for the King	2016	Inglés	Español	6.1	UK, Francia, Alemania, México, USA	Comedia, Drama, Romance	https://www.imdb.com/title/tt2980210
+92	Un Jefe En Pañales	The Boss Baby	2017	ING/ESP	Español	6.3	USA	Infantil	https://www.imdb.com/title/tt3874544
+91	Un Ladrón Con Estilo	The Old Man & the Gun	2018	ING/ESP	Español	6.7	UK, USA	Biografía, Comedia, Crimen, Drama, Romance	https://www.imdb.com/title/tt2837574
+90	Un Lugar En Silencio	A Quiet Place	2018	ING/ESP	Español	7.5	USA	Drama, Terror, Sci-Fi	https://www.imdb.com/title/tt6644200
+89	Un Método Peligroso	A Dangerous Method	2011	Inglés	Español	6.4	UK, Alemania, Canadá	Biografía, Drama, Romance	https://www.imdb.com/title/tt1571222
+88	Un Novato En Apuros 2	Ride Along 2	2016	ING/ESP	Español	5.9	USA	Acción, Comedia, Crimen	https://www.imdb.com/title/tt2869728
+87	Un Pequeño Favor	A Simple Favor	2018	Inglés	Español	6.8	Canadá, USA	Comedia, Crimen, Misterio, Thriller	https://www.imdb.com/title/tt7040874
+86	Un Viaje De Diez Metros	The Hundred-Foot Journey	2014	ING/ESP	Español	7.3	USA, Emiratos Árabes, India	Comedia, Drama	https://www.imdb.com/title/tt2980648
+85	Un Viaje En El Tiempo	A Wrinkle in Time	2018	ING/ESP	Español	4.3	USA	Aventura, Drama, Familia, Fantasía, Sci-Fi	https://www.imdb.com/title/tt1620680
+84	Una Boda De Locos	The Wilde Wedding	2017	ING/ESP	Español	5.2	USA	Comedia, Romance	https://www.imdb.com/title/tt5066056
+83	Una Buena Receta	Burnt	2015	ING/ESP	Español	6.6	USA, UK	Comedia, Drama	https://www.imdb.com/title/tt2503944
+82	Una Cigüeña En Apuros	Überflieger - Kleine Vögel, großes Geklapper	2017	ING/ESP	Español	5.8	Alemania, Bélgica, Luxemburgo, Noruega, USA	Infantil	https://www.imdb.com/title/tt3823116
+81	Una Especie De Familia	Una especie de familia	2017	ING/ESP	Español	6.3	Argentina, Brasil, Francia, Polonia, Alemania, Dinamarca	Crimen, Drama, Thriller	https://www.imdb.com/title/tt6386168
+80	Una Familia Espacial	Atrapa la bandera	2015	ING/ESP	Español	5.8	España, USA	Infantil	https://www.imdb.com/title/tt3896100
+79	Una Historia De Venganza	Aftermath	2017	Inglés	Español	5.7	UK, USA	Drama, Misterio, Thriller	https://www.imdb.com/title/tt4581576
+78	Una Jungla De Locura	Les as de la jungle	2017	Español	Ninguno	5.3	Francia	Infantil	https://www.imdb.com/title/tt6314690
+77	Una Mujer Fantástica	Una mujer fantástica	2017	ING/ESP	Español	7.2	Chile, España, Alemania, USA	Drama	https://www.imdb.com/title/tt5639354
+76	Una Noche Para Sobrevivir	Run All Night	2015	ING/ESP	Español	6.6	USA	Acción, Crimen, Thriller	https://www.imdb.com/title/tt2199571
+75	Una Razón Para Vivir	Breathe	2017	ING/ESP	Español	7.1	UK, Suiza	Biografía, Drama, Romance	https://www.imdb.com/title/tt5716464
+74	Una Verdad Inquietante	10x10	2018	ING/ESP	Español	5.1	UK, USA	Drama, Misterio, Thriller	https://www.imdb.com/title/tt6210996
+73	Unbroken Path To Redemption	Unbroken: Path to Redemption	2018	ING/ESP	Español	5.8	USA	Biografía, Drama, Historia	https://www.imdb.com/title/tt7339792
+72	Uncle Drew	Uncle Drew	2018	ING/ESP	Español	5.8	USA	Comedia, Drama, Deporte	https://www.imdb.com/title/tt7334528
+71	Under The Silver Lake	Under the Silver Lake	2018	Inglés	Español	6.5	USA	Crimen, Drama, Misterio, Thriller	https://www.imdb.com/title/tt5691670
+70	Under The Skin	Under the Skin	2013	Inglés	Español	6.3	UK, Suiza, USA	Drama, Terror, Misterio, Sci-Fi, Thriller	https://www.imdb.com/title/tt1441395
+69	Unicorn Store	Unicorn Store	2017	ING/ESP	Español	5.6	USA	Comedia, Drama, Fantasía	https://www.imdb.com/title/tt2338454
+68	Unlocked	Unlocked	2017	ING/ESP	Español	6.3	Chequia, Suiza, UK, USA, Francia	Acción, Thriller	https://www.imdb.com/title/tt1734493
+67	Unsane	Unsane	2018	ING/ESP	Español	6.4	USA	Drama, Terror, Misterio, Thriller	https://www.imdb.com/title/tt7153766
+66	Upgrade	Upgrade	2018	ING/ESP	Español	7.5	USA, Australia	Acción, Sci-Fi, Thriller	https://www.imdb.com/title/tt6499752
+65	Urge	Urge	2016	Inglés	Español	4.3	USA	Drama, Terror, Misterio, Thriller	https://www.imdb.com/title/tt4083572
+64	Uss Indianapolis Men Of Courage	USS Indianapolis: Men of Courage	2016	ING/ESP	Español	5.3	USA	Acción, Drama, Historia, Thriller, Guerra	https://www.imdb.com/title/tt2032572
+63	Valerian Y La Ciudad De Los Mil Planetas	Valerian and the City of a Thousand Planets	2017	ING/ESP	Español	6.4	Francia, China, Bélgica, Alemania, Emiratos Árabes, USA, Canadá, Katar	Acción, Aventura, Fantasía, Sci-Fi	https://www.imdb.com/title/tt2239822
+62	Van Gogh En La Puerta De La Eternidad	At Eternity's Gate	2018	ING/ESP	Español	6.9	Irlanda, Suiza, UK, Francia, USA	Biografía, Drama, Historia	https://www.imdb.com/title/tt6938828
+61	Velvet Buzzsa	Velvet Buzzsaw	2019	ING/ESP	Español	5.7	USA, Canadá	Terror, Misterio, Thriller	https://www.imdb.com/title/tt7043012
+60	Venganza	Cold Pursuit	2019	ING/ESP	Español	6.2	UK, Noruega, China, Canadá, USA, Francia	Acción, Comedia, Crimen, Drama, Thriller	https://www.imdb.com/title/tt5719748
+59	Venom	Venom	2018	ING/ESP	Español	6.6	USA, China	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt1270797
+58	Verdad O Reto	Truth or Dare	2018	ING/ESP	Español	5.2	USA	Terror, Misterio, Thriller	https://www.imdb.com/title/tt6772950
+57	Vicio Propio	Inherent Vice	2014	Inglés	Español	6.6	USA	Comedia, Crimen, Drama, Misterio, Romance	https://www.imdb.com/title/tt1791528
+56	Victoria	Victoria	2015	Inglés	Español	7.6	Alemania, Francia, USA	Crimen, Drama, Romance, Thriller	https://www.imdb.com/title/tt4226388
+55	Victoria Y Abdul	Victoria & Abdul	2017	ING/ESP	Español	6.8	UK, USA, China	Biografía, Comedia, Drama, Historia	https://www.imdb.com/title/tt5816682
+54	Vidas Pasadas	Past Lives	2023	ING/ESP	Español	7.8	USA, Corea del Sur	Drama, Romance	https://www.imdb.com/title/tt13238346
+53	Viene De Noche	It Comes at Night	2017	ING/ESP	Español	6.1	USA	Drama, Terror, Misterio, Sci-Fi, Thriller	https://www.imdb.com/title/tt4695012
+52	Vigilante Diaries	Vigilante Diaries	2016	Inglés	Español	4.1	USA	Acción, Crimen, Thriller	https://www.imdb.com/title/tt3903852
+51	Viper Club	Viper Club	2018	Inglés	Español	5.6	USA	Drama	https://www.imdb.com/title/tt6388074
+50	Viral	Viral	2016	Inglés	Español	5.5	USA	Drama, Terror, Sci-Fi, Thriller	https://www.imdb.com/title/tt2597892
+49	Viudas	Widows	2018	ING/ESP	Español	6.8	UK, USA	Crimen, Drama, Thriller	https://www.imdb.com/title/tt4218572
+48	Volver Al Futuro	Back to the Future	1985	ING/ESP	Español	8.5	USA	Aventura, Comedia, Sci-Fi	https://www.imdb.com/title/tt0088763
+47	Wakefield	Wakefield	2016	Inglés	Español	6.3	USA	Drama	https://www.imdb.com/title/tt5195412
+46	Guerra On Everyone	Guerra on Everyone	2016	Inglés	Español	5.8	UK, Emiratos Árabes	Acción, Comedia, Crimen	https://www.imdb.com/title/tt3708886
+45	Guerracraft	Guerracraft	2016	ING/ESP	Español	6.7	China, USA, Canadá, Japón	Acción, Aventura, Fantasía	https://www.imdb.com/title/tt0803096
+44	Waterschool	Waterschool	2018	Inglés	Español	6.5	USA, Brasil, India, Uganda, China	Documental	https://www.imdb.com/title/tt7974234
+43	We Are Still Here	We Are Still Here	2015	Inglés	Español	5.7	USA	Terror, Misterio	https://www.imdb.com/title/tt3520418
+42	Welcome Home	Welcome Home	2018	ING/ESP	Español	5.2	USA	Drama, Terror, Misterio, Thriller	https://www.imdb.com/title/tt6829180
+41	Welcome To Marwen	Welcome to Marwen	2018	ING/ESP	Español	6.2	Japón, USA, China	Biografía, Comedia, Drama, Fantasía, Romance	https://www.imdb.com/title/tt3289724
+40	What Keeps You Alive	What Keeps You Alive	2018	Inglés	Español	5.7	Canadá	Terror, Thriller	https://www.imdb.com/title/tt7073710
+39	What Men Want	What Men Want	2019	ING/ESP	Español	5.4	USA	Comedia, Fantasía, Romance	https://www.imdb.com/title/tt7634968
+38	When The Bough Breaks	When the Bough Breaks	2016	Inglés	Español	5.2	USA	Drama, Thriller	https://www.imdb.com/title/tt1389139
+37	When We First Met	When We First Met	2018	ING/ESP	Español	6.4	USA	Comedia, Fantasía, Romance	https://www.imdb.com/title/tt5783956
+36	Wheres The Money	Where's the Money	2017	Inglés	Español	5.1	USA	Comedia, Crimen	https://www.imdb.com/title/tt5716848
+35	Whiskey Tango Foxtrot	Whiskey Tango Foxtrot	2016	ING/ESP	Español	6.6	USA	Biografía, Comedia, Drama, Guerra	https://www.imdb.com/title/tt3553442
+34	White Boy Rick	White Boy Rick	2018	Inglés	Español	6.5	USA	Crimen, Drama	https://www.imdb.com/title/tt4537896
+33	Wifi Ralph	Ralph Breaks the Internet	2018	ING/ESP	Español	7.0	USA	Infantil	https://www.imdb.com/title/tt5848272
+32	Wildlife	Wildlife	2018	Inglés	Español	6.8	USA	Drama	https://www.imdb.com/title/tt5929754
+31	Wine Country	Wine Country	2019	ING/ESP	Español	5.5	USA	Aventura, Comedia, Drama	https://www.imdb.com/title/tt8169446
+30	Wolverine: Inmortal	The Wolverine	2013	ING/ESP	Español	6.7	USA, UK, Japón	Acción, Sci-Fi	https://www.imdb.com/title/tt1430132
+29	Woman Walks Ahead	Woman Walks Ahead	2017	Inglés	Español	6.7	USA, UK	Biografía, Drama, Historia, Western	https://www.imdb.com/title/tt5436228
+28	Women Of Mafia	Kobiety mafii	2018	Inglés	Español	4.8	Polonia	Acción, Crimen, Drama	https://www.imdb.com/title/tt7372728
+27	Wonderstruck	Wonderstruck	2017	ING/ESP	Español	6.2	USA	Aventura, Drama, Misterio	https://www.imdb.com/title/tt5208216
+26	Wonka	Wonka	2023	ING/ESP	Español	7.0	USA, UK, Canadá	Aventura, Comedia, Familia, Fantasía, Musical	https://www.imdb.com/title/tt6166392
+25	Wyrmwood Road Of The Dead	Wyrmwood	2014	Inglés	Español	6.2	Australia	Acción, Comedia, Terror	https://www.imdb.com/title/tt2535470
+24	X-Men	X-Men	2000	ING/ESP	Español	7.3	USA, Canadá	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt0120903
+23	X-Men 2	X2	2003	ING/ESP	Español	7.4	Canadá, USA	Acción, Sci-Fi, Thriller	https://www.imdb.com/title/tt0290334
+22	X-Men Orígenes: Wolverine	X-Men Origins: Wolverine	2009	ING/ESP	Español	6.5	USA, UK	Acción, Sci-Fi	https://www.imdb.com/title/tt0458525
+21	X-Men: Apocalipsis	X-Men: Apocalypse	2016	ING/ESP	Español	6.8	USA	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt3385516
+20	X-Men: Dark Phoenix	X-Men: Dark Phoenix	2019	ING/ESP	Español	5.7	USA	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt6565702
+19	X-Men: Días Del Futuro Pasado	X-Men: Days of Future Past	2014	ING/ESP	Español	7.9	UK, USA, Canadá	Acción, Aventura, Sci-Fi, Thriller	https://www.imdb.com/title/tt1877832
+18	X-Men: La Batalla Final	X-Men: The Last Stand	2006	ING/ESP	Español	6.6	USA, UK, Canadá	Acción, Aventura, Sci-Fi	https://www.imdb.com/title/tt0376994
+17	X-Men: Primera Generación	X: First Class	2011	ING/ESP	Español	7.7	USA, UK	Acción, Sci-Fi	https://www.imdb.com/title/tt1270798
+16	Xxx: Reactivado	xXx: Return of Xander Cage	2017	ING/ESP	Español	5.2	China, Canadá, USA	Acción, Aventura, Thriller	https://www.imdb.com/title/tt1293847
+15	Yesterday	Yesterday	2019	ING/ESP	Español	6.8	UK, China, Japón, USA	Comedia, Fantasía, Música, Romance	https://www.imdb.com/title/tt8079248
+14	Yo Antes De Ti	Me Before You	2016	ING/ESP	Español	7.4	USA	Drama, Romance	https://www.imdb.com/title/tt2674426
+13	Yo Soy Simón	Love, Simon	2018	ING/ESP	Español	7.5	USA	Comedia, Drama, Romance	https://www.imdb.com/title/tt5164432
+12	Yo Vi Al Diablo	Visions	2015	Inglés	Español	5.3	USA	Terror, Misterio	https://www.imdb.com/title/tt2954474
+11	Yo, Tonya	I, Tonya	2017	Inglés	Español	7.5	USA, UK, Katar	Biografía, Comedia, Drama, Deporte	https://www.imdb.com/title/tt5580036
+10	You Get Me	You Get Me	2017	ING/ESP	Español	4.7	USA	Crimen, Drama, Misterio, Romance, Thriller	https://www.imdb.com/title/tt5539054
+9	Z For Zachariah	Z for Zachariah	2015	Inglés	Español	6.0	Islandia, Suiza, USA	Drama, Romance, Sci-Fi, Thriller	https://www.imdb.com/title/tt1598642
+8	Z: La Ciudad Perdida	The Lost City of Z	2016	ING/ESP	Español	6.6	USA	Aventura, Biografía, Drama, Historia	https://www.imdb.com/title/tt1212428
+7	Zero	Zero	2018	Inglés	Español	5.2	India	Comedia, Drama, Romance	https://www.imdb.com/title/tt6527426
+6	Zipper	Zipper	2015	Inglés	Español	5.8	USA	Drama, Thriller	https://www.imdb.com/title/tt3346224
+5	Zoe	Zoe	2018	Inglés	Español	6.1	USA	Drama, Romance, Sci-Fi	https://www.imdb.com/title/tt6010628
+4	Zombieland: Tiro De Gracia	Zombieland: Double Tap	2019	ING/ESP	Español	6.7	USA	Acción, Comedia, Terror	https://www.imdb.com/title/tt1560220
+3	Zombies	Zombies	2018	ING/ESP	Español	6.0	USA, Canadá	Aventura, Familia, Fantasía, Terror, Musical, Romance	https://www.imdb.com/title/tt6878820
+2	Zoolander 2	Zoolander 2	2016	ING/ESP	Español	4.7	USA, Italia	Acción, Aventura, Comedia, Misterio, Romance	https://www.imdb.com/title/tt1608290
+1	Zootopía	Zootopia	2016	ING/ESP	Español	8.0	USA	Infantil	https://www.imdb.com/title/tt2948356
