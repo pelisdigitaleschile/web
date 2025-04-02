@@ -19,12 +19,21 @@
     
     <style>
         /* CSS mínimo necesario para efectos que Bootstrap no cubre */
+    .navbar {
+        background-color: transparent !important;
+        transition: background-color 0.3s ease;
+    }
+    
+    .navbar.scrolled {
+        background-color: rgba(46, 139, 87, 0.95) !important;
+    }
+
+    /* Eliminar padding en móviles que causa franja blanca */
+    @media (max-width: 991px) {
         .navbar {
-            transition: background-color 0.3s ease;
+            padding: 0.5rem 1rem !important;
         }
-        .navbar.scrolled {
-            background-color: rgba(46, 139, 87, 0.95) !important;
-        }
+    }
         .hero-overlay {
             background-color: rgba(0, 0, 0, 0.6);
         }
@@ -282,12 +291,12 @@
                         <h4 class="fw-bold mb-4">Información de contacto</h4>
                         
                         <div class="d-flex align-items-start mb-4">
-                            <i class="fas fa-map-marker-alt me-3 mt-1"></i>
-                            <div>
-                                <h5 class="fw-bold mb-1">Ubicación</h5>
-                                <p>Club de Golf Lomas de la Dehesa<br>Camino El Alba 12345, Lo Barnechea</p>
-                            </div>
-                        </div>
+    <i class="fas fa-map-marker-alt me-3 mt-1"></i>
+    <div>
+        <h5 class="fw-bold mb-1">Ubicación</h5>
+        <p>Av. Lomas de La Dehesa 11.480, Lo Barnechea</p>
+    </div>
+</div>
                         
                         <div class="d-flex align-items-start mb-4">
                             <i class="fas fa-phone-alt me-3 mt-1"></i>
@@ -345,7 +354,7 @@
                 <div class="col-lg-4">
                     <h4 class="fw-bold mb-3">Ubicación</h4>
                     <div class="ratio ratio-16x9">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.345676820224!2d-70.56768292404496!3d-33.41789597339082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662ceff109f781f%3A0x2d5a1e8a7a8b5b1f!2sClub%20de%20Golf%20Lomas%20de%20la%20Dehesa!5e0!3m2!1ses!2scl!4v1681234567890!5m2!1ses!2scl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.345676820224!2d-70.56768292404496!3d-33.41789597339082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662ceff109f781f%3A0x2d5a1e8a7a8b5b1f!2sClub%20de%20Golf%20Lomas%20de%20la%20Dehesa!5e0!3m2!1ses!2scl!4v1681234567890!5m2!1ses!2scl" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
