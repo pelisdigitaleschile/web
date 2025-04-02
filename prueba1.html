@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Profesor de Golf Profesional - Clases personalizadas, testimonios y contacto.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claudio Gutiérrez - Profesor de Golf</title>
+  <!-- Favicon temático de golf -->
+  <link rel="icon" href="favicon.ico">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Animate.css para efectos de movimiento -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Vue.js -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.2.37/dist/vue.global.prod.js"></script>
+  <style>
+    :root {
+      --primary: #2E8B57;
+      --secondary: #3CB371;
+      --beige: #F5F5DC;
+      /* Para textos, se usarán blanco y negro según sea necesario */
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #fff;
+      color: #333;
+    }
+    /* Se ajusta el scrollspy: el body es relativo para evitar que el navbar fijo tape el contenido */
+    body { position: relative; }
+    section { padding-top: 100px; }
+    
+    /* HERO SECTION */
+    .hero-section {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+    .hero-section .carousel-item {
+      height: 80vh;
+    }
+    .hero-section .carousel-item img {
+      height: 100%;
+      object-fit: cover;
+    }
+    @media (max-width: 768px) {
+      .hero-section .carousel-item {
+        height: 60vh;
+      }
+    }
+    .hero-caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">Claudio Gutiérrez</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#quien-soy">Quién Soy</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="hero-section">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://placehold.co/1200x600?text=Golf+Background+1" class="d-block w-100" alt="Golf Background 1">
+        </div>
+        <div class="carousel-item">
+          <img src="https://placehold.co/1200x600?text=Golf+Background+2" class="d-block w-100" alt="Golf Background 2">
+        </div>
+        <div class="carousel-item">
+          <img src="https://placehold.co/1200x600?text=Golf+Background+3" class="d-block w-100" alt="Golf Background 3">
+        </div>
+      </div>
+      <div class="carousel-caption d-none d-md-block hero-caption animate__animated">
+        <h1 class="display-4">Mejora tu juego de golf</h1>
+        <p class="lead">Clases personalizadas para alcanzar tu máximo potencial en el green.</p>
+        <a href="#contacto" class="btn btn-primary text-uppercase">Reserva Ahora</a>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- QUIÉN SOY -->
+  <section id="quien-soy" class="py-5">
+    <div class="container">
+      <h2 class="text-center text-primary mb-4">Quién Soy</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4">
+          <img src="https://placehold.co/600x800?text=Profesor" class="img-fluid rounded shadow" alt="Foto del profesor">
+        </div>
+        <div class="col-md-6">
+          <p>Con más de 15 años de experiencia en el mundo del golf, he dedicado mi vida a perfeccionar el arte del swing y a enseñar a otros a disfrutar del deporte. Mi enfoque combina técnica, estrategia y pasión para lograr resultados notables.</p>
+          <p>A lo largo de mi carrera, he obtenido reconocimientos importantes y he ayudado a cientos de alumnos a mejorar sus habilidades.</p>
+          <!-- Timeline de logros -->
+          <ul class="list-group">
+            <li class="list-group-item">2010 – Graduado de la PGA Golf Academy</li>
+            <li class="list-group-item">2012 – Primer campeonato ganado</li>
+            <li class="list-group-item">2015 – Más de 100 alumnos capacitados</li>
+            <li class="list-group-item">2020 – Especialización en técnicas avanzadas</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="py-5" style="background-color: var(--beige);">
+    <div class="container">
+      <h2 class="text-center text-primary mb-4">Servicios</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <i class="fas fa-user fa-3x text-primary mb-3"></i>
+              <h5 class="card-title">Clases Individuales</h5>
+              <p class="card-text">Duración: 1 hora. Precio: $50.000/hora.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <i class="fas fa-users fa-3x text-primary mb-3"></i>
+              <h5 class="card-title">Clases Grupales</h5>
+              <p class="card-text">Duración: 1.5 horas. Precio: $30.000/persona.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <i class="fas fa-video fa-3x text-primary mb-3"></i>
+              <h5 class="card-title">Análisis de Video</h5>
+              <p class="card-text">Duración: 45 minutos. Precio: $70.000/sesión.</p>
+            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </section>\n\n  <!-- TESTIMONIOS -->\n  <section id=\"testimonios\" class=\"py-5\">\n    <div class=\"container\">\n      <h2 class=\"text-center text-primary mb-4\">Testimonios</h2>\n      <div id=\"testimoniosCarousel\" class=\"carousel slide\" data-bs-ride=\"carousel\">\n        <div class=\"carousel-inner\">\n          <!-- Grupo 1 -->\n          <div class=\"carousel-item active\">\n            <div class=\"row justify-content-center\">\n              <div class=\"col-md-8\">\n                <div class=\"card border-0\">\n                  <div class=\"card-body text-center\">\n                    <img src=\"https://placehold.co/100x100?text=Alumno+1\" class=\"rounded-circle mb-3\" alt=\"Alumno 1\">\n                    <p class=\"card-text\">\"Excelente profesor, mis habilidades han mejorado notablemente.\"</p>\n                    <h6 class=\"card-title\">Juan Pérez</h6>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <!-- Grupo 2 -->\n          <div class=\"carousel-item\">\n            <div class=\"row justify-content-center\">\n              <div class=\"col-md-8\">\n                <div class=\"card border-0\">\n                  <div class=\"card-body text-center\">\n                    <img src=\"https://placehold.co/100x100?text=Alumno+2\" class=\"rounded-circle mb-3\" alt=\"Alumno 2\">\n                    <p class=\"card-text\">\"Sus clases me ayudaron a reducir mi hándicap en 10 golpes.\"</p>\n                    <h6 class=\"card-title\">María López</h6>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <!-- Grupo 3 -->\n          <div class=\"carousel-item\">\n            <div class=\"row justify-content-center\">\n              <div class=\"col-md-8\">\n                <div class=\"card border-0\">\n                  <div class=\"card-body text-center\">\n                    <img src=\"https://placehold.co/100x100?text=Alumno+3\" class=\"rounded-circle mb-3\" alt=\"Alumno 3\">\n                    <p class=\"card-text\">\"Profesional y dedicado, mis resultados han mejorado.\"</p>\n                    <h6 class=\"card-title\">Carlos Ramírez</h6>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <!-- Grupo 4 -->\n          <div class=\"carousel-item\">\n            <div class=\"row justify-content-center\">\n              <div class=\"col-md-8\">\n                <div class=\"card border-0\">\n                  <div class=\"card-body text-center\">\n                    <img src=\"https://placehold.co/100x100?text=Alumno+4\" class=\"rounded-circle mb-3\" alt=\"Alumno 4\">\n                    <p class=\"card-text\">\"Una experiencia transformadora, altamente recomendado.\"</p>\n                    <h6 class=\"card-title\">Ana Torres</h6>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <!-- Grupo 5 -->\n          <div class=\"carousel-item\">\n            <div class=\"row justify-content-center\">\n              <div class=\"col-md-8\">\n                <div class=\"card border-0\">\n                  <div class=\"card-body text-center\">\n                    <img src=\"https://placehold.co/100x100?text=Alumno+5\" class=\"rounded-circle mb-3\" alt=\"Alumno 5\">\n                    <p class=\"card-text\">\"Las clases personalizadas hicieron la diferencia en mi juego.\"</p>\n                    <h6 class=\"card-title\">Luis Martínez</h6>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n        <button class=\"carousel-control-prev\" type=\"button\" data-bs-target=\"#testimoniosCarousel\" data-bs-slide=\"prev\">\n          <span class=\"carousel-control-prev-icon\"></span>\n          <span class=\"visually-hidden\">Anterior</span>\n        </button>\n        <button class=\"carousel-control-next\" type=\"button\" data-bs-target=\"#testimoniosCarousel\" data-bs-slide=\"next\">\n          <span class=\"carousel-control-next-icon\"></span>\n          <span class=\"visually-hidden\">Siguiente</span>\n        </button>\n      </div>\n    </div>\n  </section>\n\n  <!-- CONTACTO -->\n  <section id=\"contacto\" class=\"py-5\" style=\"background-color: #fff;\">\n    <div class=\"container\">\n      <h2 class=\"text-center text-primary mb-4\">Contacto</h2>\n      <div class=\"row g-4\">\n        <div class=\"col-md-7\">\n          <!-- Formulario con Vue.js -->\n          <div id=\"app\">\n            <form @submit.prevent=\"enviarWhatsApp\">\n              <div class=\"mb-3\">\n                <input type=\"text\" class=\"form-control\" v-model=\"nombre\" placeholder=\"Nombre y Apellidos\" required>\n              </div>\n              <div class=\"mb-3\">\n                <input type=\"tel\" class=\"form-control\" v-model=\"celular\" placeholder=\"Celular\" required>\n              </div>\n              <div class=\"mb-3\">\n                <input type=\"email\" class=\"form-control\" v-model=\"email\" placeholder=\"E-mail\" required>\n              </div>\n              <div class=\"mb-3\">\n                <input type=\"text\" class=\"form-control\" v-model=\"motivo\" placeholder=\"Motivo\" required>\n              </div>\n              <div class=\"mb-3\">\n                <textarea class=\"form-control\" v-model=\"mensaje\" placeholder=\"Mensaje\" rows=\"4\" required></textarea>\n              </div>\n              <button type=\"submit\" class=\"btn btn-success w-100 text-uppercase\">\n                <span v-if=\"!loading\">Enviar WhatsApp</span>\n                <span v-else><span class=\"spinner-border spinner-border-sm\"></span> Enviando...</span>\n              </button>\n            </form>\n          </div>\n        </div>\n        <div class=\"col-md-5\">\n          <div class=\"mb-3\">\n            <div class=\"ratio ratio-16x9\">\n              <!-- Google Maps embed (ajustar según API Key si se requiere) -->\n              <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.2538673176573!2d-70.580751084795!3d-33.52482018077425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf3d1e6c9e5f%3A0x65e1f0d473d81e0!2sClub%20Lomas%20de%20la%20Dehesa!5e0!3m2!1ses!2scl!4v1681921234567\" style=\"border:0;\" allowfullscreen loading=\"lazy\"></iframe>\n            </div>\n          </div>\n          <div class=\"mb-3\">\n            <h5 class=\"text-primary\">Contacto</h5>\n            <p><i class=\"fas fa-phone\"></i> +569-93428238</p>\n            <p><i class=\"fas fa-envelope\"></i> contacto@claudiogolf.cl</p>\n            <p><i class=\"fas fa-map-marker-alt\"></i> Club Lomas de la Dehesa, Santiago</p>\n          </div>\n          <div class=\"d-flex justify-content-center\">\n            <a href=\"#\" class=\"btn btn-outline-primary rounded-circle mx-1\"><i class=\"fab fa-whatsapp\"></i></a>\n            <a href=\"#\" class=\"btn btn-outline-primary rounded-circle mx-1\"><i class=\"fab fa-instagram\"></i></a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </section>\n\n  <!-- FOOTER -->\n  <footer class=\"bg-dark text-white py-4\">\n    <div class=\"container text-center\">\n      <a href=\"#\" class=\"navbar-brand text-white\">\n        <i class=\"fas fa-golf-ball\"></i> Claudio Gutiérrez\n      </a>\n      <ul class=\"list-inline my-3\">\n        <li class=\"list-inline-item\"><a href=\"#hero\" class=\"text-white text-decoration-none\">Inicio</a></li>\n        <li class=\"list-inline-item\"><a href=\"#quien-soy\" class=\"text-white text-decoration-none\">Quién Soy</a></li>\n        <li class=\"list-inline-item\"><a href=\"#servicios\" class=\"text-white text-decoration-none\">Servicios</a></li>\n        <li class=\"list-inline-item\"><a href=\"#testimonios\" class=\"text-white text-decoration-none\">Testimonios</a></li>\n        <li class=\"list-inline-item\"><a href=\"#contacto\" class=\"text-white text-decoration-none\">Contacto</a></li>\n      </ul>\n      <p class=\"mb-0\">&copy; 2025 Claudio Gutiérrez - Profesor de Golf Profesional. Todos los derechos reservados.</p>\n    </div>\n  </footer>\n\n  <!-- Vue.js para el formulario de contacto -->\n  <script>\n    const app = Vue.createApp({\n      data() {\n        return {\n          nombre: '',\n          celular: '',\n          email: '',\n          motivo: '',\n          mensaje: '',\n          loading: false\n        };\n      },\n      methods: {\n        enviarWhatsApp() {\n          this.loading = true;\n          const numero = '56993428238';\n          const texto = `Hola, mi nombre es ${this.nombre}.\\nCelular: ${this.celular}\\nE-mail: ${this.email}\\nMotivo: ${this.motivo}\\nMensaje: ${this.mensaje}`;\n          const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;\n          setTimeout(() => {\n            window.open(url, '_blank');\n            this.loading = false;\n          }, 1500);\n        }\n      }\n    });\n    app.mount('#app');\n  </script>\n\n  <!-- Intersection Observer para animaciones de scroll -->\n  <script>\n    document.addEventListener('DOMContentLoaded', function() {\n      const observer = new IntersectionObserver((entries) => {\n        entries.forEach(entry => {\n          if (entry.isIntersecting) {\n            entry.target.classList.add('animate__fadeInUp');\n            observer.unobserve(entry.target);\n          }\n        });\n      }, { threshold: 0.1 });\n      document.querySelectorAll('.animate__animated').forEach(el => observer.observe(el));\n    });\n  </script>\n</body>\n</html>\n```
