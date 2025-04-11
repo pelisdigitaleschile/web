@@ -8,30 +8,27 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
-    <!-- Font Awesome (Asowen Font alternativa) -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <!-- Vue.js -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-    <!-- Estilos personalizados -->
     <style>
-        /* Paleta de colores */
         :root {
             --verde-primario: #4CAF50;
             --verde-secundario: #388E3C;
             --beige: #F9FBE7;
         }
         
-        /* Efecto navbar */
         .navbar {
             transition: all 0.3s ease;
+            background: var(--verde-primario) !important;
         }
         .navbar-hidden {
             transform: translateY(-100%);
         }
         
-        /* Parpadeo WhatsApp */
         @keyframes parpadeo {
             0% { opacity: 1; }
             50% { opacity: 0.3; }
@@ -39,97 +36,103 @@
         }
         .whatsapp-blink {
             animation: parpadeo 1.5s infinite;
+            font-size: 1.5rem;
         }
         
-        /* Efectos generales */
-        .fade-in {
-            opacity: 0;
-            animation: fadeIn 1s ease-in forwards;
-        }
-        @keyframes fadeIn {
-            to { opacity: 1; }
+        .hero-image {
+            height: 100vh;
+            object-fit: cover;
+            object-position: center;
         }
     </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+    <!-- Navbar modificada -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
+            <a href="#" class="text-white mx-2 whatsapp-blink d-lg-none">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            
             <a class="navbar-brand" href="#">WEKEREKE PALTAS</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            
+            <div class="d-flex align-items-center">
+                <a href="#" class="text-white mx-3 whatsapp-blink d-none d-lg-block">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link" href="#clientes">Clientes</a></li>
                     <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link whatsapp-blink" href="#">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Sección Hero -->
+    <!-- Sección Hero con imagen real -->
     <section id="hero" class="vh-100 position-relative">
-        <img src="https://source.unsplash.com/random/1920x1080/?avocado" 
-             class="w-100 h-100 object-fit-cover" alt="Paltas">
-        <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Avocado_Hass_-_single_and_halved.jpg" 
+             class="hero-image w-100" alt="Paltas Hass">
+        <div class="position-absolute top-50 start-50 translate-middle text-center text-white bg-dark bg-opacity-50 p-4 rounded">
             <h1 class="display-4 fw-bold">Las mejores paltas de la región</h1>
             <button class="btn btn-success btn-lg mt-3">Comprar Ahora</button>
         </div>
     </section>
 
-    <!-- Sección Nosotros -->
+    <!-- Sección Nosotros con imagen real -->
     <section id="nosotros" class="py-5 bg-light">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <img src="https://source.unsplash.com/random/600x400/?farmer" 
+                    <img src="https://storage.lacapitalmdp.com/2023/05/Palta-05.jpg" 
                          class="img-fluid rounded" alt="Campesino">
                 </div>
                 <div class="col-md-6 mt-4 mt-md-0">
                     <h2 class="mb-4">¿Quiénes somos?</h2>
-                    <p>Somos una empresa familiar con más de 20 años de experiencia en el cultivo y comercialización de paltas. Nuestra pasión por la agricultura sostenible nos ha permitido ofrecer productos de la más alta calidad.</p>
+                    <p>Somos productores directos de paltas Hass y Edranol con más de 20 años de experiencia. Cultivamos de manera sustentable en los mejores campos de la región.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección Clientes -->
+    <!-- Sección Clientes con logos reales -->
     <section id="clientes" class="py-5">
         <div class="container">
             <h2 class="text-center mb-5">Nuestros Clientes</h2>
             <div id="carouselClientes" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="https://source.unsplash.com/random/300x150/?logo" class="d-block mx-auto" alt="Cliente 1">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg" 
+                             class="d-block mx-auto" style="max-height: 100px" alt="Walmart">
                     </div>
                     <div class="carousel-item">
-                        <img src="https://source.unsplash.com/random/300x150/?logo,business" class="d-block mx-auto" alt="Cliente 2">
+                        <img src="https://www.dafont.com/forum/attach/orig/7/7/775974.png?2" 
+                             class="d-block mx-auto" style="max-height: 100px" alt="Nike">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección Productos (Vue.js) -->
+    <!-- Sección Productos con imágenes reales -->
     <section id="productos" class="py-5 bg-light">
         <div class="container" id="app">
             <h2 class="text-center mb-5">Nuestros Productos</h2>
             
             <div class="row">
-                <!-- Productos -->
                 <div class="col-md-6">
                     <div class="row g-4">
+                        <!-- Producto 1 -->
                         <div class="col-12">
                             <div class="card h-100">
-                                <img src="https://source.unsplash.com/random/400x400/?avocado,hass" 
+                                <img src="https://www.veguitashop.cl/411-large_default/paltas-hass-chilena-vieja.jpg" 
                                      class="card-img-top" alt="Palta Hass">
                                 <div class="card-body">
                                     <h5 class="card-title">Palta Hass</h5>
@@ -144,9 +147,10 @@
                             </div>
                         </div>
                         
+                        <!-- Producto 2 -->
                         <div class="col-12">
                             <div class="card h-100">
-                                <img src="https://source.unsplash.com/random/400x400/?avocado,green" 
+                                <img src="https://jumbocl.vtexassets.com/arquivos/ids/369698/Palta-edranol-malla-1-kg.jpg?v=638776778599170000" 
                                      class="card-img-top" alt="Edranol">
                                 <div class="card-body">
                                     <h5 class="card-title">Edranol</h5>
