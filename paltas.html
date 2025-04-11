@@ -487,4 +487,89 @@
                 },
                 // Enviar pedido por WhatsApp
                 submitOrder() {
-      
+                    if (!this.hasItems) {
+                        alert('Por favor, selecciona al menos un producto para realizar tu pedido.');
+                        return;
+                    }
+                    
+                    // Construir el mensaje para WhatsApp
+                    let message = '¡Hola! Me gustaría hacer un pedido:\n\n';
+                    
+                    // Añadir productos seleccionados
+                    this.products.forEach(product => {
+                        if (product.quantity > 0) {
+                            message += `${product.name} - ${product.quantity} kg - $${(product.price * product.quantity).toLocaleString()}\n`;
+                        }
+                    });
+                    
+                    message += `\nTotal: $${this.totalAmount.toLocaleString()}\n\n`;
+                    
+                    // Añadir datos de contacto si fueron proporcionados
+                    if (this.contactInfo.name) {
+                        message += `Nombre: ${this.contactInfo.name}\n`;
+                    }
+                    if (this.contactInfo.phone) {
+                        message += `Celular: ${this.contactInfo.phone}\n`;
+                    }
+                    if (this.contactInfo.email) {
+                        message += `Email: ${this.contactInfo.email}\n`;
+                    }
+                    if (this.contactInfo.address) {
+                        message += `Dirección: ${this.contactInfo.address}\n`;
+                    }
+                    if (this.contactInfo.comments) {
+                        message += `Comentarios: ${this.contactInfo.comments}\n`;
+                    }
+                    
+                    // Codificar el mensaje para URL
+                    const encodedMessage = encodeURIComponent(message);
+                    
+                    // Abrir WhatsApp con el mensaje
+                    window.open(`https://wa.me/56912345678?text=${encodedMessage}`, '_blank');
+                }
+            }
+        }).mount('#productApp');
+
+        // Script para animar secciones al hacer scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            // Función para detectar elementos visibles
+            function checkVisible() {
+                const sections = document.querySelectorAll('.fade-in');
+                const windowHeight = window.innerHeight;
+                
+                sections.forEach(section => {
+                    const sectionTop = section.getBoundingClientRect().top;
+                    if (sectionTop < windowHeight - 100) {
+                        section.classList.add('show');
+                    }
+                });
+            }
+            
+            // Comprobar al cargar la página
+            checkVisible();
+            
+            // Comprobar al hacer scroll
+            window.addEventListener('scroll', checkVisible);
+            
+            // Variables para controlar la barra de navegación
+            let lastScrollTop = 0;
+            const navbar = document.getElementById('main-navbar');
+            
+            // Función para controlar la visibilidad de la barra de navegación
+            window.addEventListener('scroll', function() {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                
+                if (scrollTop > lastScrollTop) {
+                    // Scroll hacia abajo
+                    navbar.style.transform = 'translateY(-100%)';
+                } else {
+                    // Scroll hacia arriba
+                    navbar.style.transform = 'translateY(0)';
+                }
+                
+                lastScrollTop = scrollTop;
+            });
+        });
+    </script>
+</body>
+</html>
