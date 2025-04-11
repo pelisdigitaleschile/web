@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wekereke Paltas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome como alternativa para Asowen Font -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Vue.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.36/vue.global.min.js"></script>
+    <!-- jQuery para algunas funcionalidades de Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Popper.js requerido para Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.5/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    
+    <style>
+        /* Paleta de colores inspirada en paltas */
+        :root {
+            --palta-green-dark: #2E5D1C;
+            --palta-green-medium: #568203;
+            --palta-green-light: #8CBF3F;
+            --palta-cream: #F8F4D7;
+            --palta-brown: #6D4C41;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--palta-cream);
+            color: #333;
+        }
+        
+        /* Navbar */
+        .navbar {
+            background-color: var(--palta-green-dark);
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-brand, .navbar-nav .nav-link {
+            color: white;
+        }
+        
+        .navbar-nav .nav-link:hover {
+            color: var(--palta-green-light);
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .hero-content {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+        
+        /* Secciones */
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            color: var(--palta-green-dark);
+            margin-bottom: 40px;
+            position: relative;
+            font-weight: bold;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--palta-green-medium);
+        }
+        
+        /* Productos */
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .product-img {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .product-info {
+            padding: 15px;
+        }
+        
+        /* Formulario */
+        .contact-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--palta-green-dark);
+            color: white;
+            padding: 30px 0;
+        }
+        
+        .social-icon {
+            color: white;
+            font-size: 24px;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            transform: scale(1.2);
+            color: var(--palta-green-light);
+        }
+        
+        /* WhatsApp blinking icon */
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        
+        .whatsapp-icon {
+            animation: blink 2s infinite;
+            color: #25D366;
+        }
+        
+        /* Animaciones de secciones */
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1.5s ease;
+        }
+        
+        .fade-in.show {
+            opacity: 1;
+        }
+        
+        /* Botón WhatsApp */
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+        
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+        }
+        
+        /* Resumen de compra */
+        .order-summary {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        
+        /* Cantidad productos */
+        .quantity-control {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        
+        .quantity-btn {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: var(--palta-green-medium);
+            color: white;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        
+        .quantity {
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        
+        /* Carousel clientes */
+        .client-logo {
+            height: 100px;
+            object-fit: contain;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="main-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-avocado me-2"></i>
+                Wekereke Paltas
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">¿Quiénes somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#clients">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            <i class="fab fa-whatsapp whatsapp-icon"></i>
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" style="background-image: url('https://picsum.photos/id/429/1600/900');">
+        <div class="hero-content">
+            <h1>Wekereke Paltas</h1>
+            <p class="lead">Paltas frescas y de calidad para tu hogar y negocio</p>
+            <a href="#products" class="btn btn-success btn-lg mt-3">Comprar Ahora</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about fade-in">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">¿Quiénes somos?</h2>
+                    <p>Wekereke Paltas es una empresa familiar fundada en 2010, dedicada al cultivo y comercialización de paltas de la más alta calidad. Ubicados en la región central de Chile, contamos con las condiciones climáticas perfectas para el cultivo de este delicioso y nutritivo fruto.</p>
+                    <p>Trabajamos directamente con agricultores locales, asegurando prácticas sostenibles y respetuosas con el medio ambiente. Nuestro compromiso es ofrecer las mejores paltas, desde nuestros huertos a su mesa, manteniendo siempre la frescura y el sabor que nos caracteriza.</p>
+                    <p>Con más de 10 años de experiencia en el mercado, nos enorgullece ser proveedores de confianza para restaurantes, supermercados y hogares que valoran la calidad y el sabor auténtico de nuestras paltas.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://picsum.photos/id/1080/600/400" alt="Agricultor" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients bg-light fade-in">
+        <div class="container">
+            <h2 class="section-title text-center">Algunos de nuestros clientes</h2>
+            <div id="clientCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="https://picsum.photos/id/1/200/100" class="client-logo d-block" alt="Cliente 1">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="https://picsum.photos/id/2/200/100" class="client-logo d-block" alt="Cliente 2">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="https://picsum.photos/id/3/200/100" class="client-logo d-block" alt="Cliente 3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="https://picsum.photos/id/4/200/100" class="client-logo d-block" alt="Cliente 4">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="https://picsum.photos/id/5/200/100" class="client-logo d-block" alt="Cliente 5">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="https://picsum.photos/id/6/200/100" class="client-logo d-block" alt="Cliente 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#clientCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#clientCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section with Vue.js -->
+    <section id="products" class="products fade-in">
+        <div class="container">
+            <h2 class="section-title text-center">Nuestros Productos</h2>
+            <div id="productApp">
+                <div class="row">
+                    <!-- Product Cards -->
+                    <div class="col-md-4" v-for="(product, index) in products" :key="index">
+                        <div class="product-card">
+                            <img :src="product.image" class="product-img w-100" :alt="product.name">
+                            <div class="product-info">
+                                <h4>{{ product.name }}</h4>
+                                <p>{{ product.description }}</p>
+                                <p class="fw-bold">${{ product.price.toLocaleString() }} por KG</p>
+                                <div class="quantity-control">
+                                    <button class="quantity-btn" @click="decreaseQuantity(index)" :disabled="product.quantity <= 0">-</button>
+                                    <span class="quantity">{{ product.quantity }}</span>
+                                    <button class="quantity-btn" @click="increaseQuantity(index)">+</button>
+                                </div>
+                                <p v-if="product.quantity > 0" class="text-success fw-bold">
+                                    Total: ${{ (product.price * product.quantity).toLocaleString() }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <div class="contact-form">
+                            <h3 class="mb-4">Datos de Contacto</h3>
+                            <form @submit.prevent="submitOrder">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" v-model="contactInfo.name" placeholder="Nombre y Apellidos">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control" v-model="contactInfo.phone" placeholder="Celular">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" v-model="contactInfo.email" placeholder="E-mail">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" v-model="contactInfo.address" placeholder="Dirección completa">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" v-model="contactInfo.comments" placeholder="Comentarios" rows="3"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- Order Summary -->
+                    <div class="col-md-6">
+                        <div class="order-summary">
+                            <h3 class="mb-4">Resumen de tu pedido</h3>
+                            <div v-if="hasItems">
+                                <div v-for="(product, index) in products" :key="index" v-if="product.quantity > 0" class="d-flex justify-content-between mb-2">
+                                    <span>{{ product.name }} ({{ product.quantity }} kg)</span>
+                                    <span>${{ (product.price * product.quantity).toLocaleString() }}</span>
+                                </div>
+                                <hr>
+                                <div class="d-flex justify-content-between fw-bold">
+                                    <span>Total:</span>
+                                    <span>${{ totalAmount.toLocaleString() }}</span>
+                                </div>
+                                <button class="whatsapp-btn w-100 mt-4" @click="submitOrder">
+                                    <i class="fab fa-whatsapp me-2"></i> Enviar por WhatsApp
+                                </button>
+                            </div>
+                            <div v-else class="text-center py-4">
+                                <p>No hay productos seleccionados</p>
+                                <a href="#products" class="btn btn-outline-success">Seleccionar productos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h3>Wekereke Paltas</h3>
+                    <p>Paltas frescas y de calidad para tu hogar y negocio</p>
+                </div>
+                <div class="col-12 my-3">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="col-12">
+                    <p>&copy; 2025 Wekereke Paltas. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Vue.js App para la sección de productos
+        const { createApp } = Vue;
+        
+        createApp({
+            data() {
+                return {
+                    // Productos
+                    products: [
+                        {
+                            name: 'Palta Hass',
+                            description: 'Firme y cremosa, ideal para exportación y comercio local.',
+                            price: 3000,
+                            quantity: 0,
+                            image: 'https://picsum.photos/id/292/500/500'
+                        },
+                        {
+                            name: 'Edranol',
+                            description: 'Firme, de excelente postcosecha y alta demanda.',
+                            price: 2000,
+                            quantity: 0,
+                            image: 'https://picsum.photos/id/255/500/500'
+                        }
+                    ],
+                    // Información de contacto
+                    contactInfo: {
+                        name: '',
+                        phone: '',
+                        email: '',
+                        address: '',
+                        comments: ''
+                    }
+                };
+            },
+            computed: {
+                // Calcular el monto total
+                totalAmount() {
+                    return this.products.reduce((total, product) => {
+                        return total + (product.price * product.quantity);
+                    }, 0);
+                },
+                // Verificar si hay productos seleccionados
+                hasItems() {
+                    return this.products.some(product => product.quantity > 0);
+                }
+            },
+            methods: {
+                // Aumentar cantidad de producto
+                increaseQuantity(index) {
+                    this.products[index].quantity++;
+                },
+                // Disminuir cantidad de producto
+                decreaseQuantity(index) {
+                    if (this.products[index].quantity > 0) {
+                        this.products[index].quantity--;
+                    }
+                },
+                // Enviar pedido por WhatsApp
+                submitOrder() {
+      
